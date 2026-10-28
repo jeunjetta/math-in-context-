@@ -1,0 +1,55 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.000
+Suppose a Fourier computation becomes twice as fast.
+
+00:00:04.000 --> 00:00:08.000
+Does the whole system become twice as fast? Pause and predict.
+
+00:00:08.000 --> 00:00:13.000
+Imagine sequential work taking one hundred milliseconds.
+
+00:00:13.000 --> 00:00:18.000
+Fourier computation takes twenty. Everything else takes eighty.
+
+00:00:18.000 --> 00:00:22.000
+Halve the Fourier time: twenty milliseconds becomes ten.
+
+00:00:22.000 --> 00:00:26.000
+The other eighty milliseconds stays unchanged.
+
+00:00:26.000 --> 00:00:30.000
+Ten plus eighty is ninety. We saved ten milliseconds.
+
+00:00:30.000 --> 00:00:35.000
+Overall speedup is old time divided by new time.
+
+00:00:35.000 --> 00:00:40.000
+One hundred over ninety is about one point one one, not two.
+
+00:00:40.000 --> 00:00:44.500
+Even zero Fourier time leaves eighty milliseconds.
+
+00:00:44.500 --> 00:00:49.000
+In this model, the speedup limit is one point two five.
+
+00:00:49.000 --> 00:00:53.000
+Arithmetic complexity asks how operation counts grow.
+
+00:00:53.000 --> 00:00:57.000
+Numerical stability asks how computation errors behave.
+
+00:00:57.000 --> 00:01:01.000
+Latency measures elapsed time. Readiness needs a validated system.
+
+00:01:01.000 --> 00:01:05.500
+Check accuracy, data movement, and worst-case deadlines.
+
+00:01:05.500 --> 00:01:10.000
+This toy arithmetic proves no new FFT or real-time grid capability.
+
+00:01:10.000 --> 00:01:15.000
+Explore the fraction improved and its speedup in our Marimo lesson.
+
+00:01:15.000 --> 00:01:20.000
+Fourier methods connect algorithms to latency—not automatically to readiness.
