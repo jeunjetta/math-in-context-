@@ -1,0 +1,14 @@
+{
+  "checked_on": "2026-10-29",
+  "sources": [
+    {"id":"lex503","url":"https://lexfridman.com/math-ai-crisis/","role":"primary discussion, not independent theorem verification"},
+    {"id":"lex-transcript","url":"https://lexfridman.com/math-ai-crisis-transcript/","role":"official transcript; may contain errors and differing chapter offsets"},
+    {"id":"3b1b-zeta","url":"https://www.3blue1brown.com/lessons/zeta/","role":"creator explanation and inspiration"},
+    {"id":"3b1b-fourier","url":"https://www.3blue1brown.com/lessons/fourier-transforms/","role":"creator explanation and inspiration"},
+    {"id":"3b1b-projection","url":"https://www.3blue1brown.com/lessons/quaternions/","role":"creator explanation of stereographic projection"},
+    {"id":"nist-pmu","url":"https://www.nist.gov/publications/dynamic-phasor-measurement-unit-test-system","role":"primary metrology research, 2007; not current compliance requirements"},
+    {"id":"openai-math","url":"https://github.com/openai/math","role":"primary artifacts with varying verification status"},
+    {"id":"clay","url":"https://www.claymath.org/millennium-problems/","role":"official problem and prize context"},
+    {"id":"dlmf","url":"https://dlmf.nist.gov/25.2","role":"zeta definition and continuation reference"}
+  ]
+}
