@@ -1,0 +1,23 @@
+{
+  "nodes": [
+    {"id":"fourier","label":"Fourier decomposition"},
+    {"id":"fft","label":"FFT algorithms"},
+    {"id":"pmu","label":"Synchrophasor measurement"},
+    {"id":"latency","label":"End-to-end latency"},
+    {"id":"zeta","label":"Riemann zeta function"},
+    {"id":"rh","label":"Riemann hypothesis"},
+    {"id":"analytic","label":"Analytic complex functions"},
+    {"id":"fields","label":"Planar harmonic potentials"},
+    {"id":"projection","label":"Stereographic projection"}
+  ],
+  "edges": [
+    {"from":"fourier","to":"fft","relation":"computed efficiently by"},
+    {"from":"fourier","to":"pmu","relation":"supports some estimation methods"},
+    {"from":"pmu","to":"latency","relation":"application constrained by"},
+    {"from":"zeta","to":"fourier","relation":"oscillatory series for Re(s)>1; not a finite DFT"},
+    {"from":"rh","to":"zeta","relation":"constrains nontrivial zeros"},
+    {"from":"analytic","to":"fields","relation":"real and imaginary parts are harmonic conjugates"},
+    {"from":"projection","to":"analytic","relation":"related conformal representation, not identical objects"}
+  ],
+  "warning":"These links are methods or context, not logical equivalences or proof of common physics."
+}

@@ -1,4 +1,39 @@
-# marimo WebAssembly + GitHub Pages Template
+# Math in Context
+
+Small connected explanations of mathematics, evidence and real-world use.
+For curious people with university-level maths basics, not a sequential degree.
+
+## Start here
+
+- [First experiment: FFT and end-to-end latency](apps/fft_and_latency.py).
+- [Working checklist](ROADMAP.md).
+- [Concept connections](content/connections.json).
+- [Source registry](content/sources.json).
+
+Run locally: uvx marimo run apps/fft_and_latency.py
+
+This synthetic example has no grid connection or model-key requirement.
+It does not validate a new FFT algorithm or predict operator performance.
+
+## Two repositories, different jobs
+
+[Open Notebook](https://github.com/jeunjetta/open-notebook) is the research
+source-management platform. This repository is the public learning layer:
+Python experiments, worked examples, feedback, scripts and source links.
+
+Every bite names assumptions and limitations. Announcements, established
+results, reproduced calculations and hypotheses are different evidence types.
+Our research checkpoints need independent audit before public research claims.
+Never commit credentials, private notebook exports or operator telemetry.
+
+The original Marimo template is retained below as useful infrastructure.
+Its sample notebooks are examples, not our curriculum. Pages deployment must
+be verified before claiming a live URL. WebAssembly has first-load overhead
+and browser dependency restrictions.
+
+---
+
+## Original template documentation
 
 This template repository demonstrates how to export [marimo](https://marimo.io) notebooks to WebAssembly and deploy them to GitHub Pages.
 

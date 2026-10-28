@@ -1,0 +1,15 @@
+name: Test learning content
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: python -m unittest discover -s tests
+      - run: uvx marimo==0.25.2 check apps/fft_and_latency.py
+      - run: uvx marimo==0.25.2 check apps/fft_and_latency.py --select MW
