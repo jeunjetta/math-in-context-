@@ -15,6 +15,52 @@ Run locally: uvx marimo run apps/fft_and_latency.py
 This synthetic example has no grid connection or model-key requirement.
 It does not validate a new FFT algorithm or predict operator performance.
 
+## Release timeline
+
+Planning baseline: **29 October 2026 · Australia/Sydney**.
+These are target dates, not guaranteed release dates. All milestones below are
+**planned**; a date passing does not mark a release complete. Track implementation
+and feedback in GitHub issues, pull requests and Actions.
+
+```mermaid
+timeline
+    title Math in Context — target releases (2026)
+    section Foundation and pilot
+        30 Oct : Foundation and tablet checks
+        02 Nov : FFT pilot preview
+        05 Nov : First public video and learning bite
+    section Visual connections
+        09 Nov : Fields and complex-maps preview
+        12 Nov : Second public episode
+        16 Nov : Knowledge-map preview
+    section Evaluation and next cycle
+        19 Nov : Classifier experiment
+        23 Nov : Navier–Stokes foundations
+        26 Nov : Review and select next episodes
+```
+
+| Target (2026) | Release | Deliverables and release gate |
+|---|---|---|
+| 30 Oct | Foundation | Merge the starter PR after review; verify GitHub Pages and test the Marimo notebook on a tablet. |
+| 2 Nov | Pilot preview | FFT/latency interactive lesson, storyboard and first rendered video draft for Karin’s feedback. |
+| 5 Nov | Public pilot | Reviewed 60–90-second YouTube video, Substack companion post and linked interactive exercise. |
+| 9 Nov | Visual connections preview | “Same-looking curves, different physics”: complex maps, electric-field contours and magnetic dipoles, with assumptions explicit. |
+| 12 Nov | Second public episode | Original visual explainer, manipulable notebook and short comprehension quiz. |
+| 16 Nov | Knowledge-map preview | Browse typed relationships between problems, concepts and practical applications; no implied mathematical equivalences. |
+| 19 Nov | Classifier experiment | Compare Jev, simple rules and a small model on labelled examples; adopt only if it reduces review work at acceptable accuracy and cost. |
+| 23 Nov | Navier–Stokes foundations | Explain the prize question, what simulations already accomplish, and why those differ. No unreviewed research claims. |
+| 26 Nov | Review and next cycle | Review learner feedback, understanding and production effort; choose the next three episodes. |
+
+**Cadence:** aim for one polished video per week, supported by a Substack post
+and Marimo activity. Twice-daily agent work advances the pipeline; it does not
+promise two finished videos per day. Initial pilot dates are a trial, not a
+daily publishing commitment.
+
+**Release gates:** mathematical/source review, tested interaction, tablet usability,
+legible visuals and captions, asset rights, and Karin’s approval before public
+video/blog/social publication. Our research findings require independent audit
+before being presented as new results. Move target dates when a gate is unmet.
+
 ## Two repositories, different jobs
 
 [Open Notebook](https://github.com/jeunjetta/open-notebook) is the research
