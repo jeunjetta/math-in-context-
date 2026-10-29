@@ -4,9 +4,10 @@ First increment: **80-second silent, captioned visual draft**, not an approved
 YouTube release. Original graphics; synthetic numbers; no operational claims.
 Video work lives here independently of the Marimo starter PR #1.
 
-Latest revision: **v3** preserves the prediction question without revealing
-the answer, and synchronizes a labelled visual focus with each of the four
-complexity/stability/latency/readiness captions. Duration remains 80 seconds.
+Latest revision: **v4** derives numeric captions, labels, quotient notation
+and bar scales from one validated timing model. The public pilot remains
+100 → 90 ms. Prediction-first opening and synchronized question cards are
+retained; duration remains 80 seconds.
 
 ## Reproduce
 
@@ -18,6 +19,7 @@ uv sync --locked
 uv run --locked python -m unittest test_video -v
 uv run --locked python render.py --stills-only
 uv run --locked python render.py --out out/full
+uv run --locked python render.py --scenario fft-latency/scenarios/half-share.json --stills-only --out out/alternate
 ffprobe -v error -show_entries stream=codec_name,width,height,r_frame_rate,nb_frames -show_entries format=duration -of json out/full/fft-latency-draft.mp4
 ```
 
@@ -31,6 +33,8 @@ manager; do not assume byte-for-byte output on every machine.
 ## Content and extension points
 
 - `fft-latency/lesson.json`: scene times, captions/script, question cards and lesson parameters.
+- `lesson_model.py`: exact rational timing arithmetic, validation and template expansion.
+- `fft-latency/scenarios/half-share.json`: synthetic reuse test, not a replacement public episode.
 - `render.py`: reusable text-fitting, bar, timing and caption components.
 - `fft-latency/storyboard.md`: editorial and visual direction.
 - `fft-latency/captions.vtt`: generated from the lesson, also burned into frames.
@@ -38,15 +42,34 @@ manager; do not assume byte-for-byte output on every machine.
   synchronization and checked-in VTT freshness checks.
 - `STATUS.md`: provenance, actual validation and next bounded task.
 
-The script is the ordered caption text in `lesson.json` (also readable in VTT).
+The script is the ordered caption text in `lesson.json`, after expanding its
+numeric placeholders (also readable in generated VTT). `load_lesson()` is the
+supported construction route for rendering data; do not mutate a loaded
+dictionary's numbers without regenerating its captions.
 In the four-question scene, each card corresponds to one caption in order;
 `cue_at()` drives both the highlighted card and burned caption. Boundaries
 belong to the incoming cue. Keep the card/caption counts aligned when editing.
 No separate narration has been recorded. The current captions are a silent
 reading track, not a claim of alignment to speech. Record an authorized human
 voice only after editorial review; then retime the cues to that recording.
-Numbers in the baseline label are editorial text: when changing the example,
-update labels/captions and tests together, not just the numeric parameters.
+Change the three timing parameters through a scenario file; numeric captions,
+equations, variables and bar scales then follow automatically. The script's
+qualitative assumptions still need editorial review. This lesson deliberately
+requires `0 < fourier_ms < baseline_ms` and `kernel_speedup > 1`: zero-work,
+all-Fourier and no-speedup edge cases need a different script. Nonfinite values,
+booleans and scenarios with extra keys are rejected. Displayed timings and
+kernel speedup must be exactly representable to at most two decimal places;
+otherwise validation rejects them instead of printing an incorrect equality.
+Nonterminating time fractions such as 1/3 retain rational notation in the
+variable definition. Quotients use `≈` when their two-decimal result is rounded.
+Very large labels can still fail layout checks; validation is not a substitute
+for rendering and editorial review of a new scenario.
+
+The alternate fixture is 200 ms baseline, 100 ms Fourier time, 4× kernel gain:
+25+100=125 ms, 1.60× total gain and a 2.00× ideal ceiling. It exercises a
+different Fourier share and bar scale, not operational telemetry. Both fixtures
+are rendered at every frame in tests; only the original pilot is delivered as
+the review video. No dependency change or extra service is needed.
 
 1280×720 landscape, 24 fps. Minimum main caption size 26 px; high contrast;
 text labels accompany colors. No flashing or rapid cuts. Review on a real

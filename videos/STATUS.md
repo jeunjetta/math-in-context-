@@ -1,5 +1,61 @@
 # Video status log
 
+## 30 October 2026 · FFT/latency visual draft v4
+
+**State:** reusable-model/code increment with rerendered original review pilot;
+not a new episode or approved public release.
+
+### Retrieved state and files
+
+Fresh main `c9fdf98729379dd404afce99daad1a6aa042156e`; open pilot PR #1
+at `7905dc2b30ad9c05436f4db4a03d9cfe34224ffc`; video PR #2 at
+`0aaa36497a78ccdd03306dada72c324f9507e04d` before this increment. Read
+remote main/pilot README, AGENTS, ROADMAP, sources, concept links and pilot
+notebook; then video README/status/render/tests/data. No new PR #2 comments.
+Local editable video sources matched the remote head before edits.
+All modifications remain under `videos/` on `codex/video-fft-latency`.
+
+Added `lesson_model.py` and `fft-latency/scenarios/half-share.json`; changed
+lesson templates, renderer, tests, generated VTT, README and this log.
+Numeric captions/labels now share exact rational calculations; bar lengths
+scale against the baseline, rather than a fixed 100 ms assumption.
+Added input/precision guards and exact-versus-rounded quotient notation.
+The public pilot stays 100 → 90 ms; alternate 200 → 125 ms is only a reuse test.
+
+### Verification
+
+- Initial new text-capture test sampled the second result cue rather than its
+  sum cue, so its expectation failed. Corrected test sample to 28 s; no
+  production change was needed for that failure.
+- Final locked run from `videos/`: 9 tests pass in 23.461 seconds,
+  including arithmetic/text assertions and bar-color pixel
+  checks for the alternate scenario; VTT freshness; cue/focus synchronization;
+  invalid/rounded-input guards; all 3,840 frames across both scenarios fit.
+- A verification invocation from the repo root failed to import `test_video`;
+  rerunning from the documented `videos/` directory passed. No dependency fix
+  or project-wide environment change was needed. Whitespace checks pass.
+- Full original pilot render `out/v4/fft-latency-draft.mp4`: H.264, 720p,
+  24 fps, 1,920 frames, 80.000 s, 694,441 bytes, deliberately no audio.
+- Full encoded-file decode succeeds; extracted original result frame at 28 s.
+  Original formula and alternate formula/bar/ceiling stills inspected, with
+  correct 125 ms / 1.60× / 2.00× alternate results and no visible clipping.
+- Alternate CLI still export succeeds; no alternate full MP4 is claimed.
+- Original MP4 SHA256:
+  `2035c73833e041e6eee7317705139660cfdc2c68c11907c435b4d14ec39abd37`.
+- Python's official Fraction docs and FFmpeg legal page checked on 30 October
+  2026. Existing Python/Pillow/FFmpeg tool choice and dependency lock retained;
+  no paid service, new package, downloaded asset or redistributed binary.
+- No notebook, source registry, research conclusion, public upload or merge
+  changed. Open Notebook deployment and Pages availability remain unverified.
+
+### Next bounded step / exact remaining gates
+
+Before adding another topic, prepare an editorial handoff for this pilot:
+plain script, shot-level review checklist and draft description/source links,
+all explicitly marked for Karin's approval. These can be reviewed on a tablet
+without running the renderer. Publication still needs full human/tablet playback,
+audio-format decision and verified live Marimo link. No technical render blocker.
+
 ## 29 October 2026 · FFT/latency visual draft v3
 
 **State:** updated rendered review draft; no publication approval claimed.

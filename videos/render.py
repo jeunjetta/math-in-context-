@@ -7,14 +7,14 @@ from __future__ import annotations
 
 import argparse
 from functools import lru_cache
-import json
 from pathlib import Path
 import subprocess
 
 from PIL import Image, ImageDraw, ImageFont
+from lesson_model import compact, context, load_lesson, metrics, quotient
 
 ROOT = Path(__file__).resolve().parent
-LESSON = json.loads((ROOT / "fft-latency/lesson.json").read_text())
+LESSON = load_lesson(ROOT / "fft-latency/lesson.json")
 BG, FG, MUTED = "#101c2c", "#f4f7fc", "#b5c4d7"
 CYAN, AMBER, PANEL = "#63e0d0", "#ffc273", "#203249"
 
@@ -91,14 +91,16 @@ def cue_at(t, data=LESSON):
 
 def bar(draw, y, fourier, label, data=LESSON):
     other = data["baseline_ms"] - data["fourier_ms"]
-    x, scale, h = 96, 8.5, 72
+    x, scale, h = 96, 850 / data["baseline_ms"], 72
     draw.rounded_rectangle((x, y, x + 850, y + h), radius=8, fill=PANEL)
     fw = fourier * scale
     if fw > 0:
         draw.rectangle((x, y, x + fw, y + h), fill=CYAN)
     draw.rectangle((x + fw, y, x + fw + other * scale, y + h), fill=AMBER)
     text(draw, (x, y - 43, 850, 42), label, 25, MUTED)
-    text(draw, (990, y + 13, 200, 50), f"{fourier + other:.0f} ms", 34, bold=True)
+    label_text = f"{compact(fourier + other)} ms"
+    label_size = 34 if measure(label_text, 34, True) <= 200 else 28
+    text(draw, (990, y + 13, 200, 50), label_text, label_size, bold=True)
 
 
 def render_frame(t, data=LESSON):
@@ -111,9 +113,10 @@ def render_frame(t, data=LESSON):
     sid = s["id"]
     baseline, fourier, gain = data["baseline_ms"], data["fourier_ms"], data["kernel_speedup"]
     other = baseline - fourier
-    new = other + fourier / gain
+    values = metrics(data)
+    labels = context(data)
     if sid == "hook":
-        text(d, (80, 260, 1120, 115), "2× faster FFT. How much faster overall?", 46, CYAN, True, True)
+        text(d, (80, 260, 1120, 115), f"{labels['kernel_gain']}× faster FFT. How much faster overall?", 46, CYAN, True, True)
         text(d, (80, 410, 1120, 65), "Predict first. Then follow the time.", 32, MUTED, center=True)
     elif sid in {"baseline", "halve"}:
         text(d, (96, 208, 500, 30), "TEAL: FOURIER COMPUTATION", 18, CYAN)
@@ -126,13 +129,13 @@ def render_frame(t, data=LESSON):
             text(d, (96, 400, 1050, 70), f"Fourier: {fourier:g} ms       Other work: {other:g} ms", 32)
         text(d, (96, 524, 1050, 38), "Sequential · same accuracy · no added overhead", 23, MUTED)
     elif sid == "formula":
-        text(d, (80, 250, 1120, 100), f"{baseline:g} / {new:g} ≈ {baseline/new:.2f}×", 68, CYAN, True, True)
+        text(d, (80, 250, 1120, 100), quotient(values["baseline"], values["new_total"]), 68, CYAN, True, True)
         text(d, (80, 370, 1120, 75), "S = 1 / [(1 − f) + f/s]", 42, center=True)
-        text(d, (80, 460, 1120, 85), "f = 0.20 of baseline time\ns = 2 kernel speedup", 26, MUTED, center=True)
+        text(d, (80, 460, 1120, 85), f"f = {labels['fraction']} of baseline time\ns = {labels['kernel_gain']} kernel speedup", 26, MUTED, center=True)
     elif sid == "ceiling":
         remaining = (fourier / gain) * (1 - smooth((t-s["start"]) / 3))
         bar(d, 290, remaining, "IDEAL LIMIT · Fourier time tends to zero", data)
-        text(d, (80, 420, 1120, 100), f"{baseline:g} / {other:g} = {baseline/other:.2f}× maximum", 48, CYAN, True, True)
+        text(d, (80, 420, 1120, 100), quotient(values["baseline"], values["other"])+" maximum", 48, CYAN, True, True)
     elif sid == "distinctions":
         active, _ = cue_at(t, data)
         for i, card in enumerate(s["cards"]):
@@ -168,8 +171,8 @@ def timestamp(seconds):
     return f"{ms//3600000:02}:{ms//60000%60:02}:{ms//1000%60:02}.{ms%1000:03}"
 
 
-def write_captions(path):
-    cues = [f"{timestamp(a)} --> {timestamp(b)}\n{c}\n" for a,b,c in caption_cues()]
+def write_captions(path, data=LESSON):
+    cues = [f"{timestamp(a)} --> {timestamp(b)}\n{c}\n" for a,b,c in caption_cues(data)]
     path.write_text("WEBVTT\n\n" + "\n".join(cues))
 
 
@@ -177,22 +180,24 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("--out", type=Path, default=ROOT/"out")
     p.add_argument("--stills-only", action="store_true")
+    p.add_argument("--scenario", type=Path, help="JSON override with exactly the three timing parameters")
     args = p.parse_args()
+    data = load_lesson(ROOT/"fft-latency/lesson.json", args.scenario)
     args.out.mkdir(parents=True, exist_ok=True)
-    write_captions(args.out/"captions.vtt")
-    for s in LESSON["scenes"]:
-        render_frame((s["start"]+s["end"])/2).save(args.out/f"{s['id']}.png")
+    write_captions(args.out/"captions.vtt", data)
+    for s in data["scenes"]:
+        render_frame((s["start"]+s["end"])/2, data).save(args.out/f"{s['id']}.png")
     if args.stills_only:
         return
-    fps = LESSON["fps"]
+    fps = data["fps"]
     command = ["ffmpeg", "-hide_banner", "-loglevel", "error", "-n", "-f", "rawvideo",
                "-pix_fmt", "rgb24", "-s", "1280x720", "-r", str(fps), "-i", "pipe:0",
                "-an", "-c:v", "libx264", "-preset", "fast", "-crf", "20",
                "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(args.out/"fft-latency-draft.mp4")]
     with subprocess.Popen(command, stdin=subprocess.PIPE) as process:
         try:
-            for i in range(LESSON["duration"] * fps):
-                process.stdin.write(render_frame(i/fps).tobytes())
+            for i in range(data["duration"] * fps):
+                process.stdin.write(render_frame(i/fps, data).tobytes())
         finally:
             process.stdin.close()
         if process.wait():

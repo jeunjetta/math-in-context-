@@ -1,6 +1,11 @@
 import unittest
 from pathlib import Path
 import tempfile
+import json
+from fractions import Fraction
+from unittest.mock import patch
+import render
+from lesson_model import context, load_lesson, metrics, quotient
 from render import LESSON, ROOT, caption_cues, cue_at, render_frame, scene_at, font, write_captions
 
 
@@ -26,9 +31,12 @@ class VideoTests(unittest.TestCase):
 
     def test_every_frame_text_fits(self):
         # Renderer throws on text overflow, including all animated number states.
-        for frame in range(LESSON["duration"] * LESSON["fps"]):
-            image = render_frame(frame / LESSON["fps"])
-            self.assertEqual(image.size, (1280, 720))
+        alternate = load_lesson(ROOT/"fft-latency/lesson.json",
+                                ROOT/"fft-latency/scenarios/half-share.json")
+        for data in (LESSON, alternate):
+            for frame in range(data["duration"] * data["fps"]):
+                image = render_frame(frame / data["fps"], data)
+                self.assertEqual(image.size, (1280, 720))
 
     def test_boundaries_and_glyphs(self):
         self.assertEqual(scene_at(18)["id"], "halve")
@@ -60,6 +68,55 @@ class VideoTests(unittest.TestCase):
             write_captions(path)
             self.assertEqual(path.read_bytes(),
                              (ROOT / "fft-latency/captions.vtt").read_bytes())
+
+    def test_alternate_scenario_text_and_math(self):
+        data = load_lesson(ROOT/"fft-latency/lesson.json",
+                           ROOT/"fft-latency/scenarios/half-share.json")
+        values = metrics(data)
+        self.assertEqual(values["new_total"], 125)
+        self.assertEqual(values["overall_gain"], Fraction(8,5))
+        self.assertEqual(values["ceiling_gain"], 2)
+        self.assertEqual(quotient(values["baseline"], values["new_total"]), "200 / 125 = 1.60×")
+        self.assertEqual(quotient(Fraction(100), Fraction(90)), "100 / 90 ≈ 1.11×")
+        with patch.object(render, "text", wraps=render.text) as draw_text:
+            for t in (4, 13, 24, 28, 35, 45):
+                render_frame(t, data)
+            visible = "\n".join(str(call.args[2]) for call in draw_text.call_args_list)
+        for required in ("4× faster FFT", "25 + 100 = 125", "200 / 125 = 1.60×",
+                         "f = 0.50", "s = 4", "200 / 100 = 2.00×"):
+            self.assertIn(required, visible)
+        self.assertNotIn("0.20", visible)
+        self.assertNotIn("90 ms", visible)
+        for start, end, caption in caption_cues(data):
+            self.assertNotIn("{", caption)
+            self.assertLessEqual(len(caption)/(end-start), 21)
+
+    def test_bar_uses_baseline_relative_scale(self):
+        data = load_lesson(ROOT/"fft-latency/lesson.json",
+                           ROOT/"fft-latency/scenarios/half-share.json")
+        before = render_frame(13, data)
+        self.assertEqual(before.getpixel((500, 310)), (99,224,208))
+        self.assertEqual(before.getpixel((600, 310)), (255,194,115))
+        after = render_frame(24, data)
+        self.assertEqual(after.getpixel((620, 460)), (255,194,115))
+        self.assertEqual(after.getpixel((640, 460)), (32,50,73))
+
+    def test_invalid_or_rounded_example_fails_early(self):
+        thirds = dict(LESSON, baseline_ms=3, fourier_ms=1, kernel_speedup=2)
+        self.assertEqual(context(thirds)["fraction"], "1/3")
+        for key, value in (("baseline_ms", 0), ("fourier_ms", 100),
+                           ("kernel_speedup", 1), ("kernel_speedup", True),
+                           ("kernel_speedup", float("nan")), ("kernel_speedup", 3)):
+            data = dict(LESSON)
+            data[key] = value
+            with self.assertRaises(ValueError):
+                context(data)
+        with tempfile.TemporaryDirectory() as temp:
+            path = Path(temp)/"scenario.json"
+            path.write_text(json.dumps({"baseline_ms":200,"fourier_ms":100,
+                                        "kernel_speedup":4,"caption":"stale"}))
+            with self.assertRaises(ValueError):
+                load_lesson(ROOT/"fft-latency/lesson.json", path)
 
 
 if __name__ == "__main__":
