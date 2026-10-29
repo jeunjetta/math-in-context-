@@ -33,14 +33,17 @@ Even zero Fourier time leaves eighty milliseconds.
 00:00:44.500 --> 00:00:49.000
 In this model, the speedup limit is one point two five.
 
-00:00:49.000 --> 00:00:53.000
+00:00:49.000 --> 00:00:52.000
 Arithmetic complexity asks how operation counts grow.
 
-00:00:53.000 --> 00:00:57.000
+00:00:52.000 --> 00:00:55.000
 Numerical stability asks how computation errors behave.
 
-00:00:57.000 --> 00:01:01.000
-Latency measures elapsed time. Readiness needs a validated system.
+00:00:55.000 --> 00:00:58.000
+Latency measures elapsed time for the whole workload.
+
+00:00:58.000 --> 00:01:01.000
+Readiness needs validation against system deadlines.
 
 00:01:01.000 --> 00:01:05.500
 Check accuracy, data movement, and worst-case deadlines.

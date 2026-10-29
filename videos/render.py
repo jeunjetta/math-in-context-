@@ -75,6 +75,20 @@ def caption_cues(data=LESSON):
     return cues
 
 
+def cue_at(t, data=LESSON):
+    """One timing source for burned captions, VTT and visual attention cues.
+
+    Intervals are half-open: a cut belongs to its incoming cue, never both.
+    """
+    s = scene_at(t, data)
+    step = (s["end"] - s["start"]) / len(s["captions"])
+    # Match the same explicit boundaries used by caption_cues, avoiding a
+    # floating-point floor at fractional boundaries such as 65.5 seconds.
+    index = next(i for i in range(len(s["captions"]))
+                 if s["start"] + i*step <= t < s["start"] + (i+1)*step)
+    return index, s["captions"][index]
+
+
 def bar(draw, y, fourier, label, data=LESSON):
     other = data["baseline_ms"] - data["fourier_ms"]
     x, scale, h = 96, 8.5, 72
@@ -99,8 +113,8 @@ def render_frame(t, data=LESSON):
     other = baseline - fourier
     new = other + fourier / gain
     if sid == "hook":
-        text(d, (80, 260, 1120, 115), "2× faster FFT  ≠  2× faster system", 48, CYAN, True, True)
-        text(d, (80, 410, 1120, 65), "What stays unchanged?", 32, MUTED, center=True)
+        text(d, (80, 260, 1120, 115), "2× faster FFT. How much faster overall?", 46, CYAN, True, True)
+        text(d, (80, 410, 1120, 65), "Predict first. Then follow the time.", 32, MUTED, center=True)
     elif sid in {"baseline", "halve"}:
         text(d, (96, 208, 500, 30), "TEAL: FOURIER COMPUTATION", 18, CYAN)
         text(d, (620, 208, 580, 30), "AMBER: OTHER WORK", 18, AMBER)
@@ -120,15 +134,18 @@ def render_frame(t, data=LESSON):
         bar(d, 290, remaining, "IDEAL LIMIT · Fourier time tends to zero", data)
         text(d, (80, 420, 1120, 100), f"{baseline:g} / {other:g} = {baseline/other:.2f}× maximum", 48, CYAN, True, True)
     elif sid == "distinctions":
-        cards = [("Complexity", "Operation count as input grows"),
-                 ("Stability", "Sensitivity to computation errors"),
-                 ("Latency", "Elapsed end-to-end time"),
-                 ("Readiness", "Validated system + deadlines")]
-        for i, (a, b) in enumerate(cards):
+        active, _ = cue_at(t, data)
+        for i, card in enumerate(s["cards"]):
             x, y = 64 + (i % 2) * 588, 242 + (i // 2) * 147
-            d.rounded_rectangle((x, y, x+560, y+130), 12, fill=PANEL)
-            text(d, (x+22, y+12, 516, 44), a, 30, CYAN, True)
-            text(d, (x+22, y+62, 516, 60), b, 24)
+            selected = i == active
+            d.rounded_rectangle((x, y, x+560, y+130), 12, fill=PANEL,
+                                outline=CYAN if selected else PANEL, width=3)
+            text(d, (x+22, y+12, 516, 44), card["title"], 30,
+                 CYAN if selected else MUTED, True)
+            text(d, (x+22, y+62, 516, 60), card["description"], 24,
+                 FG if selected else MUTED)
+        text(d, (64, 537, 1152, 34), f"FOCUS {active+1}/4 · {s['cards'][active]['title']}",
+             20, CYAN)
     elif sid == "readiness":
         for i, line in enumerate(["Accuracy and numerical error", "Data movement and alignment", "Worst-case deadlines and validation"]):
             text(d, (96, 250 + 85*i, 1080, 65), f"0{i+1}   {line}", 32, CYAN if i == 0 else FG)
@@ -138,7 +155,7 @@ def render_frame(t, data=LESSON):
         text(d, (80, 325, 1120, 65), "Try: apps/fft_and_latency.py  ·  pilot PR #1", 27, center=True)
         text(d, (80, 404, 1120, 90), "Sources: FFTW accuracy notes · linked Marimo derivation\nInspiration: 3Blue1Brown's Fourier lesson", 24, MUTED, center=True)
         text(d, (80, 506, 1120, 40), "Full URLs, assumptions and credits in videos/README.md", 22, MUTED, center=True)
-    caption = next(c for a,b,c in caption_cues(data) if a <= t < b)
+    _, caption = cue_at(t, data)
     d.rectangle((0, 580, 1280, 720), fill="#0a111c")
     text(d, (80, 590, 1120, 80), caption, 26, center=True)
     text(d, (64, 684, 1152, 28), "MATH IN CONTEXT   /   SYNTHETIC EXAMPLE   /   NO GRID TELEMETRY", 16, MUTED)

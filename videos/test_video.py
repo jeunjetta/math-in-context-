@@ -1,5 +1,7 @@
 import unittest
-from render import LESSON, caption_cues, render_frame, scene_at, font
+from pathlib import Path
+import tempfile
+from render import LESSON, ROOT, caption_cues, cue_at, render_frame, scene_at, font, write_captions
 
 
 class VideoTests(unittest.TestCase):
@@ -33,6 +35,31 @@ class VideoTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             scene_at(80)
         self.assertIsNotNone(font(30).getmask("× ≠ → −"))
+
+    def test_caption_and_focus_sync(self):
+        scene = scene_at(49)
+        self.assertEqual(len(scene["cards"]), len(scene["captions"]))
+        self.assertEqual([c["title"] for c in scene["cards"]],
+                         ["Complexity", "Stability", "Latency", "Readiness"])
+        for index, start in enumerate((49, 52, 55, 58)):
+            self.assertEqual(cue_at(start)[0], index)
+            self.assertEqual(cue_at(start + 3 - 1/24)[0], index)
+            # Inspect the actual focus-border pixel, not only its timing helper.
+            image = render_frame(start)
+            for i in range(4):
+                x, y = 64 + i % 2 * 588, 242 + i // 2 * 147
+                expected = (99,224,208) if i == index else (32,50,73)
+                self.assertEqual(image.getpixel((x+100, y+1)), expected)
+        for start, end, caption in caption_cues():
+            self.assertEqual(cue_at(start)[1], caption)
+            self.assertEqual(cue_at(end - 1/24)[1], caption)
+
+    def test_checked_in_vtt_matches(self):
+        with tempfile.TemporaryDirectory() as temp:
+            path = Path(temp) / "captions.vtt"
+            write_captions(path)
+            self.assertEqual(path.read_bytes(),
+                             (ROOT / "fft-latency/captions.vtt").read_bytes())
 
 
 if __name__ == "__main__":

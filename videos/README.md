@@ -4,6 +4,10 @@ First increment: **80-second silent, captioned visual draft**, not an approved
 YouTube release. Original graphics; synthetic numbers; no operational claims.
 Video work lives here independently of the Marimo starter PR #1.
 
+Latest revision: **v3** preserves the prediction question without revealing
+the answer, and synchronizes a labelled visual focus with each of the four
+complexity/stability/latency/readiness captions. Duration remains 80 seconds.
+
 ## Reproduce
 
 From `videos/`, with Python 3.11–3.13, uv, FFmpeg (libx264 enabled) and
@@ -26,14 +30,18 @@ manager; do not assume byte-for-byte output on every machine.
 
 ## Content and extension points
 
-- `fft-latency/lesson.json`: scene times, captions/script and lesson parameters.
+- `fft-latency/lesson.json`: scene times, captions/script, question cards and lesson parameters.
 - `render.py`: reusable text-fitting, bar, timing and caption components.
 - `fft-latency/storyboard.md`: editorial and visual direction.
 - `fft-latency/captions.vtt`: generated from the lesson, also burned into frames.
-- `test_video.py`: arithmetic, cue coverage/reading-rate and frame layout checks.
+- `test_video.py`: arithmetic, cue coverage/reading-rate, frame layout, focus-pixel
+  synchronization and checked-in VTT freshness checks.
 - `STATUS.md`: provenance, actual validation and next bounded task.
 
 The script is the ordered caption text in `lesson.json` (also readable in VTT).
+In the four-question scene, each card corresponds to one caption in order;
+`cue_at()` drives both the highlighted card and burned caption. Boundaries
+belong to the incoming cue. Keep the card/caption counts aligned when editing.
 No separate narration has been recorded. The current captions are a silent
 reading track, not a claim of alignment to speech. Record an authorized human
 voice only after editorial review; then retime the cues to that recording.

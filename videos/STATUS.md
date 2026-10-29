@@ -1,5 +1,60 @@
 # Video status log
 
+## 29 October 2026 · FFT/latency visual draft v3
+
+**State:** updated rendered review draft; no publication approval claimed.
+
+### Retrieved state
+
+- Fresh main remains `c9fdf98729379dd404afce99daad1a6aa042156e`.
+- Open PR #1 remains at `7905dc2b30ad9c05436f4db4a03d9cfe34224ffc`;
+  video PR #2 at `e1aba4305ab5cc7e031b1e47e870db80f757dbfc` before this increment.
+- Read current remote README, pilot AGENTS/ROADMAP/source and concept registries,
+  video README/status/render/data/tests. PR #2 has no review comments.
+- Editable local source files matched the inspected remote head before edits.
+  Continuing the same dedicated branch; no changes outside `videos/`.
+
+### Bounded changes
+
+- Opening now asks the question instead of displaying a not-equal answer during
+  the prediction pause. The mathematical conclusion is unchanged.
+- Four distinct 3-second captions now each have one outlined, labelled focus
+  card. Card content moved into lesson data; muted cards remain legible.
+- Added shared `cue_at()` timing for captions and attention cues, pixel-level
+  focus tests at incoming/outgoing boundaries and VTT freshness regression test.
+- Updated lesson JSON, renderer, tests, regenerated VTT, storyboard, README and
+  this status log. No new external assets/dependencies or narration.
+
+### Validation actually completed
+
+- Same pinned Pillow 12.3.0/uv lock; 6 unittest tests pass in 12.759 seconds,
+  including all 1,920 frame text-fit checks and caption reading-rate guard.
+- Full render: `uv run --locked python render.py --out out/v3` succeeds.
+- FFprobe: H.264, 1280×720, 24 fps, 1,920 frames, 80.000 seconds,
+  672,514 bytes, deliberately no audio.
+- Full encoded video decodes without reported errors. Inspected opening and
+  card stills plus four encoded samples from 49–61 seconds: focus progresses
+  complexity, stability, latency, readiness with its matching caption; no
+  visible clipping. These are sampled checks, not full human playback review.
+- New MP4 SHA256:
+  `478ac6d896bb557dad694c1cd1e8ff4de90d76fc10e3c080fbb937a96b40cebd`.
+- Output remains ignored, not committed. Updating the existing review-copy
+  identity preserves the prior version. Nothing uploaded to a public platform.
+- Pillow drawing/docs/license rechecked; no renderer change or paid service.
+  The FFmpeg legal page timed out on recheck; the prior build/license caveat in
+  README remains unchanged. No binaries/fonts are redistributed.
+- No notebook modified; pilot/tablet/Pages validation is not reclassified as
+  complete. No research material or conclusions changed.
+
+### Next action and blockers
+
+Next code increment, if editorial feedback is not yet available: remove the
+remaining hard-coded numerical labels/scales and add a second synthetic
+parameter set to test reuse without caption/graphics contradictions.
+Release still requires full human/tablet playback review, the silent-versus-
+authorized-human-narration decision, a verified live lesson link and publication
+approval. Technical rendering is not blocked. PR #1 is still unmerged.
+
 ## 29 October 2026 · FFT/latency visual draft v2
 
 **State:** rendered technical preview, not editorially approved or published.
