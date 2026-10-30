@@ -160,6 +160,10 @@ With instantaneous Fourier work, `new/old → 0.8`, so gain tends to 1.25×.
 
 ## Release blockers / approval checklist
 
+See the [dated live-lesson handoff](LESSON_LINK.md) for the Pages deployment
+failure, source-path-only end card and exact verification steps. No live
+interactive URL is currently verified; the placeholder remains intentional.
+
 - [ ] Karin has watched full playback on the actual tablet and approved pacing/legibility.
 - [ ] Human mathematical/editorial review confirms the assumptions and wording.
 - [ ] Silent-versus-human-narration choice is recorded; any added audio has aligned captions.

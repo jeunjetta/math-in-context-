@@ -89,6 +89,23 @@ class VideoTests(unittest.TestCase):
         self.assertIn("1.11× overall speedup", review)
         self.assertIn("https://fftw.org/accuracy/comments.html", review)
 
+    def test_draft_cta_handoff_is_explicit(self):
+        handoff = (ROOT / "fft-latency/LESSON_LINK.md").read_text()
+        self.assertIn("BLOCKED FOR PUBLIC RELEASE", handoff)
+        self.assertIn("40723050432", handoff)
+        self.assertIn("40734730180", handoff)
+        self.assertIn("ADD_VERIFIED_LESSON_URL_BEFORE_PUBLICATION", handoff)
+        self.assertNotIn("- [x]", handoff)
+        # Audit the actual drawn end-card pointer, not only the script.
+        with patch.object(render, "text", wraps=render.text) as draw_text:
+            render_frame(75)
+            visible = "\n".join(str(call.args[2]) for call in draw_text.call_args_list)
+        self.assertIn("VISUAL DRAFT", visible)
+        self.assertIn("Try: apps/fft_and_latency.py", visible)
+        self.assertNotIn("https://", visible)
+        self.assertIn("[dated live-lesson handoff](LESSON_LINK.md)",
+                      (ROOT / "fft-latency/REVIEW.md").read_text())
+
     def test_alternate_scenario_text_and_math(self):
         data = load_lesson(ROOT/"fft-latency/lesson.json",
                            ROOT/"fft-latency/scenarios/half-share.json")

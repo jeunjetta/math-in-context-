@@ -9,6 +9,10 @@ Video work lives here independently of the Marimo starter PR #1.
 current script, scene checklist and draft title/description/source links.
 It is a review page, not a release approval or live interactive lesson.
 
+The [live-lesson handoff](fft-latency/LESSON_LINK.md) records the read-only
+Pages/Actions audit, current deployment blocker and approval-dependent CTA
+verification steps. Passing pilot tests does not establish a deployed lesson.
+
 Latest revision: **v4** derives numeric captions, labels, quotient notation
 and bar scales from one validated timing model. The public pilot remains
 100 → 90 ms. Prediction-first opening and synchronized question cards are

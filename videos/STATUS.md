@@ -1,5 +1,53 @@
 # Video status log
 
+## 31 October 2026 · live-lesson release-dependency audit
+
+**State:** concrete deployment blocker identified; silent v4 remains unapproved.
+
+Fresh source: main `c9fdf98729379dd404afce99daad1a6aa042156e`, open pilot
+PR #1 `7905dc2b30ad9c05436f4db4a03d9cfe34224ffc`, draft video PR #2
+`c15591adcaa07b97467afbec10e862e9bb76fc21`. Read remote main/pilot README,
+pilot AGENTS/ROADMAP, source/concept registries, notebook and deployment
+workflow; current video README/status/review, lesson data and renderer.
+No PR #2 feedback. Editable local files matched the remote Git blob hashes.
+
+Read-only public Actions history returned five runs. Pilot content tests
+succeeded at its current head (run 40734730180), but the sole Pages run
+40723050432 failed on 28 October at main's original template commit.
+Its build/export and artifact upload succeeded; deploy failed with HTTP 404.
+The failure annotation advises checking whether Pages is enabled. Public
+Pages metadata also returned 404; authenticated settings were not inspected.
+This identifies a deployment gate, not a definitive settings diagnosis or an
+FFT/render failure. No successful Pages run or actual lesson URL was found.
+The main build did not include the unmerged FFT lesson. Official GitHub Pages
+custom-workflow docs were checked; no setting, workflow or deployment changed.
+
+Added `fft-latency/LESSON_LINK.md`: dated evidence table, current end-card
+inventory, ordered approval-dependent handoff and pending verification fields.
+Linked from README and REVIEW. Added an offline regression test checking the
+actual drawn draft end-card pointer and the handoff's pending status. The
+description placeholder stays intact; no guessed Pages address or Open
+Notebook deployment is substituted. All changes remain under `videos/`.
+
+Render status: unchanged v4, no rerender or new playback approval claimed.
+Validation: all 12 locked-environment unittest tests pass in 45.828 seconds,
+including all 3,840 frame text-fit checks across both synthetic scenarios,
+canonical VTT/transcript checks and the new drawn end-card/handoff test.
+Complete handoff Markdown inspected; staged whitespace check is clean.
+SHA256 rechecked:
+`2035c73833e041e6eee7317705139660cfdc2c68c11907c435b4d14ec39abd37`.
+The existing review MP4 is unchanged; no replacement upload is needed.
+
+Next bounded code increment, absent editorial feedback: a reusable local QA
+command to extract encoded scene/caption-boundary contact sheets and media
+facts, making future human reviews reproducible without publishing anything.
+Release still needs an authorized PR #1 merge/publishing-source decision,
+successful deployment containing the lesson, actual tablet interaction check,
+matching final CTA/description, audio decision and exact-version publication
+approval. These release gates do not block continued local QA work.
+No merge, settings change, workflow rerun, paid service, public upload, private
+data or research conclusion was included. No new automation was created.
+
 ## 30 October 2026 · editorial handoff for v4
 
 **State:** review materials ready; video remains the same unapproved silent v4.
