@@ -1,5 +1,46 @@
 # Video status log
 
+## 30 October 2026 · editorial handoff for v4
+
+**State:** review materials ready; video remains the same unapproved silent v4.
+
+Fresh retrieval: main `c9fdf98729379dd404afce99daad1a6aa042156e`, open
+pilot PR #1 `7905dc2b30ad9c05436f4db4a03d9cfe34224ffc`, video PR #2
+`448987cc64d01e6162614eedfc831b9c3172e981`. Read current main/pilot README,
+AGENTS, ROADMAP, source/concept registries; current video README/status,
+lesson data, storyboard and VTT. No new video PR comments. Relevant local
+handoff inputs matched the freshly inspected remote source before edits.
+
+Added `fft-latency/REVIEW.md`: tablet-readable exact caption transcript,
+eight-shot review table, assumptions and arithmetic, draft title/description,
+source/credit links, feedback template and deliberately unchecked release gates.
+Linked it from `videos/README.md`. Added two regression tests to `test_video.py`
+for transcript/timing freshness and draft/gate preservation. No renderer,
+lesson, numerical model, dependency or audio was changed.
+
+Validation: 11 tests pass in 55.787 seconds, including all 3,840 frame checks
+across the two existing scenarios. After removing Markdown hard-break trailing
+spaces, the two handoff-specific tests were rerun and pass. Manually inspected
+the complete Markdown handoff for script, timing, arithmetic and draft labels.
+FFTW's primary accuracy notes and the original 3Blue1Brown Fourier lesson
+were retrieved on 30 October 2026 for source/credit verification. No quotes,
+third-party footage, music or voices are used. No research conclusions added.
+
+Render status: no new render needed or claimed; this handoff describes v4,
+80.000 seconds, silent, SHA256
+`2035c73833e041e6eee7317705139660cfdc2c68c11907c435b4d14ec39abd37`.
+The existing review MP4 is not republished or replaced for a documentation change.
+No full human playback or actual-tablet accessibility review is marked complete.
+
+Next bounded step: perform a read-only publication-readiness check of the
+pilot's Pages/Actions state and the end-card call-to-action; if not live, keep
+the explicit placeholder and record the exact missing gate. Do not enable
+Pages or alter settings without approval. Incorporate any Karin feedback
+before producing another cosmetic render. Full review, audio choice, live
+lesson URL and explicit publication approval remain release blockers, not
+technical-render blockers. No merge, public upload, purchase, account change
+or new automation performed. Other agents' files remain untouched.
+
 ## 30 October 2026 · FFT/latency visual draft v4
 
 **State:** reusable-model/code increment with rerendered original review pilot;

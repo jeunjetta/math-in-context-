@@ -6,7 +6,7 @@ from fractions import Fraction
 from unittest.mock import patch
 import render
 from lesson_model import context, load_lesson, metrics, quotient
-from render import LESSON, ROOT, caption_cues, cue_at, render_frame, scene_at, font, write_captions
+from render import LESSON, ROOT, caption_cues, cue_at, render_frame, scene_at, font, write_captions, timestamp
 
 
 class VideoTests(unittest.TestCase):
@@ -68,6 +68,26 @@ class VideoTests(unittest.TestCase):
             write_captions(path)
             self.assertEqual(path.read_bytes(),
                              (ROOT / "fft-latency/captions.vtt").read_bytes())
+
+    def test_editorial_handoff_script_matches(self):
+        review = (ROOT / "fft-latency/REVIEW.md").read_text()
+        actual = review.split("<!-- BEGIN CANONICAL CAPTIONS -->\n", 1)[1].split(
+            "\n<!-- END CANONICAL CAPTIONS -->", 1)[0]
+        def short(t):
+            return timestamp(t)[3:].removesuffix(".000")
+        expected = "\n\n".join(
+            f"**{short(a)}–{short(b)}**\n{caption}"
+            for a, b, caption in caption_cues())
+        self.assertEqual(actual, expected)
+
+    def test_editorial_handoff_keeps_release_gates(self):
+        review = (ROOT / "fft-latency/REVIEW.md").read_text()
+        self.assertIn("DRAFT FOR KARIN'S REVIEW", review)
+        self.assertIn("ADD_VERIFIED_LESSON_URL_BEFORE_PUBLICATION", review)
+        self.assertNotIn("- [x]", review)
+        self.assertIn("10% less elapsed time", review)
+        self.assertIn("1.11× overall speedup", review)
+        self.assertIn("https://fftw.org/accuracy/comments.html", review)
 
     def test_alternate_scenario_text_and_math(self):
         data = load_lesson(ROOT/"fft-latency/lesson.json",

@@ -4,6 +4,11 @@ First increment: **80-second silent, captioned visual draft**, not an approved
 YouTube release. Original graphics; synthetic numbers; no operational claims.
 Video work lives here independently of the Marimo starter PR #1.
 
+**Review without installing anything:** open the
+[tablet-friendly editorial handoff](fft-latency/REVIEW.md) for the exact
+current script, scene checklist and draft title/description/source links.
+It is a review page, not a release approval or live interactive lesson.
+
 Latest revision: **v4** derives numeric captions, labels, quotient notation
 and bar scales from one validated timing model. The public pilot remains
 100 → 90 ms. Prediction-first opening and synchronized question cards are
