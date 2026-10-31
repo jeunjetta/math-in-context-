@@ -25,11 +25,12 @@ DejaVu Sans installed:
 
 ```sh
 uv sync --locked
-uv run --locked python -m unittest test_video -v
+uv run --locked python -m unittest test_video test_qa -v
 uv run --locked python render.py --stills-only
 uv run --locked python render.py --out out/full
 uv run --locked python render.py --scenario fft-latency/scenarios/half-share.json --stills-only --out out/alternate
 ffprobe -v error -show_entries stream=codec_name,width,height,r_frame_rate,nb_frames -show_entries format=duration -of json out/full/fft-latency-draft.mp4
+uv run --locked python qa.py out/full/fft-latency-draft.mp4 --out out/review-full
 ```
 
 The renderer refuses to overwrite an existing MP4. Choose a new `--out` folder
@@ -130,6 +131,32 @@ external, not redistributed here. DejaVu Sans is a system font; see its
 installed copyright/license notice (e.g. `/usr/share/doc/fonts-dejavu-core/copyright`).
 No claim that all codec patent/distribution obligations disappear. Recheck
 applicable terms before distributing a packaged renderer.
+
+## Encoded-file QA pack
+
+`qa.py` reads an existing local MP4; it does not rerender, upload or approve it.
+Use a **new** output directory on each run. It produces `report.json`, full-size
+decoded PNG samples in `frames/`, and six-sample contact sheets. All are ignored
+under `out/`. It samples the first/last frames, both sides of each caption cut,
+and scene midpoints. The current 80-second lesson yields 39 distinct frames.
+
+The report records input SHA256, QA source hash, resolved lesson hash, external
+FFmpeg/FFprobe versions, dimensions, duration, frame count/rate and every
+frame's constant-rate timestamp check. A complete FFmpeg decode must succeed.
+It rejects wrong media geometry/timing and audio-bearing files: narration
+requires a separate listening/alignment review, not these silent-draft checks.
+Incomplete packs may remain after a decoder failure; no successful report is
+written in that case. Existing output directories are never overwritten.
+
+For an alternate rendered scenario, pass the **same** `--scenario` file to QA.
+The reported captions and scene names are expected lesson metadata, **not OCR**
+or an assertion that the encoded pixels match that scenario. Check the input
+hash against the intended render and inspect full-resolution frames; contact
+sheets are overview aids, not a substitute for tablet playback, mathematical
+review, accessibility checks or publication approval. `publication_approved`
+is always false. No voice, external assets, dependencies or binary distributions
+were added. See official [FFprobe documentation](https://ffmpeg.org/ffprobe.html)
+and [select filter documentation](https://ffmpeg.org/ffmpeg-filters.html#select_002c-aselect).
 
 ## Review gates
 

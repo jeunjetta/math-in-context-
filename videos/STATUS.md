@@ -1,5 +1,66 @@
 # Video status log
 
+## 31 October 2026 · reproducible encoded-video QA
+
+**State:** tested local QA increment; existing silent v4 MP4 unchanged.
+
+Fresh remote main `c9fdf98729379dd404afce99daad1a6aa042156e`; open pilot
+PR #1 `7905dc2b30ad9c05436f4db4a03d9cfe34224ffc`; draft video PR #2
+`e066989c54c789836a7ff377eed4725d8b21cf2f` before this increment. Read
+current main/pilot README, AGENTS/ROADMAP, source/concept registries and video
+README/status/render/model/storyboard. No PR #2 comments. Local editable
+inputs matched remote Git blob hashes. Changes remain only under `videos/`.
+
+Added `qa.py` and `test_qa.py`; updated README commands/limitations and this
+log. No lesson, renderer, caption, math conclusion, dependency or audio change.
+QA reads a local encoded file, verifies dimensions/duration/frame count/rate
+and each presentation timestamp, then fully decodes it with error-stop enabled.
+Samples both sides of caption cuts plus scene midpoints and first/last frames;
+exports full-resolution PNGs, labelled contact sheets and JSON provenance.
+The report includes file/tool/lesson hashes and encoder/prober versions, not
+private paths or arbitrary source metadata. It never grants release approval.
+Unexpected audio requires a separate sync review. Existing packs are protected
+from overwrite; incomplete packs after failure are not successful reports.
+
+Validation: complete suite `uv run --locked python -m unittest test_video
+test_qa -v` passed all 16 tests in 38.590 seconds, including all 3,840 existing
+layout frames and four new QA tests. New coverage includes cue-cut selection,
+wrong geometry/rate/count/timestamps/duration/audio rejection, a real local
+synthetic H.264 fixture, report/sample output and no-overwrite behavior.
+After adding tool-version metadata, the four QA tests were rerun successfully.
+No notebook was modified; its check/export is not newly claimed here.
+
+Actual command on the unchanged v4 MP4:
+`uv run --locked python qa.py out/v4/fft-latency-draft.mp4 --out
+out/qa-v4-20261031-final` (one line). Result: 39 samples, seven sheets;
+H.264, 1280x720, 24 fps, 1,920 frames, 80.000 s, zero audio streams;
+all presentation timestamps verified and complete decode succeeded.
+Input SHA256 remains
+`2035c73833e041e6eee7317705139660cfdc2c68c11907c435b4d14ec39abd37`.
+Outputs stay in ignored `out/`; no new MP4 render or review-copy upload.
+Inspected contact sheets 04, 06 and 07 covering formula/ceiling, question/
+readiness cuts and end-card transitions; no visible clipping in those samples.
+Full-resolution frames remain available for closer reading. This is sampled
+QA, not full human playback or actual-tablet accessibility certification.
+
+Official FFprobe/filter pages initially timed out; their official indexed
+documentation and upstream FFmpeg source documentation were retrieved for
+the frame/JSON/select options. Existing FFmpeg/Pillow license caveats remain;
+no packaged binaries, external assets, paid services or new dependencies.
+
+Next bounded editorial/code increment: clarify the ceiling transition's
+moving total versus final limit. At 40.000 s the bar still shows 90 ms while
+the 1.25x ideal-limit formula is already present; it reaches 80 ms by 43 s.
+This is a review point, not wrong final arithmetic. Consider distinct labels
+or delaying the final formula until the animation finishes, with a boundary
+regression test and encoded-frame review. Do not change the final 80 ms limit.
+The report's expected caption metadata is not OCR or proof that a supplied
+video matches a lesson; inspect pixels and verify the intended input hash.
+Release blockers remain human/tablet review, audio decision, an authorized
+lesson deployment/verified URL, final CTA and exact-version publication
+approval. Open Notebook deployment is not assumed. No merge, publishing,
+settings change, workflow rerun, private data or research claims included.
+
 ## 31 October 2026 · live-lesson release-dependency audit
 
 **State:** concrete deployment blocker identified; silent v4 remains unapproved.
