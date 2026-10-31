@@ -1,5 +1,60 @@
 # Video status log
 
+## 1 November 2026 · v5 ceiling transition clarified
+
+**State:** updated rendered review draft, not a publication-approved video.
+
+Fresh main `c9fdf98729379dd404afce99daad1a6aa042156e`; open pilot PR #1
+`7905dc2b30ad9c05436f4db4a03d9cfe34224ffc`; draft video PR #2 source
+baseline `da902ae170f1e39813b8e39c6d273d414289f3c5` before this increment.
+Read remote main/pilot README, AGENTS/ROADMAP, source/concept registries;
+video status/render/model/data, then current handoff/storyboard/README/tests.
+Editable local inputs matched remote Git blob hashes; no PR #2 feedback.
+All changes remain on `codex/video-fft-latency`, under `videos/` only.
+
+Changed renderer, lesson data/model, tests, README, storyboard, REVIEW and
+this log. No dependency, canonical caption/VTT, duration, example arithmetic,
+source registry, notebook or research conclusion changed. The ceiling scene
+now labels its 40–43 s moving bar as a transition, holds the final 80 ms value
+from 43 s, and reveals the 1.25x formula with its cue at 44.5 s. Text/timing
+configuration lives in lesson data; a guard requires the transition to end
+before the second cue. The alternate fixture likewise ends at 100 ms/2.00x.
+
+Validation actually completed:
+
+- Full locked suite: 18 tests pass in 23.417 seconds, including all 3,840
+  frame text-fit checks across both synthetic scenarios and new transition/
+  hold/reveal boundary, amber-only limit bar and invalid-timing checks.
+- After editorial documentation updates, both transcript/gate tests pass
+  again. Canonical VTT is unchanged. Staged whitespace checks pass.
+- Full original render: `uv run --locked python render.py --out out/v5`.
+- Encoded QA: `uv run --locked python qa.py out/v5/fft-latency-draft.mp4
+  --out out/qa-v5` (one line). Complete decode succeeds; H.264, 1280x720,
+  24 fps, 1,920 frames, 80.000 s, zero audio streams; all frame timestamps
+  verified. QA exported 39 samples/seven contact sheets. No alternate full
+  video is claimed; that scenario is covered by rendered-frame tests.
+- Inspected encoded contact sheet 04 (40 s cut, 44.5 s cue reveal, 49 s cut)
+  and an additional full-size frame at exactly 43 s. Labels, 80 ms hold and
+  equation are readable with no visible clipping in those samples. This is
+  sampled QA, not full human playback or an actual-tablet usability review.
+- New MP4: 701,569 bytes; SHA256
+  `d2a0365545602c55af3ee6018944045a5804a125b0dd5af80d7585c85efe12d4`.
+- Existing review-copy identity is used for replacement, preserving earlier
+  versions. No new public upload or publishing approval is implied.
+- Pillow drawing documentation and FFmpeg's official legal page were checked
+  on 1 November 2026. Existing pinned Pillow 12.3.0 remains; no upgrade to
+  the newer documentation version or renderer/license change is implied.
+  GPL-enabled system encoder stays external; no font/binary redistribution.
+
+Next bounded supporting-content increment, absent review feedback: draft a
+short Substack companion for this same pilot with one prediction, the worked
+100->90 ms calculation and a learning-link placeholder, not another topic.
+Do not post it. Human pacing/tablet review, silent-versus-human-narration
+choice, authorized lesson deployment/verified URL, final CTA and exact-version
+publication approval remain release gates. Open Notebook is not assumed
+deployed. No merges, settings changes, paid service, telemetry, private notes,
+public posts or new automation were included.
+
 ## 31 October 2026 · reproducible encoded-video QA
 
 **State:** tested local QA increment; existing silent v4 MP4 unchanged.

@@ -2,10 +2,11 @@
 
 **DRAFT FOR KARIN'S REVIEW · not approved for publication.**
 
-Prepared 30 October 2026 from video source commit
-`448987cc64d01e6162614eedfc831b9c3172e981`.
-This handoff describes the existing **v4, 80-second silent captioned draft**;
-it does not introduce a new render, voice or mathematical claim.
+Updated 1 November 2026 for the **v5, 80-second silent captioned draft**.
+Source baseline before this refinement:
+`da902ae170f1e39813b8e39c6d273d414289f3c5`; the same draft PR contains v5.
+The ceiling transition and final formula now appear in separate beats;
+the canonical captions, timing and mathematical claims are unchanged.
 Read this page on GitHub without installing anything. Open the review video
 from the accompanying ChatGPT message; it is not a public YouTube upload.
 
@@ -45,7 +46,7 @@ for example: “35 s — equation needs another second.”
 | 00:08–00:18 | 20 ms + 80 ms = 100 ms | Can you identify both labelled parts without relying only on color? |
 | 00:18–00:30 | Only the Fourier block shrinks; total is 90 ms | Is the unchanged 80 ms visually obvious on the shared time scale? |
 | 00:30–00:40 | 100/90 ≈ 1.11×; f=0.20 and s=2 | Is the equation readable before the next cut? |
-| 00:40–00:49 | Even an instant Fourier step leaves 80 ms | Is the 1.25× ceiling understood as a model limit? |
+| 00:40–00:49 | Even an instant Fourier step leaves 80 ms | Does the labelled transition settle by 43 s, then reveal 1.25× at 44.5 s without confusing a moving total with the limit? |
 | 00:49–01:01 | Complexity, stability, latency and readiness differ | Does each highlighted card match the caption? Are 3 seconds per card enough? |
 | 01:01–01:10 | Engineering needs more than a runtime improvement | Is it clear there is no real-grid benchmark or readiness claim? |
 | 01:10–01:20 | Context, sources and a next experiment | The live Marimo call-to-action is still a blocker, not a verified link. |
@@ -173,7 +174,7 @@ interactive URL is currently verified; the placeholder remains intentional.
 - [ ] Karin explicitly approves the exact final version for YouTube/blog/social publication.
 
 No live Pages URL is inferred from the repo name. No publishing, merge,
-domain purchase or account change is part of this handoff. Keep the v4 draft
+domain purchase or account change is part of this handoff. Keep the v5 draft
 label until final review; passing automated checks does not clear these gates.
 
 ## Feedback template

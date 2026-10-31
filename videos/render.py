@@ -133,9 +133,14 @@ def render_frame(t, data=LESSON):
         text(d, (80, 370, 1120, 75), "S = 1 / [(1 − f) + f/s]", 42, center=True)
         text(d, (80, 460, 1120, 85), f"f = {labels['fraction']} of baseline time\ns = {labels['kernel_gain']} kernel speedup", 26, MUTED, center=True)
     elif sid == "ceiling":
-        remaining = (fourier / gain) * (1 - smooth((t-s["start"]) / 3))
-        bar(d, 290, remaining, "IDEAL LIMIT · Fourier time tends to zero", data)
-        text(d, (80, 420, 1120, 100), quotient(values["baseline"], values["other"])+" maximum", 48, CYAN, True, True)
+        moving = t < s["start"] + s["transition_seconds"]
+        remaining = (fourier / gain) * (1 - smooth((t-s["start"]) / s["transition_seconds"]))
+        bar(d, 290, remaining, s["transition_label"] if moving else s["limit_label"], data)
+        if cue_at(t, data)[0] == 1:
+            text(d, (80, 420, 1120, 100), quotient(values["baseline"], values["other"])+" maximum", 48, CYAN, True, True)
+        else:
+            text(d, (80, 420, 1120, 100), s["transition_note"] if moving else s["limit_note"],
+                 34, MUTED, center=True)
     elif sid == "distinctions":
         active, _ = cue_at(t, data)
         for i, card in enumerate(s["cards"]):

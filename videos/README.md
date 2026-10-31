@@ -13,10 +13,11 @@ The [live-lesson handoff](fft-latency/LESSON_LINK.md) records the read-only
 Pages/Actions audit, current deployment blocker and approval-dependent CTA
 verification steps. Passing pilot tests does not establish a deployed lesson.
 
-Latest revision: **v4** derives numeric captions, labels, quotient notation
-and bar scales from one validated timing model. The public pilot remains
-100 → 90 ms. Prediction-first opening and synchronized question cards are
-retained; duration remains 80 seconds.
+Latest revision: **v5** separates the ceiling transition from its final
+limit: the Fourier block shrinks during 40–43 s, the 80 ms limit holds,
+then the 1.25× formula appears with its caption at 44.5 s. The validated
+timing model, public 100 → 90 ms example, prediction-first opening and
+synchronized question cards are retained; duration remains 80 seconds.
 
 ## Reproduce
 
@@ -59,6 +60,9 @@ dictionary's numbers without regenerating its captions.
 In the four-question scene, each card corresponds to one caption in order;
 `cue_at()` drives both the highlighted card and burned caption. Boundaries
 belong to the incoming cue. Keep the card/caption counts aligned when editing.
+The ceiling scene's transition labels/notes and `transition_seconds` live in
+lesson data. Its transition must finish before the second cue; the final
+quotient appears only on that cue, never beside an intermediate moving total.
 No separate narration has been recorded. The current captions are a silent
 reading track, not a claim of alignment to speech. Record an authorized human
 voice only after editorial review; then retime the cues to that recording.

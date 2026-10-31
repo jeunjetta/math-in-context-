@@ -128,6 +128,37 @@ class VideoTests(unittest.TestCase):
             self.assertNotIn("{", caption)
             self.assertLessEqual(len(caption)/(end-start), 21)
 
+    def test_ceiling_transition_precedes_limit_reveal(self):
+        alternate = load_lesson(ROOT/"fft-latency/lesson.json",
+                                ROOT/"fft-latency/scenarios/half-share.json")
+        for data in (LESSON, alternate):
+            scene = next(s for s in data["scenes"] if s["id"] == "ceiling")
+            finish = scene["start"] + scene["transition_seconds"]
+            reveal = scene["start"] + (scene["end"]-scene["start"])/2
+            formula = quotient(metrics(data)["baseline"], metrics(data)["other"])+" maximum"
+            for t in (40, finish-1/24, finish, reveal-1/24, reveal):
+                with patch.object(render, "text", wraps=render.text) as draw_text:
+                    image = render_frame(t, data)
+                visible = [str(call.args[2]) for call in draw_text.call_args_list]
+                self.assertIn(scene["transition_label"] if t < finish else scene["limit_label"], visible)
+                self.assertEqual(formula in visible, t >= reveal)
+                if finish <= t < reveal:
+                    self.assertIn(scene["limit_note"], visible)
+                if t >= finish:
+                    self.assertEqual(image.getpixel((97, 310)), (255,194,115))
+                else:
+                    self.assertIn(scene["transition_note"], visible)
+
+    def test_ceiling_timing_guard(self):
+        for value in (0, 4.5, 10, True):
+            raw = json.loads((ROOT/"fft-latency/lesson.json").read_text())
+            raw["scenes"][4]["transition_seconds"] = value
+            with tempfile.TemporaryDirectory() as temp:
+                path = Path(temp)/"lesson.json"
+                path.write_text(json.dumps(raw))
+                with self.assertRaises(ValueError):
+                    load_lesson(path)
+
     def test_bar_uses_baseline_relative_scale(self):
         data = load_lesson(ROOT/"fft-latency/lesson.json",
                            ROOT/"fft-latency/scenarios/half-share.json")
