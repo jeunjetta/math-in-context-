@@ -1,0 +1,22 @@
+{
+  "id": "fft-latency",
+  "title": "{kernel_gain}× faster Fourier work. But only {saved} ms saved?",
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "duration": 80,
+  "baseline_ms": 100,
+  "fourier_ms": 20,
+  "kernel_speedup": 2,
+  "assumptions": ["Sequential work", "Same accuracy", "No added overhead", "Other work unchanged"],
+  "scenes": [
+    {"id":"hook","start":0,"end":8,"heading":"A faster FFT. A faster system?","eyebrow":"01 / THE QUESTION","captions":["Suppose Fourier computation becomes {kernel_gain}× as fast.","Does the whole system become {kernel_gain}× as fast? Pause and predict."]},
+    {"id":"baseline","start":8,"end":18,"heading":"First, measure the whole journey.","eyebrow":"02 / A SYNTHETIC PIPELINE","captions":["Imagine sequential work taking {baseline} milliseconds.","Fourier work takes {fourier} ms. Everything else takes {other} ms."]},
+    {"id":"halve","start":18,"end":30,"heading":"Only the Fourier block shrinks.","eyebrow":"03 / CHANGE ONE THING","captions":["Divide Fourier time by {kernel_gain}: {fourier} ms becomes {new_fourier} ms.","The other {other} milliseconds stays unchanged.","{new_fourier} + {other} = {new_total} ms. We saved {saved} milliseconds."]},
+    {"id":"formula","start":30,"end":40,"heading":"Kernel speed is not system speed.","eyebrow":"04 / AMDAHL-STYLE ACCOUNTING","captions":["Overall speedup is old time divided by new time.","{baseline} divided by {new_total} is about {overall_gain}×, not {kernel_gain}×."]},
+    {"id":"ceiling","start":40,"end":49,"heading":"Even an instant FFT has a ceiling.","eyebrow":"05 / THE UNCHANGED WORK","captions":["Even zero Fourier time leaves {other} milliseconds.","In this model, the speedup limit is about {ceiling_gain}×."]},
+    {"id":"distinctions","start":49,"end":61,"heading":"Four questions. Four different tests.","eyebrow":"06 / DON'T COLLAPSE THE CLAIMS","captions":["Arithmetic complexity asks how operation counts grow.","Numerical stability asks how computation errors behave.","Latency measures elapsed time for the whole workload.","Readiness needs validation against system deadlines."],"cards":[{"title":"Complexity","description":"Operation count as input grows"},{"title":"Stability","description":"Roundoff and error growth"},{"title":"Latency","description":"Elapsed end-to-end time"},{"title":"Readiness","description":"Validated system + deadlines"}]},
+    {"id":"readiness","start":61,"end":70,"heading":"Faster is useful. Readiness is more.","eyebrow":"07 / ENGINEERING CONTEXT","captions":["Check accuracy, data movement, and worst-case deadlines.","This toy arithmetic proves no new FFT or real-time grid capability."]},
+    {"id":"end","start":70,"end":80,"heading":"Measure the bottleneck. Then improve it.","eyebrow":"08 / MATH IN CONTEXT","captions":["Explore the fraction improved and its speedup in our Marimo lesson.","Fourier methods connect algorithms to latency—not automatically to readiness."]}
+  ]
+}
