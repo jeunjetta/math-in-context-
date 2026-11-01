@@ -13,6 +13,10 @@ The [Substack companion draft](fft-latency/SUBSTACK_DRAFT.md) supports this
 same pilot with a prediction, worked example and source links. It is not
 posted or approved; video/lesson destinations remain explicit placeholders.
 
+The [original thumbnail candidate](fft-latency/THUMBNAIL.md) includes full-size
+and small previews, a prediction-first hook and model-driven reproduction
+commands. It is draft packaging for review, not a performance announcement.
+
 The [live-lesson handoff](fft-latency/LESSON_LINK.md) records the read-only
 Pages/Actions audit, current deployment blocker and approval-dependent CTA
 verification steps. Passing pilot tests does not establish a deployed lesson.

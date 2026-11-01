@@ -1,0 +1,11 @@
+{
+  "brand": "MATH IN CONTEXT",
+  "status": "DRAFT",
+  "hook": "{kernel_gain}× FASTER FFT.",
+  "question": "{kernel_gain}× FASTER SYSTEM?",
+  "baseline": "{baseline} ms · sequential baseline",
+  "fourier": "FFT\n{fourier} ms",
+  "other": "OTHER WORK\n{other} ms",
+  "qualifier": "Synthetic example",
+  "alt": "Draft Math in Context thumbnail: {kernel_gain}× faster FFT. {kernel_gain}× faster system? A synthetic sequential {baseline} ms baseline contains {fourier} ms of Fourier work and {other} ms of other work. The question is not a claim of total speedup."
+}

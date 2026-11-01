@@ -18,6 +18,10 @@ from the accompanying ChatGPT message; it is not a public YouTube upload.
 
 These boxes deliberately remain unchecked. Test results are not Karin's approval.
 
+The [thumbnail candidate and small preview](THUMBNAIL.md) are available for
+matching title/video review. The question is a prediction prompt, not a
+2× system-performance claim. Its separate approval boxes are unchecked too.
+
 ## The one idea
 
 Improving one component does not improve the entire workload by the same

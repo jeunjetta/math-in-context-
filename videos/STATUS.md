@@ -1,5 +1,65 @@
 # Video status log
 
+## 2 November 2026 · original prediction-first thumbnail candidate
+
+**State:** reviewable video packaging, not an approved thumbnail or release.
+
+Fresh remote main `c9fdf98729379dd404afce99daad1a6aa042156e`, open pilot PR #1
+`7905dc2b30ad9c05436f4db4a03d9cfe34224ffc`, and open video PR #2 source
+`88a935885bc1492c472239b4817b867a1568f9e2` inspected before this increment.
+Main/video have no AGENTS or ROADMAP; read both from current pilot PR #1,
+along with its README, source/concept registries and complete lesson notebook.
+Read video README, status, review, lesson/model/renderer and relevant tests.
+PR #2 has no comments/reviews in the retrieved discussion timeline. A fresh
+detached worktree avoids the older checkout's staged changes; those are untouched.
+All changes remain under `videos/` on the dedicated video branch/PR.
+
+Added `thumbnail.py`, `test_thumbnail.py`, `fft-latency/thumbnail.json`,
+`fft-latency/THUMBNAIL.md` and two small PNGs under
+`fft-latency/thumbnail-candidate/`; README and REVIEW link the candidate.
+The hook asks “2× faster FFT. 2× faster system?” rather than asserts a total
+gain. The canonical model drives the proportional baseline 20/80 ms bar and
+text, including alternate-scenario checks. Original code-drawn graphics only,
+with explicit synthetic/draft labels, question mark, text alongside color,
+alt text and a bottom-right overlay reserve. No answer reveal in the thumbnail.
+No screenshots, third-party visual assets, private data, audio or generated voice.
+
+Actual validation:
+
+- `uv run --locked python -m unittest test_video test_qa test_thumbnail -v`:
+  24 tests pass in 49.995 s, including all 3,840 frame text-fit checks,
+  VTT/transcript, encoded-fixture QA and four new thumbnail tests.
+- New tests check model values, proportional boundary pixels, actually drawn
+  hook/qualifier/draft text, alternate 200 ms/100 ms/4× rendering, decoded PNG
+  sizes/mode/file size and refusal to overwrite existing output folders.
+- Exported with `uv run --locked python thumbnail.py --out
+  fft-latency/thumbnail-candidate` (one line), then inspected both 1280×720
+  and 320×180 images for text clipping, question mark, labels and balance.
+  This is desktop visual inspection, not actual-tablet testing or CTR evidence.
+- Full PNG: 43,371 bytes, SHA256
+  `ea7f5e46f2d6f188ed1fb651c38d99d2e6a3d5160de9f7d93f3d5bdb929cf58d`.
+  Small preview: 24,269 bytes, SHA256
+  `3c829f164872cb3321e02c0a5c71387b57b731b5e1d3df9d7fe5965d02252578`.
+- Whitespace check passes. Official Pillow drawing/license docs and YouTube
+  thumbnail help rechecked on 2 November 2026; links and provenance in
+  THUMBNAIL.md. Locked Pillow 12.3.0 retained; current docs are 13.0.0.
+  No dependency, lockfile, font binary or renderer-tool choice change.
+
+Render status: existing 80-second silent v5 MP4 unchanged, no new video render
+or review-copy replacement. Captions, lesson arithmetic, Substack article,
+research conclusions, source registry and Marimo pilot are unchanged. No new
+automation, purchase, public video/social/blog posting, merge, account change
+or assumed Open Notebook deployment. The committed PNGs are draft PR assets,
+not a YouTube upload. Publication approval remains absent.
+
+Next bounded increment if no feedback: audit the complete silent v5 playback
+in chronological segments, record timestamped issues rather than another
+packaging draft, and fix only any specific pacing/continuity defect found.
+Remaining release blockers: Karin's full/tablet/editorial review and exact-
+revision approval; audio-format decision (and retiming if narration chosen);
+authorized lesson deployment/verified learner URL and final matching links.
+The target dates in unmerged PR #1 are not evidence that these gates passed.
+
 ## 1 November 2026 · Substack companion draft for the pilot
 
 **State:** reviewable supporting copy, not a published post or video approval.
