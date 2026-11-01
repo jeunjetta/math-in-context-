@@ -1,5 +1,49 @@
 # Video status log
 
+## 1 November 2026 · Substack companion draft for the pilot
+
+**State:** reviewable supporting copy, not a published post or video approval.
+
+Fresh remote main `c9fdf98729379dd404afce99daad1a6aa042156e`; open pilot
+PR #1 `7905dc2b30ad9c05436f4db4a03d9cfe34224ffc`; draft video PR #2
+source `d911032ab6edccde549cb07a4c5a7202d0c94594` before this increment.
+Read current README/main and pilot, AGENTS/ROADMAP, source/concept registries,
+pilot notebook and video README/status/REVIEW/model/tests. No PR #2 feedback.
+Local editable inputs matched remote Git blob hashes. Work remains under
+`videos/` on the existing dedicated branch.
+
+Added `fft-latency/SUBSTACK_DRAFT.md` with reader-facing copy separated from
+editorial notes: a prediction, worked before/after table, percent-versus-ratio
+distinction, ideal ceiling, explicit assumptions, the four claim categories,
+concept placement and sources. Video and lesson URLs remain placeholders.
+The slider prompt explicitly compares hypothetical workloads rather than
+prescribing extra computation. No operational data or research claims.
+README links the draft; two regression tests check its numerical block against
+the canonical timing model and retain draft labels/unresolved links/gates.
+
+Verification: 20 tests pass in 43.128 seconds, including all 3,840 frame checks,
+VTT/transcript, encoded-fixture QA and both new draft checks. After one wording
+clarification outside the checked block, both draft tests were rerun and pass.
+Complete Markdown was manually inspected for calculation, claim scope, links,
+table/heading structure and separation of editorial material. Whitespace check
+passes. Substack rendering and actual-tablet preview are not claimed tested.
+FFTW's primary accuracy notes and the original 3Blue1Brown Fourier lesson were
+retrieved on 1 November 2026; no quoted prose or third-party assets reused.
+
+Render status: existing silent v5 unchanged; no new render or review-copy upload.
+SHA256 rechecked:
+`d2a0365545602c55af3ee6018944045a5804a125b0dd5af80d7585c85efe12d4`.
+No renderer, lesson, notebook, dependency, lockfile, audio or source registry
+changed. Open Notebook deployment remains unassumed. No purchase, publishing,
+merge, account setting change or new automation.
+
+Next bounded video-packaging increment, absent editorial feedback: prepare an
+original code-generated thumbnail candidate based on this same synthetic
+pipeline, with a readable prediction hook and no new performance claims.
+Release still needs Karin's full video/tablet/editorial review, audio decision,
+authorized lesson deployment/verified URL, matching final links and explicit
+approval for the exact video and article revisions. Do not publish the draft.
+
 ## 1 November 2026 · v5 ceiling transition clarified
 
 **State:** updated rendered review draft, not a publication-approved video.

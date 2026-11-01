@@ -5,7 +5,7 @@ import json
 from fractions import Fraction
 from unittest.mock import patch
 import render
-from lesson_model import context, load_lesson, metrics, quotient
+from lesson_model import compact, context, load_lesson, metrics, quotient
 from render import LESSON, ROOT, caption_cues, cue_at, render_frame, scene_at, font, write_captions, timestamp
 
 
@@ -158,6 +158,38 @@ class VideoTests(unittest.TestCase):
                 path.write_text(json.dumps(raw))
                 with self.assertRaises(ValueError):
                     load_lesson(path)
+
+    def test_substack_example_matches_model(self):
+        draft = (ROOT/"fft-latency/SUBSTACK_DRAFT.md").read_text()
+        actual = draft.split("<!-- BEGIN MODEL CHECKED EXAMPLE -->\n", 1)[1].split(
+            "\n<!-- END MODEL CHECKED EXAMPLE -->", 1)[0]
+        m = metrics(LESSON)
+        expected = (
+            "| Work | Before | After |\n|---|---:|---:|\n"
+            f"| Fourier computation | {compact(m['fourier'])} ms | {compact(m['new_fourier'])} ms |\n"
+            f"| Other work | {compact(m['other'])} ms | {compact(m['other'])} ms |\n"
+            f"| End-to-end total | {compact(m['baseline'])} ms | {compact(m['new_total'])} ms |\n\n"
+            f"Halving the Fourier step saves **{compact(m['saved'])} ms**, or "
+            f"**{compact(100*m['saved']/m['baseline'])}% less elapsed time**.\n"
+            f"Overall speedup is **{quotient(m['baseline'],m['new_total'])}**, "
+            f"not **{compact(m['kernel_gain'])}×**.\n\n"
+            f"Even zero Fourier time would leave **{compact(m['other'])} ms** of other work.\n"
+            f"The maximum overall speedup in this model is **{quotient(m['baseline'],m['other'])}**.")
+        self.assertEqual(actual, expected)
+
+    def test_substack_draft_retains_publication_gates(self):
+        draft = (ROOT/"fft-latency/SUBSTACK_DRAFT.md").read_text()
+        for required in ("DRAFT FOR KARIN'S REVIEW", "NOT APPROVED FOR PUBLICATION",
+                         "ADD_APPROVED_VIDEO_URL_BEFORE_PUBLICATION",
+                         "ADD_VERIFIED_LESSON_URL_BEFORE_PUBLICATION",
+                         "not benchmark measurements", "unchanged accuracy",
+                         "unchanged other work", "no added overhead",
+                         "https://fftw.org/accuracy/comments.html"):
+            self.assertIn(required, draft)
+        self.assertNotIn("- [x]", draft)
+        self.assertNotIn("chatgpt.com/library", draft)
+        self.assertEqual(draft.count("<!-- BEGIN ARTICLE -->"), 1)
+        self.assertEqual(draft.count("<!-- END ARTICLE -->"), 1)
 
     def test_bar_uses_baseline_relative_scale(self):
         data = load_lesson(ROOT/"fft-latency/lesson.json",
