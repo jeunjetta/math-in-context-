@@ -1,5 +1,70 @@
 # Video status log
 
+## 3 November 2026 · v6 removes decorative moving totals
+
+**State:** newly rendered silent review draft, not a finished approved video.
+
+Fresh main `c9fdf98729379dd404afce99daad1a6aa042156e`, unmerged pilot PR #1
+`7905dc2b30ad9c05436f4db4a03d9cfe34224ffc`, open video PR #2 source
+`049c08ab42bc585ab0fb56b09c2ea5a89629e30c` inspected. Read main/pilot
+README, pilot AGENTS/ROADMAP and source/concept registries, then video status,
+README, REVIEW, storyboard, audit, lesson/model/renderer and relevant tests.
+No PR #2 discussion feedback. A fresh detached worktree preserves earlier
+staged work; only videos/ changes are added to the dedicated video branch.
+
+Addressed AUDIT_V5 Finding A, without changing caption cues, scene duration,
+example arithmetic, numerical assumptions, source registry or research claims.
+Both moving bars now use model-derived endpoint arrows instead of showing
+precise-looking easing totals: →90 ms during 18–21 s, →80 ms during 40–43 s.
+The first beat is explicitly labelled “TRANSITION · Fourier time ÷ 2” (the
+alternate fixture correctly uses ÷4). Exact totals are restored only once
+the bars settle. The 43 s limit hold and 44.5 s formula reveal are unchanged.
+Data owns the text/timing; bar() accepts an optional total-label override.
+Both transition durations are validated to finish within their first cue.
+
+Changed render.py, lesson_model.py, lesson.json, test_video.py, README,
+REVIEW, storyboard and a dated note on the historical AUDIT_V5, plus this log.
+No dependency, lockfile, audio, font, notebook, thumbnail or Substack changes.
+
+Actual validation on final inputs:
+
+- `uv run --locked python -m unittest test_video test_qa test_thumbnail -v`:
+  27 tests pass in 31.691 s, including all 3,840 frame text-fit checks across
+  both scenarios, new transition/endpoint text and boundary assertions,
+  invalid halve-timing guards, existing ceiling-hold/reveal pixel checks,
+  canonical VTT/transcript freshness and encoded QA fixture tests.
+- Final render: `uv run --locked python render.py --out out/v6-final`.
+- Encoded check: `uv run --locked python qa.py
+  out/v6-final/fft-latency-draft.mp4 --out out/qa-v6-final --every-seconds 1`
+  (one line). Complete decode succeeds; H.264, 1280x720, 24 fps, 1,920 frames,
+  all timestamps verified, 80.000 s, zero audio streams. 101 samples exported.
+- Inspected encoded contact sheets 04,05,09,10 covering changed beats and
+  cuts; full-size 19 s and 42 s frames inspected for arrow/transition label
+  legibility. The 90/80 ms settled labels and 44.5 s formula remain legible
+  with no clipping in these samples. This is targeted sampled QA, not full
+  playback, an actual-tablet test or comprehension/accessibility approval.
+- Final output: 668,634 bytes, SHA256
+  `2d3a2b0976951c88292229eaebbc6e6a92c4322c2714e09463055f82bead14c9`.
+  An earlier unreviewed local v6 render used a longer transition label; it
+  was superseded before delivery. Only the v6-final hash identifies this draft.
+- Existing private review-copy identity replaced, retaining previous versions;
+  no public video upload. Generated MP4/QA evidence stays ignored in git.
+- Official Pillow drawing/license and FFmpeg legal pages rechecked 3 November
+  2026. Existing pinned Pillow 12.3.0 retained (current docs are 13.0.0);
+  external encoder/font and build-dependent licensing caveats unchanged.
+
+Whitespace validation passes. This does not approve a title/thumbnail/video
+combination or clear the learner-link blocker. No publishing, merging, account
+changes, paid service, new automation or assumed Open Notebook deployment.
+
+Next bounded increment, if no editorial feedback: inspect v6 at tablet-sized
+viewports for the dense formula/four-card/source scenes and record specific
+readability findings before proposing any unrelated retiming. Actual-device
+normal-speed review still belongs to Karin; scaled stills cannot replace it.
+Remaining release gates: full/tablet/editorial review and exact-version
+approval, audio-format decision and retiming if narration chosen, authorized
+lesson deployment/verified URL and matching final CTA/description/source links.
+
 ## 2 November 2026 · chronological v5 encoded-sample audit
 
 **State:** concrete timestamped audit and denser QA coverage, not full human

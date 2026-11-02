@@ -2,6 +2,11 @@
 
 **2 November 2026 · agent inspection, not human playback or release approval.**
 
+Historical audit of v5, retained unchanged below. Revision v6 (3 November)
+addresses Refinement A by replacing moving decimal totals with endpoint arrows;
+see [STATUS.md](../STATUS.md) for its new encoded validation. This does not
+retroactively change the v5 observations or clear any human review gate.
+
 Video source inspected at PR #2 commit
 `2fdc751d517e79451b774634107d6366a95c0187`; renderer/lesson are unchanged
 from the existing v5 render. Encoded input SHA256:

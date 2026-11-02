@@ -2,10 +2,11 @@
 
 **DRAFT FOR KARIN'S REVIEW · not approved for publication.**
 
-Updated 1 November 2026 for the **v5, 80-second silent captioned draft**.
+Updated 3 November 2026 for the **v6, 80-second silent captioned draft**.
 Source baseline before this refinement:
-`da902ae170f1e39813b8e39c6d273d414289f3c5`; the same draft PR contains v5.
-The ceiling transition and final formula now appear in separate beats;
+`049c08ab42bc585ab0fb56b09c2ea5a89629e30c`; the same draft PR contains v6.
+Moving-bar totals now use endpoint arrows instead of decorative decimals;
+90 ms holds from 21 s, 80 ms from 43 s, and 1.25× appears at 44.5 s.
 the canonical captions, timing and mathematical claims are unchanged.
 Read this page on GitHub without installing anything. Open the review video
 from the accompanying ChatGPT message; it is not a public YouTube upload.
@@ -48,7 +49,7 @@ for example: “35 s — equation needs another second.”
 |---|---|---|
 | 00:00–00:08 | A genuine prediction question | Does the opening invite an answer without revealing it? |
 | 00:08–00:18 | 20 ms + 80 ms = 100 ms | Can you identify both labelled parts without relying only on color? |
-| 00:18–00:30 | Only the Fourier block shrinks; total is 90 ms | Is the unchanged 80 ms visually obvious on the shared time scale? |
+| 00:18–00:30 | Only the Fourier block shrinks; total is 90 ms | Is the transition arrow clearly a destination, followed by the exact 90 ms label at 21 s? Is the unchanged 80 ms obvious? |
 | 00:30–00:40 | 100/90 ≈ 1.11×; f=0.20 and s=2 | Is the equation readable before the next cut? |
 | 00:40–00:49 | Even an instant Fourier step leaves 80 ms | Does the labelled transition settle by 43 s, then reveal 1.25× at 44.5 s without confusing a moving total with the limit? |
 | 00:49–01:01 | Complexity, stability, latency and readiness differ | Does each highlighted card match the caption? Are 3 seconds per card enough? |
@@ -178,7 +179,7 @@ interactive URL is currently verified; the placeholder remains intentional.
 - [ ] Karin explicitly approves the exact final version for YouTube/blog/social publication.
 
 No live Pages URL is inferred from the repo name. No publishing, merge,
-domain purchase or account change is part of this handoff. Keep the v5 draft
+domain purchase or account change is part of this handoff. Keep the v6 draft
 label until final review; passing automated checks does not clear these gates.
 
 ## Feedback template

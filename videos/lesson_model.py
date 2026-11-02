@@ -78,10 +78,10 @@ def load_lesson(path, scenario=None):
             raise ValueError("Every scene needs captions")
         if "cards" in scene and len(scene["cards"]) != len(scene["captions"]):
             raise ValueError("Each question card needs exactly one caption")
-        if scene["id"] == "ceiling":
+        if scene["id"] in {"halve", "ceiling"}:
             transition = number(scene["transition_seconds"])
-            if len(scene["captions"]) != 2 or not 0 < transition < (scene["end"] - scene["start"]) / 2:
-                raise ValueError("Ceiling needs two cues and a transition shorter than its first cue")
+            if (scene["id"] == "ceiling" and len(scene["captions"]) != 2) or not 0 < transition < (scene["end"] - scene["start"]) / len(scene["captions"]):
+                raise ValueError("Bar transition must finish within the first cue; ceiling needs two cues")
         expected = scene["end"]
     if expected != data["duration"]:
         raise ValueError("Scenes must cover the full duration")

@@ -89,7 +89,7 @@ def cue_at(t, data=LESSON):
     return index, s["captions"][index]
 
 
-def bar(draw, y, fourier, label, data=LESSON):
+def bar(draw, y, fourier, label, data=LESSON, total_label=None):
     other = data["baseline_ms"] - data["fourier_ms"]
     x, scale, h = 96, 850 / data["baseline_ms"], 72
     draw.rounded_rectangle((x, y, x + 850, y + h), radius=8, fill=PANEL)
@@ -98,7 +98,7 @@ def bar(draw, y, fourier, label, data=LESSON):
         draw.rectangle((x, y, x + fw, y + h), fill=CYAN)
     draw.rectangle((x + fw, y, x + fw + other * scale, y + h), fill=AMBER)
     text(draw, (x, y - 43, 850, 42), label, 25, MUTED)
-    label_text = f"{compact(fourier + other)} ms"
+    label_text = total_label if total_label is not None else f"{compact(fourier + other)} ms"
     label_size = 34 if measure(label_text, 34, True) <= 200 else 28
     text(draw, (990, y + 13, 200, 50), label_text, label_size, bold=True)
 
@@ -123,8 +123,10 @@ def render_frame(t, data=LESSON):
         text(d, (620, 208, 580, 30), "AMBER: OTHER WORK", 18, AMBER)
         bar(d, 282, fourier, "BEFORE", data)
         if sid == "halve":
-            remaining = fourier * (1 - (1 - 1 / gain) * smooth((t - s["start"]) / 3))
-            bar(d, 427, remaining, "AFTER · same time scale", data)
+            moving = t < s["start"] + s["transition_seconds"]
+            remaining = fourier * (1 - (1 - 1 / gain) * smooth((t - s["start"]) / s["transition_seconds"]))
+            bar(d, 427, remaining, s["transition_label"] if moving else s["result_label"], data,
+                total_label=s["transition_total"] if moving else None)
         else:
             text(d, (96, 400, 1050, 70), f"Fourier: {fourier:g} ms       Other work: {other:g} ms", 32)
         text(d, (96, 524, 1050, 38), "Sequential · same accuracy · no added overhead", 23, MUTED)
@@ -135,7 +137,8 @@ def render_frame(t, data=LESSON):
     elif sid == "ceiling":
         moving = t < s["start"] + s["transition_seconds"]
         remaining = (fourier / gain) * (1 - smooth((t-s["start"]) / s["transition_seconds"]))
-        bar(d, 290, remaining, s["transition_label"] if moving else s["limit_label"], data)
+        bar(d, 290, remaining, s["transition_label"] if moving else s["limit_label"], data,
+            total_label=s["transition_total"] if moving else None)
         if cue_at(t, data)[0] == 1:
             text(d, (80, 420, 1120, 100), quotient(values["baseline"], values["other"])+" maximum", 48, CYAN, True, True)
         else:

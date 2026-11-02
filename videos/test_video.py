@@ -159,6 +159,35 @@ class VideoTests(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     load_lesson(path)
 
+    def test_transition_labels_hide_easing_totals(self):
+        alternate = load_lesson(ROOT/"fft-latency/lesson.json",
+                                ROOT/"fft-latency/scenarios/half-share.json")
+        for data in (LESSON, alternate):
+            for sid, value in (("halve", metrics(data)["new_total"]),
+                               ("ceiling", metrics(data)["other"])):
+                scene = next(s for s in data["scenes"] if s["id"] == sid)
+                finish = scene["start"] + scene["transition_seconds"]
+                for t in (scene["start"], scene["start"]+1, finish-1/24, finish):
+                    with patch.object(render, "text", wraps=render.text) as drawn:
+                        render_frame(t, data)
+                    visible = [str(call.args[2]) for call in drawn.call_args_list]
+                    self.assertEqual(scene["transition_total"] in visible, t < finish)
+                    self.assertEqual(f"{compact(value)} ms" in visible, t >= finish)
+                    if t < finish:
+                        self.assertIn(scene["transition_label"], visible)
+                    self.assertNotIn("97.41 ms", visible)
+                    self.assertNotIn("82.59 ms", visible)
+
+    def test_halve_timing_guard(self):
+        for value in (0, 4, 10, True):
+            raw = json.loads((ROOT/"fft-latency/lesson.json").read_text())
+            raw["scenes"][2]["transition_seconds"] = value
+            with tempfile.TemporaryDirectory() as temp:
+                path = Path(temp)/"lesson.json"
+                path.write_text(json.dumps(raw))
+                with self.assertRaises(ValueError):
+                    load_lesson(path)
+
     def test_substack_example_matches_model(self):
         draft = (ROOT/"fft-latency/SUBSTACK_DRAFT.md").read_text()
         actual = draft.split("<!-- BEGIN MODEL CHECKED EXAMPLE -->\n", 1)[1].split(
