@@ -12,10 +12,14 @@ from lesson_model import load_lesson
 from render import ROOT, caption_cues, cue_at, font, scene_at
 
 
-def sample_frames(data):
+def sample_frames(data, every_seconds=None):
     """Both sides of every cue cut, scene midpoints, first and last frames."""
     fps, count = data["fps"], data["fps"] * data["duration"]
     frames = {0, count - 1}
+    if every_seconds is not None:
+        if type(every_seconds) is not int or every_seconds <= 0:
+            raise ValueError("Sampling interval must be a positive whole number of seconds")
+        frames.update(range(0, count, every_seconds * fps))
     for start, _, _ in caption_cues(data):
         incoming = math.ceil(start * fps)
         frames.update((max(0, incoming - 1), incoming))
@@ -70,10 +74,11 @@ def contact_sheets(paths, records, out):
     return sheets
 
 
-def review_pack(video, out, data):
+def review_pack(video, out, data, every_seconds=None):
     video, out = Path(video).resolve(), Path(out).resolve()
     if not video.is_file():
         raise ValueError("Input must be an existing local video file")
+    indices = sample_frames(data, every_seconds)  # validate before creating outputs
     # Never overwrite a prior review pack or its evidence.
     if out.exists():
         raise FileExistsError("Choose a new QA output directory")
@@ -93,7 +98,6 @@ def review_pack(video, out, data):
     out.mkdir(parents=True)
     frames_dir = out / "frames"
     frames_dir.mkdir()
-    indices = sample_frames(data)
     select = "+".join(f"eq(n\\,{i})" for i in indices)
     # Consume the entire stream, including its last frame; -xerror stops on errors.
     subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-xerror", "-n",
@@ -114,6 +118,7 @@ def review_pack(video, out, data):
                   tools={name: subprocess.check_output([name, "-version"], text=True).splitlines()[0]
                          for name in ("ffmpeg", "ffprobe")},
                   media=facts, full_decode_completed=True, samples=records, contact_sheets=sheets,
+                  every_seconds=every_seconds,
                   limitations="Expected captions come from supplied lesson, not OCR. Sampling does not establish content/source identity, accessibility, comprehension, audio sync or approval.",
                   publication_approved=False)
     (out / "report.json").write_text(json.dumps(report, indent=2) + "\n")
@@ -125,9 +130,11 @@ def main():
     parser.add_argument("video", type=Path)
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--scenario", type=Path)
+    parser.add_argument("--every-seconds", type=int,
+                        help="Add regular chronological samples; retains all cue-cut checks")
     args = parser.parse_args()
     data = load_lesson(ROOT / "fft-latency/lesson.json", args.scenario)
-    report = review_pack(args.video, args.out, data)
+    report = review_pack(args.video, args.out, data, args.every_seconds)
     print(f"QA pack: {len(report['samples'])} encoded samples; human review still required.")
 
 

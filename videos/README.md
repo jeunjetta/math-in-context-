@@ -40,6 +40,7 @@ uv run --locked python render.py --out out/full
 uv run --locked python render.py --scenario fft-latency/scenarios/half-share.json --stills-only --out out/alternate
 ffprobe -v error -show_entries stream=codec_name,width,height,r_frame_rate,nb_frames -show_entries format=duration -of json out/full/fft-latency-draft.mp4
 uv run --locked python qa.py out/full/fft-latency-draft.mp4 --out out/review-full
+uv run --locked python qa.py out/full/fft-latency-draft.mp4 --out out/review-chronological --every-seconds 1
 ```
 
 The renderer refuses to overwrite an existing MP4. Choose a new `--out` folder
@@ -146,11 +147,22 @@ applicable terms before distributing a packaged renderer.
 
 ## Encoded-file QA pack
 
+The [dated v5 chronological sample audit](fft-latency/AUDIT_V5.md) records
+observations across all eight scenes, the inspected encoded file's hash,
+one animation-label refinement and the limits of sampled review. It does
+not mark full playback, actual-tablet usability or publication approved.
+
 `qa.py` reads an existing local MP4; it does not rerender, upload or approve it.
 Use a **new** output directory on each run. It produces `report.json`, full-size
 decoded PNG samples in `frames/`, and six-sample contact sheets. All are ignored
 under `out/`. It samples the first/last frames, both sides of each caption cut,
 and scene midpoints. The current 80-second lesson yields 39 distinct frames.
+
+Optional `--every-seconds 1` adds each whole-second frame while retaining
+all those cut/midpoint/first/last checks: 101 samples and 17 contact sheets
+for the current pilot. It accepts positive whole seconds only. Omitting
+the option preserves the original selection. The report records the interval;
+even dense samples cannot certify unseen frames, smooth motion or pacing.
 
 The report records input SHA256, QA source hash, resolved lesson hash, external
 FFmpeg/FFprobe versions, dimensions, duration, frame count/rate and every

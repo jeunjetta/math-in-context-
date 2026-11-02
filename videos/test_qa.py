@@ -18,6 +18,18 @@ def fixture_probe():
 
 
 class QATests(unittest.TestCase):
+    def test_regular_sampling_keeps_cuts_and_last_frame(self):
+        default = sample_frames(LESSON)
+        dense = sample_frames(LESSON, every_seconds=1)
+        self.assertEqual(len(default), 39)
+        self.assertTrue(set(default).issubset(dense))
+        self.assertTrue(set(range(0, 1920, 24)).issubset(dense))
+        self.assertEqual(dense, sorted(set(dense)))
+        self.assertEqual(dense[-1], 1919)
+        for invalid in (0, -1, True, 1.5):
+            with self.assertRaises(ValueError):
+                sample_frames(LESSON, invalid)
+
     def test_cut_selection(self):
         frames = sample_frames(LESSON)
         self.assertEqual(frames, sorted(set(frames)))
@@ -63,7 +75,8 @@ class QATests(unittest.TestCase):
                             "color=c=navy:s=1280x720:r=4:d=1", "-an", "-c:v",
                             "libx264", "-threads", "1", "-pix_fmt", "yuv420p", str(video)], check=True)
             out = root/"qa"
-            report = review_pack(video, out, data)
+            report = review_pack(video, out, data, every_seconds=1)
+            self.assertEqual(report["every_seconds"], 1)
             self.assertFalse(report["publication_approved"])
             self.assertTrue(report["full_decode_completed"])
             self.assertEqual(report["media"]["frames"], 4)

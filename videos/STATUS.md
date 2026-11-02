@@ -1,5 +1,66 @@
 # Video status log
 
+## 2 November 2026 · chronological v5 encoded-sample audit
+
+**State:** concrete timestamped audit and denser QA coverage, not full human
+playback, an updated video or release approval.
+
+Fresh main `c9fdf98729379dd404afce99daad1a6aa042156e`, open pilot PR #1
+`7905dc2b30ad9c05436f4db4a03d9cfe34224ffc`, video PR #2 source
+`2fdc751d517e79451b774634107d6366a95c0187` inspected. Read main and pilot
+README, pilot AGENTS/ROADMAP (absent on main/video), source/concept registries;
+video README/status/REVIEW/storyboard/captions/model/renderer and QA/tests.
+PR #2 discussion timeline has no feedback. Used a fresh detached worktree;
+older staged checkouts and all non-video work remain untouched.
+
+Added optional `qa.py --every-seconds N` (positive whole seconds). It retains
+the existing 39 cue/scene/edge samples and adds regular chronological frames.
+Omission preserves existing behavior. Selection is validated before creating
+an output directory; report records the interval. Updated `test_qa.py` and
+README; new `fft-latency/AUDIT_V5.md` contains timestamped findings and limits.
+No lesson, renderer, caption, thumbnail, Substack or research changes.
+
+Actual validation:
+
+- Complete decode of the matching existing silent v5 MP4 succeeds. Input
+  SHA256 `d2a0365545602c55af3ee6018944045a5804a125b0dd5af80d7585c85efe12d4`;
+  H.264, 1280x720, 24 fps, 1,920 timestamps verified, 80.000 seconds, no audio.
+- Ran `uv run --locked python qa.py PATH_TO_MATCHING_V5.mp4 --out
+  out/audit-v5 --every-seconds 1` (one line). 101 frames, 17 contact sheets;
+  inspected all sheets in chronological order and full-resolution 19 s,
+  35 s and 49 s samples. New QA source SHA256 in the generated report:
+  `45ae6c25baf9f54564c8cf4cf95ee2e8590ed988fc5e732e9cf96fc21094d9b9`.
+- `uv run --locked python -m unittest test_video test_qa test_thumbnail -v`:
+  25 tests pass in 25.144 s, including all 3,840 rendered-frame fit checks,
+  encoded fixture/report checks and the new regular-sampling test. The latter
+  checks default 39 coverage, whole seconds, preserved cuts, sorted unique
+  selection, final frame and invalid intervals. No dependency/lock change.
+- Whitespace check passes. Official FFmpeg select and license/build pages
+  rechecked 2 November 2026; existing external build/font caveats retained.
+
+Finding A (editorial clarity, not wrong endpoint math): 18–21 s and 40–43 s
+show precise-looking intermediate totals produced by easing (e.g. 97.41 ms
+at 19 s). They are not measured timing results and add unnecessary reading
+load. Recommend transition/endpoint cues during motion, exact endpoint labels
+once settled, while preserving the 43 s hold and 44.5 s ceiling-formula reveal.
+The complete timestamp table distinguishes sampled checks from human pacing
+questions. No sampled clipping/missing scene/wrong final value was found.
+No full normal-speed/tablet review, all-frame visual check, audio listening,
+comprehension or publication approval is claimed. Do not clear those gates.
+
+Render status: video unchanged; no new MP4 render or review-copy replacement.
+Generated QA evidence stays ignored under out/ and can be reproduced; no new
+public binary assets. No publishing, merging, account changes, purchases,
+automation creation or assumed Open Notebook deployment. Existing source-path
+CTA is still not a verified live learner URL; PR #1 remains unmerged.
+
+Next bounded increment: address Finding A in the two animation beats with
+targeted boundary tests, render a new draft and inspect its encoded result.
+Do not change unrelated scenes or mark release approved. Remaining blockers:
+Karin's full/tablet/editorial review and exact-version approval; audio decision
+and retiming if narration; authorized lesson deployment/verified URL and matching
+final CTA/description. This audit is not evidence those conditions are met.
+
 ## 2 November 2026 · original prediction-first thumbnail candidate
 
 **State:** reviewable video packaging, not an approved thumbnail or release.
