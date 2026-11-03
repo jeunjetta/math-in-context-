@@ -25,7 +25,12 @@ The [live-lesson handoff](fft-latency/LESSON_LINK.md) records the read-only
 Pages/Actions audit, current deployment blocker and approval-dependent CTA
 verification steps. Passing pilot tests does not establish a deployed lesson.
 
-Latest revision: **v6** replaces animation-generated decimal totals with
+Latest revision: **v7 focus-first candidate** enlarges the active category's
+description while retaining the four titles as context. See the
+[encoded v6/v7 comparison and review limits](fft-latency/FOCUS_V7.md).
+It has not passed actual-tablet playback or editorial approval.
+
+Retained from v6: moving bars replace animation-generated decimal totals with
 endpoint arrows during the two moving-bar beats (18–21 s and 40–43 s).
 Exact totals appear only once settled: 90 ms at 21 s and 80 ms at 43 s;
 the 1.25× formula still appears with its caption at 44.5 s. The validated
@@ -76,6 +81,9 @@ dictionary's numbers without regenerating its captions.
 In the four-question scene, each card corresponds to one caption in order;
 `cue_at()` drives both the highlighted card and burned caption. Boundaries
 belong to the incoming cue. Keep the card/caption counts aligned when editing.
+`focus_cards()` draws a persistent four-title strip and only the active
+description in a larger panel; copy remains in `lesson.json`. No separate
+animation clock or duplicated caption timing is introduced.
 Both bar scenes' transition labels, endpoint arrows and `transition_seconds`
 live in lesson data. Each transition must finish within its first cue; the ceiling
 quotient appears only with its second cue, never beside an intermediate moving total.

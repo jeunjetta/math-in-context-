@@ -10,7 +10,7 @@ does not depend on the viewer knowing an FFT implementation.
 | 18–30 | Labelled transition with →90 ms endpoint cue, then exact 90 ms from 21 s | Preserve unchanged work; no decorative intermediate totals |
 | 30–40 | 100/90≈1.11× and the general fraction formula | Quantify total speedup |
 | 40–49 | Labelled transition with →80 ms endpoint cue until 43 s; exact 80 ms holds; formula at 44.5 | Separate motion from the exact total and final ceiling |
-| 49–61 | Four labelled cards; one outlined focus matches each 3-second cue | Separate complexity, stability, latency, readiness |
+| 49–61 | Four persistent category titles; one enlarged active explanation matches each 3-second cue | Separate complexity, stability, latency, readiness |
 | 61–70 | Accuracy, data movement, deadline checklist | Engineering context, no operational promise |
 | 70–80 | Concept chain, Marimo path and credited sources | Place the bite in the graph; invite exploration |
 

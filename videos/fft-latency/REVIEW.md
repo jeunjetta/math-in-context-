@@ -2,9 +2,12 @@
 
 **DRAFT FOR KARIN'S REVIEW · not approved for publication.**
 
-Updated 3 November 2026 for the **v6, 80-second silent captioned draft**.
+Updated 4 November 2026 for the **v7 focus-first candidate, 80-second silent draft**.
 Source baseline before this refinement:
-`049c08ab42bc585ab0fb56b09c2ea5a89629e30c`; the same draft PR contains v6.
+`ad0d35aced7ff2a5e33cc08f128896b0b7604e57`; the same draft PR contains v7.
+Only the 49–61 s category scene changes: four persistent titles, one enlarged
+active explanation. See the [encoded comparison](FOCUS_V7.md). The existing
+review-copy link now contains v7; earlier versions are retained.
 Moving-bar totals now use endpoint arrows instead of decorative decimals;
 90 ms holds from 21 s, 80 ms from 43 s, and 1.25× appears at 44.5 s.
 the canonical captions, timing and mathematical claims are unchanged.
@@ -56,7 +59,7 @@ for example: “35 s — equation needs another second.”
 | 00:18–00:30 | Only the Fourier block shrinks; total is 90 ms | Is the transition arrow clearly a destination, followed by the exact 90 ms label at 21 s? Is the unchanged 80 ms obvious? |
 | 00:30–00:40 | 100/90 ≈ 1.11×; f=0.20 and s=2 | Is the equation readable before the next cut? |
 | 00:40–00:49 | Even an instant Fourier step leaves 80 ms | Does the labelled transition settle by 43 s, then reveal 1.25× at 44.5 s without confusing a moving total with the limit? |
-| 00:49–01:01 | Complexity, stability, latency and readiness differ | Does each highlighted card match the caption? Are 3 seconds per card enough? |
+| 00:49–01:01 | Complexity, stability, latency and readiness differ | Does the highlighted title and enlarged active explanation match the caption? Are 3 seconds per card enough? |
 | 01:01–01:10 | Engineering needs more than a runtime improvement | Is it clear there is no real-grid benchmark or readiness claim? |
 | 01:10–01:20 | Context, sources and a next experiment | The live Marimo call-to-action is still a blocker, not a verified link. |
 

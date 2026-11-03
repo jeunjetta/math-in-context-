@@ -55,12 +55,29 @@ class VideoTests(unittest.TestCase):
             # Inspect the actual focus-border pixel, not only its timing helper.
             image = render_frame(start)
             for i in range(4):
-                x, y = 64 + i % 2 * 588, 242 + i // 2 * 147
+                x, y = 64 + i * 294, 242
                 expected = (99,224,208) if i == index else (32,50,73)
                 self.assertEqual(image.getpixel((x+100, y+1)), expected)
         for start, end, caption in caption_cues():
             self.assertEqual(cue_at(start)[1], caption)
             self.assertEqual(cue_at(end - 1/24)[1], caption)
+
+    def test_focus_first_shows_only_active_description(self):
+        scene = scene_at(49)
+        for index, start in enumerate((49, 52, 55, 58)):
+            for t in (start, start + 3 - 1/24):
+                with patch.object(render, "text", wraps=render.text) as drawn:
+                    render_frame(t)
+                calls = drawn.call_args_list
+                visible = [call.args[2] for call in calls]
+                for i, card in enumerate(scene["cards"]):
+                    self.assertIn(card["title"], visible)
+                    self.assertEqual(card["description"] in visible, i == index)
+                active = scene["cards"][index]
+                body = next(call for call in calls if call.args[2] == active["description"])
+                self.assertEqual(body.args[3], 38)
+                self.assertIn(cue_at(t)[1], visible)
+                self.assertIn(f"FOCUS {index+1}/4 · {active['title']}", visible)
 
     def test_checked_in_vtt_matches(self):
         with tempfile.TemporaryDirectory() as temp:

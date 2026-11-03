@@ -1,5 +1,57 @@
 # Video status log
 
+## 4 November 2026 · v7 focus-first visual candidate
+
+**State:** encoded silent review candidate; no publication approval.
+
+Fresh main `c9fdf98729379dd404afce99daad1a6aa042156e`, open/unmerged pilot
+PR #1 `7905dc2b30ad9c05436f4db4a03d9cfe34224ffc`, video PR #2 source
+`ad0d35aced7ff2a5e33cc08f128896b0b7604e57` inspected. Read main README,
+pilot AGENTS/ROADMAP and source/concept registries, video README/status,
+REVIEW/storyboard, renderer/model/tests. No PR #2 discussion feedback.
+Fresh detached worktree preserves prior staged/unrelated work.
+
+Addressed SMALL_SCREEN's proposed focus-first candidate: four category titles
+remain as context; only the active description appears in an enlarged panel.
+Added reusable focus_cards() to render.py, updated border-pixel tests and a
+new active-description-only/font-size/cue-edge test. Updated README, REVIEW,
+storyboard; added FOCUS_V7.md and one encoded 640-wide comparison PNG.
+No lesson JSON, VTT, arithmetic, timing, dependencies, lockfile, notebook,
+thumbnail, Substack copy or research changes. Duration stays 80 seconds.
+
+Actual validation:
+
+- `uv run --locked python -m unittest test_video test_qa test_thumbnail
+  test_small_screen -v`: 32 tests pass in 25.500 s, including 3,840 frame-fit
+  checks across both fixtures and each active description at incoming/last
+  outgoing frames. Whitespace check passes.
+- `render.py --out out/v7-focus`, then `qa.py
+  out/v7-focus/fft-latency-draft.mp4 --out out/qa-v7-focus --every-seconds 1`:
+  full decode succeeds, H.264 1280×720, 24 fps, 1,920 verified timestamps,
+  80.000 s, zero audio, 101 encoded samples.
+- Inspected encoded 49/52/55/58 s full frames, contact sheets 09–14 and
+  640-wide v6/v7 stability frames. No visible clipping in inspected samples;
+  active description nominally 12→19 px at 640, but inactive titles shrink
+  to 13 px. Larger current copy/fewer descriptions is observed, not proof
+  of better comprehension, normal-speed readability or accessibility.
+- MP4: 669,380 bytes; SHA256
+  `1d3050b3094f1a090954cb9c2e6ed10e90d438169e86bd2cfbc2a7f13ed74036`.
+  Existing private review-copy identity updated, older versions retained.
+  Full output/QA stays ignored; one preview and provenance are in FOCUS_V7.
+- Official Pillow drawing/license pages rechecked 4 November; pinned 12.3.0
+  and external FFmpeg/font licensing caveats retained. No new assets/audio.
+
+No publishing, YouTube upload, merge, account change, paid service or new
+automation. Open Notebook deployment is not assumed. No private research notes,
+chat logs, credentials or operator data added to the public branch.
+
+Next bounded step: normal-speed review of v7, especially the three-second
+category cues. Absent feedback, audit final packaging/source-card/description
+consistency against this exact render, without default retiming or narration.
+Exact release blockers remain actual-tablet/full-playback/editorial approval,
+audio decision and retiming if needed, authorized lesson deployment/verified
+URL and corresponding final CTA/description/source links.
+
 ## 3 November 2026 · v6 smaller-view evidence and density findings
 
 **State:** inspectable review assets and a tested exporter; same silent v6

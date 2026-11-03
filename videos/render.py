@@ -103,6 +103,24 @@ def bar(draw, y, fourier, label, data=LESSON, total_label=None):
     text(draw, (990, y + 13, 200, 50), label_text, label_size, bold=True)
 
 
+def focus_cards(draw, scene, active):
+    """Keep the category map; give only the current explanation reading space."""
+    for i, card in enumerate(scene["cards"]):
+        x, y = 64 + i * 294, 242
+        selected = i == active
+        draw.rounded_rectangle((x, y, x+270, y+66), 12, fill=PANEL,
+                               outline=CYAN if selected else PANEL, width=3)
+        text(draw, (x+12, y+14, 246, 42), card["title"], 26,
+             CYAN if selected else MUTED, True, True)
+    card = scene["cards"][active]
+    draw.rounded_rectangle((64, 340, 1216, 530), 12, fill=PANEL,
+                           outline=CYAN, width=3)
+    text(draw, (88, 356, 1104, 66), card["title"], 44, CYAN, True)
+    text(draw, (88, 440, 1104, 70), card["description"], 38, FG)
+    text(draw, (64, 537, 1152, 34), f"FOCUS {active+1}/4 · {card['title']}",
+         20, CYAN)
+
+
 def render_frame(t, data=LESSON):
     s = scene_at(t, data)
     image = Image.new("RGB", (data["width"], data["height"]), BG)
@@ -146,17 +164,7 @@ def render_frame(t, data=LESSON):
                  34, MUTED, center=True)
     elif sid == "distinctions":
         active, _ = cue_at(t, data)
-        for i, card in enumerate(s["cards"]):
-            x, y = 64 + (i % 2) * 588, 242 + (i // 2) * 147
-            selected = i == active
-            d.rounded_rectangle((x, y, x+560, y+130), 12, fill=PANEL,
-                                outline=CYAN if selected else PANEL, width=3)
-            text(d, (x+22, y+12, 516, 44), card["title"], 30,
-                 CYAN if selected else MUTED, True)
-            text(d, (x+22, y+62, 516, 60), card["description"], 24,
-                 FG if selected else MUTED)
-        text(d, (64, 537, 1152, 34), f"FOCUS {active+1}/4 · {s['cards'][active]['title']}",
-             20, CYAN)
+        focus_cards(d, s, active)
     elif sid == "readiness":
         for i, line in enumerate(["Accuracy and numerical error", "Data movement and alignment", "Worst-case deadlines and validation"]):
             text(d, (96, 250 + 85*i, 1080, 65), f"0{i+1}   {line}", 32, CYAN if i == 0 else FG)
