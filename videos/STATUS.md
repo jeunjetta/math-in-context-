@@ -1,5 +1,56 @@
 # Video status log
 
+## 3 November 2026 · v6 smaller-view evidence and density findings
+
+**State:** inspectable review assets and a tested exporter; same silent v6
+video, not a new render or an approved release.
+
+Fresh main `c9fdf98729379dd404afce99daad1a6aa042156e`, unmerged pilot PR #1
+`7905dc2b30ad9c05436f4db4a03d9cfe34224ffc`, open video PR #2 source
+`7997d44991a32f20d9365d6d3f3ad9b99cc73bb0` inspected. Read current main
+README, pilot AGENTS/ROADMAP and source/concept registries, then video
+README/status/REVIEW/storyboard, renderer and QA/tests. No PR #2 discussion
+feedback. Fresh detached worktree; previous staged work remains untouched.
+
+Added `small_screen.py`, `test_small_screen.py`, `fft-latency/SMALL_SCREEN.md`
+and `fft-latency/small-screen-v6/` (six PNGs and a provenance manifest).
+README and REVIEW link the audit. No renderer, lesson, VTT, timing, dependency,
+lockfile, thumbnail, Substack, notebook or research changes.
+
+Actual validation:
+
+- Rechecked existing v6 MP4 SHA256
+  `2d3a2b0976951c88292229eaebbc6e6a92c4322c2714e09463055f82bead14c9`.
+- Fresh `qa.py PATH_TO_V6.mp4 --out out/qa-small-screen --every-seconds 1`:
+  complete decode, H.264 1280×720, 24 fps, 1,920 verified timestamps,
+  80.000 seconds, zero audio, 101 decoded samples. No new video render.
+- `small_screen.py out/qa-small-screen/report.json --out
+  fft-latency/small-screen-v6`: six LANCZOS previews from exact encoded
+  35/52/75 s samples, at 640×360 and 960×540. All six visually inspected.
+- No clipping found in those samples. Main numerical equation stays distinct;
+  640-wide card descriptions/source credits are nominally 12 px and the
+  README pointer 11 px. Competing card/caption copy is the highest-priority
+  density concern, not a measured comprehension failure. Full observations
+  and a font-scale table are in SMALL_SCREEN.md.
+- `uv run --locked python -m unittest test_video test_qa test_thumbnail
+  test_small_screen -v`: final rerun passes 31 tests in 25.986 s, including 3,840 frame-fit
+  checks and four new pack tests. Whitespace checks pass.
+- Pillow resize documentation/license rechecked; pinned 12.3.0 retained.
+  Manifest has hashes and relative image names, no local paths/private data.
+
+Raster dimensions are not CSS/device measurements; stills do not establish
+normal-speed readability, pacing, audio sync, accessibility or approval.
+No public video upload, publication, merge, paid service, account change,
+new automation or assumed Open Notebook deployment.
+
+Next bounded increment, absent feedback: prototype a focus-first four-card
+candidate with only the active description enlarged, retaining all four
+category titles and existing cue semantics; compare encoded 640-wide frames
+and timing against v6 before promoting it. Actual-tablet/full-playback and
+editorial approval remain pending. Other exact blockers: audio-format decision,
+retiming if human narration chosen, authorized lesson deployment/verified URL
+and corresponding final CTA/description/source links.
+
 ## 3 November 2026 · v6 removes decorative moving totals
 
 **State:** newly rendered silent review draft, not a finished approved video.

@@ -9,6 +9,10 @@ Video work lives here independently of the Marimo starter PR #1.
 current script, scene checklist and draft title/description/source links.
 It is a review page, not a release approval or live interactive lesson.
 
+The [v6 smaller-view review pack](fft-latency/SMALL_SCREEN.md) includes three
+encoded moments at 640×360 and 960×540, timestamped findings and a reproducible
+export command. It flags dense secondary text; it is not an actual-tablet test.
+
 The [Substack companion draft](fft-latency/SUBSTACK_DRAFT.md) supports this
 same pilot with a prediction, worked example and source links. It is not
 posted or approved; video/lesson destinations remain explicit placeholders.
@@ -61,6 +65,8 @@ manager; do not assume byte-for-byte output on every machine.
 - `fft-latency/captions.vtt`: generated from the lesson, also burned into frames.
 - `test_video.py`: arithmetic, cue coverage/reading-rate, frame layout, focus-pixel
   synchronization and checked-in VTT freshness checks.
+- `small_screen.py` / `test_small_screen.py`: scaled encoded-sample review packs,
+  provenance hashes and input/no-overwrite guards; no device approval.
 - `STATUS.md`: provenance, actual validation and next bounded task.
 
 The script is the ordered caption text in `lesson.json`, after expanding its

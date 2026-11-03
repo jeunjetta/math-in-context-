@@ -19,6 +19,10 @@ from the accompanying ChatGPT message; it is not a public YouTube upload.
 
 These boxes deliberately remain unchecked. Test results are not Karin's approval.
 
+The [smaller-view audit](SMALL_SCREEN.md) provides 35 s / 52 s / 75 s frames
+at two raster sizes, with specific density concerns and comparison links.
+It does not replace watching the full draft on your tablet at normal speed.
+
 The [thumbnail candidate and small preview](THUMBNAIL.md) are available for
 matching title/video review. The question is a prediction prompt, not a
 2× system-performance claim. Its separate approval boxes are unchecked too.
