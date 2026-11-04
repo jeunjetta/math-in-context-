@@ -8,9 +8,16 @@ Source baseline before this refinement:
 Only the 49–61 s category scene changes: four persistent titles, one enlarged
 active explanation. See the [encoded comparison](FOCUS_V7.md). The existing
 review-copy link now contains v7; earlier versions are retained.
+
+Audited renderer source: `b902ecec4099e84aca458715665aeb88d55e0611`.
+Exact current MP4 SHA256:
+`1d3050b3094f1a090954cb9c2e6ed10e90d438169e86bd2cfbc2a7f13ed74036`.
+The [review identity and credit snapshot](review-version.json) and
+[packaging audit](PACKAGE_AUDIT_V7.md) couple the handoff to that candidate;
+neither records human approval.
 Moving-bar totals now use endpoint arrows instead of decorative decimals;
 90 ms holds from 21 s, 80 ms from 43 s, and 1.25× appears at 44.5 s.
-the canonical captions, timing and mathematical claims are unchanged.
+The canonical captions, timing and mathematical claims are unchanged.
 Read this page on GitHub without installing anything. Open the review video
 from the accompanying ChatGPT message; it is not a public YouTube upload.
 
@@ -130,7 +137,7 @@ Fourier methods connect algorithms to latency—not automatically to readiness.
 
 ## Draft YouTube packaging — NOT FOR PUBLICATION YET
 
-**Candidate title:** Twice as fast… but only 10 ms saved?
+**Candidate title:** 2× faster FFT—but only 10 ms saved?
 
 **Draft description:**
 
@@ -186,7 +193,7 @@ interactive URL is currently verified; the placeholder remains intentional.
 - [ ] Karin explicitly approves the exact final version for YouTube/blog/social publication.
 
 No live Pages URL is inferred from the repo name. No publishing, merge,
-domain purchase or account change is part of this handoff. Keep the v6 draft
+domain purchase or account change is part of this handoff. Keep the v7 draft
 label until final review; passing automated checks does not clear these gates.
 
 ## Feedback template

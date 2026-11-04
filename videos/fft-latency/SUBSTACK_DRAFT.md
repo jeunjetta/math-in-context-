@@ -1,8 +1,9 @@
 # FFT/latency companion · DRAFT FOR KARIN'S REVIEW
 
-**NOT APPROVED FOR PUBLICATION.** Prepared 1 November 2026 against video
-source baseline `d911032ab6edccde549cb07a4c5a7202d0c94594` and the same
-synthetic lesson. No post has been created or published on Substack.
+**NOT APPROVED FOR PUBLICATION.** Article prepared 1 November 2026;
+handoff reconciled 4 November 2026 to **v7 focus-first candidate**, renderer
+source `b902ecec4099e84aca458715665aeb88d55e0611`, with the same synthetic
+lesson. No post has been created or published on Substack.
 
 The marked article below is the proposed reader-facing copy. Editorial notes
 after it are not part of the post. Links are intentionally unresolved until
@@ -96,14 +97,16 @@ and application links, not mathematical equivalences or proof of readiness.
 
 ## Editorial handoff — not reader-facing copy
 
-The post supports the existing v5 video, not a separate lesson or an update
+The post supports the current v7 candidate, not a separate lesson or an update
 about newly solved mathematics. Its numerical block is regression-checked
 against `lesson_model.py` and canonical `lesson.json`. If that model changes,
 review the entire post, not just its checked block. No automatic post generator,
 new dependency, footage, narration or mathematical research claim was added.
 
 Video review version: 80 seconds, silent, SHA256
-`d2a0365545602c55af3ee6018944045a5804a125b0dd5af80d7585c85efe12d4`.
+`1d3050b3094f1a090954cb9c2e6ed10e90d438169e86bd2cfbc2a7f13ed74036`.
+This matches [review-version.json](review-version.json); see the
+[packaging audit](PACKAGE_AUDIT_V7.md). No reader-facing article copy changes.
 See [REVIEW.md](REVIEW.md) for script/approval gates and
 [LESSON_LINK.md](LESSON_LINK.md) for the dated deployment audit. Do not infer a
 live lesson address or Open Notebook deployment. Source URLs were retrieved

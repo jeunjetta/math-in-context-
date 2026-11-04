@@ -9,6 +9,10 @@ Video work lives here independently of the Marimo starter PR #1.
 current script, scene checklist and draft title/description/source links.
 It is a review page, not a release approval or live interactive lesson.
 
+The [v7 packaging audit](fft-latency/PACKAGE_AUDIT_V7.md) reconciles current
+video/blog handoff identities, the component-specific title and source credits.
+Its shared snapshot and regression tests detect narrow drift, not release approval.
+
 The [v6 smaller-view review pack](fft-latency/SMALL_SCREEN.md) includes three
 encoded moments at 640×360 and 960×540, timestamped findings and a reproducible
 export command. It flags dense secondary text; it is not an actual-tablet test.
@@ -44,7 +48,7 @@ DejaVu Sans installed:
 
 ```sh
 uv sync --locked
-uv run --locked python -m unittest test_video test_qa -v
+uv run --locked python -m unittest test_video test_qa test_thumbnail test_small_screen test_package -v
 uv run --locked python render.py --stills-only
 uv run --locked python render.py --out out/full
 uv run --locked python render.py --scenario fft-latency/scenarios/half-share.json --stills-only --out out/alternate
@@ -72,6 +76,8 @@ manager; do not assume byte-for-byte output on every machine.
   synchronization and checked-in VTT freshness checks.
 - `small_screen.py` / `test_small_screen.py`: scaled encoded-sample review packs,
   provenance hashes and input/no-overwrite guards; no device approval.
+- `fft-latency/review-version.json` / `test_package.py`: current candidate
+  identity, title template and credited-source consistency; no publishing authority.
 - `STATUS.md`: provenance, actual validation and next bounded task.
 
 The script is the ordered caption text in `lesson.json`, after expanding its

@@ -67,5 +67,8 @@ This is sampled desktop image review, not actual-tablet testing or approval.
 - [ ] Karin reviews the hook and small-preview readability.
 - [ ] Approve exact title/thumbnail/video revisions together before upload.
 
-The silent v5 MP4, captions and Substack draft are unchanged. Remaining release
-gates in [REVIEW.md](REVIEW.md) still apply; this image clears none of them.
+The thumbnail artwork is unchanged since its 2 November candidate. On
+4 November its pairing was checked against the v7 focus-first video; see the
+[packaging audit](PACKAGE_AUDIT_V7.md). Historical image-production notes above
+are not a v7 playback review. Remaining release gates in [REVIEW.md](REVIEW.md)
+still apply; this image clears none of them.

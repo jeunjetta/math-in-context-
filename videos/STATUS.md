@@ -1,5 +1,56 @@
 # Video status log
 
+## 4 November 2026 · v7 package identity and claim audit
+
+**State:** corrected draft handoffs and tested packaging; v7 video unchanged.
+
+Fresh main `c9fdf98729379dd404afce99daad1a6aa042156e`, unmerged pilot PR #1
+`7905dc2b30ad9c05436f4db4a03d9cfe34224ffc`, open video PR #2 source
+`b902ecec4099e84aca458715665aeb88d55e0611` inspected. Read main README,
+pilot AGENTS/ROADMAP, source/concept registries and actual FFT lesson; video
+README/status, REVIEW, Substack/thumbnail handoffs, model/render/tests.
+No PR #2 discussion feedback. Fresh detached worktree preserves unrelated work.
+
+Found and corrected concrete drift: Substack editorial notes referenced v5's
+old hash; REVIEW's final instruction said v6; THUMBNAIL's final v5 note was
+not clearly historical. All now identify the current v7 pairing. Article body
+and thumbnail pixels are unchanged. Candidate title now explicitly scopes
+the gain: “2× faster FFT—but only 10 ms saved?” No engagement claim.
+
+Added fft-latency/review-version.json (identity, title template, three credited
+URLs and false approval snapshot), PACKAGE_AUDIT_V7.md (claim/evidence ledger,
+source/destination distinctions and limits) and test_package.py (four narrow
+guards). Updated README, REVIEW, SUBSTACK_DRAFT and THUMBNAIL handoffs.
+No renderer, lesson JSON, VTT, timing, arithmetic, dependency, lockfile,
+notebook, research, audio, MP4 or thumbnail-asset changes.
+
+Actual validation:
+
+- Current v7 MP4 rehashed; matches
+  `1d3050b3094f1a090954cb9c2e6ed10e90d438169e86bd2cfbc2a7f13ed74036`.
+  No new render or complete decode run; prior results remain in FOCUS_V7.
+- Inspected existing encoded 75 s end/source frame and committed 320×180
+  thumbnail. Credits match the three URLs in the description/article/README;
+  the end-card repo path still is not a verified live exercise destination.
+- FFTW accuracy notes and 3Blue1Brown Fourier page retrieved 4 November;
+  roles remain implementation context and inspiration, not timing evidence.
+- `uv run --locked python -m unittest test_video test_qa test_thumbnail
+  test_small_screen test_package -v`: 36 tests pass in 26.571 s, including
+  3,840 frame-fit checks, four new packaging guards and prior numerical tests.
+  Whitespace check passes. Snapshot/strings are not OCR, semantic certification,
+  URL usability tests, human review or publishing permission.
+
+Exact blockers remain tablet/full-playback/pacing and editorial approval,
+audio decision (retiming if recorded), authorized lesson deployment/verified
+URL and corresponding final CTA/description/source links. All release boxes
+remain unchecked; no video upload, Substack/social publication, merge, account
+change, purchase, new automation or assumed Open Notebook deployment.
+
+Next bounded work: respond to v7 review if available; otherwise prepare one
+source-checked comparison storyboard for the already-proposed later candidate
+“Same-looking curves, different physics,” with no private research claims.
+Do not use recurring runs to infer approval or keep cosmetically retiming v7.
+
 ## 4 November 2026 · v7 focus-first visual candidate
 
 **State:** encoded silent review candidate; no publication approval.
