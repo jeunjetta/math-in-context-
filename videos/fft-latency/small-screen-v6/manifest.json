@@ -1,0 +1,71 @@
+{
+  "input_video_sha256": "2d3a2b0976951c88292229eaebbc6e6a92c4322c2714e09463055f82bead14c9",
+  "source_report_sha256": "9d5fa7e14b9dd2ed6eb3d9844365c72bcfc36506102a60ca510676a802840085",
+  "generator_sha256": "f284f2d7a8589fc64e889f309379e68d32b6701479d0549de1edf546f9df192a",
+  "pillow": "12.3.0",
+  "resampling": "Pillow LANCZOS",
+  "samples": [
+    {
+      "seconds": 35.0,
+      "frame": 840,
+      "scene": "formula",
+      "width": 640,
+      "height": 360,
+      "source_image_sha256": "976b5db2211e42e5e138dceb58ac6c550829207b3daf1a8336c11cd68441a1cf",
+      "image": "35s-formula-640.png",
+      "image_sha256": "80fac099ad2a195ab07ff05e48c3be379259065199c06e2f9ee0ac3eed385d78"
+    },
+    {
+      "seconds": 35.0,
+      "frame": 840,
+      "scene": "formula",
+      "width": 960,
+      "height": 540,
+      "source_image_sha256": "976b5db2211e42e5e138dceb58ac6c550829207b3daf1a8336c11cd68441a1cf",
+      "image": "35s-formula-960.png",
+      "image_sha256": "151ccaf83ce800205021ce30e06b20e49cb5254a26fcbe69be7054b116123855"
+    },
+    {
+      "seconds": 52.0,
+      "frame": 1248,
+      "scene": "distinctions",
+      "width": 640,
+      "height": 360,
+      "source_image_sha256": "ce04944f2823e7232735e927816421c78761e6e913ce6a759a9408c73fbaadcc",
+      "image": "52s-distinctions-640.png",
+      "image_sha256": "8b8c126657f3233391c55a6835d3cdb5b6973864926fa282a5057a9661563e50"
+    },
+    {
+      "seconds": 52.0,
+      "frame": 1248,
+      "scene": "distinctions",
+      "width": 960,
+      "height": 540,
+      "source_image_sha256": "ce04944f2823e7232735e927816421c78761e6e913ce6a759a9408c73fbaadcc",
+      "image": "52s-distinctions-960.png",
+      "image_sha256": "50732252145fa6ef3dce52a3b1edcc798c4adb6b385645707b255882ec17b782"
+    },
+    {
+      "seconds": 75.0,
+      "frame": 1800,
+      "scene": "end",
+      "width": 640,
+      "height": 360,
+      "source_image_sha256": "c0ea5dc90bee0913afa76c3ea41e6a7530abe1dd2127f8b3f0800993f0ddf37d",
+      "image": "75s-end-640.png",
+      "image_sha256": "80e2ea801804c3b0ed06c215533ce46574f7fc4bc1d23bcc4e15c5e5b0aa3c08"
+    },
+    {
+      "seconds": 75.0,
+      "frame": 1800,
+      "scene": "end",
+      "width": 960,
+      "height": 540,
+      "source_image_sha256": "c0ea5dc90bee0913afa76c3ea41e6a7530abe1dd2127f8b3f0800993f0ddf37d",
+      "image": "75s-end-960.png",
+      "image_sha256": "1df9a8f4e205fd8f21ec5ed68b262f9d474a4be23020e29a9baae0ef980ca071"
+    }
+  ],
+  "limitations": "Raster-size simulations, not CSS/device measurements or normal-speed playback. Scene/caption labels are QA metadata, not OCR. Hashes record supplied files, not proof that source PNGs came from the claimed MP4. No accessibility, comprehension, audio-sync or publication approval.",
+  "publication_approved": false
+}

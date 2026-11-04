@@ -1,0 +1,5 @@
+{
+  "baseline_ms": 200,
+  "fourier_ms": 100,
+  "kernel_speedup": 4
+}
