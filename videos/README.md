@@ -13,6 +13,11 @@ The [v7 packaging audit](fft-latency/PACKAGE_AUDIT_V7.md) reconciles current
 video/blog handoff identities, the component-specific title and source credits.
 Its shared snapshot and regression tests detect narrow drift, not release approval.
 
+Later candidate: [Same-looking curves, different physics](same-looking-curves/STORYBOARD.md)
+has an original 82-second unrecorded script, primary-source ledger and tested
+geometry helpers. No images or video have been rendered for it; the FFT pilot
+remains the first release milestone. No RH or private NS research claims.
+
 The [v6 smaller-view review pack](fft-latency/SMALL_SCREEN.md) includes three
 encoded moments at 640×360 and 960×540, timestamped findings and a reproducible
 export command. It flags dense secondary text; it is not an actual-tablet test.

@@ -1,5 +1,64 @@
 # Video status log
 
+## 5 November 2026 · source-checked curves storyboard, separate candidate
+
+**State:** concrete unrecorded 82-second script and tested geometry helpers;
+not rendered, reviewed or approved. FFT/latency v7 remains unchanged.
+
+Fresh main `c9fdf98729379dd404afce99daad1a6aa042156e`, unmerged pilot PR #1
+`7905dc2b30ad9c05436f4db4a03d9cfe34224ffc`, video PR #2 source
+`97c8aea386535f8eca8ffd00478f36b56adc364e` inspected. Read main README,
+pilot AGENTS/ROADMAP and source/concept registries, video README/status and
+current REVIEW. No PR #2 discussion feedback. Fresh detached worktree keeps
+prior staged/unrelated work intact. Candidate branch is
+codex/video-curves-storyboard, with a draft PR targeting the existing video
+branch; the small stacked diff does not modify PR #2 or main.
+
+Added same-looking-curves/script.json (157-word unrecorded script, six timed
+scenes, labels, visual directions), same-looking-curves/STORYBOARD.md (typed
+concept links, coordinate/physics distinctions, equations, source ledger and
+production gates), curves_models.py and test_curves.py. README links it.
+All changes remain under videos/. No FFT renderer/lesson/caption/MP4,
+thumbnail, Substack, notebook, dependency/lockfile or research-note changes.
+
+The narrow lesson is to identify what a curve represents. It distinguishes
+the image of x=1 under z², contours versus field lines of a chosen local
+harmonic potential, and ideal 3D dipole lines under a depth-losing camera.
+It includes the genuine analytic-to-harmonic relation, rather than asserting
+either universal physical equivalence or no mathematical connection.
+Camera projection is explicitly orthographic, not stereographic. Critical
+origin, zero field direction and singular dipole source are excluded/labeled.
+No RH proof, private NS claim or real operational model is used.
+
+Actual validation:
+
+- Five new tests pass: exact rational quadratic/gradient checks, 30 numerical
+  dipole tangent samples (relative tolerance 1e-12; not a proof), two-camera
+  overlap/separation, source/invalid-input guards and contiguous script budget.
+- `uv run --locked python -m unittest test_video test_qa test_thumbnail
+  test_small_screen test_package test_curves -v`: 41 tests pass in 46.050 s;
+  five focused tests rerun successfully after final script edits.
+- 157 script words across 82 provisional seconds; <=3 words/s per scene is
+  only a preproduction guard, not measured speech or readable captions.
+- Primary NIST DLMF §1.9, MIT EM §4.1 and NASA CCMC dipole equations/field-line
+  module retrieved 5 November. Creator zeta/quaternion pages are inspiration,
+  not theorem validation; no unseen transcript inferred from the sparse latter
+  page. Full URLs and exact source roles are in the storyboard.
+- Whitespace check passes. No new image/video render attempted; no layout,
+  clipping, actual-device, human playback or audio/caption-sync claim.
+
+Next bounded production step: two original code-drawn keyframes (mapping vs
+potential; two-camera dipole comparison) with source mask, persistent axes and
+plain-language legends; inspect full and smaller raster views before animating.
+Remaining work is unimplemented production, not a permission/render failure.
+Recheck official docs/licensing before choosing a new rendering dependency.
+
+FFT pilot release gates remain exact-version/tablet/pacing/editorial approval,
+audio decision and retiming if recorded, verified lesson URL and matching CTA.
+Candidate also needs independent mathematical/editorial and eventual publication
+approval. No publishing, merge, paid service, account change, new automation,
+private exports/operator data or assumed Open Notebook deployment.
+
 ## 4 November 2026 · v7 package identity and claim audit
 
 **State:** corrected draft handoffs and tested packaging; v7 video unchanged.
