@@ -1,6 +1,6 @@
 # Same-looking curves, different physics
 
-**Preproduction draft · 5 November 2026 · not approved or rendered.**
+**Preproduction draft · 5 November 2026 · not approved or animated.**
 One idea: identify the mathematical object before comparing its shape.
 Audience: university-level maths basics, engineers and curious builders.
 This is a later candidate, not a replacement for the FFT/latency pilot.
@@ -11,7 +11,9 @@ Work branch: `codex/video-curves-storyboard`, stacked on
 The complete proposed spoken script, scene times, labels and visual directions
 are editable in [script.json](script.json). It is **unrecorded narration**,
 not a fabricated voiceover or an audio-aligned caption track. There is no new
-MP4, VTT, image export, human playback review or actual-device test.
+MP4, VTT, human playback review or actual-device test.
+Two [original keyframes and smaller-view QA](KEYFRAMES.md) are now available;
+their implementation does not establish animation timing or release approval.
 
 ## 82-second cut
 
@@ -73,8 +75,8 @@ formula is not an equipotential equation. The model is singular at r=0.
 Use L=1 and phi=±pi/3 for the two main curves. For a future render, exclude
 a sphere r<0.15: split/mask each polyline there, never join its endpoints
 through the source or close a line across the gap. The math helper excludes
-the poles but does not implement the renderer's source mask; that is remaining
-work. The mathematical tangent check includes the equator, avoiding division
+the poles; the new keyframe renderer now implements that split and mask.
+The mathematical tangent check includes the equator, avoiding division
 by a radial component that vanishes there.
 
 ### 4. Camera projection — not new physics
@@ -119,7 +121,7 @@ distinctive creator assets copied. Equations are implemented in original code.
 - [3Blue1Brown zeta lesson](https://www.3blue1brown.com/lessons/zeta/)
   and [quaternions/stereographic lesson page](https://www.3blue1brown.com/lessons/quaternions/): credited conceptual inspiration only. The latter retrieved page is sparse; no unseen transcript or detailed video content is inferred. No clips mean no episode/transcript timestamp-offset assumption.
 
-## Validation and next concrete deliverable
+## Initial storyboard validation (before keyframes)
 
 `curves_models.py` separates small geometry functions from script data and any
 future renderer. `test_curves.py` has five tests: exact rational polynomial
@@ -139,14 +141,14 @@ checks, not narration synchronization, visual QA or mathematical peer review.
 uv run --locked python -m unittest test_curves -v
 ```
 
-Next bounded increment: produce two original code-drawn keyframes (mapping
-versus potential, and the two-camera dipole comparison), including the source
-mask and persistent coordinate labels. Inspect at full size and tablet-sized
-rasters before attempting an animatic. Use existing tools if suitable; recheck
-official docs/licensing before choosing any new renderer or distributing assets.
+The keyframe increment is now complete: see [previews, validation and
+remaining limits](KEYFRAMES.md). Next: a short silent animatic with staged
+reveals and enlarged active explanations, followed by timing/transition QA.
+Use existing tools if suitable; recheck official docs/licensing before
+choosing any new renderer or distributing assets.
 
-Open work is production, not a technical inability to render: no keyframes,
-layout/contrast checks, captions, audio or full render yet. Human mathematical,
+Open work is production, not a technical inability to render: no animation,
+caption/audio alignment or full video render yet. Human mathematical,
 editorial and eventual exact-version publication approval are still required.
 The v7 FFT pilot remains the first release milestone with its existing gates;
 this small preproduction task clears none of them.

@@ -1,5 +1,49 @@
 # Video status log
 
+## 5 November 2026 · two original comparison keyframes
+
+Fresh source PR #3 `8ca5c5861ddd9423583f68006a13df26cc4da8fd`;
+main `c9fdf98729379dd404afce99daad1a6aa042156e`, PR #1
+`7905dc2b30ad9c05436f4db4a03d9cfe34224ffc` and parent PR #2
+`97c8aea386535f8eca8ffd00478f36b56adc364e` remain unchanged/open.
+Read current main README, pilot AGENTS/ROADMAP/source registry, video
+README/status, curves storyboard/model/script/tests and all open PR metadata
+and discussions. No human feedback on #2/#3. AGENTS/ROADMAP are still absent
+from main and were read from unmerged #1. Isolated local snapshot fetched
+the current #3 files via connector, preserving earlier dirty worktrees.
+
+Added curves_keyframes.py, test_curves_keyframes.py, keyframes.json,
+KEYFRAMES.md and four PNG previews under same-looking-curves/previews/.
+Updated video README and storyboard state; no FFT lesson/renderer/MP4,
+research, dependency/lockfile or repository-root changes. All work under videos/
+on codex/video-curves-storyboard, continuing draft PR #3's stacked scope.
+
+Result: mapping/potential/field comparison and two-camera dipole comparison.
+Persistent coordinates, scale disclaimer, solid/dashed labels, arrows and
+preprojection source-domain splitting. Conservative source-disc occlusion is
+explained. Negative-φ line becomes edge-on in camera 2, explicitly labeled.
+No equivalence morph, stereographic, RH, common-physics or operator-data claim.
+
+QA: initial text-height overflow and mapped-curve panel escape were found
+and fixed; final geometry has a bounds regression. Full and 640-wide stills
+inspected; no final clipping/overlap found. Secondary text remains small/dense
+at 640; animate/reveal sequentially, not a frozen overview teaching track.
+Full seven-module video suite: 45 tests pass in 24.979 s, including four
+new keyframe tests. Whitespace check passes. PNG export succeeds, with
+full-size and 640-wide images decoded and inspected; no new MP4 attempted.
+Pillow remains pinned 12.3.0; official current ImageDraw and MIT-CMU license
+statement rechecked, plus NASA dipole components/line equation. No new
+renderer, encoder, paid service, assets, fonts or licensing assumption.
+
+Next bounded action: short silent animatic with staged reveals and enlarged
+active explanations, then timing/transition QA and source/end card. No
+technical rendering blocker; animation/audio/captions are not yet implemented.
+Human mathematical/editorial and real-tablet review remain outstanding.
+PR #3 requires parent-branch reconciliation before eventual main integration.
+FFT v7 remains silent/unapproved and the first release milestone; existing
+lesson URL, pacing, audio and publication gates unchanged. No upload,
+publication, merge, account setting, automation or Open Notebook deployment.
+
 ## 5 November 2026 · source-checked curves storyboard, separate candidate
 
 **State:** concrete unrecorded 82-second script and tested geometry helpers;
