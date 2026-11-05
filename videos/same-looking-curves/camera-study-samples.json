@@ -1,0 +1,122 @@
+{
+  "input_sha256": "ee67d1b210942c1665c384655b69e16eb76c80cd727ca6e2f22a7f12e74cd5e6",
+  "samples": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "expected_caption": "These two ideal dipole field lines occupy different depths."
+    },
+    {
+      "frame": 48,
+      "time_seconds": 2.0,
+      "expected_caption": "These two ideal dipole field lines occupy different depths."
+    },
+    {
+      "frame": 96,
+      "time_seconds": 4.0,
+      "expected_caption": "These two ideal dipole field lines occupy different depths."
+    },
+    {
+      "frame": 119,
+      "time_seconds": 4.958333333333333,
+      "expected_caption": "These two ideal dipole field lines occupy different depths."
+    },
+    {
+      "frame": 120,
+      "time_seconds": 5.0,
+      "expected_caption": "Solid: \u03c6 = +60\u00b0. Dashed: \u03c6 = \u221260\u00b0. Their x,z projections overlap."
+    },
+    {
+      "frame": 144,
+      "time_seconds": 6.0,
+      "expected_caption": "Solid: \u03c6 = +60\u00b0. Dashed: \u03c6 = \u221260\u00b0. Their x,z projections overlap."
+    },
+    {
+      "frame": 192,
+      "time_seconds": 8.0,
+      "expected_caption": "Solid: \u03c6 = +60\u00b0. Dashed: \u03c6 = \u221260\u00b0. Their x,z projections overlap."
+    },
+    {
+      "frame": 239,
+      "time_seconds": 9.958333333333334,
+      "expected_caption": "Solid: \u03c6 = +60\u00b0. Dashed: \u03c6 = \u221260\u00b0. Their x,z projections overlap."
+    },
+    {
+      "frame": 240,
+      "time_seconds": 10.0,
+      "expected_caption": "All 3D points stay fixed. The orthographic camera turns by 30\u00b0."
+    },
+    {
+      "frame": 288,
+      "time_seconds": 12.0,
+      "expected_caption": "All 3D points stay fixed. The orthographic camera turns by 30\u00b0."
+    },
+    {
+      "frame": 336,
+      "time_seconds": 14.0,
+      "expected_caption": "All 3D points stay fixed. The orthographic camera turns by 30\u00b0."
+    },
+    {
+      "frame": 384,
+      "time_seconds": 16.0,
+      "expected_caption": "All 3D points stay fixed. The orthographic camera turns by 30\u00b0."
+    },
+    {
+      "frame": 431,
+      "time_seconds": 17.958333333333332,
+      "expected_caption": "All 3D points stay fixed. The orthographic camera turns by 30\u00b0."
+    },
+    {
+      "frame": 432,
+      "time_seconds": 18.0,
+      "expected_caption": "The dashed curve is edge-on. Neither the curves nor the field changed."
+    },
+    {
+      "frame": 480,
+      "time_seconds": 20.0,
+      "expected_caption": "The dashed curve is edge-on. Neither the curves nor the field changed."
+    },
+    {
+      "frame": 528,
+      "time_seconds": 22.0,
+      "expected_caption": "The dashed curve is edge-on. Neither the curves nor the field changed."
+    },
+    {
+      "frame": 576,
+      "time_seconds": 24.0,
+      "expected_caption": "The dashed curve is edge-on. Neither the curves nor the field changed."
+    },
+    {
+      "frame": 599,
+      "time_seconds": 24.958333333333332,
+      "expected_caption": "The dashed curve is edge-on. Neither the curves nor the field changed."
+    },
+    {
+      "frame": 600,
+      "time_seconds": 25.0,
+      "expected_caption": "Prediction: turn the camera back. Will the outlines overlap again?"
+    },
+    {
+      "frame": 624,
+      "time_seconds": 26.0,
+      "expected_caption": "Prediction: turn the camera back. Will the outlines overlap again?"
+    },
+    {
+      "frame": 672,
+      "time_seconds": 28.0,
+      "expected_caption": "Prediction: turn the camera back. Will the outlines overlap again?"
+    },
+    {
+      "frame": 720,
+      "time_seconds": 30.0,
+      "expected_caption": "Prediction: turn the camera back. Will the outlines overlap again?"
+    },
+    {
+      "frame": 767,
+      "time_seconds": 31.958333333333332,
+      "expected_caption": "Prediction: turn the camera back. Will the outlines overlap again?"
+    }
+  ],
+  "publication_approved": false,
+  "note": "Expected captions are source metadata, not OCR; inspect decoded pixels."
+}

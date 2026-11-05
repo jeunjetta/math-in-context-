@@ -1,6 +1,6 @@
 # Same-looking curves, different physics
 
-**Preproduction draft · 5 November 2026 · not approved or animated.**
+**Preproduction draft · updated 6 November 2026 · not approved.**
 One idea: identify the mathematical object before comparing its shape.
 Audience: university-level maths basics, engineers and curious builders.
 This is a later candidate, not a replacement for the FFT/latency pilot.
@@ -10,8 +10,10 @@ Work branch: `codex/video-curves-storyboard`, stacked on
 `codex/video-fft-latency` so the later candidate does not alter PR #2.
 The complete proposed spoken script, scene times, labels and visual directions
 are editable in [script.json](script.json). It is **unrecorded narration**,
-not a fabricated voiceover or an audio-aligned caption track. There is no new
-MP4, VTT, human playback review or actual-device test.
+not a fabricated voiceover or an audio-aligned caption track. The full 82-second
+episode has not been rendered or reviewed on an actual device.
+The [32-second silent camera-study excerpt](CAMERA_STUDY.md) is a separate
+production test with its own VTT; its timings do not replace this full script.
 Two [original keyframes and smaller-view QA](KEYFRAMES.md) are now available;
 their implementation does not establish animation timing or release approval.
 
@@ -148,7 +150,7 @@ Use existing tools if suitable; recheck official docs/licensing before
 choosing any new renderer or distributing assets.
 
 Open work is production, not a technical inability to render: no animation,
-caption/audio alignment or full video render yet. Human mathematical,
+full-episode caption/audio alignment or full-episode render yet. Human mathematical,
 editorial and eventual exact-version publication approval are still required.
 The v7 FFT pilot remains the first release milestone with its existing gates;
 this small preproduction task clears none of them.

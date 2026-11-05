@@ -17,7 +17,9 @@ Later candidate: [Same-looking curves, different physics](same-looking-curves/ST
 has an original 82-second unrecorded script, primary-source ledger and tested
 geometry helpers. Two [original comparison keyframes](same-looking-curves/KEYFRAMES.md)
 now include full/640-pixel previews, source masking and reproducible code.
-No animated video yet; the FFT pilot remains the first release milestone.
+A [32-second silent camera-study excerpt](same-looking-curves/CAMERA_STUDY.md)
+now tests fixed dipole curves under a turning camera, with captions and encoded QA.
+The full episode is not rendered; the FFT pilot remains the first release milestone.
 No RH or private NS research claims.
 
 The [v6 smaller-view review pack](fft-latency/SMALL_SCREEN.md) includes three

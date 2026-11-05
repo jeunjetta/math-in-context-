@@ -1,5 +1,50 @@
 # Video status log
 
+## 6 November 2026 · rendered silent camera-study excerpt
+
+Fresh source #3 `12745869662ffd0093ef7e933d428fc4b56cc519`; main
+`c9fdf98729379dd404afce99daad1a6aa042156e`, pilot #1
+`7905dc2b30ad9c05436f4db4a03d9cfe34224ffc` and parent #2
+`97c8aea386535f8eca8ffd00478f36b56adc364e` remain unchanged/open.
+Read current main README, #1 AGENTS/ROADMAP, #3 video README/status,
+storyboard/keyframe guide/script/model and all open PR metadata; no new
+human feedback on #2/#3. Main still lacks AGENTS/ROADMAP. Fresh isolated
+snapshot materializes current production files; earlier dirty work retained.
+
+Added camera_study.py, camera_study_qa.py, test_camera_study.py,
+same-looking-curves/camera-study.json/.vtt, CAMERA_STUDY.md, render/sample
+reports and four small encoded previews. All changes under videos/ on
+codex/video-curves-storyboard, continuing draft #3. No FFT source/MP4,
+research conclusions, dependencies, lockfile, notebooks or root docs changed.
+
+One original silent 32-second excerpt: fixed dipole curves overlap in one
+view, then only the orthographic camera turns. Includes source/end card,
+prediction, persistent coordinates, preprojection source mask and labeled
+edge-on curve. It is not the full 82-second episode or a new release.
+
+Actual validation: 49 tests pass in 28.866 s (all 768 source frames fit);
+32.000 s/768 frames/720p24 silent H.264 render fully decodes. MP4 hash:
+ee67d1b210942c1665c384655b69e16eb76c80cd727ca6e2f22a7f12e74cd5e6.
+23 encoded samples exported; 11 inspected at full/smaller size, including
+caption cuts, midturn, edge-on settle and source/end card. No clipping or
+cut mismatch found in inspected frames; secondary formula/label small at
+640. No-overwrite guard and whitespace check pass. Sample review does not
+certify full playback, unseen motion, actual-device or editorial approval.
+
+Existing Pillow/FFmpeg retained. Pillow license and NASA formulas rechecked;
+FFmpeg main site timed out, so official source documentation/license and
+installed encoder help/copyright used. No tool binaries/fonts redistributed,
+no commercial-free blanket claim. CAMERA_STUDY.md records exact commands,
+source/asset provenance, typed concept link, limits and next action.
+
+Next: stage the map-versus-potential opening and retime the full storyboard;
+improve secondary label size when integrating. No technical render blocker.
+Full episode, independent mathematical/editorial review, tablet/pacing review,
+audio choice and eventual exact-version publication approval remain open.
+FFT v7 is unchanged and remains the first milestone; its lesson URL/review
+gates are unchanged. PR #3 needs parent reconciliation. No publish/upload,
+merge, account change, paid service, automation or hosting assumption.
+
 ## 5 November 2026 · two original comparison keyframes
 
 Fresh source PR #3 `8ca5c5861ddd9423583f68006a13df26cc4da8fd`;
