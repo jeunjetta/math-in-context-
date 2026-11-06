@@ -1,6 +1,6 @@
 # Same-looking curves, different physics
 
-**Preproduction draft · updated 6 November 2026 · not approved.**
+**Preproduction draft · updated 7 November 2026 · not approved.**
 One idea: identify the mathematical object before comparing its shape.
 Audience: university-level maths basics, engineers and curious builders.
 This is a later candidate, not a replacement for the FFT/latency pilot.
@@ -10,17 +10,22 @@ Work branch: `codex/video-curves-storyboard`, stacked on
 `codex/video-fft-latency` so the later candidate does not alter PR #2.
 The complete proposed spoken script, scene times, labels and visual directions
 are editable in [script.json](script.json). It is **unrecorded narration**,
-not a fabricated voiceover or an audio-aligned caption track. The full 82-second
-episode has not been rendered or reviewed on an actual device.
+not a fabricated voiceover or an audio-aligned caption track. This original
+82-second spoken proposal has not been recorded or rendered as such.
+The [86-second integrated silent rough cut](EPISODE.md) now has its own
+authoritative episode.json/.vtt, staged 3D orientation and closing card.
+It is not an audio-aligned rendition of this earlier script; no device or
+publication approval is implied.
 The [32-second silent camera-study excerpt](CAMERA_STUDY.md) is a separate
 production test with its own VTT; its timings do not replace this full script.
 The [32-second map/potential study](MAP_STUDY.md) now supplies a separate staged
-opening and reading track. Neither study has been integrated into this cut;
-retime the full episode rather than concatenate their duplicate end cards.
+opening and reading track. Both studies remain intact as historical tests;
+the new integrated rough cut retimes/reuses their primitives rather than
+concatenating duplicate end cards.
 Two [original keyframes and smaller-view QA](KEYFRAMES.md) are now available;
 their implementation does not establish animation timing or release approval.
 
-## 82-second cut
+## Original 82-second spoken proposal (historical; unrecorded)
 
 157 whitespace-delimited words. Provisional scene durations are reading-budget
 checks, not measured narration timings. If an authorized human records it,
@@ -147,13 +152,14 @@ uv run --locked python -m unittest test_curves -v
 ```
 
 The keyframe increment is now complete: see [previews, validation and
-remaining limits](KEYFRAMES.md). Next: a short silent animatic with staged
-reveals and enlarged active explanations, followed by timing/transition QA.
+remaining limits](KEYFRAMES.md). The subsequent study and integrated-episode
+guides record actual later renders. Next: chronological smaller-view review
+of the integrated rough cut, then its exact-version editorial checklist.
 Use existing tools if suitable; recheck official docs/licensing before
 choosing any new renderer or distributing assets.
 
-Open work is production, not a technical inability to render: no animation,
-full-episode caption/audio alignment or full-episode render yet. Human mathematical,
+Open work is review/refinement, not a technical inability to render. The full
+silent rough cut exists; narration/audio alignment does not. Human mathematical,
 editorial and eventual exact-version publication approval are still required.
 The v7 FFT pilot remains the first release milestone with its existing gates;
 this small preproduction task clears none of them.

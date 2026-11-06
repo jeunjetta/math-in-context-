@@ -1,5 +1,63 @@
 # Video status log
 
+## 7 November 2026 · integrated 86-second silent rough cut
+
+Fresh PR #3 baseline `f4c40f736d1a5c8f9990a77cdf147ef1d25eccb7`;
+main `c9fdf98729379dd404afce99daad1a6aa042156e`, #1
+`7905dc2b30ad9c05436f4db4a03d9cfe34224ffc` and parent #2
+`97c8aea386535f8eca8ffd00478f36b56adc364e` unchanged/open.
+Read live root README, #1 AGENTS/ROADMAP (still absent on main), current
+video README/status/storyboard, source/study data and open PRs/discussions.
+No new human feedback on #2/#3. In an isolated copy, 27 relevant code/data/
+test/doc files were checked against current remote Git blob hashes before
+work; earlier workspaces preserved. No Open Notebook deployment assumed.
+
+Added curves_episode.py, test_curves_episode.py, episode.json/.vtt,
+EPISODE.md, episode-render.json and four encoded smaller previews.
+Updated video README/storyboard/status only. All paths under videos/ on
+codex/video-curves-storyboard, continuing draft #3 stacked on #2.
+No FFT pilot, earlier study source/MP4, research, notebook, lockfile,
+dependency or root-document edits. Original 82-second spoken proposal
+remains historical/unrecorded; new episode.json is this silent cut's script.
+
+One coherent 86-second rough cut: definitions, matched map points, labelled
+return to a chosen potential, 3D dipole orientation, labelled camera cut,
+camera-only turn, then one recap question and answer/source card. Reuses
+immutable geometry and original drawing primitives, not concatenated
+study end cards. Orthographic camera rows are tested orthonormal; beta=0
+recovers the earlier camera. Model assumptions/source exclusion preserved.
+
+Actual final validation: **58 tests pass in 56.807 s** (five new tests),
+including all 2,064 episode source frames fitting, geometry bounds,
+cue/motion/VTT consistency, projection checks and no study-data mutation.
+86.000 s/2,064 frames/720p24 H.264/yuv420p silent encode fully decodes;
+ffprobe shape/timing checks pass. Final MP4 SHA256:
+7a8358fc3fec937d482d4d5c5614d599698f76b4629a57f6c91baa4d35075236.
+63 encoded samples exported. Inspected final 0,408,528,1008,1151,1152,
+1416,1536,1823,1824,2063 at 640×360: no clipping/caption mismatch found
+there. Source QA fixed panel escape/axis-label overlap; first encoded QA
+fixed misleading y-only depth-loss wording during camera turn, then
+rerendered/retested. Small secondary plot labels and orientation key still
+need actual-tablet review. Sampled review is not full playback, pacing,
+independent mathematical/editorial or accessibility approval. No audio.
+Existing-output refusal and whitespace checks pass. MP4 supplied separately
+for owner review, not in public Git; encoded previews/report are tracked.
+
+Primary NIST/MIT/NASA equations and official Pillow/FFmpeg docs/licenses
+rechecked. Kept Pillow 12.3.0 and external GPL-enabled FFmpeg 6.1.1/libx264;
+no binaries/fonts redistributed, no new tool/purchase or blanket commercial
+clearance claim. EPISODE.md records exact timeline, equations, sources,
+rights, reproduction, render identity and remaining limits.
+
+Next bounded task: chronological smaller-view review of this integrated
+cut, improve the most consequential pacing/readability issue, and prepare
+an exact-version editorial checklist. No technical render blocker.
+Human/tablet playback, independent math/editorial review, audio choice,
+parent reconciliation and exact-version publication approval remain gates.
+FFT v7 remains the first milestone and its gates are unchanged. Nothing
+uploaded to YouTube, posted to Substack/socials, merged, paid for, or changed
+in account settings; no automation or private/operator data introduced.
+
 ## 6 November 2026 · rendered silent map/potential excerpt
 
 Fresh source PR #3 `fe359523a6c6c65c40c6f070bd7f4e1042816293`;
