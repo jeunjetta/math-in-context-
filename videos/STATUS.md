@@ -1,5 +1,58 @@
 # Video status log
 
+## 6 November 2026 · rendered silent map/potential excerpt
+
+Fresh source PR #3 `fe359523a6c6c65c40c6f070bd7f4e1042816293`;
+main `c9fdf98729379dd404afce99daad1a6aa042156e`, pilot #1
+`7905dc2b30ad9c05436f4db4a03d9cfe34224ffc` and parent #2
+`97c8aea386535f8eca8ffd00478f36b56adc364e` remain unchanged/open.
+Read live main README, #1 AGENTS/ROADMAP, #3 video README/status,
+storyboard, camera study, current sources/code and open PR state/discussions.
+Main still lacks AGENTS/ROADMAP; no new human feedback on #2/#3.
+Rechecked #3 head before publication; isolated snapshot, earlier work retained.
+
+Added map_study.py, study_media.py, test_map_study.py, map-study.json/.vtt,
+MAP_STUDY.md, render report and four encoded small previews. Updated only
+video README/storyboard/status. All files under videos/ on existing
+codex/video-curves-storyboard, continuing draft #3. FFT v7, camera study,
+research conclusions, dependencies/lockfile, notebooks and root docs unchanged.
+
+One original 32-second silent excerpt stages matching points from x=1 under
+w=z², then a labelled cut returns to domain x,y for a chosen V=x²−y²
+potential. Separate dashed contours and directed field lines; critical
+zero-field origin marked. Different plot scales and parameter-not-time
+motion disclosed. No morph equates an output grid with a force field.
+
+Actual validation: nine-module suite **53 tests pass in 77.674 s**, including
+all 768 new source frames fitting. Exact map/bounds, contour, direction,
+cue/VTT and invalid-input checks; existing-output guard and whitespace pass.
+720p24 H.264/yuv420p render: 32.000 s, 768 frames, silent; full decode and
+media-shape checks pass. SHA256:
+5dae3c75451ab655ae6996a376fe13a846e09ab95162f7af7ddde612f96286bb.
+25 encoded samples exported; inspected 143,144,240,335,336,527,528,647,648,767
+at 640×360, covering both sides of every caption cut. No clipping/cut mismatch
+found there. Source still review caught an overlapping zero-field label,
+fixed before final render. Small secondary labels still need device review;
+samples do not certify full playback, unseen motion or editorial approval.
+No audio exists, so no audio-sync claim. Owner review MP4 supplied separately;
+public repo contains only source, report and small previews.
+
+NIST DLMF §1.9, MIT EM §4.1 and current official tool docs/licenses rechecked.
+Retained Pillow 12.3.0 and external GPL-enabled FFmpeg 6.1.1/libx264; original
+graphics, external DejaVu font, no copied clips or redistributed binaries.
+MAP_STUDY.md records equations, modelling assumptions, source links,
+reproduction commands, source-baseline semantics and limits.
+
+Next: retime an integrated 60–90-second cut from the two tested studies,
+including 3D orientation, a single closing question/source card and larger
+secondary labels. Do not blindly concatenate duplicate end cards. The old
+82-second spoken script remains unrecorded; full episode not rendered.
+No technical render blocker. Independent mathematical/editorial and
+human/tablet review, audio decision, parent reconciliation and exact-version
+publication approval remain open. FFT first-milestone gates unchanged.
+No YouTube/Substack/social publishing, merge, paid service, account changes,
+new automation, private data or Open Notebook deployment assumption.
+
 ## 6 November 2026 · rendered silent camera-study excerpt
 
 Fresh source #3 `12745869662ffd0093ef7e933d428fc4b56cc519`; main

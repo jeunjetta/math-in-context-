@@ -19,6 +19,9 @@ geometry helpers. Two [original comparison keyframes](same-looking-curves/KEYFRA
 now include full/640-pixel previews, source masking and reproducible code.
 A [32-second silent camera-study excerpt](same-looking-curves/CAMERA_STUDY.md)
 now tests fixed dipole curves under a turning camera, with captions and encoded QA.
+A [32-second silent map/potential excerpt](same-looking-curves/MAP_STUDY.md)
+now stages matching input/output points, then explicitly returns to the domain
+for a chosen potential model. The two studies are not yet an integrated cut.
 The full episode is not rendered; the FFT pilot remains the first release milestone.
 No RH or private NS research claims.
 

@@ -14,6 +14,9 @@ not a fabricated voiceover or an audio-aligned caption track. The full 82-second
 episode has not been rendered or reviewed on an actual device.
 The [32-second silent camera-study excerpt](CAMERA_STUDY.md) is a separate
 production test with its own VTT; its timings do not replace this full script.
+The [32-second map/potential study](MAP_STUDY.md) now supplies a separate staged
+opening and reading track. Neither study has been integrated into this cut;
+retime the full episode rather than concatenate their duplicate end cards.
 Two [original keyframes and smaller-view QA](KEYFRAMES.md) are now available;
 their implementation does not establish animation timing or release approval.
 

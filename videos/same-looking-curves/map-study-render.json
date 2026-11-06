@@ -1,0 +1,121 @@
+{
+  "source_commit": "fe359523a6c6c65c40c6f070bd7f4e1042816293",
+  "sha256": "5dae3c75451ab655ae6996a376fe13a846e09ab95162f7af7ddde612f96286bb",
+  "duration": 32,
+  "fps": 24,
+  "frames": 768,
+  "audio": false,
+  "complete_decode": true,
+  "publication_approved": false,
+  "samples": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0
+    },
+    {
+      "frame": 48,
+      "time_seconds": 2.0
+    },
+    {
+      "frame": 72,
+      "time_seconds": 3.0
+    },
+    {
+      "frame": 96,
+      "time_seconds": 4.0
+    },
+    {
+      "frame": 143,
+      "time_seconds": 5.958333333333333
+    },
+    {
+      "frame": 144,
+      "time_seconds": 6.0
+    },
+    {
+      "frame": 192,
+      "time_seconds": 8.0
+    },
+    {
+      "frame": 240,
+      "time_seconds": 10.0
+    },
+    {
+      "frame": 288,
+      "time_seconds": 12.0
+    },
+    {
+      "frame": 335,
+      "time_seconds": 13.958333333333334
+    },
+    {
+      "frame": 336,
+      "time_seconds": 14.0
+    },
+    {
+      "frame": 384,
+      "time_seconds": 16.0
+    },
+    {
+      "frame": 432,
+      "time_seconds": 18.0
+    },
+    {
+      "frame": 480,
+      "time_seconds": 20.0
+    },
+    {
+      "frame": 527,
+      "time_seconds": 21.958333333333332
+    },
+    {
+      "frame": 528,
+      "time_seconds": 22.0
+    },
+    {
+      "frame": 576,
+      "time_seconds": 24.0
+    },
+    {
+      "frame": 588,
+      "time_seconds": 24.5
+    },
+    {
+      "frame": 624,
+      "time_seconds": 26.0
+    },
+    {
+      "frame": 647,
+      "time_seconds": 26.958333333333332
+    },
+    {
+      "frame": 648,
+      "time_seconds": 27.0
+    },
+    {
+      "frame": 672,
+      "time_seconds": 28.0
+    },
+    {
+      "frame": 708,
+      "time_seconds": 29.5
+    },
+    {
+      "frame": 720,
+      "time_seconds": 30.0
+    },
+    {
+      "frame": 767,
+      "time_seconds": 31.958333333333332
+    }
+  ],
+  "source_hashes": {
+    "map_study.py": "38697d7a8dab49a14d4d290b07c508e821db0f90e36ebf4c5169adafc0e3387e",
+    "study_media.py": "e0d6e413e0bdb1534deb65bf6b0f28d11be4b469ef1ec842e0fe528e586d017f",
+    "curves_models.py": "a5fcd26f4475b414351cd4db407fffe4bd0b99cd36774297770cafa99f59f45b",
+    "curves_keyframes.py": "5c8fce3a85d728e3cb358a6ea9bda7f8108023e5f062158b0d1409d4e758917a",
+    "render.py": "186ca20d2a95d9cb10b728edecf786ddc5c47a7ac70ede9f0ae76df70b17b1f1",
+    "same-looking-curves/map-study.json": "c32d3bd1cedf3010bd18ee2c41d36e8e5b48b372e86767dd2a8e1456464b686a"
+  },
+  "ffmpeg": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers"
+}
