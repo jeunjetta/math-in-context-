@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:05.000
+These two ideal dipole field lines occupy different depths.
+
+00:00:05.000 --> 00:00:10.000
+Solid: φ = +60°. Dashed: φ = −60°. Their x,z projections overlap.
+
+00:00:10.000 --> 00:00:18.000
+All 3D points stay fixed. The orthographic camera turns by 30°.
+
+00:00:18.000 --> 00:00:25.000
+The dashed curve is edge-on. Neither the curves nor the field changed.
+
+00:00:25.000 --> 00:00:32.000
+Prediction: turn the camera back. Will the outlines overlap again?

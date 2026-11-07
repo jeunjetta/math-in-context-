@@ -1,0 +1,23 @@
+{
+  "title":"One polynomial. Two different jobs.",
+  "status":"SILENT MAP STUDY · ORIGINAL NORMALIZED MODEL · NOT APPROVED",
+  "duration":32,"fps":24,
+  "motion_start":6,"motion_end":14,
+  "cues":[
+    {"start":0,"end":6,"heading":"Start with points on x = 1","caption":"A line in the input plane is a set of points. Apply w = z².","view":"input"},
+    {"start":6,"end":14,"heading":"Map points — not a force","caption":"Matching dots show z = 1 + iy and w = (1 − y²) + i(2y).","view":"map"},
+    {"start":14,"end":22,"heading":"Return to the original x,y plane","caption":"Choosing V = x² − y² defines a local potential model, not the output plane.","view":"potential"},
+    {"start":22,"end":27,"heading":"Contour ≠ field line","caption":"Contours keep V constant. Field lines follow E, crossing regular contours at right angles.","view":"potential"},
+    {"start":27,"end":32,"heading":"Check the definition before the shape","caption":"Which curve is defined by mapping points into the u,v plane?","view":"sources"}
+  ],
+  "input_title":"INPUT: x,y",
+  "output_title":"OUTPUT: u,v",
+  "hidden_title":"Output revealed next",
+  "input_formula":"z = 1 + iy",
+  "map_formula":"u = 1 − v²/4",
+  "scale_label":"Plot scales differ. Dot motion is a parameter sweep, not physical time.",
+  "domain_title":"DOMAIN: x,y",
+  "potential_labels":["V = x² − y²","E = −grad V = (−2x, 2y)","Dashed: V = ±1","Solid + arrows: xy = ±0.6"],
+  "potential_note":"Local 2D model. E = 0 at origin; no field direction there.",
+  "sources":["Point map → output curve; chosen potential → gradient field.","NIST DLMF §1.9 · dlmf.nist.gov/1.9","MIT EM §4.1 · web.mit.edu/6.013_book/","Original visuals. No RH, NS or common-physics claim."]
+}

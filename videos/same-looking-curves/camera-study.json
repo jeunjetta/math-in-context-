@@ -1,0 +1,27 @@
+{
+  "title": "Same field. Different view.",
+  "status": "SILENT CAMERA STUDY · ORIGINAL NORMALIZED GEOMETRY · NOT APPROVED",
+  "duration": 32,
+  "fps": 24,
+  "rotation_start": 10,
+  "rotation_end": 18,
+  "max_angle_degrees": 30,
+  "cues": [
+    {"start":0,"end":5,"heading":"Two curves. One outline?","caption":"These two ideal dipole field lines occupy different depths.","view":"camera"},
+    {"start":5,"end":10,"heading":"Looking along y hides depth","caption":"Solid: φ = +60°. Dashed: φ = −60°. Their x,z projections overlap.","view":"camera"},
+    {"start":10,"end":18,"heading":"Turn only the camera","caption":"All 3D points stay fixed. The orthographic camera turns by 30°.","view":"camera"},
+    {"start":18,"end":25,"heading":"Now their projections separate","caption":"The dashed curve is edge-on. Neither the curves nor the field changed.","view":"camera"},
+    {"start":25,"end":32,"heading":"A view is not the field","caption":"Prediction: turn the camera back. Will the outlines overlap again?","view":"sources"}
+  ],
+  "legend": "Solid +60°   /   Dashed −60°",
+  "axis_note": "h = x cos α + y sin α\nz stays fixed",
+  "mask_label": "Source r < 0.15 excluded",
+  "projection_label": "Orthographic — NOT stereographic",
+  "source_lines": [
+    "Ideal +z dipole: r = sin²θ, fixed φ.",
+    "NASA CCMC: Properties of Magnetic Dipoles",
+    "ccmc.gsfc.nasa.gov/static/files/Dipole.pdf",
+    "Equations (7)–(9), (15). Original code-drawn visuals.",
+    "No RH claim, real magnet interior or operator data."
+  ]
+}

@@ -1,5 +1,322 @@
 # Video status log
 
+## 7 November 2026 · legibility v3 and exact-version review handoff
+
+Fresh source PR #3 `e30ea2a1c6e640c9de87aae2e833d4e47542b557`;
+main `c9fdf98729379dd404afce99daad1a6aa042156e`, #1
+`7905dc2b30ad9c05436f4db4a03d9cfe34224ffc` and parent #2
+`97c8aea386535f8eca8ffd00478f36b56adc364e` remain unchanged/open.
+Read live root README, #1 AGENTS/ROADMAP (still missing on main), video
+README/status/storyboard/episode sources and open PRs/discussions. No new
+human feedback on #2/#3. Isolated snapshot: 29 relevant code/data/test/doc
+files checked against current remote Git blob hashes. Prior work retained.
+
+Chronological 640×360 baseline sample review: frames 0,216,408,624,816,
+1008,1224,1416,1608,1752,1944. Verified baseline movie hash against its
+known report. Identified undersized orientation key as the bounded visual
+issue: enlarged arrows 55→90 px, axis labels 25→30 px, model labels
+26→30 px; separated legend/source-exclusion and projection-note lines.
+All field geometry, equations, caption text, cue times, sweep/turn intervals
+and 86-second duration unchanged (cue/motion equality checked against
+fresh baseline JSON). No FFT/study source, research, notebook, dependency,
+lockfile or root-document changes. Only videos/ on codex/video-curves-storyboard.
+
+Changed curves_episode.py, test_curves_episode.py and episode.json; added
+REVIEW.md, review-candidate.json, episode-v2-render.json and three small
+before/after PNGs. Updated current episode-render.json and video README,
+EPISODE.md/status. Historical v2 QA points to its retained report; current
+review identity is explicit and approval boxes remain unchecked.
+
+Actual final validation: **60 tests pass in 46.527 s**, including two new
+tests for orientation-label bounds/depth dot and review/report/source-hash
+identity. All 2,064 episode source frames fit. One initial single-label
+text-box height failure was corrected before render. 86.000 s/720p24/
+2,064-frame H.264/yuv420p silent render fully decodes; shape/timing checks
+pass. Final SHA256:
+f252ab6d34b79c8011c9a4bd71cb8547ceb42bd3797aa675e07e13325d65bc10.
+63 encoded samples exported; inspected final 0,408,816,1008,1224,1416,
+1608,1824 at 640×360. No clipping/caption mismatch found there. Larger key
+and model labels are visible in these samples; still no actual-device or
+full-playback approval. Long projection formula and small secondary map
+labels remain review issues. No audio/listening or audio-sync claim.
+No-overwrite and whitespace checks pass. Existing owner review MP4 updated
+with prior version retained; no public MP4 in Git or video-platform upload.
+
+Retained pinned Pillow 12.3.0 and external GPL-enabled FFmpeg 6.1.1/libx264;
+official ImageDraw/docs and tool licenses rechecked. No dependency purchase,
+binary/font distribution, borrowed creator assets or blanket commercial-use
+claim. Concept links, model assumptions, sources and limits remain in
+EPISODE.md; REVIEW.md supplies timestamped feedback prompts and exact-media
+checklist without marking human/editorial rights or publication approved.
+
+Next bounded task: prepare a candidate-specific publication-package draft
+(title, description, source links and review questions), checking it against
+this frozen lesson; incorporate timestamped human feedback if any arrives.
+No technical blocker. Human/tablet full playback, independent mathematical/
+editorial review, audio choice, parent reconciliation and exact-version
+publication approval remain gates. FFT v7 remains the first milestone with
+unchanged gates. No YouTube/Substack/social publishing, merge, paid service,
+account changes, new automation, operator data or assumed Open Notebook deployment.
+
+## 7 November 2026 · integrated 86-second silent rough cut
+
+Fresh PR #3 baseline `f4c40f736d1a5c8f9990a77cdf147ef1d25eccb7`;
+main `c9fdf98729379dd404afce99daad1a6aa042156e`, #1
+`7905dc2b30ad9c05436f4db4a03d9cfe34224ffc` and parent #2
+`97c8aea386535f8eca8ffd00478f36b56adc364e` unchanged/open.
+Read live root README, #1 AGENTS/ROADMAP (still absent on main), current
+video README/status/storyboard, source/study data and open PRs/discussions.
+No new human feedback on #2/#3. In an isolated copy, 27 relevant code/data/
+test/doc files were checked against current remote Git blob hashes before
+work; earlier workspaces preserved. No Open Notebook deployment assumed.
+
+Added curves_episode.py, test_curves_episode.py, episode.json/.vtt,
+EPISODE.md, episode-render.json and four encoded smaller previews.
+Updated video README/storyboard/status only. All paths under videos/ on
+codex/video-curves-storyboard, continuing draft #3 stacked on #2.
+No FFT pilot, earlier study source/MP4, research, notebook, lockfile,
+dependency or root-document edits. Original 82-second spoken proposal
+remains historical/unrecorded; new episode.json is this silent cut's script.
+
+One coherent 86-second rough cut: definitions, matched map points, labelled
+return to a chosen potential, 3D dipole orientation, labelled camera cut,
+camera-only turn, then one recap question and answer/source card. Reuses
+immutable geometry and original drawing primitives, not concatenated
+study end cards. Orthographic camera rows are tested orthonormal; beta=0
+recovers the earlier camera. Model assumptions/source exclusion preserved.
+
+Actual final validation: **58 tests pass in 56.807 s** (five new tests),
+including all 2,064 episode source frames fitting, geometry bounds,
+cue/motion/VTT consistency, projection checks and no study-data mutation.
+86.000 s/2,064 frames/720p24 H.264/yuv420p silent encode fully decodes;
+ffprobe shape/timing checks pass. Final MP4 SHA256:
+7a8358fc3fec937d482d4d5c5614d599698f76b4629a57f6c91baa4d35075236.
+63 encoded samples exported. Inspected final 0,408,528,1008,1151,1152,
+1416,1536,1823,1824,2063 at 640×360: no clipping/caption mismatch found
+there. Source QA fixed panel escape/axis-label overlap; first encoded QA
+fixed misleading y-only depth-loss wording during camera turn, then
+rerendered/retested. Small secondary plot labels and orientation key still
+need actual-tablet review. Sampled review is not full playback, pacing,
+independent mathematical/editorial or accessibility approval. No audio.
+Existing-output refusal and whitespace checks pass. MP4 supplied separately
+for owner review, not in public Git; encoded previews/report are tracked.
+
+Primary NIST/MIT/NASA equations and official Pillow/FFmpeg docs/licenses
+rechecked. Kept Pillow 12.3.0 and external GPL-enabled FFmpeg 6.1.1/libx264;
+no binaries/fonts redistributed, no new tool/purchase or blanket commercial
+clearance claim. EPISODE.md records exact timeline, equations, sources,
+rights, reproduction, render identity and remaining limits.
+
+Next bounded task: chronological smaller-view review of this integrated
+cut, improve the most consequential pacing/readability issue, and prepare
+an exact-version editorial checklist. No technical render blocker.
+Human/tablet playback, independent math/editorial review, audio choice,
+parent reconciliation and exact-version publication approval remain gates.
+FFT v7 remains the first milestone and its gates are unchanged. Nothing
+uploaded to YouTube, posted to Substack/socials, merged, paid for, or changed
+in account settings; no automation or private/operator data introduced.
+
+## 6 November 2026 · rendered silent map/potential excerpt
+
+Fresh source PR #3 `fe359523a6c6c65c40c6f070bd7f4e1042816293`;
+main `c9fdf98729379dd404afce99daad1a6aa042156e`, pilot #1
+`7905dc2b30ad9c05436f4db4a03d9cfe34224ffc` and parent #2
+`97c8aea386535f8eca8ffd00478f36b56adc364e` remain unchanged/open.
+Read live main README, #1 AGENTS/ROADMAP, #3 video README/status,
+storyboard, camera study, current sources/code and open PR state/discussions.
+Main still lacks AGENTS/ROADMAP; no new human feedback on #2/#3.
+Rechecked #3 head before publication; isolated snapshot, earlier work retained.
+
+Added map_study.py, study_media.py, test_map_study.py, map-study.json/.vtt,
+MAP_STUDY.md, render report and four encoded small previews. Updated only
+video README/storyboard/status. All files under videos/ on existing
+codex/video-curves-storyboard, continuing draft #3. FFT v7, camera study,
+research conclusions, dependencies/lockfile, notebooks and root docs unchanged.
+
+One original 32-second silent excerpt stages matching points from x=1 under
+w=z², then a labelled cut returns to domain x,y for a chosen V=x²−y²
+potential. Separate dashed contours and directed field lines; critical
+zero-field origin marked. Different plot scales and parameter-not-time
+motion disclosed. No morph equates an output grid with a force field.
+
+Actual validation: nine-module suite **53 tests pass in 77.674 s**, including
+all 768 new source frames fitting. Exact map/bounds, contour, direction,
+cue/VTT and invalid-input checks; existing-output guard and whitespace pass.
+720p24 H.264/yuv420p render: 32.000 s, 768 frames, silent; full decode and
+media-shape checks pass. SHA256:
+5dae3c75451ab655ae6996a376fe13a846e09ab95162f7af7ddde612f96286bb.
+25 encoded samples exported; inspected 143,144,240,335,336,527,528,647,648,767
+at 640×360, covering both sides of every caption cut. No clipping/cut mismatch
+found there. Source still review caught an overlapping zero-field label,
+fixed before final render. Small secondary labels still need device review;
+samples do not certify full playback, unseen motion or editorial approval.
+No audio exists, so no audio-sync claim. Owner review MP4 supplied separately;
+public repo contains only source, report and small previews.
+
+NIST DLMF §1.9, MIT EM §4.1 and current official tool docs/licenses rechecked.
+Retained Pillow 12.3.0 and external GPL-enabled FFmpeg 6.1.1/libx264; original
+graphics, external DejaVu font, no copied clips or redistributed binaries.
+MAP_STUDY.md records equations, modelling assumptions, source links,
+reproduction commands, source-baseline semantics and limits.
+
+Next: retime an integrated 60–90-second cut from the two tested studies,
+including 3D orientation, a single closing question/source card and larger
+secondary labels. Do not blindly concatenate duplicate end cards. The old
+82-second spoken script remains unrecorded; full episode not rendered.
+No technical render blocker. Independent mathematical/editorial and
+human/tablet review, audio decision, parent reconciliation and exact-version
+publication approval remain open. FFT first-milestone gates unchanged.
+No YouTube/Substack/social publishing, merge, paid service, account changes,
+new automation, private data or Open Notebook deployment assumption.
+
+## 6 November 2026 · rendered silent camera-study excerpt
+
+Fresh source #3 `12745869662ffd0093ef7e933d428fc4b56cc519`; main
+`c9fdf98729379dd404afce99daad1a6aa042156e`, pilot #1
+`7905dc2b30ad9c05436f4db4a03d9cfe34224ffc` and parent #2
+`97c8aea386535f8eca8ffd00478f36b56adc364e` remain unchanged/open.
+Read current main README, #1 AGENTS/ROADMAP, #3 video README/status,
+storyboard/keyframe guide/script/model and all open PR metadata; no new
+human feedback on #2/#3. Main still lacks AGENTS/ROADMAP. Fresh isolated
+snapshot materializes current production files; earlier dirty work retained.
+
+Added camera_study.py, camera_study_qa.py, test_camera_study.py,
+same-looking-curves/camera-study.json/.vtt, CAMERA_STUDY.md, render/sample
+reports and four small encoded previews. All changes under videos/ on
+codex/video-curves-storyboard, continuing draft #3. No FFT source/MP4,
+research conclusions, dependencies, lockfile, notebooks or root docs changed.
+
+One original silent 32-second excerpt: fixed dipole curves overlap in one
+view, then only the orthographic camera turns. Includes source/end card,
+prediction, persistent coordinates, preprojection source mask and labeled
+edge-on curve. It is not the full 82-second episode or a new release.
+
+Actual validation: 49 tests pass in 28.866 s (all 768 source frames fit);
+32.000 s/768 frames/720p24 silent H.264 render fully decodes. MP4 hash:
+ee67d1b210942c1665c384655b69e16eb76c80cd727ca6e2f22a7f12e74cd5e6.
+23 encoded samples exported; 11 inspected at full/smaller size, including
+caption cuts, midturn, edge-on settle and source/end card. No clipping or
+cut mismatch found in inspected frames; secondary formula/label small at
+640. No-overwrite guard and whitespace check pass. Sample review does not
+certify full playback, unseen motion, actual-device or editorial approval.
+
+Existing Pillow/FFmpeg retained. Pillow license and NASA formulas rechecked;
+FFmpeg main site timed out, so official source documentation/license and
+installed encoder help/copyright used. No tool binaries/fonts redistributed,
+no commercial-free blanket claim. CAMERA_STUDY.md records exact commands,
+source/asset provenance, typed concept link, limits and next action.
+
+Next: stage the map-versus-potential opening and retime the full storyboard;
+improve secondary label size when integrating. No technical render blocker.
+Full episode, independent mathematical/editorial review, tablet/pacing review,
+audio choice and eventual exact-version publication approval remain open.
+FFT v7 is unchanged and remains the first milestone; its lesson URL/review
+gates are unchanged. PR #3 needs parent reconciliation. No publish/upload,
+merge, account change, paid service, automation or hosting assumption.
+
+## 5 November 2026 · two original comparison keyframes
+
+Fresh source PR #3 `8ca5c5861ddd9423583f68006a13df26cc4da8fd`;
+main `c9fdf98729379dd404afce99daad1a6aa042156e`, PR #1
+`7905dc2b30ad9c05436f4db4a03d9cfe34224ffc` and parent PR #2
+`97c8aea386535f8eca8ffd00478f36b56adc364e` remain unchanged/open.
+Read current main README, pilot AGENTS/ROADMAP/source registry, video
+README/status, curves storyboard/model/script/tests and all open PR metadata
+and discussions. No human feedback on #2/#3. AGENTS/ROADMAP are still absent
+from main and were read from unmerged #1. Isolated local snapshot fetched
+the current #3 files via connector, preserving earlier dirty worktrees.
+
+Added curves_keyframes.py, test_curves_keyframes.py, keyframes.json,
+KEYFRAMES.md and four PNG previews under same-looking-curves/previews/.
+Updated video README and storyboard state; no FFT lesson/renderer/MP4,
+research, dependency/lockfile or repository-root changes. All work under videos/
+on codex/video-curves-storyboard, continuing draft PR #3's stacked scope.
+
+Result: mapping/potential/field comparison and two-camera dipole comparison.
+Persistent coordinates, scale disclaimer, solid/dashed labels, arrows and
+preprojection source-domain splitting. Conservative source-disc occlusion is
+explained. Negative-φ line becomes edge-on in camera 2, explicitly labeled.
+No equivalence morph, stereographic, RH, common-physics or operator-data claim.
+
+QA: initial text-height overflow and mapped-curve panel escape were found
+and fixed; final geometry has a bounds regression. Full and 640-wide stills
+inspected; no final clipping/overlap found. Secondary text remains small/dense
+at 640; animate/reveal sequentially, not a frozen overview teaching track.
+Full seven-module video suite: 45 tests pass in 24.979 s, including four
+new keyframe tests. Whitespace check passes. PNG export succeeds, with
+full-size and 640-wide images decoded and inspected; no new MP4 attempted.
+Pillow remains pinned 12.3.0; official current ImageDraw and MIT-CMU license
+statement rechecked, plus NASA dipole components/line equation. No new
+renderer, encoder, paid service, assets, fonts or licensing assumption.
+
+Next bounded action: short silent animatic with staged reveals and enlarged
+active explanations, then timing/transition QA and source/end card. No
+technical rendering blocker; animation/audio/captions are not yet implemented.
+Human mathematical/editorial and real-tablet review remain outstanding.
+PR #3 requires parent-branch reconciliation before eventual main integration.
+FFT v7 remains silent/unapproved and the first release milestone; existing
+lesson URL, pacing, audio and publication gates unchanged. No upload,
+publication, merge, account setting, automation or Open Notebook deployment.
+
+## 5 November 2026 · source-checked curves storyboard, separate candidate
+
+**State:** concrete unrecorded 82-second script and tested geometry helpers;
+not rendered, reviewed or approved. FFT/latency v7 remains unchanged.
+
+Fresh main `c9fdf98729379dd404afce99daad1a6aa042156e`, unmerged pilot PR #1
+`7905dc2b30ad9c05436f4db4a03d9cfe34224ffc`, video PR #2 source
+`97c8aea386535f8eca8ffd00478f36b56adc364e` inspected. Read main README,
+pilot AGENTS/ROADMAP and source/concept registries, video README/status and
+current REVIEW. No PR #2 discussion feedback. Fresh detached worktree keeps
+prior staged/unrelated work intact. Candidate branch is
+codex/video-curves-storyboard, with a draft PR targeting the existing video
+branch; the small stacked diff does not modify PR #2 or main.
+
+Added same-looking-curves/script.json (157-word unrecorded script, six timed
+scenes, labels, visual directions), same-looking-curves/STORYBOARD.md (typed
+concept links, coordinate/physics distinctions, equations, source ledger and
+production gates), curves_models.py and test_curves.py. README links it.
+All changes remain under videos/. No FFT renderer/lesson/caption/MP4,
+thumbnail, Substack, notebook, dependency/lockfile or research-note changes.
+
+The narrow lesson is to identify what a curve represents. It distinguishes
+the image of x=1 under z², contours versus field lines of a chosen local
+harmonic potential, and ideal 3D dipole lines under a depth-losing camera.
+It includes the genuine analytic-to-harmonic relation, rather than asserting
+either universal physical equivalence or no mathematical connection.
+Camera projection is explicitly orthographic, not stereographic. Critical
+origin, zero field direction and singular dipole source are excluded/labeled.
+No RH proof, private NS claim or real operational model is used.
+
+Actual validation:
+
+- Five new tests pass: exact rational quadratic/gradient checks, 30 numerical
+  dipole tangent samples (relative tolerance 1e-12; not a proof), two-camera
+  overlap/separation, source/invalid-input guards and contiguous script budget.
+- `uv run --locked python -m unittest test_video test_qa test_thumbnail
+  test_small_screen test_package test_curves -v`: 41 tests pass in 46.050 s;
+  five focused tests rerun successfully after final script edits.
+- 157 script words across 82 provisional seconds; <=3 words/s per scene is
+  only a preproduction guard, not measured speech or readable captions.
+- Primary NIST DLMF §1.9, MIT EM §4.1 and NASA CCMC dipole equations/field-line
+  module retrieved 5 November. Creator zeta/quaternion pages are inspiration,
+  not theorem validation; no unseen transcript inferred from the sparse latter
+  page. Full URLs and exact source roles are in the storyboard.
+- Whitespace check passes. No new image/video render attempted; no layout,
+  clipping, actual-device, human playback or audio/caption-sync claim.
+
+Next bounded production step: two original code-drawn keyframes (mapping vs
+potential; two-camera dipole comparison) with source mask, persistent axes and
+plain-language legends; inspect full and smaller raster views before animating.
+Remaining work is unimplemented production, not a permission/render failure.
+Recheck official docs/licensing before choosing a new rendering dependency.
+
+FFT pilot release gates remain exact-version/tablet/pacing/editorial approval,
+audio decision and retiming if recorded, verified lesson URL and matching CTA.
+Candidate also needs independent mathematical/editorial and eventual publication
+approval. No publishing, merge, paid service, account change, new automation,
+private exports/operator data or assumed Open Notebook deployment.
+
 ## 4 November 2026 · v7 package identity and claim audit
 
 **State:** corrected draft handoffs and tested packaging; v7 video unchanged.

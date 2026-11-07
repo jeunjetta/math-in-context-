@@ -13,6 +13,21 @@ The [v7 packaging audit](fft-latency/PACKAGE_AUDIT_V7.md) reconciles current
 video/blog handoff identities, the component-specific title and source credits.
 Its shared snapshot and regression tests detect narrow drift, not release approval.
 
+Later candidate: [Same-looking curves, different physics](same-looking-curves/STORYBOARD.md)
+has an original 82-second unrecorded script, primary-source ledger and tested
+geometry helpers. Two [original comparison keyframes](same-looking-curves/KEYFRAMES.md)
+now include full/640-pixel previews, source masking and reproducible code.
+A [32-second silent camera-study excerpt](same-looking-curves/CAMERA_STUDY.md)
+now tests fixed dipole curves under a turning camera, with captions and encoded QA.
+A [32-second silent map/potential excerpt](same-looking-curves/MAP_STUDY.md)
+now stages matching input/output points, then explicitly returns to the domain
+for a chosen potential model. An [86-second integrated silent rough cut](same-looking-curves/EPISODE.md)
+now adds 3D orientation, labelled camera cuts and one closing question/source card.
+The [exact-version review handoff](same-looking-curves/REVIEW.md) now includes
+larger orientation labels, before/after samples and an unchecked reviewer checklist.
+It remains unapproved; the FFT pilot remains the first release milestone.
+No RH or private NS research claims.
+
 The [v6 smaller-view review pack](fft-latency/SMALL_SCREEN.md) includes three
 encoded moments at 640×360 and 960×540, timestamped findings and a reproducible
 export command. It flags dense secondary text; it is not an actual-tablet test.

@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.000
+A line in the input plane is a set of points. Apply w = z².
+
+00:00:06.000 --> 00:00:14.000
+Matching dots show z = 1 + iy and w = (1 − y²) + i(2y).
+
+00:00:14.000 --> 00:00:22.000
+Choosing V = x² − y² defines a local potential model, not the output plane.
+
+00:00:22.000 --> 00:00:27.000
+Contours keep V constant. Field lines follow E, crossing regular contours at right angles.
+
+00:00:27.000 --> 00:00:32.000
+Which curve is defined by mapping points into the u,v plane?
