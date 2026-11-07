@@ -1,5 +1,48 @@
 # Video status log
 
+## 7 November 2026 · frozen-candidate publication-copy draft
+
+Fresh PR #3 source `29a2a1256105d38f809b1f6475e5266dee7b5a4e`;
+main `c9fdf98729379dd404afce99daad1a6aa042156e`, open #1
+`7905dc2b30ad9c05436f4db4a03d9cfe34224ffc` and draft parent #2
+`97c8aea386535f8eca8ffd00478f36b56adc364e` unchanged. Read live root
+README, #1 AGENTS/ROADMAP (absent on main), current video README/status,
+storyboard/episode/review sources and open PR metadata/discussions. No new
+human feedback on #3. Isolated copy verified against 12 fresh remote Git blob
+hashes before edits; existing work preserved. All changes under videos/ on
+codex/video-curves-storyboard; no root, research, notebook or FFT changes.
+
+Completed the prior next task: same-looking-curves/package.json separates
+editable copy from rendering, and generated PACKAGE.md supplies proposed
+title/description, primary-source links, explicitly separate inspiration
+credits, concept/application links, timestamped review prompts and unchecked
+release gates. Added stdlib-only curves_package.py (offline --check/--stdout),
+test_curves_package.py, and links from video README and REVIEW.md. No guessed
+public movie/interactive-lesson links, platform chapters or private review
+locators appear in the public-copy block. NIST DLMF §1.9, MIT EM §4.1 and
+NASA CCMC Dipole.pdf rechecked; roles and equation/page pointers recorded.
+Sources support specified definitions/models, not visual equivalence or RH.
+
+Validation: **63 tests pass in 81.902 s**, including three new package tests
+for generated-copy equality, frozen media/lesson identity and rejection of
+changed hashes/timing/title/audio/approval/destinations/source roles. Focused
+three tests also pass; --check and py_compile pass. Checks are narrow drift
+guards, not independent mathematical/editorial review or rights clearance.
+Local current MP4 hash rechecked as
+f252ab6d34b79c8011c9a4bd71cb8547ceb42bd3797aa675e07e13325d65bc10.
+No media, lesson JSON, cue/VTT, renderer, dependency or lockfile changed;
+no new render, encoded-frame inspection, full-playback or audio-sync claim.
+The prior legibility-v3 render/sample findings below remain historical.
+
+Next bounded task: incorporate timestamped human feedback if available;
+otherwise prepare one original thumbnail option for this same frozen later
+candidate, with full/small-size legibility checks and source provenance.
+No technical blocker. Actual-device full playback, independent mathematical/
+editorial review, audio choice, rights, parent reconciliation, verified public
+destinations and exact-version publication approval remain gates. FFT v7
+is still the first release milestone. No publishing, merge, paid service,
+account changes, extra automation, operator data or assumed Open Notebook deployment.
+
 ## 7 November 2026 · legibility v3 and exact-version review handoff
 
 Fresh source PR #3 `e30ea2a1c6e640c9de87aae2e833d4e47542b557`;

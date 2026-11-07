@@ -11,6 +11,9 @@ MP4 SHA256: `f252ab6d34b79c8011c9a4bd71cb8547ceb42bd3797aa675e07e13325d65bc10`.
 [Render report and exact source hashes](episode-render.json).
 Review only this version; an earlier approval does not transfer automatically.
 Playable copy is supplied separately to Karin, not a public YouTube URL.
+The [draft publication package](PACKAGE.md) is bound to this candidate and keeps
+proposed public copy separate from source roles and unchecked release gates.
+No public video/interactive-lesson link or publication approval is supplied.
 
 ## Bounded visual change
 

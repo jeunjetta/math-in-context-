@@ -25,6 +25,9 @@ for a chosen potential model. An [86-second integrated silent rough cut](same-lo
 now adds 3D orientation, labelled camera cuts and one closing question/source card.
 The [exact-version review handoff](same-looking-curves/REVIEW.md) now includes
 larger orientation labels, before/after samples and an unchecked reviewer checklist.
+The [candidate-bound publication package](same-looking-curves/PACKAGE.md) separates
+proposed title/description and primary-source links from internal review prompts.
+Its offline copy checks reject lesson/media identity drift; they grant no approval.
 It remains unapproved; the FFT pilot remains the first release milestone.
 No RH or private NS research claims.
 
