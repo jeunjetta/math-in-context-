@@ -2,6 +2,8 @@
   "title":"Same-looking curves, different physics",
   "status":"SILENT ROUGH CUT · NORMALIZED MODELS · NOT APPROVED",
   "duration":86,"fps":24,
+  "dipole_layout":{"axis_origin":[1035,420],"axis_length":90,"axis_font":30,"label_font":30},
+  "projection_kind":"Orthographic, not stereographic",
   "map_motion":[12,22],"camera_motion":[54,64],
   "projection_notes":["3D orientation key","Looking along y: depth lost","Depth lost: h = x cos α + y sin α; vertical = z"],
   "intro_labels":["Mapped grid → images of points","Potential contour → constant V","Field line → follows a vector field"],

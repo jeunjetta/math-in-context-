@@ -1,6 +1,9 @@
 # Same-looking curves, different physics · integrated rough cut
 
 **7 November 2026 · 86 seconds · silent · not approved for publication.**
+Current candidate: [legibility v3 review handoff](REVIEW.md), with the same
+timeline and lesson but larger camera-orientation/model labels. The original
+v2 QA below is retained as history; its report has a versioned filename.
 The later candidate now has a complete sequential rough cut, rather than
 two concatenated studies. The FFT/latency v7 pilot remains the first release
 milestone and is unchanged. This clears none of its review/lesson-link gates.
@@ -91,13 +94,13 @@ identify exact added code; source_commit means the prior inspected remote
 baseline, not a claim that added files already existed in that commit.
 System encoder/font differences can change rendered pixels and hashes.
 
-## QA and review limits
+## Historical v2 QA and review limits
 
 Actual final candidate: H.264/yuv420p, 1280×720, 24 fps, **2,064 frames /
 86.000 seconds**, one video stream, no audio. Complete decode and ffprobe
 media checks pass. SHA256:
 `7a8358fc3fec937d482d4d5c5614d599698f76b4629a57f6c91baa4d35075236`.
-[Render identity, hashes and sample times](episode-render.json).
+[Historical v2 render identity, hashes and sample times](episode-v2-render.json).
 All **58 tests pass in 56.807 s**, including five new episode tests.
 
 63 encoded samples exported. Visually inspected final frames
@@ -156,8 +159,9 @@ copied 3Blue1Brown assets, private notebook export or operator data. Broader
 creator inspiration is credited in STORYBOARD.md, not theorem validation.
 Open Notebook remains a separate source repository, not assumed deployed.
 
-Next bounded task: review the integrated cut chronologically at smaller
-size, improve its most consequential pacing/readability issue, and prepare
-an exact-version review checklist. PR #3 remains draft/stacked on #2;
+The subsequent chronological sample audit, legibility change and exact-version
+checklist are recorded in REVIEW.md. Next: obtain human feedback against that
+specific candidate and address a timestamped issue rather than assuming approval.
+PR #3 remains draft/stacked on #2;
 parent reconciliation, human/tablet review, audio choice and specific
 publication approval remain gates. No upload, merge or account change.

@@ -13,7 +13,7 @@ from study_media import render_study
 
 ROOT=Path(__file__).resolve().parent
 DATA=json.loads((ROOT/'same-looking-curves/episode.json').read_text())
-BASELINE='f4c40f736d1a5c8f9990a77cdf147ef1d25eccb7'
+BASELINE='e30ea2a1c6e640c9de87aae2e833d4e47542b557'
 
 
 def validate(data):
@@ -70,6 +70,18 @@ def map_frame(t,cue,data):
     return map_study.frame(t,config)
 
 
+def orientation_key(t,data=DATA):
+    alpha,beta=view_angles(t,data)
+    layout=data['dipole_layout'];origin=tuple(layout['axis_origin'])
+    result=[]
+    for label,p,offset in [('x',(1,0,0),(8,0)),('y',(0,1,0),(-24,18)),('z',(0,0,1),(8,-8))]:
+        h,v=project3(p,alpha,beta)
+        end=(origin[0]+layout['axis_length']*h,origin[1]-layout['axis_length']*v)
+        box=(end[0]+offset[0],end[1]+offset[1],45,41)
+        result.append((label,origin,end,box,abs(h)+abs(v)<1e-10))
+    return result
+
+
 def draw_dipole(d,t,data):
     alpha,beta=view_angles(t,data)
     d.rounded_rectangle((40,190,1240,490),radius=12,fill=PANEL)
@@ -84,19 +96,17 @@ def draw_dipole(d,t,data):
     rad=scale*MASK
     d.ellipse((cx-rad,cy-rad,cx+rad,cy+rad),fill=BG,outline=FG,width=2)
     # A separate orientation key shows projected +axis directions, not field B.
-    origin=(1070,430)
-    for label,p,offset in [('x',(1,0,0),(8,0)),('y',(0,1,0),(-24,18)),('z',(0,0,1),(8,-8))]:
-        h,v=project3(p,alpha,beta);end=(origin[0]+55*h,origin[1]-55*v)
-        if abs(h)+abs(v)<1e-10:
+    for label,origin,end,box,collapsed in orientation_key(t,data):
+        if collapsed:
             d.ellipse((origin[0]-4,origin[1]-4,origin[0]+4,origin[1]+4),outline=MUTED)
         else:
             arrow(d,origin,end,MUTED)
-        text(d,(end[0]+offset[0],end[1]+offset[1],45,35),label,25,MUTED)
-    for i,label in enumerate(data['dipole_labels'][:3]):
-        text(d,(760,210+48*i,450,44),label,26,FG)
+        text(d,box,label,data['dipole_layout']['axis_font'],MUTED)
+    for i,label in enumerate(data['dipole_labels'][:2]):
+        text(d,(760,210+50*i,450,44),label,data['dipole_layout']['label_font'],FG)
     note=data['projection_notes'][0 if beta else (1 if alpha==0 else 2)]
-    text(d,(70,500,1140,43),note,27)
-    text(d,(70,548,1140,45),data['dipole_labels'][3]+' · Orthographic, not stereographic',25,MUTED)
+    text(d,(70,500,1140,43),data['dipole_labels'][2]+' · '+data['dipole_labels'][3],28)
+    text(d,(70,548,1140,55),note+' · '+data['projection_kind'],27,MUTED)
 
 
 def frame(t,data=DATA):

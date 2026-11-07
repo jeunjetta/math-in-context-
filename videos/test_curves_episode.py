@@ -1,8 +1,10 @@
 from copy import deepcopy
+import hashlib
+import json
 import math
 from pathlib import Path
 import unittest
-from curves_episode import DATA,validate,cue_at,view_angles,project3,frame,vtt
+from curves_episode import DATA,validate,cue_at,view_angles,project3,frame,vtt,orientation_key
 from curves_models import camera
 from camera_study import geometry
 import map_study
@@ -54,3 +56,32 @@ class EpisodeTests(unittest.TestCase):
     def test_all_frames_fit(self):
         for n in range(DATA['duration']*DATA['fps']):
             self.assertEqual(frame(n/24).size,(1280,720))
+
+    def test_orientation_key_bounds_and_depth_dot(self):
+        self.assertGreaterEqual(DATA['dipole_layout']['axis_length'],90)
+        self.assertGreaterEqual(DATA['dipole_layout']['axis_font'],30)
+        for t in [38,47]+[48+i/24 for i in range(22*24)]:
+            keys=orientation_key(t)
+            for label,origin,end,box,collapsed in keys:
+                x,y,w,h=box
+                self.assertTrue(750<=x and x+w<=1220)
+                self.assertTrue(310<=y and y+h<=485)
+                if collapsed:self.assertEqual(end,origin)
+        keys={k[0]:k for k in orientation_key(48)}
+        self.assertTrue(keys['y'][-1])
+        self.assertFalse(keys['x'][-1])
+        self.assertFalse(keys['z'][-1])
+
+    def test_review_candidate_identity(self):
+        root=Path(__file__).parent;folder=root/'same-looking-curves'
+        candidate=json.loads((folder/'review-candidate.json').read_text())
+        report=json.loads((folder/'episode-render.json').read_text())
+        for key in ('sha256','duration','fps','frames','audio','publication_approved'):
+            self.assertEqual(candidate[key],report[key])
+        self.assertEqual(candidate['source_baseline'],report['source_commit'])
+        self.assertEqual(candidate['duration'],DATA['duration'])
+        self.assertEqual(candidate['fps'],DATA['fps'])
+        self.assertFalse(candidate['publication_approved'])
+        self.assertIn(candidate['sha256'],(folder/'REVIEW.md').read_text())
+        for name,digest in report['source_hashes'].items():
+            self.assertEqual(hashlib.sha256((root/name).read_bytes()).hexdigest(),digest)

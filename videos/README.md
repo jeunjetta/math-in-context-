@@ -23,6 +23,8 @@ A [32-second silent map/potential excerpt](same-looking-curves/MAP_STUDY.md)
 now stages matching input/output points, then explicitly returns to the domain
 for a chosen potential model. An [86-second integrated silent rough cut](same-looking-curves/EPISODE.md)
 now adds 3D orientation, labelled camera cuts and one closing question/source card.
+The [exact-version review handoff](same-looking-curves/REVIEW.md) now includes
+larger orientation labels, before/after samples and an unchecked reviewer checklist.
 It remains unapproved; the FFT pilot remains the first release milestone.
 No RH or private NS research claims.
 

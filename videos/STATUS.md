@@ -1,5 +1,63 @@
 # Video status log
 
+## 7 November 2026 · legibility v3 and exact-version review handoff
+
+Fresh source PR #3 `e30ea2a1c6e640c9de87aae2e833d4e47542b557`;
+main `c9fdf98729379dd404afce99daad1a6aa042156e`, #1
+`7905dc2b30ad9c05436f4db4a03d9cfe34224ffc` and parent #2
+`97c8aea386535f8eca8ffd00478f36b56adc364e` remain unchanged/open.
+Read live root README, #1 AGENTS/ROADMAP (still missing on main), video
+README/status/storyboard/episode sources and open PRs/discussions. No new
+human feedback on #2/#3. Isolated snapshot: 29 relevant code/data/test/doc
+files checked against current remote Git blob hashes. Prior work retained.
+
+Chronological 640×360 baseline sample review: frames 0,216,408,624,816,
+1008,1224,1416,1608,1752,1944. Verified baseline movie hash against its
+known report. Identified undersized orientation key as the bounded visual
+issue: enlarged arrows 55→90 px, axis labels 25→30 px, model labels
+26→30 px; separated legend/source-exclusion and projection-note lines.
+All field geometry, equations, caption text, cue times, sweep/turn intervals
+and 86-second duration unchanged (cue/motion equality checked against
+fresh baseline JSON). No FFT/study source, research, notebook, dependency,
+lockfile or root-document changes. Only videos/ on codex/video-curves-storyboard.
+
+Changed curves_episode.py, test_curves_episode.py and episode.json; added
+REVIEW.md, review-candidate.json, episode-v2-render.json and three small
+before/after PNGs. Updated current episode-render.json and video README,
+EPISODE.md/status. Historical v2 QA points to its retained report; current
+review identity is explicit and approval boxes remain unchecked.
+
+Actual final validation: **60 tests pass in 46.527 s**, including two new
+tests for orientation-label bounds/depth dot and review/report/source-hash
+identity. All 2,064 episode source frames fit. One initial single-label
+text-box height failure was corrected before render. 86.000 s/720p24/
+2,064-frame H.264/yuv420p silent render fully decodes; shape/timing checks
+pass. Final SHA256:
+f252ab6d34b79c8011c9a4bd71cb8547ceb42bd3797aa675e07e13325d65bc10.
+63 encoded samples exported; inspected final 0,408,816,1008,1224,1416,
+1608,1824 at 640×360. No clipping/caption mismatch found there. Larger key
+and model labels are visible in these samples; still no actual-device or
+full-playback approval. Long projection formula and small secondary map
+labels remain review issues. No audio/listening or audio-sync claim.
+No-overwrite and whitespace checks pass. Existing owner review MP4 updated
+with prior version retained; no public MP4 in Git or video-platform upload.
+
+Retained pinned Pillow 12.3.0 and external GPL-enabled FFmpeg 6.1.1/libx264;
+official ImageDraw/docs and tool licenses rechecked. No dependency purchase,
+binary/font distribution, borrowed creator assets or blanket commercial-use
+claim. Concept links, model assumptions, sources and limits remain in
+EPISODE.md; REVIEW.md supplies timestamped feedback prompts and exact-media
+checklist without marking human/editorial rights or publication approved.
+
+Next bounded task: prepare a candidate-specific publication-package draft
+(title, description, source links and review questions), checking it against
+this frozen lesson; incorporate timestamped human feedback if any arrives.
+No technical blocker. Human/tablet full playback, independent mathematical/
+editorial review, audio choice, parent reconciliation and exact-version
+publication approval remain gates. FFT v7 remains the first milestone with
+unchanged gates. No YouTube/Substack/social publishing, merge, paid service,
+account changes, new automation, operator data or assumed Open Notebook deployment.
+
 ## 7 November 2026 · integrated 86-second silent rough cut
 
 Fresh PR #3 baseline `f4c40f736d1a5c8f9990a77cdf147ef1d25eccb7`;
