@@ -1,0 +1,20 @@
+{
+  "candidate": "curves-legibility-v3",
+  "media_sha256": "f252ab6d34b79c8011c9a4bd71cb8547ceb42bd3797aa675e07e13325d65bc10",
+  "publication_approved": false,
+  "pillow": "12.3.0",
+  "images": {
+    "thumbnail-1280.png": "fcd38708f47bdff8d5f00a1dc3f4eb76fcc257b62b5ebfb7bd05ae1c56434388",
+    "thumbnail-640.png": "ada46aa55a60bd5158d5033ed72cca9b87be99675fccaffa62835e40cc688baf",
+    "thumbnail-320.png": "346cd650df8bacfd21eef89446d742091ffd2c0e0dfb79a90ff5aab3a6c9887f"
+  },
+  "source_sha256": {
+    "curves_thumbnail.py": "0cef3fb67aa1bf62ed020e0bd196d17a1b1c7d62dff3a88cf5bf300326d06baf",
+    "curves_models.py": "a5fcd26f4475b414351cd4db407fffe4bd0b99cd36774297770cafa99f59f45b",
+    "curves_keyframes.py": "5c8fce3a85d728e3cb358a6ea9bda7f8108023e5f062158b0d1409d4e758917a",
+    "render.py": "186ca20d2a95d9cb10b728edecf786ddc5c47a7ac70ede9f0ae76df70b17b1f1",
+    "same-looking-curves/thumbnail.json": "66e6ea81e4980b48a156a7f8fbd455af4f9a164ec61d1021d62beee7fe05b7f6"
+  },
+  "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+  "font_sha256": "5c1247acef7f2b8522a31742c76d6adcb5569bacc0be7ceaa4dc39dd252ce895"
+}

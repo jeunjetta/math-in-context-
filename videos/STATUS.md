@@ -1,5 +1,64 @@
 # Video status log
 
+## 8 November 2026 · one original curves thumbnail option
+
+Fresh PR #3 source `63996c504f0ad17092a618954a5b00dfc12320f6`;
+main `c9fdf98729379dd404afce99daad1a6aa042156e`, open pilot #1
+`7905dc2b30ad9c05436f4db4a03d9cfe34224ffc`, draft parent #2
+`97c8aea386535f8eca8ffd00478f36b56adc364e` unchanged. Read live main
+README, #1 AGENTS/ROADMAP (absent on main), current video README/status,
+storyboard/episode/review/copy sources, known open PR metadata and #2/#3
+discussions. No new human feedback. Issue-search returned no rows despite
+these directly confirmed open PRs; no inference that other PRs cannot exist.
+An isolated working copy matched 13 relevant fresh remote Git blob hashes
+before edits. Prior work preserved; only videos/ on codex/video-curves-storyboard.
+
+Completed prior next task: one code-drawn cover option, “Same shape? Check
+the object.” Added curves_thumbnail.py, test_curves_thumbnail.py,
+same-looking-curves/thumbnail.json, THUMBNAIL.md and thumbnail-previews-v2/
+(1280/640/320 PNGs + hash/source/font report), with a link from video README.
+Copy is separate from rendering; reuses unchanged geometry/text helpers.
+Three separately labelled panels represent point images, V=1 contour and
+projected source-excluded ideal dipole lines. Different plot scales,
+orthographic view and conservative source-disc occlusion are documented.
+No new mathematical/research claim or inference from visual resemblance.
+
+Actual validation: **67 tests pass in 48.999 s**, including four new tests
+for copy/identity/overflow, plot bounds, algebraic curve meaning/source
+exclusion, export decode/dimensions/hashes/no-overwrite and committed-preview
+provenance. Focused four tests pass (0.102 s); frozen publication package
+--check and whitespace checks pass. Initial full suite had 66 passing tests
+before the fourth provenance test; final result above supersedes it.
+Inspected first full-size/320 and final full/640/320 PNGs. Corrected first
+footer from categorical “not shared physics” to “definitions first” before
+final previews. No clipping or panel escape found in inspected final images;
+hook/panel labels readable there. Brand/footer remain small at 320; raster
+inspection is not human-device/accessibility review or an audience test.
+
+Final full-size thumbnail SHA256:
+fcd38708f47bdff8d5f00a1dc3f4eb76fcc257b62b5ebfb7bd05ae1c56434388.
+Bound to legibility-v3 media SHA256
+f252ab6d34b79c8011c9a4bd71cb8547ceb42bd3797aa675e07e13325d65bc10.
+Movie/caption timing, lesson JSON/VTT, render helpers, package copy, FFT,
+research, dependencies and uv.lock unchanged. No new MP4 render, encoded-frame
+audit, playback or audio-sync claim. No audio exists. Existing media QA below
+remains historical, not rerun by thumbnail tests.
+
+Retained pinned Pillow 12.3.0; official current ImageDraw/textbbox docs and
+MIT-CMU license rechecked. System DejaVu Sans Bold hash in preview report;
+no font/binary distribution or new license purchase. Original mathematical
+plots, no creator assets, stock footage, logo, model API or operator data.
+No Open Notebook deployment assumed. No upload, publishing, merge, paid
+service, account change or automation.
+
+Next bounded task: incorporate timestamped human feedback first; otherwise
+prepare a short companion writing draft for this frozen episode, retaining
+the explicit object definitions and no guessed public video/lesson link.
+FFT v7 remains the first release milestone. No technical render blocker;
+actual-device full playback, independent mathematical/editorial and rights
+review, audio choice, thumbnail selection, parent reconciliation, verified
+destinations and explicit exact-version publication approval remain gates.
+
 ## 7 November 2026 · frozen-candidate publication-copy draft
 
 Fresh PR #3 source `29a2a1256105d38f809b1f6475e5266dee7b5a4e`;

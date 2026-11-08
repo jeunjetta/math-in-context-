@@ -28,6 +28,8 @@ larger orientation labels, before/after samples and an unchecked reviewer checkl
 The [candidate-bound publication package](same-looking-curves/PACKAGE.md) separates
 proposed title/description and primary-source links from internal review prompts.
 Its offline copy checks reject lesson/media identity drift; they grant no approval.
+One [original curves thumbnail option](same-looking-curves/THUMBNAIL.md) now has
+full/640/320-pixel previews, reproducible geometry and candidate-bound hashes.
 It remains unapproved; the FFT pilot remains the first release milestone.
 No RH or private NS research claims.
 
