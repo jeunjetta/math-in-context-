@@ -1,5 +1,56 @@
 # Video status log
 
+## 9 November 2026 · unpublished curves companion writing
+
+Fresh PR #3 source `1358a273285983ae7a610f2b45b22839591a380e`;
+main `c9fdf98729379dd404afce99daad1a6aa042156e`, open #1
+`7905dc2b30ad9c05436f4db4a03d9cfe34224ffc` and draft parent #2
+`97c8aea386535f8eca8ffd00478f36b56adc364e` unchanged. Read live main
+README, #1 AGENTS/ROADMAP (absent on main), current video README/status,
+episode/storyboard/review/identity/package sources and known open PR metadata/
+discussions. No new human feedback. Issue-search again returned no rows
+despite the directly confirmed PRs; no claim of exhaustive PR inventory.
+Isolated copy matched ten relevant current remote Git blob hashes before
+edits. No unrelated work overwritten; all five changed paths are under videos/.
+
+Completed the previous next task: same-looking-curves/SUBSTACK_DRAFT.md has
+598 whitespace-delimited words of proposed public copy, separated by explicit
+markers from internal editorial notes. One worked z=1+i → w=2i example,
+contour-versus-field-line prediction/answer, regular-contour/zero-field caveat,
+model choice, camera-depth distinction, concept links and engineering plot-
+reading context. No RH/NS or shared-physics inference. Public sources and
+inspiration credits are separate in role; no source assets or quotes reused.
+NIST DLMF §1.9, MIT EM §4.1 and NASA CCMC Dipole.pdf rechecked 9 November.
+Added companion.json for frozen candidate/lesson identity and absent public
+destinations, test_curves_companion.py, and a video README link.
+
+Actual validation: **70 tests pass in 75.948 s**. Three new tests check
+candidate/lesson hashes and draft destinations, source/scope/public-copy guards,
+and exact rational map/gradient identities. Focused three pass (0.002 s);
+existing curves_package.py --check and whitespace check pass. These are narrow
+regressions, not prose approval, model validation, reading-time evidence,
+independent mathematical audit or Substack rendering certification.
+
+Media remains legibility-v3 SHA256
+f252ab6d34b79c8011c9a4bd71cb8547ceb42bd3797aa675e07e13325d65bc10.
+No MP4, caption/VTT, lesson JSON, thumbnail/PNG, renderer/model helper,
+package copy, dependency/lockfile, FFT, notebook or research change. No new
+render, encoded-frame inspection, playback or audio-sync claim. Existing
+media/thumbnail findings below remain historical. No image/embed or guessed
+video/lesson URL is inserted into public copy; no Substack account accessed.
+
+Next bounded task: address human feedback first. Otherwise return to the
+first-release FFT pilot and prepare one short teaser storyboard derived from
+its frozen synthetic 100→90 ms lesson, with explicit assumptions; do not
+claim a rendered short without rendering and checking it. FFT v7 remains
+the first release milestone, not replaced by this supporting later draft.
+No technical writing blocker. Human/tablet full video review, independent
+mathematical/editorial and rights review, actual Substack/mobile preview,
+cover/audio choices, verified public destinations, parent reconciliation and
+explicit exact-version publishing approval remain open. No publishing,
+upload, merge, paid service, account change, private data, new automation or
+assumed Open Notebook deployment.
+
 ## 8 November 2026 · one original curves thumbnail option
 
 Fresh PR #3 source `63996c504f0ad17092a618954a5b00dfc12320f6`;
