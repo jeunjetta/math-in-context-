@@ -5,6 +5,10 @@ This is a separate proposed vertical edit, not a crop of the 80-second pilot.
 The 60–90-second first milestone remains the unchanged v7 full explainer.
 Nothing is uploaded, posted, scheduled, merged or approved here.
 
+10 November follow-on: two [baseline/result still prototypes](VERTICAL_KEYFRAMES.md)
+are now rendered and inspected at three widths. The other four layouts and
+the full teaser movie are still not rendered; the storyboard below is retained.
+
 Inspected baseline: `a1ae076e794ebc5ccc3c45b65132694e3a8c0af0`;
 original FFT work branch/PR #2: `97c8aea386535f8eca8ffd00478f36b56adc364e`.
 Frozen source movie SHA256:

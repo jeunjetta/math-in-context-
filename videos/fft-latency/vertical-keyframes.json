@@ -1,0 +1,14 @@
+{
+  "status": "two still prototypes, not a rendered teaser",
+  "publication_approved": false,
+  "headlines": {
+    "baseline": ["Where does", "the time go?"],
+    "result": ["One step halved.", "Not the whole job."]
+  },
+  "component_labels": ["Fourier", "Other work"],
+  "baseline_label": "BEFORE · {baseline} ms",
+  "result_label": "AFTER · {new_total} ms",
+  "baseline_sum": "{fourier} + {other} = {baseline} ms",
+  "result_sum": "{new_fourier} + {other} = {new_total} ms",
+  "baseline_note": "Sequential workload"
+}

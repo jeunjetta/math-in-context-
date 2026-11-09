@@ -1,5 +1,62 @@
 # Video status log
 
+## 10 November 2026 · FFT vertical baseline/result still prototypes
+
+Fresh clone of PR #3 head `99a70b7cdbbaecc94086b932fc385a532d3c12a7`,
+not a stale local checkout. Live main README remains the template; AGENTS.md
+and ROADMAP.md are absent on main. Read #1's contributor instructions and
+roadmap at `7905dc2b30ad9c05436f4db4a03d9cfe34224ffc`, relevant video
+README/status, full FFT and teaser data/model/review sources, open PRs #1–3
+and #3 discussion. No newer human editorial feedback identified there.
+Main `c9fdf98729379dd404afce99daad1a6aa042156e` and parent FFT #2
+`97c8aea386535f8eca8ffd00478f36b56adc364e` remain unmerged/unchanged.
+Remote #3 head rechecked before handoff. Work remains under videos/ on
+codex/video-curves-storyboard / draft PR #3; no unrelated local work touched.
+
+Completed previous bounded next task: original 1080×1920 baseline/result
+still layouts for the proposed 28-second FFT teaser. Added
+fft_vertical_keyframes.py, fft-latency/vertical-keyframes.json,
+test_fft_vertical_keyframes.py, fft-latency/VERTICAL_KEYFRAMES.md,
+six PNGs plus report.json under fft-latency/vertical-keyframes/; README and
+TEASER now link that handoff. Numeric values and captions resolve from
+unchanged lesson/model/teaser sources. One common scale: Fourier 156→78 px,
+other work stays 624 px; exact 20+80=100 and 10+80=90 ms totals. Synthetic
+label, large external component labels and lower caption band. Safe-region
+margin is a design choice, not a certified platform-overlay template.
+
+Actual validation: **77 tests pass in 48.561 s**, including four new tests
+for true glyph bounds/safe region, source/caption/report and image identity,
+common-scale geometry/color pixels, overflow refusal, draft-only guard and
+output no-overwrite. Focused four pass in 0.399 s. Teaser --check, existing
+curves package --check and git diff --check pass. Previous full candidates,
+lesson/VTTs, existing renderers/model helpers, dependencies/uv.lock, notebooks
+and research unchanged. Marimo check/export not rerun: no notebook changed.
+
+Generated and inspected both stills at 1080, 540 and 360 widths. No clipping
+found; labels/equations/captions fit and component widths compare correctly.
+Synthetic disclosure remains small at 360; actual-device judgement pending.
+Report records Pillow 12.3.0, all image/source/font hashes, text ink bounds,
+bar coordinates and proposed cue slots. Still exports are NOT encoded frames,
+full playback, caption timing, comprehension or audio-sync certification.
+No teaser movie/audio exists, and the other four teaser layouts are unrendered.
+FFT v7 stays the first 60–90-second release milestone, unchanged/unapproved.
+
+Rechecked official Pillow ImageDraw/textbbox docs and MIT-CMU license page
+10 November; stable docs show 13.0.0, retained pinned 12.3.0 APIs exercised
+in tests and installed license read. DejaVu system font license read; no
+font/library/encoder binaries bundled. FFTW authors' accuracy notes rechecked
+for claim separation, not timing evidence. Original code graphics only;
+no copied creator assets, narration, quotations or transcript offsets.
+
+Next bounded step: implement remaining question/component/assumption/scope
+layouts, then exercise every source frame and cue boundary before a full
+teaser test render. No technical still-render blocker. Full human/tablet and
+independent editorial review, four-assumption and source-card preservation,
+audio choice, verified public destinations, rights, parent reconciliation and
+explicit exact-version publishing approval remain gates. No upload, publishing,
+merge, paid service, account change, private/operator data, new automation or
+assumed Open Notebook deployment. Earlier media QA below stays historical.
+
 ## 9 November 2026 · FFT-first teaser preproduction
 
 Fresh PR #3 source `a1ae076e794ebc5ccc3c45b65132694e3a8c0af0`;

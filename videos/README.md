@@ -14,6 +14,9 @@ video/blog handoff identities, the component-specific title and source credits.
 Its shared snapshot and regression tests detect narrow drift, not release approval.
 The [28-second FFT teaser storyboard](fft-latency/TEASER.md) now has a
 source-bound script and provisional VTT. It is unrendered, not a replacement pilot.
+Two [original vertical keyframe prototypes](fft-latency/VERTICAL_KEYFRAMES.md)
+now test the baseline/result layout at full, 540 and 360-pixel widths.
+They are stills, not a rendered teaser or a reviewed release.
 
 Later candidate: [Same-looking curves, different physics](same-looking-curves/STORYBOARD.md)
 has an original 82-second unrecorded script, primary-source ledger and tested
