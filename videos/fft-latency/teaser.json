@@ -1,0 +1,23 @@
+{
+  "title": "Faster Fourier, faster system?",
+  "status": "unrendered storyboard",
+  "source_commit": "a1ae076e794ebc5ccc3c45b65132694e3a8c0af0",
+  "source_lesson_sha256": "8d6cb7de816988a1577a4ae8d2ac942ce01567331110dc075c05dfba97ffc3dc",
+  "source_video_sha256": "1d3050b3094f1a090954cb9c2e6ed10e90d438169e86bd2cfbc2a7f13ed74036",
+  "publication_approved": false,
+  "audio": false,
+  "public_video_url": null,
+  "interactive_lesson_url": null,
+  "duration": 28,
+  "fps": 24,
+  "proposed_canvas": [1080, 1920],
+  "persistent_label": "SYNTHETIC · NOT A BENCHMARK",
+  "cues": [
+    {"id":"question","start":0,"end":4,"source_scene":"hook","caption":"Suppose Fourier work is {kernel_gain}× as fast. The whole system too?"},
+    {"id":"baseline","start":4,"end":8,"source_scene":"baseline","caption":"{fourier} ms Fourier + {other} ms other work = {baseline} ms."},
+    {"id":"component","start":8,"end":12,"source_scene":"halve","caption":"Fourier: {fourier} → {new_fourier} ms. Other work: {other} ms."},
+    {"id":"result","start":12,"end":17,"source_scene":"halve","caption":"{new_fourier} + {other} = {new_total} ms total—not {kernel_gain}× overall speedup."},
+    {"id":"assumptions","start":17,"end":22,"source_scene":"readiness","caption":"Sequential work. Same accuracy. No added overhead. Other work unchanged."},
+    {"id":"scope","start":22,"end":28,"source_scene":"distinctions","caption":"Timing is not operation-count complexity, numerical stability, or validated grid readiness."}
+  ]
+}

@@ -12,6 +12,8 @@ It is a review page, not a release approval or live interactive lesson.
 The [v7 packaging audit](fft-latency/PACKAGE_AUDIT_V7.md) reconciles current
 video/blog handoff identities, the component-specific title and source credits.
 Its shared snapshot and regression tests detect narrow drift, not release approval.
+The [28-second FFT teaser storyboard](fft-latency/TEASER.md) now has a
+source-bound script and provisional VTT. It is unrendered, not a replacement pilot.
 
 Later candidate: [Same-looking curves, different physics](same-looking-curves/STORYBOARD.md)
 has an original 82-second unrecorded script, primary-source ledger and tested

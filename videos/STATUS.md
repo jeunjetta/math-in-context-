@@ -1,5 +1,59 @@
 # Video status log
 
+## 9 November 2026 · FFT-first teaser preproduction
+
+Fresh PR #3 source `a1ae076e794ebc5ccc3c45b65132694e3a8c0af0`;
+main `c9fdf98729379dd404afce99daad1a6aa042156e`, open #1
+`7905dc2b30ad9c05436f4db4a03d9cfe34224ffc`, draft parent #2
+`97c8aea386535f8eca8ffd00478f36b56adc364e` unchanged. Read live main
+README, #1 AGENTS/ROADMAP (absent on main), video README/status, FFT lesson,
+model/storyboard/review/identity and the known open PRs/discussions. No new
+human feedback. Search again returned no rows despite confirmed open PRs;
+do not treat it as an exhaustive inventory. Isolated copy matched seven
+relevant current remote Git blob hashes. No unrelated changes overwritten.
+Work stays under videos/ on codex/video-curves-storyboard/PR #3; the parent
+FFT PR #2 and both frozen full candidates are not edited or replaced.
+
+Completed prior next task: fft-latency/TEASER.md is one 28-second proposed
+vertical storyboard for the original synthetic 100→90 ms lesson. Added
+teaser.json (separate templates/timing/provenance), fft_teaser.py (stdlib
+offline resolver/checker using unchanged lesson_model.py), provisional
+teaser.vtt, test_fft_teaser.py and a video README link. Proposed 1080×1920,
+24 fps / 672 frames IF rendered. Not a crop or timecoded excerpt. Question,
+20+80 baseline, Fourier-only 20→10 change, settled 90 ms, four assumptions,
+and a claim-limit/source closing card; no guessed public CTA. Sixty-two
+whitespace caption words; max 2.75 words/s, provisional not measured reading
+or comprehension evidence. Main 80-second v7 remains the first milestone.
+
+Actual validation: **73 tests pass in 81.537 s**. Three new tests cover
+exact 100/20/80→10/90 arithmetic and 10/9 quotient, provisional VTT equality,
+source hashes, timeline/source-scene mapping, reading-budget and unrendered/
+silent/draft/destination guards, storyboard/script consistency and required
+assumptions/scope. Focused three tests pass (0.008 s); teaser --check,
+existing curves package --check and whitespace check pass. These are script/
+data regressions, NOT layout/clipping, pacing, encoded-video or audio QA.
+
+Bound to source FFT v7 movie SHA256
+1d3050b3094f1a090954cb9c2e6ed10e90d438169e86bd2cfbc2a7f13ed74036
+and exact lesson hash recorded in teaser.json. No teaser movie/audio exists;
+no new full-video render, frame inspection, decode, playback or synchronization
+claim. Full lesson/VTT/renderer, model helper, FFT and curves movies, thumbnail,
+companion/package copy, dependencies/lockfiles, notebooks and research untouched.
+Old media/visual QA below is historical. Source app at inspected unmerged #1
+and FFTW authors' accuracy notes rechecked 9 November; accuracy notes are
+not evidence for invented timing numbers. No clip/quote/transcript offsets.
+
+Next bounded task: incorporate feedback if any; otherwise prototype two
+original vertical keyframes (baseline and settled result) with explicit
+labels, synthetic flag and actual text-fit/small-view inspection. Recheck
+official renderer docs/licensing before implementing that render path.
+No new renderer/service/dependency selected or purchased here. No technical
+storyboard blocker; rendering is not claimed unavailable. Editorial and
+human/tablet review, layout/render QA, audio decision, verified destinations,
+rights, parent reconciliation and explicit exact-version publication approval
+remain gates. No uploads, publishing, merge, paid service, account changes,
+operator/private data, extra automation or assumed Open Notebook deployment.
+
 ## 9 November 2026 · unpublished curves companion writing
 
 Fresh PR #3 source `1358a273285983ae7a610f2b45b22839591a380e`;
