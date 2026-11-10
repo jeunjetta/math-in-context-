@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "status": "draft",
+  "publication_approved": false,
+  "repo_baseline": "29a2a1256105d38f809b1f6475e5266dee7b5a4e",
+  "candidate": {
+    "candidate": "curves-legibility-v3",
+    "source_baseline": "e30ea2a1c6e640c9de87aae2e833d4e47542b557",
+    "sha256": "f252ab6d34b79c8011c9a4bd71cb8547ceb42bd3797aa675e07e13325d65bc10",
+    "duration": 86,
+    "fps": 24,
+    "frames": 2064,
+    "audio": false,
+    "publication_approved": false
+  },
+  "lesson_hashes": {
+    "episode.json": "19680842253319da8d144d52e29732c8130d7416c27be64b113d3db30ef722cd",
+    "episode.vtt": "0e00e1723be6dc9c74efd2026d548227ce44adfee8b0a7b279120fe6a722c6c9"
+  },
+  "title": "Same-looking curves, different physics",
+  "description": [
+    "What defines this curve? This 86-second silent explainer separates images of points under w = z², contours of a chosen local 2D potential, and field lines of an ideal 3D magnetic dipole. Then only the camera turns.",
+    "The potential V = x² − y² is a modelling choice, not a claim that a mapped grid is a force field. The camera uses orthographic projection, not stereographic projection: depth is lost even though the field stays fixed.",
+    "Normalized educational models; the dipole source is excluded. No real grid telemetry, operational-readiness claim, proof of the Riemann hypothesis or Navier–Stokes regularity, or inference of shared physics. Original code-generated visuals and on-screen text; no audio.",
+    "Before comparing two plots, ask: what defines each curve?"
+  ],
+  "public_video_url": null,
+  "interactive_lesson_url": null,
+  "sources_checked_utc": "2026-11-07",
+  "primary_sources": [
+    {
+      "id": "harmonic",
+      "label": "NIST DLMF §1.9",
+      "url": "https://dlmf.nist.gov/1.9",
+      "role": "Analytic real and imaginary parts are harmonic (Eq. 1.9.26). Our z² map is derived directly; this source does not identify a mapped grid as a physical field."
+    },
+    {
+      "id": "potential",
+      "label": "MIT, Electromagnetic Fields and Energy §4.1",
+      "url": "https://web.mit.edu/6.013_book/www/chapter4/4.1.html",
+      "role": "E = −grad V and the distinction between potential contours and field lines. Our polynomial potential is a chosen local normalized model, not an engineered boundary-value solution."
+    },
+    {
+      "id": "dipole",
+      "label": "NASA CCMC, Properties of Magnetic Dipoles",
+      "url": "https://ccmc.gsfc.nasa.gov/static/files/Dipole.pdf",
+      "role": "Cartesian dipole components, Eqs. (7)–(9), and r = L sin²θ, Eq. (15), printed pages 2 and 4. Source excluded; not the interior of a real magnet."
+    }
+  ],
+  "inspirations": [
+    {
+      "label": "3Blue1Brown: zeta lesson",
+      "url": "https://www.3blue1brown.com/lessons/zeta/",
+      "role": "Conceptual inspiration only; no footage, artwork or narration reused; not theorem validation."
+    },
+    {
+      "label": "3Blue1Brown: quaternions lesson page",
+      "url": "https://www.3blue1brown.com/lessons/quaternions/",
+      "role": "Conceptual inspiration only; no footage, artwork or narration reused; not theorem validation. No unseen transcript content is inferred."
+    }
+  ],
+  "review_questions": [
+    "At 12–22 s, can you distinguish the input x,y plane from the output u,v plane and read the matching-point equation? The sweep is a parameter, not physical time.",
+    "At 22–38 s, is the return to the original domain and choice of potential explicit? Are dashed regular potential contours distinct from solid directed field lines, with no field direction claimed at E = 0?",
+    "At 38–48 s, can you read the +z orientation, source exclusion and normalized-model labels on an actual tablet? The long formula still needs device feedback.",
+    "At 48–70 s, do the labelled cut, lost depth and camera-only turn make sense? The field and underlying 3D curves do not change or collapse.",
+    "At 70–86 s, can you answer the definition question before the answer appears and read the source card? Report timestamp, device and any text that needs more time."
+  ]
+}

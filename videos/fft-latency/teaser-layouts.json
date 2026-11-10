@@ -1,0 +1,24 @@
+{
+  "status": "source-frame layouts, no teaser movie",
+  "publication_approved": false,
+  "headlines": {
+    "question": ["Faster Fourier.", "Faster system?"],
+    "component": ["Only one part", "changes."],
+    "assumptions": ["This model", "assumes…"],
+    "scope": ["Different questions.", "Different evidence."]
+  },
+  "question": {"label":"Fourier speed","value":"{kernel_gain}×","prompt":"Whole workload?","instruction":"Predict before the reveal."},
+  "component": [{"label":"Fourier","value":"{fourier} → {new_fourier} ms"},{"label":"Other work","value":"{other} ms unchanged"}],
+  "assumptions": ["Sequential work", "Same accuracy", "No added overhead", "Other work unchanged"],
+  "scope": [
+    {"title":"Complexity","description":"Operation-count growth"},
+    {"title":"Stability","description":"Numerical error behavior"},
+    {"title":"Latency","description":"Whole-workload time"},
+    {"title":"Grid readiness","description":"Validation + deadlines"}
+  ],
+  "credits": ["MODEL · synthetic lesson", "ACCURACY CONTEXT · FFTW authors"],
+  "source_urls": [
+    "https://github.com/jeunjetta/math-in-context-/blob/7905dc2b30ad9c05436f4db4a03d9cfe34224ffc/apps/fft_and_latency.py",
+    "https://fftw.org/accuracy/comments.html"
+  ]
+}

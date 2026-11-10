@@ -1,0 +1,11 @@
+{
+  "candidate": "curves-legibility-v3",
+  "media_sha256": "f252ab6d34b79c8011c9a4bd71cb8547ceb42bd3797aa675e07e13325d65bc10",
+  "publication_approved": false,
+  "eyebrow": "MATH IN CONTEXT",
+  "headline": ["SAME SHAPE?", "CHECK THE OBJECT."],
+  "labels": ["MAPPED LINE", "CONTOUR", "FIELD LINE"],
+  "notes": ["point image", "constant V", "3D projection"],
+  "footer": "IDEAL MODELS · DEFINITIONS FIRST",
+  "alt": "Draft thumbnail: Same shape? Check the object. Three separately labelled panels show the image of x=1 under w=z squared, a contour of the chosen potential x squared minus y squared, and two projected ideal dipole field lines with the source excluded. Different scales; no physical equivalence is implied."
+}

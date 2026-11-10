@@ -1,0 +1,44 @@
+{
+  "title": "Same-looking curves, different physics",
+  "status": "UNRECORDED STORYBOARD DRAFT — NOT APPROVED",
+  "duration_seconds": 82,
+  "idea": "Identify the mathematical object before comparing its shape.",
+  "scenes": [
+    {
+      "id": "question", "start": 0, "end": 8,
+      "script": "These curves may look related. But what does each curve actually represent?",
+      "visual": "Three original, separately labeled previews; no morph implying equivalence.",
+      "labels": ["MAPPED GRID", "POTENTIAL CONTOUR", "FIELD LINE"]
+    },
+    {
+      "id": "mapped-grid", "start": 8, "end": 22,
+      "script": "Start with the map w equals z squared. A straight grid line becomes a parabola. We have moved points into another plane; we have not drawn a force.",
+      "visual": "Two distinct panels: z-plane x,y and w-plane u,v. Highlight x=1 and its mapped parabola. Mark origin as a critical point, not an angle-preserving example.",
+      "labels": ["POINT MAPPING: w=z²", "INPUT x,y → OUTPUT u,v", "IMAGE OF x=1: u=1−v²/4"]
+    },
+    {
+      "id": "potential", "start": 22, "end": 38,
+      "script": "The real part, x squared minus y squared, can also serve as a local two-dimensional potential. Its contours are equipotentials; the field follows minus its gradient, crossing them at right angles away from the origin.",
+      "visual": "Return to domain x,y, explicitly not output u,v. Dashed equipotential hyperbolas, solid field lines and labeled arrows. Exclude origin from orthogonality claim.",
+      "labels": ["LOCAL NORMALIZED 2D MODEL", "V=x²−y²; E=−∇V", "CONTOUR ≠ FIELD LINE"]
+    },
+    {
+      "id": "dipole", "start": 38, "end": 56,
+      "script": "An ideal magnetic dipole is different again. Its three-dimensional field lines follow the magnetic field. This is an ideal model outside its source, not a simulation inside a real bar magnet.",
+      "visual": "Original 3D dipole curves, visible x,y,z axes, z-aligned moment. Mask source neighborhood; truncate curves at mask, never connect through singularity. Show just two colored azimuthal planes.",
+      "labels": ["3D IDEAL DIPOLE — SOURCE EXCLUDED", "FIELD-LINE TANGENT ∥ B", "NORMALIZED GEOMETRY; NOT TELEMETRY"]
+    },
+    {
+      "id": "projection", "start": 56, "end": 70,
+      "script": "Project two dipole curves onto a screen. Distinct depths can overlap. Turn the camera and they separate. The camera changed; the physical field did not.",
+      "visual": "Orthographic camera first looking along y: phi=±pi/3 curves overlap in x,z. Rotate camera azimuth to pi/6, keeping all 3D points fixed. Keep projection warning and orientation axes visible.",
+      "labels": ["ORTHOGRAPHIC CAMERA — DEPTH LOST", "PROJECTED SHAPE / ANGLES CAN DISTORT", "NOT STEREOGRAPHIC PROJECTION"]
+    },
+    {
+      "id": "takeaway", "start": 70, "end": 82,
+      "script": "Before comparing patterns, ask: a mapped grid, a potential contour, or a field line? Check the definition, dimensions, and equations. Resemblance alone proves no common physics.",
+      "visual": "Return to the three object labels with definitions and a compact source card. No proof arrow to RH or NS. Offer prediction: which object is tangent to its field?",
+      "labels": ["DEFINITION → EQUATIONS → EVIDENCE", "RESEMBLANCE ≠ PROOF", "NO RH OR NS RESEARCH CLAIM"]
+    }
+  ]
+}

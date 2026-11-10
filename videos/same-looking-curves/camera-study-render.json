@@ -1,0 +1,17 @@
+{
+  "source_commit": "12745869662ffd0093ef7e933d428fc4b56cc519",
+  "sha256": "ee67d1b210942c1665c384655b69e16eb76c80cd727ca6e2f22a7f12e74cd5e6",
+  "duration": 32,
+  "frames": 768,
+  "audio": false,
+  "complete_decode": true,
+  "publication_approved": false,
+  "source_hashes": {
+    "camera_study.py": "0d9ea5a5e5b21aeddb8df0b68059aa18ed2c4b2f21c02a96b0e1d06111f85cac",
+    "curves_models.py": "a5fcd26f4475b414351cd4db407fffe4bd0b99cd36774297770cafa99f59f45b",
+    "curves_keyframes.py": "5c8fce3a85d728e3cb358a6ea9bda7f8108023e5f062158b0d1409d4e758917a",
+    "render.py": "186ca20d2a95d9cb10b728edecf786ddc5c47a7ac70ede9f0ae76df70b17b1f1",
+    "same-looking-curves/camera-study.json": "9716a4a3cc14323acf31aa55a55bb0871222f6c644b8081480910b17154bd6bd"
+  },
+  "ffmpeg": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers"
+}

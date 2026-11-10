@@ -12,6 +12,38 @@ It is a review page, not a release approval or live interactive lesson.
 The [v7 packaging audit](fft-latency/PACKAGE_AUDIT_V7.md) reconciles current
 video/blog handoff identities, the component-specific title and source credits.
 Its shared snapshot and regression tests detect narrow drift, not release approval.
+The [28-second FFT teaser storyboard](fft-latency/TEASER.md) now has a
+source-bound preproduction script and provisional VTT, retained for provenance.
+Two [original vertical keyframe prototypes](fft-latency/VERTICAL_KEYFRAMES.md)
+now test the baseline/result layout at full, 540 and 360-pixel widths.
+They are stills, not a rendered teaser or a reviewed release.
+The [complete teaser source-frame layouts](fft-latency/TEASER_LAYOUTS.md)
+add the other four scenes and staged closing distinctions. All 672 proposed
+frames are testable. The [first complete silent encoded teaser test](fft-latency/TEASER_RENDER.md)
+now has a matching reading-track VTT, full decode/timestamp checks and sampled
+pixel review. It is not an approved release or a replacement for the full pilot.
+
+Later candidate: [Same-looking curves, different physics](same-looking-curves/STORYBOARD.md)
+has an original 82-second unrecorded script, primary-source ledger and tested
+geometry helpers. Two [original comparison keyframes](same-looking-curves/KEYFRAMES.md)
+now include full/640-pixel previews, source masking and reproducible code.
+A [32-second silent camera-study excerpt](same-looking-curves/CAMERA_STUDY.md)
+now tests fixed dipole curves under a turning camera, with captions and encoded QA.
+A [32-second silent map/potential excerpt](same-looking-curves/MAP_STUDY.md)
+now stages matching input/output points, then explicitly returns to the domain
+for a chosen potential model. An [86-second integrated silent rough cut](same-looking-curves/EPISODE.md)
+now adds 3D orientation, labelled camera cuts and one closing question/source card.
+The [exact-version review handoff](same-looking-curves/REVIEW.md) now includes
+larger orientation labels, before/after samples and an unchecked reviewer checklist.
+The [candidate-bound publication package](same-looking-curves/PACKAGE.md) separates
+proposed title/description and primary-source links from internal review prompts.
+Its offline copy checks reject lesson/media identity drift; they grant no approval.
+One [original curves thumbnail option](same-looking-curves/THUMBNAIL.md) now has
+full/640/320-pixel previews, reproducible geometry and candidate-bound hashes.
+The [unpublished curves companion](same-looking-curves/SUBSTACK_DRAFT.md) adds
+a worked point map and contour-versus-field-line prediction, with primary sources.
+It remains unapproved; the FFT pilot remains the first release milestone.
+No RH or private NS research claims.
 
 The [v6 smaller-view review pack](fft-latency/SMALL_SCREEN.md) includes three
 encoded moments at 640×360 and 960×540, timestamped findings and a reproducible

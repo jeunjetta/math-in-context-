@@ -1,0 +1,25 @@
+{
+  "title":"Same-looking curves, different physics",
+  "status":"SILENT ROUGH CUT · NORMALIZED MODELS · NOT APPROVED",
+  "duration":86,"fps":24,
+  "dipole_layout":{"axis_origin":[1035,420],"axis_length":90,"axis_font":30,"label_font":30},
+  "projection_kind":"Orthographic, not stereographic",
+  "map_motion":[12,22],"camera_motion":[54,64],
+  "projection_notes":["3D orientation key","Looking along y: depth lost","Depth lost: h = x cos α + y sin α; vertical = z"],
+  "intro_labels":["Mapped grid → images of points","Potential contour → constant V","Field line → follows a vector field"],
+  "sources":["NIST DLMF §1.9 · dlmf.nist.gov/1.9","MIT EM §4.1 · web.mit.edu/6.013_book/","NASA CCMC · Properties of Magnetic Dipoles","Original visuals · no RH, NS or common-physics claim"],
+  "dipole_labels":["3D ideal dipole · +z moment","r = sin²θ; φ = ±60°","Solid +60° / dashed −60°","Source r < 0.15 excluded","Normalized, not a real magnet interior"],
+  "cues":[
+    {"start":0,"end":6,"view":"intro","heading":"What does each curve represent?","caption":"Similar-looking curves can describe different mathematical objects. Start with their definitions."},
+    {"start":6,"end":12,"view":"input","heading":"Start with points on x = 1","caption":"Take a line in the input plane. Apply the point map w = z²."},
+    {"start":12,"end":22,"view":"map","heading":"Map points — not a force","caption":"Matching dots show z = 1 + iy and w = (1 − y²) + i(2y)."},
+    {"start":22,"end":30,"view":"potential","heading":"Return to the original x,y plane","caption":"Now choose V = Re(z²) = x² − y² as a local potential. That is a modelling choice."},
+    {"start":30,"end":38,"view":"potential","heading":"Contour ≠ field line","caption":"Dashed contours keep V constant. Solid field lines follow E = −grad V, crossing regular contours normally."},
+    {"start":38,"end":48,"view":"orientation","heading":"New model: a 3D magnetic dipole","caption":"These ideal field lines follow B in three dimensions, outside the excluded source. This is a different model."},
+    {"start":48,"end":54,"view":"camera","heading":"Cut to a view looking along y","caption":"The same two fixed 3D curves have different depths. In this x,z view, their outlines overlap."},
+    {"start":54,"end":64,"view":"camera","heading":"Turn only the camera","caption":"The orthographic camera turns by 30°. All physical points and the magnetic field stay fixed."},
+    {"start":64,"end":70,"view":"camera","heading":"Different view — unchanged field","caption":"Their projections separate. The dashed curve is edge-on; the underlying curve has not collapsed."},
+    {"start":70,"end":76,"view":"question","heading":"Check the definition before the shape","caption":"Which object has a tangent parallel to its vector field: mapped grid, potential contour, or field line?"},
+    {"start":76,"end":86,"view":"sources","heading":"Field line: tangent parallel to the field","caption":"The answer is field line. Definitions and equations establish the connection; visual resemblance alone does not."}
+  ]
+}

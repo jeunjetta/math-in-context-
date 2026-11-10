@@ -1,0 +1,385 @@
+{
+  "status": "two still prototypes, not a rendered teaser",
+  "publication_approved": false,
+  "audio": false,
+  "pillow": "12.3.0",
+  "canvas": [
+    1080,
+    1920
+  ],
+  "images": {
+    "baseline-1080.png": "2ea79c1866c4736f8f273f9424f5a25a7724f15d42c5345cf428113b2e3ca04f",
+    "baseline-540.png": "d7c674ab4abb50fb3da82ace8b17433d464fa596c579db50943f4dcee7f6e0af",
+    "baseline-360.png": "23644fd1fc44246ed7cc414b4d21969bd84cf8a2dc6c17b52a33ec712c24d9c1",
+    "result-1080.png": "64df4c7c6ff6fdfa3fc92ae62b73cfcfd68d18040fa810da83a395ea2dfd607c",
+    "result-540.png": "9dd0eb660082fa3c62550e408d422097e3990220716cd5fa2b3c1c9abb8a383c",
+    "result-360.png": "f566bc4f09e811399d673b4d8cceffb7a870db46d4913cd0407e609465db356a"
+  },
+  "frames": [
+    {
+      "kind": "baseline",
+      "proposed_cue_seconds": [
+        4,
+        8
+      ],
+      "caption": "20 ms Fourier + 80 ms other work = 100 ms.",
+      "text": [
+        {
+          "text": "SYNTHETIC \u00b7 NOT A BENCHMARK",
+          "bounds": [
+            100,
+            180,
+            726,
+            205
+          ],
+          "size": 34,
+          "color": "#63e0d0"
+        },
+        {
+          "text": "Where does",
+          "bounds": [
+            100,
+            290,
+            568,
+            344
+          ],
+          "size": 70,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "the time go?",
+          "bounds": [
+            100,
+            384,
+            596,
+            452
+          ],
+          "size": 70,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "Fourier",
+          "bounds": [
+            120,
+            558,
+            307,
+            593
+          ],
+          "size": 46,
+          "color": "#63e0d0"
+        },
+        {
+          "text": "20 ms",
+          "bounds": [
+            120,
+            647,
+            309,
+            690
+          ],
+          "size": 56,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "Other work",
+          "bounds": [
+            520,
+            558,
+            813,
+            593
+          ],
+          "size": 46,
+          "color": "#ffc273"
+        },
+        {
+          "text": "80 ms",
+          "bounds": [
+            520,
+            647,
+            709,
+            690
+          ],
+          "size": 56,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "BEFORE \u00b7 100 ms",
+          "bounds": [
+            100,
+            810,
+            445,
+            836
+          ],
+          "size": 36,
+          "color": "#b5c4d7"
+        },
+        {
+          "text": "20 + 80 = 100 ms",
+          "bounds": [
+            100,
+            1000,
+            735,
+            1049
+          ],
+          "size": 64,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "Sequential workload",
+          "bounds": [
+            100,
+            1130,
+            549,
+            1172
+          ],
+          "size": 44,
+          "color": "#b5c4d7"
+        },
+        {
+          "text": "20 ms Fourier + 80 ms other",
+          "bounds": [
+            100,
+            1330,
+            840,
+            1365
+          ],
+          "size": 46,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "work = 100 ms.",
+          "bounds": [
+            100,
+            1390,
+            503,
+            1425
+          ],
+          "size": 46,
+          "color": "#f4f7fc"
+        }
+      ],
+      "bars": [
+        {
+          "id": "baseline",
+          "segments": [
+            [
+              100,
+              870,
+              256.0,
+              952
+            ],
+            [
+              256.0,
+              870,
+              880.0,
+              952
+            ]
+          ]
+        }
+      ],
+      "safe_region": [
+        90,
+        170,
+        900,
+        1550
+      ]
+    },
+    {
+      "kind": "result",
+      "proposed_cue_seconds": [
+        12,
+        17
+      ],
+      "caption": "10 + 80 = 90 ms total\u2014not 2\u00d7 overall speedup.",
+      "text": [
+        {
+          "text": "SYNTHETIC \u00b7 NOT A BENCHMARK",
+          "bounds": [
+            100,
+            180,
+            726,
+            205
+          ],
+          "size": 34,
+          "color": "#63e0d0"
+        },
+        {
+          "text": "One step halved.",
+          "bounds": [
+            100,
+            290,
+            769,
+            358
+          ],
+          "size": 70,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "Not the whole job.",
+          "bounds": [
+            100,
+            384,
+            827,
+            452
+          ],
+          "size": 70,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "Fourier",
+          "bounds": [
+            120,
+            558,
+            307,
+            593
+          ],
+          "size": 46,
+          "color": "#63e0d0"
+        },
+        {
+          "text": "10 ms",
+          "bounds": [
+            120,
+            647,
+            309,
+            690
+          ],
+          "size": 56,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "Other work",
+          "bounds": [
+            520,
+            558,
+            813,
+            593
+          ],
+          "size": 46,
+          "color": "#ffc273"
+        },
+        {
+          "text": "80 ms",
+          "bounds": [
+            520,
+            647,
+            709,
+            690
+          ],
+          "size": 56,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "BEFORE \u00b7 100 ms",
+          "bounds": [
+            100,
+            810,
+            445,
+            836
+          ],
+          "size": 36,
+          "color": "#b5c4d7"
+        },
+        {
+          "text": "AFTER \u00b7 90 ms",
+          "bounds": [
+            100,
+            1000,
+            390,
+            1026
+          ],
+          "size": 36,
+          "color": "#b5c4d7"
+        },
+        {
+          "text": "10 + 80 = 90 ms",
+          "bounds": [
+            100,
+            1190,
+            691,
+            1239
+          ],
+          "size": 64,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "10 + 80 = 90 ms total\u2014not 2\u00d7",
+          "bounds": [
+            100,
+            1330,
+            882,
+            1365
+          ],
+          "size": 46,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "overall speedup.",
+          "bounds": [
+            100,
+            1390,
+            533,
+            1435
+          ],
+          "size": 46,
+          "color": "#f4f7fc"
+        }
+      ],
+      "bars": [
+        {
+          "id": "baseline",
+          "segments": [
+            [
+              100,
+              870,
+              256.0,
+              952
+            ],
+            [
+              256.0,
+              870,
+              880.0,
+              952
+            ]
+          ]
+        },
+        {
+          "id": "result",
+          "segments": [
+            [
+              100,
+              1060,
+              178.0,
+              1142
+            ],
+            [
+              178.0,
+              1060,
+              802.0,
+              1142
+            ]
+          ]
+        }
+      ],
+      "safe_region": [
+        90,
+        170,
+        900,
+        1550
+      ]
+    }
+  ],
+  "source_sha256": {
+    "fft_vertical_keyframes.py": "fef278a261315939eeaa7eb27d630dd8c9afdb42a844e2f46d7658e996eeb64b",
+    "fft_teaser.py": "f6ad3f46470cf1c1e0d2c154accc616eca26a9fe669fa026c369974874c7ed96",
+    "lesson_model.py": "bb1dc4939db2806b136986f5f287f9d5ecea4f2b9d93336434c96ecde852bc5c",
+    "render.py": "186ca20d2a95d9cb10b728edecf786ddc5c47a7ac70ede9f0ae76df70b17b1f1",
+    "fft-latency/vertical-keyframes.json": "1d3e2c60692b2cad7002136c7598aee19e628ddaa77e91ccd31c4bb3c06f3746",
+    "fft-latency/teaser.json": "5fbe660617eac237e9f3ff09d7ee240e269a49ec7ab6b05cf1b8ebabe822ec4d",
+    "fft-latency/lesson.json": "8d6cb7de816988a1577a4ae8d2ac942ce01567331110dc075c05dfba97ffc3dc",
+    "fft-latency/review-version.json": "0bed8b95103558c954bf099c9d453ec5105b17434746a48a2bdcd726cbb7f994"
+  },
+  "font_sha256": {
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e",
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf": "a4c5bc453ca281d90ea079e596da7ae0dfeb5777497c29ec254e76d97ff6f890"
+  }
+}

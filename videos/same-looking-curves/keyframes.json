@@ -1,0 +1,10 @@
+{
+  "title": "Same-looking curves, different physics",
+  "mapping_titles": ["INPUT: x,y", "OUTPUT: u,v", "LOCAL MODEL: x,y"],
+  "mapping_notes": ["Start with the line x = 1.", "w = z² maps each point.\nu = 1 − v²/4", "V = x² − y²\nE = −grad V = (−2x, 2y)"],
+  "mapping_footer": "Mapped line ≠ potential contour ≠ field line",
+  "dipole_titles": ["CAMERA 1: depth hidden", "CAMERA 2: view rotated 30°"],
+  "dipole_notes": ["screen = (x, z); y is dropped", "screen = (x cos α + y sin α, z)"],
+  "dipole_footer": "Same 3D curves. Different camera. No change to the field.",
+  "draft": "ORIGINAL PREPRODUCTION STILL · NORMALIZED GEOMETRY · NOT TELEMETRY"
+}

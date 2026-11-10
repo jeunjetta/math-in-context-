@@ -1,0 +1,1093 @@
+{
+  "status": "source-frame layouts, no teaser movie",
+  "publication_approved": false,
+  "audio": false,
+  "canvas": [
+    1080,
+    1920
+  ],
+  "proposed_duration": 28,
+  "fps": 24,
+  "pillow": "12.3.0",
+  "images": {
+    "question-1080.png": "1291ef099ef1e86cbec835dae212c5ebbbd3a4da68e181b19bf675fbe870bf37",
+    "question-360.png": "d85bb687fa8a4d40bae8f65c592a2f6f4e4f0ec1677966bea098b523e3361154",
+    "component-1080.png": "f018452b57acc5280c6b8dd1df7a0a9ae12da0ed489e75b90aaa3048ef7d2c70",
+    "component-360.png": "3bd33462d4c9a837b6caf46543ee1c342a3ea63a31ca35e6e79ea1e03f933621",
+    "assumptions-1080.png": "8e91fb578ab4318aedfd6358346b29865ce46a59dece80bbdadd8d83421ef4a4",
+    "assumptions-360.png": "69379a68a2a03d53c09fa2bc9539e813433963c9f5d5da6e7d6bf7ca30c1cd5e",
+    "scope-0-1080.png": "178d69e606786710b7a2da6e7bbc69003c7ac440b1bad074ffabc51882368a24",
+    "scope-0-360.png": "831af3b76c73e5ece65cfe42a46bf7483b6c88342259d1baa53492101a9c42d1",
+    "scope-1-360.png": "350bfb29820bfb4ff9dd0c3165c018c995721c8092143628bee6af4f893d1738",
+    "scope-2-360.png": "d9e3b3adc96022256aa20c917cf151c3d9911ceabc20493687aeedc0673523e7",
+    "scope-3-360.png": "990f7c810765387eeafc1995f8ac436e3b6434470aa0cf19b2546b1ce00aa01d"
+  },
+  "frames": [
+    {
+      "time": 2,
+      "cue": "question",
+      "scope_focus": null,
+      "caption": "Suppose Fourier work is 2\u00d7 as fast. The whole system too?",
+      "proposed_cue_seconds": [
+        0,
+        4
+      ],
+      "text": [
+        {
+          "text": "SYNTHETIC \u00b7 NOT A BENCHMARK",
+          "bounds": [
+            100,
+            180,
+            726,
+            205
+          ],
+          "size": 34,
+          "color": "#63e0d0"
+        },
+        {
+          "text": "Faster Fourier.",
+          "bounds": [
+            100,
+            290,
+            623,
+            340
+          ],
+          "size": 64,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "Faster system?",
+          "bounds": [
+            100,
+            384,
+            645,
+            445
+          ],
+          "size": 64,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "Fourier speed",
+          "bounds": [
+            100,
+            560,
+            474,
+            606
+          ],
+          "size": 48,
+          "color": "#63e0d0"
+        },
+        {
+          "text": "2\u00d7",
+          "bounds": [
+            100,
+            670,
+            345,
+            789
+          ],
+          "size": 160,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "Whole workload?",
+          "bounds": [
+            100,
+            955,
+            736,
+            1006
+          ],
+          "size": 66,
+          "color": "#ffc273"
+        },
+        {
+          "text": "Predict before the reveal.",
+          "bounds": [
+            100,
+            1110,
+            658,
+            1143
+          ],
+          "size": 44,
+          "color": "#b5c4d7"
+        },
+        {
+          "text": "Suppose Fourier work is 2\u00d7 as",
+          "bounds": [
+            100,
+            1330,
+            888,
+            1375
+          ],
+          "size": 46,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "fast. The whole system too?",
+          "bounds": [
+            100,
+            1390,
+            829,
+            1435
+          ],
+          "size": 46,
+          "color": "#f4f7fc"
+        }
+      ],
+      "safe_region": [
+        90,
+        170,
+        900,
+        1550
+      ]
+    },
+    {
+      "time": 10,
+      "cue": "component",
+      "scope_focus": null,
+      "caption": "Fourier: 20 \u2192 10 ms. Other work: 80 ms.",
+      "proposed_cue_seconds": [
+        8,
+        12
+      ],
+      "text": [
+        {
+          "text": "SYNTHETIC \u00b7 NOT A BENCHMARK",
+          "bounds": [
+            100,
+            180,
+            726,
+            205
+          ],
+          "size": 34,
+          "color": "#63e0d0"
+        },
+        {
+          "text": "Only one part",
+          "bounds": [
+            100,
+            290,
+            592,
+            353
+          ],
+          "size": 64,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "changes.",
+          "bounds": [
+            100,
+            384,
+            424,
+            447
+          ],
+          "size": 64,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "Fourier",
+          "bounds": [
+            125,
+            563,
+            320,
+            600
+          ],
+          "size": 48,
+          "color": "#63e0d0"
+        },
+        {
+          "text": "20 \u2192 10 ms",
+          "bounds": [
+            125,
+            668,
+            528,
+            717
+          ],
+          "size": 64,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "Other work",
+          "bounds": [
+            125,
+            863,
+            430,
+            900
+          ],
+          "size": 48,
+          "color": "#ffc273"
+        },
+        {
+          "text": "80 ms unchanged",
+          "bounds": [
+            125,
+            968,
+            762,
+            1031
+          ],
+          "size": 64,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "Fourier: 20 \u2192 10 ms. Other",
+          "bounds": [
+            100,
+            1330,
+            792,
+            1365
+          ],
+          "size": 46,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "work: 80 ms.",
+          "bounds": [
+            100,
+            1390,
+            435,
+            1425
+          ],
+          "size": 46,
+          "color": "#f4f7fc"
+        }
+      ],
+      "safe_region": [
+        90,
+        170,
+        900,
+        1550
+      ]
+    },
+    {
+      "time": 19.5,
+      "cue": "assumptions",
+      "scope_focus": null,
+      "caption": "Sequential work. Same accuracy. No added overhead. Other work unchanged.",
+      "proposed_cue_seconds": [
+        17,
+        22
+      ],
+      "text": [
+        {
+          "text": "SYNTHETIC \u00b7 NOT A BENCHMARK",
+          "bounds": [
+            100,
+            180,
+            726,
+            205
+          ],
+          "size": 34,
+          "color": "#63e0d0"
+        },
+        {
+          "text": "This model",
+          "bounds": [
+            100,
+            290,
+            493,
+            340
+          ],
+          "size": 64,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "assumes\u2026",
+          "bounds": [
+            100,
+            384,
+            477,
+            421
+          ],
+          "size": 64,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "Sequential work",
+          "bounds": [
+            125,
+            573,
+            566,
+            619
+          ],
+          "size": 48,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "Same accuracy",
+          "bounds": [
+            125,
+            743,
+            531,
+            789
+          ],
+          "size": 48,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "No added overhead",
+          "bounds": [
+            125,
+            913,
+            654,
+            950
+          ],
+          "size": 48,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "Other work unchanged",
+          "bounds": [
+            125,
+            1083,
+            744,
+            1129
+          ],
+          "size": 48,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "Sequential work. Same",
+          "bounds": [
+            100,
+            1330,
+            699,
+            1375
+          ],
+          "size": 46,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "accuracy. No added overhead.",
+          "bounds": [
+            100,
+            1390,
+            883,
+            1435
+          ],
+          "size": 46,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "Other work unchanged.",
+          "bounds": [
+            100,
+            1450,
+            711,
+            1495
+          ],
+          "size": 46,
+          "color": "#f4f7fc"
+        }
+      ],
+      "safe_region": [
+        90,
+        170,
+        900,
+        1550
+      ]
+    },
+    {
+      "time": 22.75,
+      "cue": "scope",
+      "scope_focus": 0,
+      "caption": "Timing is not operation-count complexity, numerical stability, or validated grid readiness.",
+      "proposed_cue_seconds": [
+        22,
+        28
+      ],
+      "text": [
+        {
+          "text": "SYNTHETIC \u00b7 NOT A BENCHMARK",
+          "bounds": [
+            100,
+            180,
+            726,
+            205
+          ],
+          "size": 34,
+          "color": "#63e0d0"
+        },
+        {
+          "text": "Different questions.",
+          "bounds": [
+            100,
+            290,
+            821,
+            352
+          ],
+          "size": 64,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "Different evidence.",
+          "bounds": [
+            100,
+            384,
+            791,
+            434
+          ],
+          "size": 64,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "Complexity",
+          "bounds": [
+            120,
+            534,
+            373,
+            573
+          ],
+          "size": 40,
+          "color": "#63e0d0"
+        },
+        {
+          "text": "Stability",
+          "bounds": [
+            120,
+            618,
+            310,
+            657
+          ],
+          "size": 40,
+          "color": "#b5c4d7"
+        },
+        {
+          "text": "Latency",
+          "bounds": [
+            120,
+            702,
+            297,
+            740
+          ],
+          "size": 40,
+          "color": "#b5c4d7"
+        },
+        {
+          "text": "Grid readiness",
+          "bounds": [
+            120,
+            786,
+            448,
+            816
+          ],
+          "size": 40,
+          "color": "#b5c4d7"
+        },
+        {
+          "text": "Operation-count growth",
+          "bounds": [
+            100,
+            930,
+            779,
+            979
+          ],
+          "size": 50,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "MODEL \u00b7 synthetic lesson",
+          "bounds": [
+            100,
+            1110,
+            480,
+            1139
+          ],
+          "size": 30,
+          "color": "#b5c4d7"
+        },
+        {
+          "text": "ACCURACY CONTEXT \u00b7 FFTW authors",
+          "bounds": [
+            100,
+            1158,
+            649,
+            1181
+          ],
+          "size": 30,
+          "color": "#b5c4d7"
+        },
+        {
+          "text": "Timing is not operation-count",
+          "bounds": [
+            100,
+            1240,
+            871,
+            1285
+          ],
+          "size": 46,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "complexity, numerical",
+          "bounds": [
+            100,
+            1300,
+            671,
+            1345
+          ],
+          "size": 46,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "stability, or validated grid",
+          "bounds": [
+            100,
+            1360,
+            776,
+            1405
+          ],
+          "size": 46,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "readiness.",
+          "bounds": [
+            100,
+            1420,
+            370,
+            1455
+          ],
+          "size": 46,
+          "color": "#f4f7fc"
+        }
+      ],
+      "safe_region": [
+        90,
+        170,
+        900,
+        1550
+      ]
+    },
+    {
+      "time": 24.25,
+      "cue": "scope",
+      "scope_focus": 1,
+      "caption": "Timing is not operation-count complexity, numerical stability, or validated grid readiness.",
+      "proposed_cue_seconds": [
+        22,
+        28
+      ],
+      "text": [
+        {
+          "text": "SYNTHETIC \u00b7 NOT A BENCHMARK",
+          "bounds": [
+            100,
+            180,
+            726,
+            205
+          ],
+          "size": 34,
+          "color": "#63e0d0"
+        },
+        {
+          "text": "Different questions.",
+          "bounds": [
+            100,
+            290,
+            821,
+            352
+          ],
+          "size": 64,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "Different evidence.",
+          "bounds": [
+            100,
+            384,
+            791,
+            434
+          ],
+          "size": 64,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "Complexity",
+          "bounds": [
+            120,
+            534,
+            373,
+            573
+          ],
+          "size": 40,
+          "color": "#b5c4d7"
+        },
+        {
+          "text": "Stability",
+          "bounds": [
+            120,
+            618,
+            310,
+            657
+          ],
+          "size": 40,
+          "color": "#63e0d0"
+        },
+        {
+          "text": "Latency",
+          "bounds": [
+            120,
+            702,
+            297,
+            740
+          ],
+          "size": 40,
+          "color": "#b5c4d7"
+        },
+        {
+          "text": "Grid readiness",
+          "bounds": [
+            120,
+            786,
+            448,
+            816
+          ],
+          "size": 40,
+          "color": "#b5c4d7"
+        },
+        {
+          "text": "Numerical error behavior",
+          "bounds": [
+            100,
+            930,
+            811,
+            969
+          ],
+          "size": 50,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "MODEL \u00b7 synthetic lesson",
+          "bounds": [
+            100,
+            1110,
+            480,
+            1139
+          ],
+          "size": 30,
+          "color": "#b5c4d7"
+        },
+        {
+          "text": "ACCURACY CONTEXT \u00b7 FFTW authors",
+          "bounds": [
+            100,
+            1158,
+            649,
+            1181
+          ],
+          "size": 30,
+          "color": "#b5c4d7"
+        },
+        {
+          "text": "Timing is not operation-count",
+          "bounds": [
+            100,
+            1240,
+            871,
+            1285
+          ],
+          "size": 46,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "complexity, numerical",
+          "bounds": [
+            100,
+            1300,
+            671,
+            1345
+          ],
+          "size": 46,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "stability, or validated grid",
+          "bounds": [
+            100,
+            1360,
+            776,
+            1405
+          ],
+          "size": 46,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "readiness.",
+          "bounds": [
+            100,
+            1420,
+            370,
+            1455
+          ],
+          "size": 46,
+          "color": "#f4f7fc"
+        }
+      ],
+      "safe_region": [
+        90,
+        170,
+        900,
+        1550
+      ]
+    },
+    {
+      "time": 25.75,
+      "cue": "scope",
+      "scope_focus": 2,
+      "caption": "Timing is not operation-count complexity, numerical stability, or validated grid readiness.",
+      "proposed_cue_seconds": [
+        22,
+        28
+      ],
+      "text": [
+        {
+          "text": "SYNTHETIC \u00b7 NOT A BENCHMARK",
+          "bounds": [
+            100,
+            180,
+            726,
+            205
+          ],
+          "size": 34,
+          "color": "#63e0d0"
+        },
+        {
+          "text": "Different questions.",
+          "bounds": [
+            100,
+            290,
+            821,
+            352
+          ],
+          "size": 64,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "Different evidence.",
+          "bounds": [
+            100,
+            384,
+            791,
+            434
+          ],
+          "size": 64,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "Complexity",
+          "bounds": [
+            120,
+            534,
+            373,
+            573
+          ],
+          "size": 40,
+          "color": "#b5c4d7"
+        },
+        {
+          "text": "Stability",
+          "bounds": [
+            120,
+            618,
+            310,
+            657
+          ],
+          "size": 40,
+          "color": "#b5c4d7"
+        },
+        {
+          "text": "Latency",
+          "bounds": [
+            120,
+            702,
+            297,
+            740
+          ],
+          "size": 40,
+          "color": "#63e0d0"
+        },
+        {
+          "text": "Grid readiness",
+          "bounds": [
+            120,
+            786,
+            448,
+            816
+          ],
+          "size": 40,
+          "color": "#b5c4d7"
+        },
+        {
+          "text": "Whole-workload time",
+          "bounds": [
+            100,
+            930,
+            701,
+            969
+          ],
+          "size": 50,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "MODEL \u00b7 synthetic lesson",
+          "bounds": [
+            100,
+            1110,
+            480,
+            1139
+          ],
+          "size": 30,
+          "color": "#b5c4d7"
+        },
+        {
+          "text": "ACCURACY CONTEXT \u00b7 FFTW authors",
+          "bounds": [
+            100,
+            1158,
+            649,
+            1181
+          ],
+          "size": 30,
+          "color": "#b5c4d7"
+        },
+        {
+          "text": "Timing is not operation-count",
+          "bounds": [
+            100,
+            1240,
+            871,
+            1285
+          ],
+          "size": 46,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "complexity, numerical",
+          "bounds": [
+            100,
+            1300,
+            671,
+            1345
+          ],
+          "size": 46,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "stability, or validated grid",
+          "bounds": [
+            100,
+            1360,
+            776,
+            1405
+          ],
+          "size": 46,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "readiness.",
+          "bounds": [
+            100,
+            1420,
+            370,
+            1455
+          ],
+          "size": 46,
+          "color": "#f4f7fc"
+        }
+      ],
+      "safe_region": [
+        90,
+        170,
+        900,
+        1550
+      ]
+    },
+    {
+      "time": 27.25,
+      "cue": "scope",
+      "scope_focus": 3,
+      "caption": "Timing is not operation-count complexity, numerical stability, or validated grid readiness.",
+      "proposed_cue_seconds": [
+        22,
+        28
+      ],
+      "text": [
+        {
+          "text": "SYNTHETIC \u00b7 NOT A BENCHMARK",
+          "bounds": [
+            100,
+            180,
+            726,
+            205
+          ],
+          "size": 34,
+          "color": "#63e0d0"
+        },
+        {
+          "text": "Different questions.",
+          "bounds": [
+            100,
+            290,
+            821,
+            352
+          ],
+          "size": 64,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "Different evidence.",
+          "bounds": [
+            100,
+            384,
+            791,
+            434
+          ],
+          "size": 64,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "Complexity",
+          "bounds": [
+            120,
+            534,
+            373,
+            573
+          ],
+          "size": 40,
+          "color": "#b5c4d7"
+        },
+        {
+          "text": "Stability",
+          "bounds": [
+            120,
+            618,
+            310,
+            657
+          ],
+          "size": 40,
+          "color": "#b5c4d7"
+        },
+        {
+          "text": "Latency",
+          "bounds": [
+            120,
+            702,
+            297,
+            740
+          ],
+          "size": 40,
+          "color": "#b5c4d7"
+        },
+        {
+          "text": "Grid readiness",
+          "bounds": [
+            120,
+            786,
+            448,
+            816
+          ],
+          "size": 40,
+          "color": "#63e0d0"
+        },
+        {
+          "text": "Validation + deadlines",
+          "bounds": [
+            100,
+            930,
+            734,
+            969
+          ],
+          "size": 50,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "MODEL \u00b7 synthetic lesson",
+          "bounds": [
+            100,
+            1110,
+            480,
+            1139
+          ],
+          "size": 30,
+          "color": "#b5c4d7"
+        },
+        {
+          "text": "ACCURACY CONTEXT \u00b7 FFTW authors",
+          "bounds": [
+            100,
+            1158,
+            649,
+            1181
+          ],
+          "size": 30,
+          "color": "#b5c4d7"
+        },
+        {
+          "text": "Timing is not operation-count",
+          "bounds": [
+            100,
+            1240,
+            871,
+            1285
+          ],
+          "size": 46,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "complexity, numerical",
+          "bounds": [
+            100,
+            1300,
+            671,
+            1345
+          ],
+          "size": 46,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "stability, or validated grid",
+          "bounds": [
+            100,
+            1360,
+            776,
+            1405
+          ],
+          "size": 46,
+          "color": "#f4f7fc"
+        },
+        {
+          "text": "readiness.",
+          "bounds": [
+            100,
+            1420,
+            370,
+            1455
+          ],
+          "size": 46,
+          "color": "#f4f7fc"
+        }
+      ],
+      "safe_region": [
+        90,
+        170,
+        900,
+        1550
+      ]
+    }
+  ],
+  "source_sha256": {
+    "fft_teaser_layouts.py": "7160070c1b7a1acd7731105d2da8f2ddaac51b3e9164491637c12c690815957e",
+    "fft_vertical_keyframes.py": "fef278a261315939eeaa7eb27d630dd8c9afdb42a844e2f46d7658e996eeb64b",
+    "fft_teaser.py": "f6ad3f46470cf1c1e0d2c154accc616eca26a9fe669fa026c369974874c7ed96",
+    "lesson_model.py": "bb1dc4939db2806b136986f5f287f9d5ecea4f2b9d93336434c96ecde852bc5c",
+    "render.py": "186ca20d2a95d9cb10b728edecf786ddc5c47a7ac70ede9f0ae76df70b17b1f1",
+    "fft-latency/teaser-layouts.json": "4ff0b2c242f5df6b27416736de73ff371bf8274fbc27b43c02b877acdbc19f65",
+    "fft-latency/vertical-keyframes.json": "1d3e2c60692b2cad7002136c7598aee19e628ddaa77e91ccd31c4bb3c06f3746",
+    "fft-latency/teaser.json": "5fbe660617eac237e9f3ff09d7ee240e269a49ec7ab6b05cf1b8ebabe822ec4d",
+    "fft-latency/lesson.json": "8d6cb7de816988a1577a4ae8d2ac942ce01567331110dc075c05dfba97ffc3dc",
+    "fft-latency/review-version.json": "0bed8b95103558c954bf099c9d453ec5105b17434746a48a2bdcd726cbb7f994"
+  },
+  "font_sha256": {
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e",
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf": "a4c5bc453ca281d90ea079e596da7ae0dfeb5777497c29ec254e76d97ff6f890"
+  }
+}

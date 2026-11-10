@@ -1,0 +1,306 @@
+{
+  "source_commit": "61f11c05c8c47011eb93645bd074075272b9da32",
+  "movie": "fft-latency-teaser-draft.mp4",
+  "sha256": "1ad0c7ed5ed0de7f14b0723ef3af37ab4e22b5c7616391a744c8a6fd136b4f50",
+  "media": {
+    "codec": "h264",
+    "width": 1080,
+    "height": 1920,
+    "fps": 24,
+    "frames": 672,
+    "duration": 28.0,
+    "audio_streams": 0,
+    "timestamps_verified": true
+  },
+  "complete_decode": true,
+  "audio": false,
+  "publication_approved": false,
+  "samples": [
+    {
+      "frame": 0,
+      "seconds": 0.0,
+      "cue": "question",
+      "scope_focus": null,
+      "expected_caption": "Suppose Fourier work is 2\u00d7 as fast. The whole system too?",
+      "image": "encoded/0001.png",
+      "small": "encoded/0001-360.png"
+    },
+    {
+      "frame": 48,
+      "seconds": 2.0,
+      "cue": "question",
+      "scope_focus": null,
+      "expected_caption": "Suppose Fourier work is 2\u00d7 as fast. The whole system too?",
+      "image": "encoded/0002.png",
+      "small": "encoded/0002-360.png"
+    },
+    {
+      "frame": 95,
+      "seconds": 3.9583333333333335,
+      "cue": "question",
+      "scope_focus": null,
+      "expected_caption": "Suppose Fourier work is 2\u00d7 as fast. The whole system too?",
+      "image": "encoded/0003.png",
+      "small": "encoded/0003-360.png"
+    },
+    {
+      "frame": 96,
+      "seconds": 4.0,
+      "cue": "baseline",
+      "scope_focus": null,
+      "expected_caption": "20 ms Fourier + 80 ms other work = 100 ms.",
+      "image": "encoded/0004.png",
+      "small": "encoded/0004-360.png"
+    },
+    {
+      "frame": 144,
+      "seconds": 6.0,
+      "cue": "baseline",
+      "scope_focus": null,
+      "expected_caption": "20 ms Fourier + 80 ms other work = 100 ms.",
+      "image": "encoded/0005.png",
+      "small": "encoded/0005-360.png"
+    },
+    {
+      "frame": 191,
+      "seconds": 7.958333333333333,
+      "cue": "baseline",
+      "scope_focus": null,
+      "expected_caption": "20 ms Fourier + 80 ms other work = 100 ms.",
+      "image": "encoded/0006.png",
+      "small": "encoded/0006-360.png"
+    },
+    {
+      "frame": 192,
+      "seconds": 8.0,
+      "cue": "component",
+      "scope_focus": null,
+      "expected_caption": "Fourier: 20 \u2192 10 ms. Other work: 80 ms.",
+      "image": "encoded/0007.png",
+      "small": "encoded/0007-360.png"
+    },
+    {
+      "frame": 240,
+      "seconds": 10.0,
+      "cue": "component",
+      "scope_focus": null,
+      "expected_caption": "Fourier: 20 \u2192 10 ms. Other work: 80 ms.",
+      "image": "encoded/0008.png",
+      "small": "encoded/0008-360.png"
+    },
+    {
+      "frame": 287,
+      "seconds": 11.958333333333334,
+      "cue": "component",
+      "scope_focus": null,
+      "expected_caption": "Fourier: 20 \u2192 10 ms. Other work: 80 ms.",
+      "image": "encoded/0009.png",
+      "small": "encoded/0009-360.png"
+    },
+    {
+      "frame": 288,
+      "seconds": 12.0,
+      "cue": "result",
+      "scope_focus": null,
+      "expected_caption": "10 + 80 = 90 ms total\u2014not 2\u00d7 overall speedup.",
+      "image": "encoded/0010.png",
+      "small": "encoded/0010-360.png"
+    },
+    {
+      "frame": 336,
+      "seconds": 14.0,
+      "cue": "result",
+      "scope_focus": null,
+      "expected_caption": "10 + 80 = 90 ms total\u2014not 2\u00d7 overall speedup.",
+      "image": "encoded/0011.png",
+      "small": "encoded/0011-360.png"
+    },
+    {
+      "frame": 348,
+      "seconds": 14.5,
+      "cue": "result",
+      "scope_focus": null,
+      "expected_caption": "10 + 80 = 90 ms total\u2014not 2\u00d7 overall speedup.",
+      "image": "encoded/0012.png",
+      "small": "encoded/0012-360.png"
+    },
+    {
+      "frame": 384,
+      "seconds": 16.0,
+      "cue": "result",
+      "scope_focus": null,
+      "expected_caption": "10 + 80 = 90 ms total\u2014not 2\u00d7 overall speedup.",
+      "image": "encoded/0013.png",
+      "small": "encoded/0013-360.png"
+    },
+    {
+      "frame": 407,
+      "seconds": 16.958333333333332,
+      "cue": "result",
+      "scope_focus": null,
+      "expected_caption": "10 + 80 = 90 ms total\u2014not 2\u00d7 overall speedup.",
+      "image": "encoded/0014.png",
+      "small": "encoded/0014-360.png"
+    },
+    {
+      "frame": 408,
+      "seconds": 17.0,
+      "cue": "assumptions",
+      "scope_focus": null,
+      "expected_caption": "Sequential work. Same accuracy. No added overhead. Other work unchanged.",
+      "image": "encoded/0015.png",
+      "small": "encoded/0015-360.png"
+    },
+    {
+      "frame": 432,
+      "seconds": 18.0,
+      "cue": "assumptions",
+      "scope_focus": null,
+      "expected_caption": "Sequential work. Same accuracy. No added overhead. Other work unchanged.",
+      "image": "encoded/0016.png",
+      "small": "encoded/0016-360.png"
+    },
+    {
+      "frame": 468,
+      "seconds": 19.5,
+      "cue": "assumptions",
+      "scope_focus": null,
+      "expected_caption": "Sequential work. Same accuracy. No added overhead. Other work unchanged.",
+      "image": "encoded/0017.png",
+      "small": "encoded/0017-360.png"
+    },
+    {
+      "frame": 480,
+      "seconds": 20.0,
+      "cue": "assumptions",
+      "scope_focus": null,
+      "expected_caption": "Sequential work. Same accuracy. No added overhead. Other work unchanged.",
+      "image": "encoded/0018.png",
+      "small": "encoded/0018-360.png"
+    },
+    {
+      "frame": 527,
+      "seconds": 21.958333333333332,
+      "cue": "assumptions",
+      "scope_focus": null,
+      "expected_caption": "Sequential work. Same accuracy. No added overhead. Other work unchanged.",
+      "image": "encoded/0019.png",
+      "small": "encoded/0019-360.png"
+    },
+    {
+      "frame": 528,
+      "seconds": 22.0,
+      "cue": "scope",
+      "scope_focus": 0,
+      "expected_caption": "Timing is not operation-count complexity, numerical stability, or validated grid readiness.",
+      "image": "encoded/0020.png",
+      "small": "encoded/0020-360.png"
+    },
+    {
+      "frame": 563,
+      "seconds": 23.458333333333332,
+      "cue": "scope",
+      "scope_focus": 0,
+      "expected_caption": "Timing is not operation-count complexity, numerical stability, or validated grid readiness.",
+      "image": "encoded/0021.png",
+      "small": "encoded/0021-360.png"
+    },
+    {
+      "frame": 564,
+      "seconds": 23.5,
+      "cue": "scope",
+      "scope_focus": 1,
+      "expected_caption": "Timing is not operation-count complexity, numerical stability, or validated grid readiness.",
+      "image": "encoded/0022.png",
+      "small": "encoded/0022-360.png"
+    },
+    {
+      "frame": 576,
+      "seconds": 24.0,
+      "cue": "scope",
+      "scope_focus": 1,
+      "expected_caption": "Timing is not operation-count complexity, numerical stability, or validated grid readiness.",
+      "image": "encoded/0023.png",
+      "small": "encoded/0023-360.png"
+    },
+    {
+      "frame": 599,
+      "seconds": 24.958333333333332,
+      "cue": "scope",
+      "scope_focus": 1,
+      "expected_caption": "Timing is not operation-count complexity, numerical stability, or validated grid readiness.",
+      "image": "encoded/0024.png",
+      "small": "encoded/0024-360.png"
+    },
+    {
+      "frame": 600,
+      "seconds": 25.0,
+      "cue": "scope",
+      "scope_focus": 2,
+      "expected_caption": "Timing is not operation-count complexity, numerical stability, or validated grid readiness.",
+      "image": "encoded/0025.png",
+      "small": "encoded/0025-360.png"
+    },
+    {
+      "frame": 624,
+      "seconds": 26.0,
+      "cue": "scope",
+      "scope_focus": 2,
+      "expected_caption": "Timing is not operation-count complexity, numerical stability, or validated grid readiness.",
+      "image": "encoded/0026.png",
+      "small": "encoded/0026-360.png"
+    },
+    {
+      "frame": 635,
+      "seconds": 26.458333333333332,
+      "cue": "scope",
+      "scope_focus": 2,
+      "expected_caption": "Timing is not operation-count complexity, numerical stability, or validated grid readiness.",
+      "image": "encoded/0027.png",
+      "small": "encoded/0027-360.png"
+    },
+    {
+      "frame": 636,
+      "seconds": 26.5,
+      "cue": "scope",
+      "scope_focus": 3,
+      "expected_caption": "Timing is not operation-count complexity, numerical stability, or validated grid readiness.",
+      "image": "encoded/0028.png",
+      "small": "encoded/0028-360.png"
+    },
+    {
+      "frame": 671,
+      "seconds": 27.958333333333332,
+      "cue": "scope",
+      "scope_focus": 3,
+      "expected_caption": "Timing is not operation-count complexity, numerical stability, or validated grid readiness.",
+      "image": "encoded/0029.png",
+      "small": "encoded/0029-360.png"
+    }
+  ],
+  "captions_sha256": "a2751098d2961d9bc0ed5d35bca2fe486f9e7634ff9c145fe91a4cadb06bd850",
+  "pillow": "12.3.0",
+  "source_hashes": {
+    "fft_teaser_media.py": "bdc3393ff6c874fbac71fb4a7e6e79edcc18f670a58953b72d5320b15760f55a",
+    "fft_teaser_layouts.py": "7160070c1b7a1acd7731105d2da8f2ddaac51b3e9164491637c12c690815957e",
+    "fft_vertical_keyframes.py": "fef278a261315939eeaa7eb27d630dd8c9afdb42a844e2f46d7658e996eeb64b",
+    "fft_teaser.py": "f6ad3f46470cf1c1e0d2c154accc616eca26a9fe669fa026c369974874c7ed96",
+    "lesson_model.py": "bb1dc4939db2806b136986f5f287f9d5ecea4f2b9d93336434c96ecde852bc5c",
+    "render.py": "186ca20d2a95d9cb10b728edecf786ddc5c47a7ac70ede9f0ae76df70b17b1f1",
+    "qa.py": "45ae6c25baf9f54564c8cf4cf95ee2e8590ed988fc5e732e9cf96fc21094d9b9",
+    "fft-latency/teaser-layouts.json": "4ff0b2c242f5df6b27416736de73ff371bf8274fbc27b43c02b877acdbc19f65",
+    "fft-latency/vertical-keyframes.json": "1d3e2c60692b2cad7002136c7598aee19e628ddaa77e91ccd31c4bb3c06f3746",
+    "fft-latency/teaser.json": "5fbe660617eac237e9f3ff09d7ee240e269a49ec7ab6b05cf1b8ebabe822ec4d",
+    "fft-latency/lesson.json": "8d6cb7de816988a1577a4ae8d2ac942ce01567331110dc075c05dfba97ffc3dc",
+    "fft-latency/review-version.json": "0bed8b95103558c954bf099c9d453ec5105b17434746a48a2bdcd726cbb7f994"
+  },
+  "fonts": {
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e",
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf": "a4c5bc453ca281d90ea079e596da7ae0dfeb5777497c29ec254e76d97ff6f890"
+  },
+  "tools": {
+    "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffprobe": "ffprobe version 7.1.5-0+deb13u1 Copyright (c) 2007-2026 the FFmpeg developers"
+  },
+  "limitations": "Expected captions are source metadata, not OCR. Sampled inspection is not full playback, accessibility, comprehension, audio sync or publishing approval."
+}
