@@ -1,5 +1,9 @@
 # FFT teaser · complete source-frame layouts
 
+11 November follow-on: [first complete encoded test](TEASER_RENDER.md).
+This page remains the dated source-frame milestone; see the render page
+for current media status and encoded QA, not the historical “no movie” below.
+
 10 November 2026 · draft, **not a movie or an approved release**.
 Source commit `c4cbdd55621cc26d7bcc6637393b5d32be882fd0` on PR #3.
 The main 80-second FFT v7 explainer remains the first release milestone.

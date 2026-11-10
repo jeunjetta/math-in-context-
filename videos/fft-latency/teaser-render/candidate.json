@@ -1,0 +1,16 @@
+{
+  "candidate": "fft-teaser-first-silent-test",
+  "status": "rendered test, not a reviewed release",
+  "sha256": "1ad0c7ed5ed0de7f14b0723ef3af37ab4e22b5c7616391a744c8a6fd136b4f50",
+  "source_baseline": "61f11c05c8c47011eb93645bd074075272b9da32",
+  "duration": 28,
+  "width": 1080,
+  "height": 1920,
+  "fps": 24,
+  "frames": 672,
+  "audio": false,
+  "publication_approved": false,
+  "public_video_url": null,
+  "interactive_lesson_url": null,
+  "render_report": "render-report.json"
+}

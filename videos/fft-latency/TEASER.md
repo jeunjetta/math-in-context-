@@ -1,5 +1,9 @@
 # FFT/latency · 28-second teaser storyboard
 
+Current follow-on, 11 November: [first silent encoded test](TEASER_RENDER.md)
+now exists. The text below is the retained 9–10 November preproduction record;
+its “no movie” statements are historical, not current status.
+
 **9 November 2026 · preproduction only · no teaser movie or audio exists.**
 This is a separate proposed vertical edit, not a crop of the 80-second pilot.
 The 60–90-second first milestone remains the unchanged v7 full explainer.

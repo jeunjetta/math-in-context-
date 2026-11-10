@@ -1,5 +1,66 @@
 # Video status log
 
+## 11 November 2026 · first complete silent FFT teaser encode
+
+Fresh remote PR #3 head `61f11c05c8c47011eb93645bd074075272b9da32`,
+isolated worktree at that exact commit. Read current main README (template),
+confirmed AGENTS/ROADMAP absent on main, then read unmerged #1 instructions/
+roadmap and lesson at unchanged `7905dc2b30ad9c05436f4db4a03d9cfe34224ffc`.
+Read video README/status/layout/teaser sources, open PR inventory #1–3,
+their metadata and #3 discussion; no newer human feedback identified.
+Main c9fdf987 and parent FFT #2 97c8aea3 unchanged/unmerged. Changes target
+existing codex/video-curves-storyboard / draft PR #3; only videos/ touched.
+
+Completed previous next step: fft_teaser_media.py encodes the unchanged
+six-scene source frames and performs complete decoded QA. Separate wrapper
+because study_media.py is landscape-only; no old helper or frozen source
+asset modified. Added test_fft_teaser_media.py, TEASER_RENDER.md,
+teaser-render/candidate.json, render-report.json, matching silent VTT and
+two decoded 360-wide PNGs; README/TEASER/layout pages link current status.
+Historical source JSON/provisional VTT preserved, not silently relabelled.
+
+Actual output: H.264, 1080×1920, 24 fps, 672 frames, 28.000 s, no audio,
+383383 bytes. Complete stream decode and every-frame timestamp, dimensions,
+count/rates, duration and one-video/no-audio-stream checks pass. SHA256
+1ad0c7ed5ed0de7f14b0723ef3af37ab4e22b5c7616391a744c8a6fd136b4f50.
+Owner review copy saved separately, not a public upload or Git binary.
+Report records starting commit, exact modified code/data and font hashes,
+Pillow and external FFmpeg/FFprobe versions; captions are source metadata,
+not OCR or a claim of automatic semantic/pixel source identification.
+
+Twenty-nine decoded samples exported. Inspected 18 at 360 width around
+scene/focus cuts and end (IDs listed in TEASER_RENDER.md), plus result 288
+and ending 671 at full size. No clipping or caption/cut mismatch found in
+inspected samples; original synthetic 20+80→10+80=90, labels, assumptions
+and scope/source roles retained. Synthetic/source notes remain small at
+360; closing 1.5-second focuses need full human/tablet pace judgement.
+No continuous human playback, accessibility/comprehension or audio-sync
+approval. VTT explicitly describes a silent reading track, not speech.
+
+Final validation: **85 tests pass in 54.092 s**. Four new tests cover
+VTT/cut coverage, vertical media facts and bad timestamp rejection,
+no-overwrite/input guards, candidate/source/report/caption identity.
+Focused four pass in 0.017 s; existing teaser/package --check and whitespace
+checks pass. Earlier 81 source-frame/content regressions retained. No
+notebook changed; Marimo check/export not rerun. Both full movie candidates,
+full lessons/VTTs, research, old render/model helpers and dependencies/
+uv.lock untouched. FFT v7 remains the first 60–90-second release milestone.
+
+Official FFmpeg/FFprobe docs and legal page rechecked 11 November; tested
+7.1.5-0+deb13u1 with GPL/libx264 enabled, external not bundled. Pillow
+license page, installed pinned 12.3.0 notice and system DejaVu notice read;
+FFTW accuracy notes and #1 source rechecked. No blanket commercial/codec
+rights clearance, paid service, copied assets, quotes, private/operator data
+or fabricated voice. Open Notebook deployment is not assumed.
+
+Next bounded step: feedback first; otherwise assess closing reading load
+and prepare one slower comparison, retaining this frozen candidate. Reading
+rates alone cannot prove comprehension. No encode blocker. Full human/
+tablet, independent editorial/math and rights review, audio/destination
+choices, parent reconciliation and explicit exact-version publication
+approval remain gates. Nothing published/merged; no account change or new
+automation. Previous status/QA below remains dated historical evidence.
+
 ## 10 November 2026 · complete FFT teaser source-frame layouts
 
 Fresh source PR #3 `c4cbdd55621cc26d7bcc6637393b5d32be882fd0`,

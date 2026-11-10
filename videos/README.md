@@ -13,13 +13,15 @@ The [v7 packaging audit](fft-latency/PACKAGE_AUDIT_V7.md) reconciles current
 video/blog handoff identities, the component-specific title and source credits.
 Its shared snapshot and regression tests detect narrow drift, not release approval.
 The [28-second FFT teaser storyboard](fft-latency/TEASER.md) now has a
-source-bound script and provisional VTT. It is unrendered, not a replacement pilot.
+source-bound preproduction script and provisional VTT, retained for provenance.
 Two [original vertical keyframe prototypes](fft-latency/VERTICAL_KEYFRAMES.md)
 now test the baseline/result layout at full, 540 and 360-pixel widths.
 They are stills, not a rendered teaser or a reviewed release.
 The [complete teaser source-frame layouts](fft-latency/TEASER_LAYOUTS.md)
 add the other four scenes and staged closing distinctions. All 672 proposed
-frames are testable; no teaser MP4/audio or encoded-frame QA is claimed.
+frames are testable. The [first complete silent encoded teaser test](fft-latency/TEASER_RENDER.md)
+now has a matching reading-track VTT, full decode/timestamp checks and sampled
+pixel review. It is not an approved release or a replacement for the full pilot.
 
 Later candidate: [Same-looking curves, different physics](same-looking-curves/STORYBOARD.md)
 has an original 82-second unrecorded script, primary-source ledger and tested
