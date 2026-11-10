@@ -1,5 +1,61 @@
 # Video status log
 
+## 10 November 2026 · complete FFT teaser source-frame layouts
+
+Fresh source PR #3 `c4cbdd55621cc26d7bcc6637393b5d32be882fd0`,
+fetched into an isolated worktree matching the live commit. Read live main
+README (template), confirmed AGENTS/ROADMAP absent there, then read #1's
+instructions/roadmap and relevant source/concept registries at unchanged
+`7905dc2b30ad9c05436f4db4a03d9cfe34224ffc`. Read current video status,
+README, FFT/teaser/keyframe data and sources, open PR inventory #1–3,
+metadata and #3 discussion. No newer human review feedback identified.
+Main remains c9fdf987; parent FFT #2 remains 97c8aea3, both unmerged.
+Changes target existing codex/video-curves-storyboard / draft PR #3;
+no unrelated work, research, notebook, root docs or account changes.
+
+Completed prior next task: four missing question/component/assumptions/
+scope layouts plus full six-scene source-frame dispatch. Added
+fft_teaser_layouts.py, test_fft_teaser_layouts.py,
+fft-latency/teaser-layouts.json and TEASER_LAYOUTS.md, eleven PNG previews
+and report.json under fft-latency/teaser-layouts/; README and TEASER link
+the handoff. Previous baseline/result renderer and preview hashes untouched.
+Question does not reveal 90 ms; component shows only 20→10 and unchanged
+80 ms. Four assumptions explicit. Closing retains four category titles,
+one active description per 1.5-second phase and model/accuracy source roles.
+Full frozen pilot, curves movie, lessons/VTTs, old model/render helpers,
+dependencies and uv.lock unchanged. FFT v7 remains the first milestone.
+
+Actual final validation: **81 tests pass in 54.577 s** after refreshing
+previews and rerunning the clean process. Four new tests include all 672
+1080×1920 source frames / 28 s at 24 fps, five scene cuts, four scope-phase
+starts, caption identity, no early answer, four assumptions/source presence,
+glyph fit, range/overflow/draft/no-overwrite and source/image/report guards.
+Focused final four pass in 7.749 s; existing teaser/package --check and
+git diff --check pass. No notebook changed; Marimo export not rerun.
+
+Initial checks caught a clipped closing caption. Enlarged/lifted its band
+without reducing 46-pixel caption type; moved credits higher after small-
+screen inspection. Final four new full-size layouts and seven 360-wide
+samples inspected, including every closing phase. No clipping found there.
+Secondary source notes and synthetic disclosure remain small at 360;
+the 1.5-second focuses need actual playback and device feedback. Source
+report pins images/fonts/code/data and intended cues; these are not encoded
+frames, measured reading/comprehension results or accessibility approval.
+
+Rechecked official Pillow textbbox/docs and MIT-CMU license, installed
+Pillow 12.3.0 license and DejaVu notice 10 November. Current stable docs
+show 13.0.0; retained pinned APIs tested locally. FFTW authors' accuracy
+notes rechecked as context, not timing evidence. Original graphics, no
+copied assets, clips, voices, quotes, operator data or paid tools/services.
+
+No teaser MP4/audio exists; no encoder/decode/audio-sync claim. Next bounded
+step: encode first full teaser test, generate a matching silent-draft VTT,
+fully decode and inspect encoded cut/focus/caption/end samples. There is
+no technical source-frame blocker. Human/editorial/device and rights review,
+audio choice, verified destinations, parent reconciliation and exact-version
+publication approval remain gates. No publishing, merging, extra automation
+or assumed Open Notebook deployment. Earlier QA below stays historical.
+
 ## 10 November 2026 · FFT vertical baseline/result still prototypes
 
 Fresh clone of PR #3 head `99a70b7cdbbaecc94086b932fc385a532d3c12a7`,

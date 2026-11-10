@@ -17,6 +17,9 @@ source-bound script and provisional VTT. It is unrendered, not a replacement pil
 Two [original vertical keyframe prototypes](fft-latency/VERTICAL_KEYFRAMES.md)
 now test the baseline/result layout at full, 540 and 360-pixel widths.
 They are stills, not a rendered teaser or a reviewed release.
+The [complete teaser source-frame layouts](fft-latency/TEASER_LAYOUTS.md)
+add the other four scenes and staged closing distinctions. All 672 proposed
+frames are testable; no teaser MP4/audio or encoded-frame QA is claimed.
 
 Later candidate: [Same-looking curves, different physics](same-looking-curves/STORYBOARD.md)
 has an original 82-second unrecorded script, primary-source ledger and tested

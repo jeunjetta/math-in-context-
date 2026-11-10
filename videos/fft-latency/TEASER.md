@@ -9,6 +9,10 @@ Nothing is uploaded, posted, scheduled, merged or approved here.
 are now rendered and inspected at three widths. The other four layouts and
 the full teaser movie are still not rendered; the storyboard below is retained.
 
+Later 10 November: [all six source-frame layouts](TEASER_LAYOUTS.md) now
+exist and are tested, including the four missing scenes. No teaser movie
+or audio exists; earlier notes above are dated preproduction snapshots.
+
 Inspected baseline: `a1ae076e794ebc5ccc3c45b65132694e3a8c0af0`;
 original FFT work branch/PR #2: `97c8aea386535f8eca8ffd00478f36b56adc364e`.
 Frozen source movie SHA256:
