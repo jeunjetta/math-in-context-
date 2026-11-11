@@ -26,7 +26,9 @@ pixel review. It is not an approved release or a replacement for the full pilot.
 The [slower closing comparison](fft-latency/TEASER_PACING.md) quantifies
 the competing closing copy and supplies a tested 34-second timing alternative.
 Only the four final holds double; original pixels and frozen movies stay intact.
-This alternative has not been encoded or reviewed on a device.
+The [34-second encoded comparison](fft-latency/TEASER_SLOW_RENDER.md) now
+has complete decode/timestamp checks and sampled pixel review. Neither
+version has been approved by complete actual-device playback.
 
 Later candidate: [Same-looking curves, different physics](same-looking-curves/STORYBOARD.md)
 has an original 82-second unrecorded script, primary-source ledger and tested

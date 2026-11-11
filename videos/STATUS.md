@@ -1,5 +1,67 @@
 # Video status log
 
+## 12 November 2026 · encoded slower FFT teaser comparison
+
+Fresh PR #4 head c1a0bf873111dbd73b161bcb17815fa6cf2aba29; isolated
+worktree from fetched exact remote commit. Read current main README and
+confirmed AGENTS/ROADMAP absent there, read #1 instructions/roadmap/source
+registry, video README/status, lesson and pacing/render sources. Open PRs
+#1–4 remain unmerged; #4 has no human discussion feedback. Prior parent
+heads #1 7905dc2b, #2 97c8aea3, #3 23aa5b2 unchanged. Work updates only
+codex/video-teaser-pacing / draft PR #4, stacked on #3, not other branches.
+
+Delivered fft_teaser_slow_media.py, test_fft_teaser_slow_media.py,
+fft-latency/TEASER_SLOW_RENDER.md, teaser-slower-render/candidate.json,
+render-report.json, matching rendered reading-track VTT, two decoded PNGs,
+README link and this log. Existing timing proposal remains dated history.
+New wrapper retains frozen helpers and uses the tested source-time adapter.
+No retiming/graphics/model/dependency changes beyond the already proposed
+34-second comparison. All new/modified files are under videos/.
+
+Output: H.264, 1080×1920, 24 fps, 816 frames, 34.000 s, 461078 bytes,
+no audio/extra streams. Complete decode and every-frame timestamps,
+count/rates/dimensions/duration pass. SHA256
+7651d3e43a027947cf44efce39ecd76c14700e02df98a6d6a377fcdfde28405d.
+Owner review copy saved separately; no public video/lesson URL or Git movie.
+Rendered VTT is a silent reading track, not aligned speech. Report includes
+exact source/tool/font hashes and 29 decoded sample records; expected
+captions are mapped source metadata, not OCR. Local sample paths in report
+are not all committed; only result/end 360-wide PNGs are included.
+
+Actually inspected 18 decoded 360-wide samples on three chronological cut
+sheets: 0,95,96,191,192,287,288,407,408,527,528,599,600,671,672,743,744,815;
+also full-resolution result 288 and ending 815. No clipping/caption-focus
+mismatch found there. Closing focuses switch at 22,25,28,31 s; original
+synthetic label, 20+80→10+80=90 arithmetic and four assumptions retained.
+Result PNG is byte-identical to prior decoded result; ending is separately
+decoded from this encode. This is sampled inspection, not continuous human
+playback, actual-tablet, accessibility/comprehension or audio-sync review.
+Secondary source/synthetic notes remain small at 360. Three-second holds
+are an alternative for feedback, not evidence of better learning outcomes.
+
+Final full suite: **93 tests pass in 34.090 s**. Four new tests cover 34 s
+versus 28 s format and bad timestamps, incoming caption/focus cuts,
+no-overwrite/input guards, frozen candidate/source/report/VTT identity.
+Existing 89 regressions retained; pacing --check and whitespace check pass.
+No notebook edits; Marimo check/export not rerun. Frozen 28-second teaser,
+80-second FFT v7, curves movie, old helpers/lessons/VTTs, dependency pins/
+uv.lock and research unchanged. Tested tree is verified before branch update.
+
+Official FFmpeg/FFprobe docs and licensing rechecked 12 November; external
+7.1.5 GPL/libx264 build, pinned Pillow 12.3.0 and system DejaVu notices
+retained. No binary/font bundle, new dependency, blanket commercial/codec
+clearance, paid service, copied footage/music or fabricated voice. FFTW
+authors' accuracy context rechecked; synthetic timing is not a new FFT or
+grid readiness claim. No private/operator data or Open Notebook deployment.
+
+Next: complete 28- versus 34-second tablet playback and timestamped feedback,
+then fix one observed issue rather than generate a third timing variant.
+No technical render blocker. Actual-device/full human, independent math/
+editorial/rights review, audio/public destinations, stacked-parent
+reconciliation and explicit exact-version publication approval remain
+unchecked. FFT v7 stays the first release milestone. No YouTube/Substack/
+social publishing, merge, account setting change or new automation.
+
 ## 11 November 2026 · measured closing load and slower timing alternative
 
 Fresh source: PR #3 head 23aa5b2ab3ec88d07a39251c2ba01c95305468e1.
