@@ -23,6 +23,11 @@ frames are testable. The [first complete silent encoded teaser test](fft-latency
 now has a matching reading-track VTT, full decode/timestamp checks and sampled
 pixel review. It is not an approved release or a replacement for the full pilot.
 
+The [slower closing comparison](fft-latency/TEASER_PACING.md) quantifies
+the competing closing copy and supplies a tested 34-second timing alternative.
+Only the four final holds double; original pixels and frozen movies stay intact.
+This alternative has not been encoded or reviewed on a device.
+
 Later candidate: [Same-looking curves, different physics](same-looking-curves/STORYBOARD.md)
 has an original 82-second unrecorded script, primary-source ledger and tested
 geometry helpers. Two [original comparison keyframes](same-looking-curves/KEYFRAMES.md)

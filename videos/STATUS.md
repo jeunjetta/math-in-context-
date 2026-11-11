@@ -1,5 +1,56 @@
 # Video status log
 
+## 11 November 2026 · measured closing load and slower timing alternative
+
+Fresh source: PR #3 head 23aa5b2ab3ec88d07a39251c2ba01c95305468e1.
+Fetched origin, inspected current main README (template), #1 README/AGENTS/
+ROADMAP/source registry at 7905dc2b, video README/status, teaser lesson,
+script/layouts/render handoff and all open PR metadata (#1–3) plus #3
+discussion. No newer human timing feedback found. AGENTS/ROADMAP remain
+absent on main and video branch; #1 still unmerged. Existing #2 and #3
+branches are untouched. Work is isolated on codex/video-teaser-pacing,
+stacked on #3 for narrow review, not a request to merge the stack.
+
+Delivered fft_teaser_pacing.py, test_fft_teaser_pacing.py,
+fft-latency/teaser-pacing.json, generated TEASER_PACING.md,
+teaser-pacing-report.json and teaser-pacing.vtt, plus README link and log.
+Report records source commit, frozen MP4 identity and source-file hashes.
+New timing preserves 0–22 s and doubles four final focus holds 1.5→3 s:
+34 seconds / 816 proposed frames at 24 fps. The frame adapter reuses exact
+original renderer pixels at mapped times without changing frozen helpers.
+
+Mechanical reading-load audit: 34 persistent whitespace tokens (including
+11-token caption) plus 10 changing description tokens. Persistent text is
+counted once, not recharged to each focus. Description-only token/second
+rates halve; neither metric predicts reading time or comprehension. No
+new numerical threshold or evidence of better learner outcomes is claimed.
+
+Validation: four focused tests pass in 0.545 s; full suite **89 tests pass
+in 54.854 s**. New tests check all 816 mapped times, exact incoming cuts,
+12 pixel-identical source-frame comparisons with actual glyph-fit checks,
+invalid indices, cue coverage, rates and generated-source identity/drift.
+Alternative --check, original teaser --check and git diff --check pass.
+This is source-frame verification, not fresh encoded pixel inspection,
+continuous playback or tablet/accessibility review. No new MP4 or audio;
+the matching alternative VTT is explicitly unrendered and not speech.
+No technical encode blocker: bounded output is a tested timing storyboard.
+
+All changed files under videos/. Full FFT v7, 28-second frozen teaser,
+curves candidate, original captions/lesson/models/renderers, dependency
+pins/uv.lock, Marimo notebooks and research conclusions unchanged. No
+Marimo check/export rerun because no notebook changed. Existing pinned
+Pillow 12.3.0 path retained; current official ImageDraw/license pages
+rechecked (stable docs now 13.0.0). No new assets/fonts/tool binaries,
+copied footage or fabricated voice, blanket commercial clearance, private
+data or assumed Open Notebook deployment.
+
+Next bounded action: encode the 34-second alternative into a new directory,
+verify full decode/timestamps and inspect cut/end frames before comparison
+playback. Human/editorial/math/rights and actual-device review, audio and
+public destinations, stacked-parent reconciliation and explicit exact-version
+publication approval remain gates. FFT v7 remains the first 60–90-second
+milestone. Nothing published, merged or scheduled; no account changes.
+
 ## 11 November 2026 · first complete silent FFT teaser encode
 
 Fresh remote PR #3 head `61f11c05c8c47011eb93645bd074075272b9da32`,

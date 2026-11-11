@@ -1,0 +1,69 @@
+{
+  "status": "unrendered timing comparison",
+  "publication_approved": false,
+  "audio": false,
+  "source_commit": "23aa5b2ab3ec88d07a39251c2ba01c95305468e1",
+  "frozen_video_sha256": "1ad0c7ed5ed0de7f14b0723ef3af37ab4e22b5c7616391a744c8a6fd136b4f50",
+  "baseline_duration": 28,
+  "comparison_duration": 34,
+  "comparison_frames": 816,
+  "scope_persistent_tokens": 34,
+  "scope_description_tokens": 10,
+  "closing_caption_tokens": 11,
+  "rows": [
+    {
+      "title": "Complexity",
+      "description": "Operation-count growth",
+      "description_tokens": 2,
+      "baseline_start": 22.0,
+      "comparison_start": 22,
+      "baseline_hold": 1.5,
+      "comparison_hold": 3,
+      "baseline_description_tokens_per_second": 1.3333333333333333,
+      "comparison_description_tokens_per_second": 0.6666666666666666
+    },
+    {
+      "title": "Stability",
+      "description": "Numerical error behavior",
+      "description_tokens": 3,
+      "baseline_start": 23.5,
+      "comparison_start": 25,
+      "baseline_hold": 1.5,
+      "comparison_hold": 3,
+      "baseline_description_tokens_per_second": 2.0,
+      "comparison_description_tokens_per_second": 1.0
+    },
+    {
+      "title": "Latency",
+      "description": "Whole-workload time",
+      "description_tokens": 2,
+      "baseline_start": 25.0,
+      "comparison_start": 28,
+      "baseline_hold": 1.5,
+      "comparison_hold": 3,
+      "baseline_description_tokens_per_second": 1.3333333333333333,
+      "comparison_description_tokens_per_second": 0.6666666666666666
+    },
+    {
+      "title": "Grid readiness",
+      "description": "Validation + deadlines",
+      "description_tokens": 3,
+      "baseline_start": 26.5,
+      "comparison_start": 31,
+      "baseline_hold": 1.5,
+      "comparison_hold": 3,
+      "baseline_description_tokens_per_second": 2.0,
+      "comparison_description_tokens_per_second": 1.0
+    }
+  ],
+  "source_sha256": {
+    "fft_teaser_pacing.py": "87b3020208f39df11dc52135b90c6e722cd0c2d9e56d92246b74d6d134545a97",
+    "fft-latency/teaser-pacing.json": "f9390c3e07a6270743f485a6b058fbdf039186031a0cfc3536220f5815d8541f",
+    "fft_teaser_layouts.py": "7160070c1b7a1acd7731105d2da8f2ddaac51b3e9164491637c12c690815957e",
+    "fft-latency/teaser-layouts.json": "4ff0b2c242f5df6b27416736de73ff371bf8274fbc27b43c02b877acdbc19f65",
+    "fft_teaser.py": "f6ad3f46470cf1c1e0d2c154accc616eca26a9fe669fa026c369974874c7ed96",
+    "fft-latency/teaser.json": "5fbe660617eac237e9f3ff09d7ee240e269a49ec7ab6b05cf1b8ebabe822ec4d",
+    "fft-latency/lesson.json": "8d6cb7de816988a1577a4ae8d2ac942ce01567331110dc075c05dfba97ffc3dc",
+    "fft-latency/teaser-render/candidate.json": "041584c0fbe1b57cb9fb7bb2ef2578592da3add6ef7122bd0b1d2cdc12473b88"
+  }
+}
