@@ -30,6 +30,11 @@ The [34-second encoded comparison](fft-latency/TEASER_SLOW_RENDER.md) now
 has complete decode/timestamp checks and sampled pixel review. Neither
 version has been approved by complete actual-device playback.
 
+A [local comparison-review prototype](fft-latency/LOCAL_REVIEW.md) adds
+exact-file verification and timestamped feedback export without uploading files.
+Its code checks pass; browser layout/native playback remain unverified due
+to a browser-launch restriction. It is optional, not a release gate substitute.
+
 Later candidate: [Same-looking curves, different physics](same-looking-curves/STORYBOARD.md)
 has an original 82-second unrecorded script, primary-source ledger and tested
 geometry helpers. Two [original comparison keyframes](same-looking-curves/KEYFRAMES.md)

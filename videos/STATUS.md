@@ -1,5 +1,64 @@
 # Video status log
 
+## 12 November 2026 · optional local comparison-review prototype
+
+Fresh remote PR #4 head 60c09d44da94f88fe43915b9806211a6b3419620;
+isolated worktree at that commit. Read current main README, confirmed
+AGENTS/ROADMAP absent there, read unmerged #1 instructions/
+roadmap/source registry, current video README/status, timing and encoded
+comparison sources and all open PR metadata (#1–4). No #4 human discussion
+feedback. Heads #1 7905dc2b, #2 97c8aea3 and #3 23aa5b2 remain unchanged.
+Only codex/video-teaser-pacing / draft PR #4 is updated; no new branch stack.
+
+Delivered optional review aid, not another movie/timing variant:
+fft_review_player.py, test_fft_review_player.py, test_review_player_logic.cjs,
+fft-latency/review-player-template.html, generated review-player.html,
+LOCAL_REVIEW.md, README link and this log. Framework/network-free single
+HTML uses frozen candidate identities from JSON, local SHA-256, native
+media controls, 22 s shortcut and paused-time issue notes. JSON export
+contains candidate identities, provisional preference and explicitly
+self-reported playback; publication_approved is always false. No reviewer
+name/path collection, local/session storage, upload or automatic GitHub post.
+Notes are volatile until explicitly downloaded. CSP disallows connections;
+unknown bytes/oversize selection and duration mismatches are blocked in code.
+Text is inserted with textContent, not interpreted HTML. No real user
+feedback or private/operator data is included in tests or public sources.
+
+Final full Python suite: **96 tests pass in 147.049 s**. Generated-player
+--check, Node logic checks and git diff --check pass. Connected commit tree
+is checked against the tested local tree before expected-head branch update.
+Three new Python tests cover generated identity/static guards/controls.
+Built-in Node 24.22.1 DOM-shim logic checks pass for unknown/oversize
+rejection, fixture switch/seek/timestamped literal-text note, false-approval
+export, duration mismatch and object-URL cleanup. Matching candidate state
+is injected in this fixture, not a verified real-browser file acceptance.
+
+Browser validation is explicitly BLOCKED, not passed: bundled Playwright
+browser executable absent; installed Chromium launch fails at its process-
+singleton socket with Operation not permitted. Stopped without permission
+workaround or browser download. No screenshot, real-browser clipping/native
+media/hash acceptance, keyboard/screen-reader, continuous playback or actual
+tablet usability claim. Static/DOM-shim checks cannot replace those reviews.
+This optional aid must not block using the original MP4s/native player.
+
+All eight changed paths are under videos/. No video, caption, timing data,
+lesson/model/old-render helper, dependency/lockfile, notebook or research
+change. No new render/encoded QA or audio-sync claim. No Marimo check/export
+rerun because notebooks are untouched. No third-party runtime dependency:
+HTML uses browser APIs; Python standard library generator; optional logic
+test uses Node built-ins. MDN digest/object-URL/currentTime docs rechecked
+12 November; API mechanism evidence, not device compatibility clearance.
+Original interface code, no copied creator assets, voice, paid service or
+assumed Open Notebook deployment. No hosting or account configuration.
+
+Next bounded action: permitted real-browser smoke test before relying on
+the aid, then complete 28/34-second tablet comparison and timestamped
+feedback. Use native playback/manual notes if browser/file support is
+unsuitable. Full human/device, independent math/editorial/rights review,
+audio/public destinations, stacked-parent reconciliation and exact-version
+publication approval remain open. FFT v7 remains the first release milestone.
+No YouTube/Substack/social publication, merge or new automation.
+
 ## 12 November 2026 · encoded slower FFT teaser comparison
 
 Fresh PR #4 head c1a0bf873111dbd73b161bcb17815fa6cf2aba29; isolated
