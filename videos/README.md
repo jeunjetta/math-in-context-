@@ -12,6 +12,10 @@ It is a review page, not a release approval or live interactive lesson.
 The [v7 packaging audit](fft-latency/PACKAGE_AUDIT_V7.md) reconciles current
 video/blog handoff identities, the component-specific title and source credits.
 Its shared snapshot and regression tests detect narrow drift, not release approval.
+An [unadopted source-only ending proposal](fft-latency/SOURCE_ENDCARD.md)
+offers a clearly labelled public-notebook-source fallback while the live lesson
+is unverified. Two original still states are inspected, but no full video or
+release gate has changed; adoption requires a separate reviewed decision.
 The [28-second FFT teaser storyboard](fft-latency/TEASER.md) now has a
 source-bound preproduction script and provisional VTT, retained for provenance.
 Two [original vertical keyframe prototypes](fft-latency/VERTICAL_KEYFRAMES.md)

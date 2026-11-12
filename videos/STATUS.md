@@ -1,5 +1,67 @@
 # Video status log
 
+## 13 November 2026 · full-pilot source-only ending proposal
+
+Fresh PR #4 head 368ddab0d0f3cbb4388e5d0b6784add5a92f0a83; isolated
+worktree from fetched exact remote commit. Read current main README,
+unmerged #1 AGENTS/ROADMAP/source registry, current video README/status,
+full pilot REVIEW/storyboard/LESSON_LINK and relevant rendering/content
+sources. Open PRs #1–4 unchanged/unmerged; no #4 human feedback. Returned
+to the 80-second first milestone instead of another teaser timing variant.
+Only codex/video-teaser-pacing / draft PR #4 is updated, no new PR stack.
+
+Concrete increment: SOURCE_ENDCARD.md, source-endcard.json, separate
+fft_source_endcard.py and four tests, source-endcard/report.json and four
+original PNGs (two caption states at 1280 and 640 width), README link/log.
+Proposal covers only 70–80 s, two five-second caption windows, bound to
+full FFT v7 hash 1d3050b3…d74036. Text clearly distinguishes public Python/
+Marimo SOURCE CODE from a live interactive app. Concept path and synthetic/
+no-grid-readiness limitations retained. Proposed description links are
+explicitly conditional on adoption, not already-published destinations.
+
+Public notebook fetched fresh at immutable commit 7905dc2b30ad9c05436f4db4a03d9cfe34224ffc,
+returned blob bf6eb0d52cb3bb20f0ec2747a0648612eb1af09a. It contains the
+model/sliders/prediction feedback. This verifies available code only, not
+a running lesson or tablet/Pages readiness. No new deployment/settings
+audit, guessed Pages address or Open Notebook service claim. Existing
+LESSON_LINK.md is dated evidence, not treated as current account diagnosis.
+
+This is an UNADOPTED alternative release design, not clearing or silently
+removing the live-lesson gate. Frozen full/teaser/curves videos, canonical
+captions, lesson/models, old render helpers/review identity/description
+placeholder/package and deployment handoff remain unchanged. No account,
+workflow, publishing, notebook, dependency/pin/uv.lock or research change.
+
+Validation: four focused tests pass in 0.058 s. Final full suite **100 tests
+pass in 134.009 s**; review-player --check, Node logic checks and whitespace
+check pass. New tests cover all 240 half-open frame indices (mapping to
+two static states), actual ink bounds/minimum type size, source-only and
+frozen pilot identity, source/image hashes and no-overwrite output guard.
+Both 1280×720 and both 640×360 stills inspected; no clipping found there.
+Minimum font 28 px (14 px at 640 width) is a design budget, not device
+accessibility/comprehension evidence. Secondary credits and simultaneous
+reading load remain a real-tablet/human judgement. No new MP4, encoded
+review, speech/audio timing, browser test or approval. Earlier browser
+socket-permission blocker was not retried or bypassed; local still rendering
+is unaffected. No Marimo check/export rerun: notebooks untouched.
+
+Official Pillow drawing/license docs and FFTW accuracy context checked
+13 November; retained pinned Pillow 12.3.0 and external DejaVu notices.
+Current stable docs show 13.0.0; no runtime upgrade or bundled font/tool
+binary. Source/font/image hashes recorded. Original code visuals only,
+no creator footage/music/voice/assets, paid service or blanket commercial
+clearance. All changed paths remain under videos/; connected tree checked
+against tested local tree before expected-head update, no force push.
+
+Next: decision on keeping the interactive-lesson dependency versus adopting
+the labelled source-only release route. If adopted, update the complete
+candidate/captions/review/package identities together, rerender, inspect
+encoded/full playback and get exact-version approval; do not silently
+overwrite v7. Before a choice, this is a concrete fallback, not an adopted
+replacement. Full human/device/math/editorial/rights review, audio and
+destination decisions, stacked-parent reconciliation and publication
+approval remain open. No publishing/merge/account change/new automation.
+
 ## 12 November 2026 · optional local comparison-review prototype
 
 Fresh remote PR #4 head 60c09d44da94f88fe43915b9806211a6b3419620;
