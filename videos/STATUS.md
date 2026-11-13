@@ -1,5 +1,56 @@
 # Video status log
 
+## 13 November 2026 · source-only ending encoded excerpt
+
+Fresh remote PR #4 head 879cf7b13eb9a4cb4af3889803e41da26d31e869;
+isolated fetched worktree. Read main README, unmerged PR #1 instructions/
+ROADMAP/source registry, current video README/status and source-only proposal/
+renderer/QA sources. PRs #1–4 still open/unmerged; no #4 human feedback.
+Only codex/video-teaser-pacing / draft PR #4 is updated, no new PR stack.
+
+Bounded increment: separate fft_source_endcard_media.py wrapper and four
+tests; SOURCE_ENDCARD_EXCERPT.md; matching excerpt-relative VTT, encoded
+render-report.json and two 640-wide decoded previews in source-ending-excerpt/;
+README link/log. Original 70–80 s proposal maps to 0–10 s, with its caption
+cut at frame 120 / 5 s. Two static states, no animation or narration. Source
+content remains separate in the unchanged source-endcard.json. No new maths,
+telemetry or claimed live app. The first milestone remains the full pilot.
+
+New silent MP4 SHA256 c6735b9bc729204db6c6238ecda204d22643489807a918dee92c8115eee65f79,
+1280×720 H.264, 24 fps, 240 frames, exactly 10.000 s, no audio streams.
+Complete decode and all 240 expected timestamps verified; ten decoded sample
+frames generated. Inspected frames 0/119/120/239 at 1280, 119/120/239 at 640.
+Correct caption cut and final state; no clipping observed in those samples.
+No equation on this card; earlier arithmetic/equation frames not re-reviewed.
+Readable fit is not audience comprehension: simultaneous reading load and
+28 px source / 14 px reduced secondary type need actual-device/human review.
+No continuous human playback or speech/caption synchronization claimed.
+
+Validation: four focused tests pass in 0.071 s; final full suite **104 tests
+pass in 67.853 s**. Review-player --check, Node logic and whitespace checks
+pass. Tests cover every excerpt frame/cue mapping, generated VTT identity,
+stored source/caption/media evidence and no-overwrite guard. Stored report
+checks do not rerender/OCR the movie. Source/font/uv.lock hashes recorded.
+Official FFmpeg encoding/probe/legal docs inspected 13 November; retained
+external 7.1.5-0+deb13u1 GPL-enabled libx264 build, pinned Pillow 12.3.0 and
+DejaVu fonts. No bundled tool/font binary, new dependency, paid service or
+blanket commercial/codec rights clearance. Optional browser-launch permission
+blocker not retried/bypassed; local encoding available. Notebooks unchanged,
+so no Marimo check/export rerun. Public review copy linked in excerpt handoff.
+
+UNADOPTED technical excerpt only. Frozen 80 s v7, both teaser candidates,
+curves movie, canonical lesson/captions/review/package/description placeholder,
+deployment handoff and research conclusions untouched. Existing live-lesson
+release gate remains; no source-only design adoption inferred from rendering.
+All changes under videos/; expected-head update and exact tree check required.
+
+Next: actual-device review of this exact excerpt's reading load and owner
+decision on source-only route versus retaining interactive-lesson dependency.
+If adopted, separately update full candidate/captions/review/package together,
+rerender and obtain full playback/math/editorial/rights/exact-version approval.
+Audio choice and stacked-parent reconciliation remain open. No account,
+hosting, publishing, merge or automation change.
+
 ## 13 November 2026 · full-pilot source-only ending proposal
 
 Fresh PR #4 head 368ddab0d0f3cbb4388e5d0b6784add5a92f0a83; isolated

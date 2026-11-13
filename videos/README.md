@@ -16,6 +16,9 @@ An [unadopted source-only ending proposal](fft-latency/SOURCE_ENDCARD.md)
 offers a clearly labelled public-notebook-source fallback while the live lesson
 is unverified. Two original still states are inspected, but no full video or
 release gate has changed; adoption requires a separate reviewed decision.
+A [separate 10-second encoded ending test](fft-latency/SOURCE_ENDCARD_EXCERPT.md)
+now checks that proposal's caption cut and final frame. It is not an adopted
+80-second candidate; device readability and the release-design decision remain open.
 The [28-second FFT teaser storyboard](fft-latency/TEASER.md) now has a
 source-bound preproduction script and provisional VTT, retained for provenance.
 Two [original vertical keyframe prototypes](fft-latency/VERTICAL_KEYFRAMES.md)
