@@ -79,6 +79,64 @@ does not by itself settle codec patent/distribution or commercial rights.
 No blanket commercial clearance, paid service or copied creator assets.
 See the preceding proposal for source and artwork provenance.
 
+## Verify a downloaded or copied excerpt
+
+Added 14 November 2026, from fresh source commit
+`cb999cec97edb70705cabc6a24bdd9695ae95b8c`. This is a verification-only
+increment; it does not create another timing/layout variant or new movie.
+From `videos/`, run against an existing LOCAL file:
+
+```sh
+uv run --locked python verify_source_ending.py /absolute/path/to/excerpt.mp4
+# Optional matching VTT and a new evidence file (never overwrites):
+uv run --locked python verify_source_ending.py /absolute/path/to/excerpt.mp4 --captions /absolute/path/to/excerpt.vtt --out out/new-verification.json
+uv run --locked python -m unittest test_verify_source_ending -v
+```
+
+Use the already supplied exact draft above, not a renamed full pilot or
+teaser. Without `--captions`, the check uses the committed matching VTT.
+The output parent directory must already exist. No upload, network fetch,
+browser, rendering, review submission or installation is performed by the
+checker; `uv sync`/environment setup is a separate prerequisite. It retains
+the existing pinned environment and external FFmpeg/ffprobe.
+
+Before decoding, the tool compares the actual local movie and captions
+with the trusted committed render-report SHA256 identities, checks the
+unadopted/silent/excerpt timeline and all eight recorded source-file hashes,
+and rejects source paths escaping `videos/`. It then independently probes
+every frame timestamp, dimensions, rates, duration, codec and single silent
+stream, and consumes the full movie with FFmpeg's error-stop flag. This
+does not trust the previous report's `complete_decode` Boolean as a new test.
+Six focused unit tests cover matching fixture bytes, wrong movie/captions,
+source drift/missing evidence/path escape, approval/audio/timeline mismatch,
+rejection before decoder invocation and no-overwrite before verification.
+The fixtures are explicitly NOT movies; real-media validation is separate.
+
+Actual run: the existing excerpt SHA256 `c6735b9b…e65f79` passes a fresh
+complete decode and all 240 timestamps, with 1280×720 H.264 at 24 fps,
+10.000 s and no audio. Eight source files and matching VTT pass.
+The [new verification report](source-ending-excerpt/verification-report.json)
+records exact movie/caption/render-report/verifier hashes and runtime tool
+versions. Its `source_commit` is the ORIGINAL rendering baseline, not a
+claim that the newly added verifier existed at that older commit.
+The current verification baseline is the commit at the start of this section.
+Full-suite results are in [STATUS.md](../STATUS.md).
+
+Trust boundary: this checks against repository evidence, not a digital
+signature. Editing both report and movie can redefine that evidence; use a
+trusted commit for review. No OCR, fresh visual sampling, equation review,
+speech sync, continuous human playback, device readability/comprehension,
+rights or publication approval is established. The earlier inspected cut/end
+frames and their editorial limitations remain the visual evidence; they were
+not inspected again merely because bytes were reverified. Frozen full-pilot
+identity and source-only adoption gates are unchanged.
+
+Official [ffprobe docs](https://ffmpeg.org/ffprobe.html) and
+[FFmpeg legal guidance](https://ffmpeg.org/legal.html) rechecked 14 November.
+The external tools remain 7.1.5-0+deb13u1, GPL-enabled build; no binary is
+bundled or new dependency introduced. No commercial/codec rights clearance
+is inferred from being able to run a local check.
+
 ## Next action and exact gates
 
 Review this exact excerpt on the intended device for simultaneous reading

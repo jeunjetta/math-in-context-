@@ -1,5 +1,60 @@
 # Video status log
 
+## 14 November 2026 · exact-copy verification for ending excerpt
+
+Fresh fetched PR #4 head cb999cec97edb70705cabc6a24bdd9695ae95b8c;
+isolated codex/video-* worktree. Read current main README/root inventory
+(AGENTS/ROADMAP absent there), unmerged #1 instructions/ROADMAP/source
+registry, current video README/status, excerpt handoff/render report and
+QA implementation. Open PRs #1–4 remain unmerged; no new #4 feedback.
+Continue on codex/video-teaser-pacing / draft PR #4, no extra PR stack.
+
+Bounded increment: verify_source_ending.py, six tests, new
+source-ending-excerpt/verification-report.json, excerpt handoff command/
+trust-boundary documentation, README link and this log. Checks an existing
+local movie rather than generating another unapproved video variant.
+SHA256 movie/caption matching and eight recorded source hashes checked
+before decoder invocation; source paths restricted to videos/. Verifies
+unadopted/silent/excerpt timeline, independently probes every timestamp,
+dimensions/rates/codec/duration/single stream and fully decodes with
+FFmpeg -xerror. Optional JSON output refuses overwrite. No network fetch,
+upload, browser, automatic feedback post or approval from this checker.
+
+Actual existing MP4 c6735b9bc729204db6c6238ecda204d22643489807a918dee92c8115eee65f79
+passes: H.264 1280×720, 24 fps, 240 frames, 10.000 s, no audio; all frame
+timestamps and full decode verified anew. Matching VTT and all eight
+source files pass. Evidence records movie/caption/render-report/verifier
+hashes and actual FFmpeg/ffprobe 7.1.5-0+deb13u1 versions. Report's
+source_commit remains the rendering baseline 879cf7b…, distinct from
+this run's cb999ce… verification baseline. No new MP4 or visual change.
+
+Validation: six focused tests pass in 0.005 s; final full suite **110 tests
+pass in 61.978 s**. Wrong movie/captions, source drift/empty evidence/path
+escape, claimed approval/audio/timeline drift, pre-decoder rejection and
+pre-verification no-overwrite covered. Fixtures are not media; real decode
+is the separate actual-file check. Existing review-player --check and Node
+logic pass; whitespace check passes. Trusted repo evidence is not a digital
+signature: changing both reference report and movie redefines that evidence.
+No OCR, fresh visual/frame/equation inspection, speech sync, continuous human
+playback or device/comprehension/rights/adoption certification is claimed.
+Earlier inspected frames and dense-text concern remain the visual evidence.
+
+Official ffprobe and FFmpeg legal docs checked 14 November; retained pinned
+environment and external GPL-enabled tools, no new dependency/lock change,
+bundled binary/font, commercial/codec clearance or paid service. No optional
+browser permission retry/bypass; not needed for local verification. No
+notebook changes, so no Marimo check/export rerun. All changed files under
+videos/; tested local tree compared to connected tree before expected-head
+fast-forward, never force. Full pilot/teasers/curves/old report/captions/
+lesson/review/package/description/deployment handoff and research untouched.
+
+Next: actual-device reading-load review of the SAME ending excerpt and owner
+decision on source-only route versus retaining live-lesson dependency.
+Adoption still requires controlled full-candidate/caption/review/package
+update, full playback and math/editorial/rights/exact-version approval.
+Audio choice and stacked-parent reconciliation remain open. No publishing,
+merge, hosting, account change or new automation.
+
 ## 13 November 2026 · source-only ending encoded excerpt
 
 Fresh remote PR #4 head 879cf7b13eb9a4cb4af3889803e41da26d31e869;

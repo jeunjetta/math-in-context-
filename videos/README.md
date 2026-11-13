@@ -19,6 +19,9 @@ release gate has changed; adoption requires a separate reviewed decision.
 A [separate 10-second encoded ending test](fft-latency/SOURCE_ENDCARD_EXCERPT.md)
 now checks that proposal's caption cut and final frame. It is not an adopted
 80-second candidate; device readability and the release-design decision remain open.
+A [local exact-copy check](fft-latency/SOURCE_ENDCARD_EXCERPT.md#verify-a-downloaded-or-copied-excerpt)
+rejects wrong movie/caption bytes and source drift before probing the excerpt.
+Passing this technical check does not approve its content or adoption.
 The [28-second FFT teaser storyboard](fft-latency/TEASER.md) now has a
 source-bound preproduction script and provisional VTT, retained for provenance.
 Two [original vertical keyframe prototypes](fft-latency/VERTICAL_KEYFRAMES.md)
