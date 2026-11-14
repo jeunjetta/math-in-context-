@@ -87,6 +87,9 @@ Latest revision: **v7 focus-first candidate** enlarges the active category's
 description while retaining the four titles as context. See the
 [encoded v6/v7 comparison and review limits](fft-latency/FOCUS_V7.md).
 It has not passed actual-tablet playback or editorial approval.
+A [full-pilot caption pacing audit](fft-latency/CAPTION_PACING.md) identifies
+49–61 s as the highest caption-character-rate region and supplies four shorter,
+unadopted copy proposals. Counts are not comprehension or accessibility approval.
 
 Retained from v6: moving bars replace animation-generated decimal totals with
 endpoint arrows during the two moving-bar beats (18–21 s and 40–43 s).

@@ -1,5 +1,44 @@
 # Video status log
 
+## 15 November 2026 · full-pilot caption audit and shorter copy proposals
+
+Source: fresh PR #4 head 85f1868ea816a52c581ed64cbde3d21b567a40c4;
+isolated fetched worktree. Read main README, #1 AGENTS/ROADMAP/source
+registry, video README/status, v7 focus audit and canonical cue generation.
+AGENTS/ROADMAP remain absent on main; PRs #1–4 open/unmerged and #4
+issue/review/inline feedback empty. Continue codex/video-teaser-pacing/#4.
+
+Files: caption_pacing.py, test_caption_pacing.py, caption-proposals.json,
+derived CAPTION_PACING.md and caption-pacing-report.json, README/log.
+Audited all 19 canonical cues: 1001 Unicode code points / 160 whitespace
+tokens. Highest caption CPS are the four 49–61 s category cues; peak
+52–55 s is 55/3=18.33. Four original shorter proposals reduce their
+combined count 213→166 without changing target windows. Numerical
+stability remains explicitly numerical; all four questions remain separate.
+These are UNADOPTED copy proposals, not validated reading-speed limits,
+WCAG compliance, total screen-load measurement or proof of comprehension.
+
+Validation: four focused tests pass in 0.004 s; full suite **118 pass in
+54.428 s**. Audit/script generated --checks, review-player/Node and whitespace
+checks pass. Tests cover rational cue/count arithmetic, Unicode/symbol
+definition, all-cue coverage/ranking, shorter equal-duration proposals,
+generated report/source hashes and unapproved status. Official W3C caption
+guidance and Python Fraction/licence docs checked 15 November. Existing
+dependencies/lock and renderer retained; no binary/asset bundle, new paid
+service or blanket commercial/codec rights clearance. Exact staged/connected
+tree comparison and expected-head fast-forward used; all edits in videos/.
+
+No new render, frame/equation/clipping/device/playback/audio-sync review;
+previous visual evidence stays dated. Frozen movie/lesson/captions/VTT,
+narration choice, ending/source-only adoption, release package, notebooks
+and research unchanged. No browser permission retry, assumed Open Notebook
+deployment, publishing, merge, hosting/settings change or new automation.
+Next: device review of existing 49–61 s concurrent reading load. Only if
+copy is chosen, migrate lesson/captions/review/package together, rerender
+and inspect encoded cuts. Device/editorial/math/rights approval, audio and
+destination choices, live-lesson gate unless explicitly changed, parent
+reconciliation and exact-version publication approval remain unresolved.
+
 ## 14 November 2026 · optional human-recording script
 
 Fresh remote PR #4 head fa1d45046df8a462f3b92c9b4f36b8ea5e2fca4a;
