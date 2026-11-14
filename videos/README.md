@@ -152,6 +152,9 @@ not an instantaneous measured total. Settled labels use the exact model value.
 No separate narration has been recorded. The current captions are a silent
 reading track, not a claim of alignment to speech. Record an authorized human
 voice only after editorial review; then retime the cues to that recording.
+An [optional human-recording brief and 154-word rehearsal script](fft-latency/NARRATION_BRIEF.md)
+now prepares that choice; target timing is tested, but no speech or sync is claimed.
+Its neutral ending does not resolve the frozen visual CTA or adopt a release route.
 Change the three timing parameters through a scenario file; numeric captions,
 equations, variables and bar scales then follow automatically. The script's
 qualitative assumptions still need editorial review. This lesson deliberately

@@ -1,5 +1,66 @@
 # Video status log
 
+## 14 November 2026 · optional human-recording script
+
+Fresh remote PR #4 head fa1d45046df8a462f3b92c9b4f36b8ea5e2fca4a;
+isolated fetched codex/video-* worktree. Read current main README/root
+inventory (AGENTS/ROADMAP absent there), unmerged #1 instructions/ROADMAP/
+source registry, video README/status, full REVIEW/script/storyboard/lesson
+and narration-related handoffs. PRs #1–4 remain open/unmerged; #4 issue,
+review and inline comments empty. Existing script was a reading transcript,
+not separate recording copy. Continue codex/video-teaser-pacing / draft #4.
+
+Bounded increment: optional NARRATION_BRIEF.md, editable narration.json,
+derived NARRATION_SCRIPT.md, narration_script.py and four tests, README
+link/log. Original 154-word human-read rehearsal for the SAME 80 s lesson:
+19 provisional cue windows, two planned one-second pauses, pronounced
+numbers/quotients, four explicit assumptions and separate complexity/
+stability/latency/readiness lines. Synthetic/no-new-algorithm-benchmark/
+no-real-time-grid-readiness limitations and connected concept placement
+retained. No narrator, recording method/service or audio-format decision
+is presumed; no voice recorded, synthesized, cloned or impersonated.
+
+Mechanical accounting: 154 words / 80 s =115.50 wpm; 118.46 excluding
+two planned pause seconds; maximum individual cue 140 wpm, below our
+draft 160 wpm budget. This is planning arithmetic, not measured speech,
+validated accessibility, speaking pace or comprehension. Producer checked
+script numbers and focus windows against current lesson/storyboard:
+90 ms after bar settles; ceiling quotient at 44.5 s; categories in order.
+No new render/frame/clipping/equation inspection or audio/caption sync.
+The brief flags actual concurrent-copy mismatch at 22–26 s and requires
+new captions aligned to a real consented recording, not the silent cues.
+
+Destination-neutral rehearsal ending does NOT resolve the frozen visual
+live-lesson CTA, choose an adoption route, or approve the source-only
+alternative. No new movie, adopted soundtrack, replacement canonical
+captions, release package or public destination. Frozen full v7, teasers,
+curves movie, source-only excerpt, lesson/math model/render helpers,
+review/package/description/deployment handoff, notebooks and research
+unchanged. Independent NS audit gate remains. All files under videos/.
+
+Validation: four focused tests pass in 0.016 s; final full suite **114
+tests pass in 100.552 s**. Generated script --check, existing review-player
+--check, Node logic and whitespace checks pass. Tests cover exact 19 cue
+windows, pauses/rates, changed movie/lesson/timing/approval identity,
+bad pauses/over-budget copy, generated-text identity and assumption/
+disclaimer wording. Source baseline and frozen movie/lesson hashes in
+data; no dependency/pin/uv.lock change. Python runtime 3.12.14; official
+JSON/license docs and FFTW accuracy context rechecked 14 November.
+Latest docs differ from retained runtime; no binary/asset/audio engine
+bundle or blanket commercial/codec/recording-rights clearance. No paid
+service. No browser permission retry/bypass; no Marimo export for unchanged
+notebooks. Exact tested tree comparison and expected-head fast-forward,
+never force, are used for the connected commit.
+
+Next: editorially review this concrete script and choose silent versus
+authorized human narration. If chosen, obtain a consented read, log actual
+timings/breaths, then separately build/review an audio candidate with
+speech-aligned captions and a controlled ending/package identity. No
+consented narrator/audio file currently supplied. Device reading-load,
+destination/live-lesson gate unless explicitly changed, math/editorial/
+rights/parent reconciliation and exact-version publication approval remain
+open. No publishing, merge, hosting, account change or new automation.
+
 ## 14 November 2026 · exact-copy verification for ending excerpt
 
 Fresh fetched PR #4 head cb999cec97edb70705cabc6a24bdd9695ae95b8c;
