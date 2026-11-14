@@ -12,6 +12,16 @@ It is a review page, not a release approval or live interactive lesson.
 The [v7 packaging audit](fft-latency/PACKAGE_AUDIT_V7.md) reconciles current
 video/blog handoff identities, the component-specific title and source credits.
 Its shared snapshot and regression tests detect narrow drift, not release approval.
+An [unadopted source-only ending proposal](fft-latency/SOURCE_ENDCARD.md)
+offers a clearly labelled public-notebook-source fallback while the live lesson
+is unverified. Two original still states are inspected, but no full video or
+release gate has changed; adoption requires a separate reviewed decision.
+A [separate 10-second encoded ending test](fft-latency/SOURCE_ENDCARD_EXCERPT.md)
+now checks that proposal's caption cut and final frame. It is not an adopted
+80-second candidate; device readability and the release-design decision remain open.
+A [local exact-copy check](fft-latency/SOURCE_ENDCARD_EXCERPT.md#verify-a-downloaded-or-copied-excerpt)
+rejects wrong movie/caption bytes and source drift before probing the excerpt.
+Passing this technical check does not approve its content or adoption.
 The [28-second FFT teaser storyboard](fft-latency/TEASER.md) now has a
 source-bound preproduction script and provisional VTT, retained for provenance.
 Two [original vertical keyframe prototypes](fft-latency/VERTICAL_KEYFRAMES.md)
@@ -22,6 +32,18 @@ add the other four scenes and staged closing distinctions. All 672 proposed
 frames are testable. The [first complete silent encoded teaser test](fft-latency/TEASER_RENDER.md)
 now has a matching reading-track VTT, full decode/timestamp checks and sampled
 pixel review. It is not an approved release or a replacement for the full pilot.
+
+The [slower closing comparison](fft-latency/TEASER_PACING.md) quantifies
+the competing closing copy and supplies a tested 34-second timing alternative.
+Only the four final holds double; original pixels and frozen movies stay intact.
+The [34-second encoded comparison](fft-latency/TEASER_SLOW_RENDER.md) now
+has complete decode/timestamp checks and sampled pixel review. Neither
+version has been approved by complete actual-device playback.
+
+A [local comparison-review prototype](fft-latency/LOCAL_REVIEW.md) adds
+exact-file verification and timestamped feedback export without uploading files.
+Its code checks pass; browser layout/native playback remain unverified due
+to a browser-launch restriction. It is optional, not a release gate substitute.
 
 Later candidate: [Same-looking curves, different physics](same-looking-curves/STORYBOARD.md)
 has an original 82-second unrecorded script, primary-source ledger and tested
@@ -130,6 +152,9 @@ not an instantaneous measured total. Settled labels use the exact model value.
 No separate narration has been recorded. The current captions are a silent
 reading track, not a claim of alignment to speech. Record an authorized human
 voice only after editorial review; then retime the cues to that recording.
+An [optional human-recording brief and 154-word rehearsal script](fft-latency/NARRATION_BRIEF.md)
+now prepares that choice; target timing is tested, but no speech or sync is claimed.
+Its neutral ending does not resolve the frozen visual CTA or adopt a release route.
 Change the three timing parameters through a scenario file; numeric captions,
 equations, variables and bar scales then follow automatically. The script's
 qualitative assumptions still need editorial review. This lesson deliberately

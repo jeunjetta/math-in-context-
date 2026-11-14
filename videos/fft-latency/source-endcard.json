@@ -1,0 +1,29 @@
+{
+  "status": "unadopted source-only end-card proposal",
+  "publication_approved": false,
+  "audio": false,
+  "source_commit": "368ddab0d0f3cbb4388e5d0b6784add5a92f0a83",
+  "source_video_sha256": "1d3050b3094f1a090954cb9c2e6ed10e90d438169e86bd2cfbc2a7f13ed74036",
+  "start": 70,
+  "end": 80,
+  "fps": 24,
+  "heading": "Measure the whole job.",
+  "concept_path": "Fourier methods → component costs → end-to-end latency",
+  "label": "EXPLORE THE SOURCE",
+  "body": "Public Python / Marimo notebook",
+  "disclosure": "Source code only · not a live interactive app",
+  "limit": "Faster computation ≠ validated grid readiness",
+  "credit": "MODEL · synthetic example  |  ACCURACY CONTEXT · FFTW authors",
+  "persistent_label": "SYNTHETIC · NOT A BENCHMARK",
+  "cues": [
+    {"start":70,"end":75,"caption":"Inspect the synthetic notebook source, linked in the description."},
+    {"start":75,"end":80,"caption":"No live lesson or real-grid benchmark is claimed."}
+  ],
+  "notebook": {
+    "url":"https://github.com/jeunjetta/math-in-context-/blob/7905dc2b30ad9c05436f4db4a03d9cfe34224ffc/apps/fft_and_latency.py",
+    "blob_sha":"bf6eb0d52cb3bb20f0ec2747a0648612eb1af09a",
+    "checked_on":"2026-11-13",
+    "kind":"public source code, not verified live lesson"
+  },
+  "accuracy_context_url":"https://fftw.org/accuracy/comments.html"
+}

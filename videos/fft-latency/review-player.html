@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; media-src blob:; connect-src 'none'; img-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>FFT teaser · local comparison review</title>
+<style>
+:root{color-scheme:dark;font:18px/1.5 system-ui,sans-serif;background:#101929;color:#edf2fa}
+body{max-width:860px;margin:auto;padding:20px}h1{font-size:1.7rem;line-height:1.2}h2{font-size:1.2rem}
+label{display:block;margin:12px 0}button,input,select,textarea{font:inherit;max-width:100%;box-sizing:border-box}
+button{padding:10px 16px;margin:4px;min-height:48px;background:#223951;color:inherit;border:2px solid #7295ad;border-radius:8px}
+button:disabled{opacity:.5}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #5bd6ce;outline-offset:3px}
+textarea{width:100%;min-height:100px;padding:10px}video{display:block;margin:16px auto;width:100%;max-width:360px;max-height:65vh;background:#000}
+section{border-top:1px solid #7295ad;padding-top:12px;margin-top:20px}.muted{color:#becbdd}#status{min-height:3em}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:.85rem}
+</style></head><body>
+<h1>Compare the FFT teaser cuts</h1>
+<p>Local draft review · no uploads · no publication approval.</p>
+<p>Download both review MP4s supplied with this project, then choose them below.
+This page verifies their SHA-256 identities, not their mathematical quality.
+No files or notes leave this page unless you explicitly download the feedback.</p>
+<label>Choose one or both MP4s <input id="files" type="file" accept="video/mp4" multiple></label>
+<p id="status" role="status" aria-live="polite">No verified movie loaded.</p>
+<div><button id="cut-a" disabled>28-second cut</button><button id="cut-b" disabled>34-second cut</button></div>
+<video id="movie" controls playsinline preload="metadata" aria-label="Selected silent FFT teaser"></video>
+<p id="identity" class="muted">Select a verified cut. Captions are already drawn into these silent movies.</p>
+<button id="closing" disabled>Jump to closing card · 22 s</button>
+<section><h2>Watch first, then compare</h2>
+<p>Watch each complete cut at normal size and speed before using the closing-card shortcut.
+Can you explain why 20 + 80 becomes 10 + 80 = 90 ms, rather than a whole-system doubling?
+Can you distinguish operation-count growth, error behavior, elapsed time and grid readiness?</p>
+<p class="muted">Synthetic sequential workload, same accuracy, no added overhead, other work unchanged.
+No real telemetry or operational readiness is demonstrated. The 80-second pilot remains the first release milestone.</p>
+<label>Provisional pacing preference <select id="preference"><option value="undecided">Undecided / not compared</option><option value="a">28 seconds</option><option value="b">34 seconds</option><option value="neither">Neither is clear enough</option></select></label>
+<label><input id="watched-a" type="checkbox"> I watched the complete 28-second cut (self-report).</label>
+<label><input id="watched-b" type="checkbox"> I watched the complete 34-second cut (self-report).</label>
+</section>
+<section><h2>Mark one issue at the paused time</h2>
+<label>Issue type <select id="kind"><option>Reading / small text</option><option>Pacing</option><option>Arithmetic / assumptions</option><option>Concept distinction</option><option>Other</option></select></label>
+<label>What was hard to understand? <textarea id="note" maxlength="2000" placeholder="For example: I could not read the source credit at normal size."></textarea></label>
+<button id="mark" disabled>Pause and add timestamped note</button>
+<p id="saved" role="status" aria-live="polite">No notes recorded. Notes are lost when this page closes unless downloaded.</p>
+<pre id="notes"></pre>
+<button id="download">Download draft feedback JSON</button>
+<p class="muted">No automatic posting, storage or approval. Review the JSON before sharing; include only public project feedback, never operator data or private information.
+Self-reported playback and preferences are not comprehension evidence or publishing authority. Actual tablet/browser behavior still needs testing.</p>
+</section>
+<script id="candidate-data" type="application/json">{
+  "a": {
+    "label": "28-second cut",
+    "sha256": "1ad0c7ed5ed0de7f14b0723ef3af37ab4e22b5c7616391a744c8a6fd136b4f50",
+    "duration": 28
+  },
+  "b": {
+    "label": "34-second cut",
+    "sha256": "7651d3e43a027947cf44efce39ecd76c14700e02df98a6d6a377fcdfde28405d",
+    "duration": 34
+  }
+}</script>
+<script>
+'use strict';
+const candidates=JSON.parse(document.getElementById('candidate-data').textContent);
+const $=id=>document.getElementById(id), movie=$('movie'), loaded=new Map(), notes=[];
+let active=null, generation=0, ready=false;
+function buttons(){for(const id of ['a','b'])$('cut-'+id).disabled=!loaded.has(id);$('mark').disabled=!ready;$('closing').disabled=!ready;}
+function choose(id){
+  if(!loaded.has(id))return;
+  movie.pause();active=id;ready=false;buttons();movie.src=loaded.get(id).url;
+  $('identity').textContent=candidates[id].label+' · verifying media duration…';movie.load();
+}
+movie.addEventListener('loadedmetadata',()=>{
+  if(!active)return;
+  if(Math.abs(movie.duration-candidates[active].duration)>.1){ready=false;$('status').textContent='Duration mismatch; this movie is blocked.';buttons();return;}
+  ready=true;$('identity').textContent=candidates[active].label+' · '+candidates[active].sha256;buttons();
+});
+movie.addEventListener('error',()=>{ready=false;buttons();$('status').textContent='This browser could not decode the selected file. Use another browser or the native video player; no review approval inferred.';});
+$('cut-a').onclick=()=>choose('a');$('cut-b').onclick=()=>choose('b');
+$('closing').onclick=()=>{if(ready){movie.pause();movie.currentTime=22;}};
+$('files').onchange=async()=>{
+  const token=++generation, files=Array.from($('files').files);
+  $('status').textContent='Checking selected local files…';
+  try{
+    if(!crypto.subtle)throw Error('Local hashing unavailable in this browser/context. Do not bypass identity verification.');
+    if(files.length<1||files.length>2)throw Error('Choose one or two files.');
+    const staged=[];
+    for(const file of files){
+      if(file.size>10000000)throw Error('File exceeds this review tool’s 10 MB limit.');
+      const hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',await file.arrayBuffer())),b=>b.toString(16).padStart(2,'0')).join('');
+      const id=Object.keys(candidates).find(id=>candidates[id].sha256===hash);
+      if(!id)throw Error('Unknown movie bytes. Obtain the exact review copy; renaming does not verify a candidate.');
+      if(staged.some(x=>x.id===id))throw Error('The same candidate was selected twice.');
+      staged.push({id,file});
+    }
+    if(token!==generation)return;
+    movie.pause();ready=false;buttons();
+    for(const {id,file} of staged){if(loaded.has(id))URL.revokeObjectURL(loaded.get(id).url);loaded.set(id,{url:URL.createObjectURL(file)});}
+    $('status').textContent=loaded.size+' verified cut(s) loaded locally. Play at normal speed; nothing uploaded.';
+    choose(staged[0].id);
+  }catch(error){if(token===generation)$('status').textContent=error.message;}
+};
+$('mark').onclick=()=>{
+  if(!ready||!active)return;
+  const text=$('note').value.trim();if(!text){$('saved').textContent='Write an issue before adding a note.';return;}
+  movie.pause();notes.push({candidate:active,sha256:candidates[active].sha256,seconds:Number(movie.currentTime.toFixed(3)),kind:$('kind').value,text});
+  $('notes').textContent=notes.map(n=>candidates[n.candidate].label+' @ '+n.seconds+' s · '+n.kind+'\n'+n.text).join('\n\n');
+  $('saved').textContent=notes.length+' note(s) held only in this page. Download before closing.';$('note').value='';
+};
+function feedback(){return {schema_version:1,source_baseline:'60c09d44da94f88fe43915b9806211a6b3419620',status:'draft human feedback, not approval',publication_approved:false,
+  candidates,loaded_candidates:Array.from(loaded.keys()),preference:$('preference').value,
+  playback_self_report:{a:$('watched-a').checked,b:$('watched-b').checked},notes:notes.slice()};}
+$('download').onclick=()=>{
+  const url=URL.createObjectURL(new Blob([JSON.stringify(feedback(),null,2)+'\n'],{type:'application/json'}));
+  const a=document.createElement('a');a.href=url;a.download='fft-teaser-feedback-draft.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+};
+window.addEventListener('beforeunload',()=>{for(const x of loaded.values())URL.revokeObjectURL(x.url);});
+</script></body></html>
