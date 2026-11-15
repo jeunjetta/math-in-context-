@@ -1,0 +1,17 @@
+{
+  "source_commit": "d8c8756681e3f2e03e6a9029e6cfc6b38df0489a",
+  "video_sha256": "1d3050b3094f1a090954cb9c2e6ed10e90d438169e86bd2cfbc2a7f13ed74036",
+  "file_name": "fft-latency-draft.mp4",
+  "observed_version": "5",
+  "verified_on_utc": "2026-11-15",
+  "size_bytes": 669380,
+  "duration_seconds": 80,
+  "frames_decoded": 1920,
+  "width": 1280,
+  "height": 720,
+  "frame_rate": "24/1",
+  "audio_streams": 0,
+  "full_decode_passed": true,
+  "access": "Private review copy; no links or access grants in this public record",
+  "limits": "Dated file observation, not publication approval; recheck video_sha256 after replacement"
+}

@@ -42,6 +42,31 @@ class PackageTests(unittest.TestCase):
         self.assertTrue(copy["question"].endswith("?"))
         self.assertIn("Synthetic", copy["qualifier"])
 
+    def test_full_review_file_is_identified_without_private_access_links(self):
+        copy = json.loads((ROOT / "fft-latency/review-file.json").read_text())
+        self.assertEqual(copy["video_sha256"], self.identity["video_sha256"])
+        self.assertEqual(copy["duration_seconds"], self.identity["duration_seconds"])
+        self.assertNotIn("url", copy)
+        self.assertEqual(copy["file_name"], "fft-latency-draft.mp4")
+        for marker in ("chatgpt.com/library", "libfile_"):
+            self.assertNotIn(marker, json.dumps(copy))
+            self.assertNotIn(marker, self.review)
+        self.assertEqual(copy["observed_version"], "5")
+        self.assertEqual(copy["size_bytes"], 669380)
+        self.assertEqual(copy["frames_decoded"], copy["duration_seconds"] * 24)
+        self.assertEqual(copy["audio_streams"], 0)
+        self.assertIs(copy["full_decode_passed"], True)
+        self.assertRegex(copy["verified_on_utc"], r"^\d{4}-\d{2}-\d{2}$")
+        self.assertIn("recheck video_sha256", copy["limits"])
+        for document in (self.review, (ROOT / "README.md").read_text()):
+            self.assertIn("80-second", document)
+            self.assertIn("Private review links", document)
+        self.assertIn(copy["file_name"], self.review)
+        self.assertIn("does not grant access", self.review)
+        self.assertNotIn("from the accompanying ChatGPT message", self.review)
+        # Offline guard only: no claim to authenticate a viewer, verify live access,
+        # or replace the recorded byte/probe/decode audit.
+
     def test_description_article_and_source_card_credit_same_sources(self):
         readme = (ROOT / "README.md").read_text()
         self.assertEqual(len(self.identity["sources"]), 3)

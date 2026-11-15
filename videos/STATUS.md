@@ -1,5 +1,56 @@
 # Video status log
 
+## 15 November 2026 UTC · exact full-pilot file handoff
+
+Source: freshly fetched PR #4 head d8c8756681e3f2e03e6a9029e6cfc6b38df0489a;
+isolated codex/video-* worktree. Read current main README/inventory, #1
+AGENTS/ROADMAP/source registry and FFT lesson, video README/status, full
+handoff/identity and v7 audit. Main still lacks AGENTS/ROADMAP; #1–4 remain
+open/unmerged, #4 issue/review/inline feedback empty. Continue existing
+codex/video-teaser-pacing / draft #4, not another stacked PR or variant.
+
+Found a concrete handoff gap: the full 80-second REVIEW sent readers back
+to an earlier chat message without file-selection/access-limit guidance.
+Resolved the existing full review copy, version 5, rather than creating a
+duplicate. Downloaded bytes match frozen v7 SHA256
+1d3050b3094f1a090954cb9c2e6ed10e90d438169e86bd2cfbc2a7f13ed74036.
+Size 669,380 bytes; ffprobe counts 1,920 frames, H.264 1280×720 at 24 fps,
+80.000 seconds, no audio streams. FFmpeg 7.1.5 complete decode with
+-xerror succeeds. This checks identity/decodability, not editorial playback.
+
+Files: README.md and fft-latency/REVIEW.md now identify the exact full copy,
+distinguish it from teasers and explain private access/approval limits;
+fft-latency/review-file.json records observed identity/probe/decode facts;
+test_package.py adds one narrow offline identity/private-link exclusion guard.
+Private review links are excluded from this public change, not published
+or replaced with a public upload. Ask for the exact hash-matching copy
+through an authorized review route. No sharing changed; viewer-side sign-in/
+playback untested. A public review destination still requires authorization.
+
+Validation: five packaging tests pass (0.027 s), full suite **123 pass in
+56.276 s**; caption-pacing/narration --checks, review-player HTML check,
+Node logic and git diff --check pass. Initial attempt put file metadata
+in review-version.json; eight provenance checks correctly rejected its
+changed hash. Restored that frozen file byte-for-byte and kept new file data
+separate; no historical evidence regenerated.
+All edits under videos/; no renderer/lesson/caption/VTT/credit snapshot,
+lockfile, dependency, assets, notebooks or research changes. No new movie,
+audio, clipping/equation inspection, timing, speech-sync, browser or actual-
+device review claimed. Existing source licences/tool choice retained, no
+purchase, redistribution or blanket commercial-clearance claim.
+
+Next: use the identified full private copy for normal-speed actual-device
+review, especially 49–61 s, and record the first confusing timestamp plus
+audio-format decision. Exact blockers remain human math/editorial/rights,
+tablet/readability and full-playback approval; unverified live-lesson CTA /
+destination (source-only alternative still unadopted); stacked-parent
+reconciliation and exact-version publication approval. No public upload,
+Substack/social post, merge, account change, assumed Open Notebook
+deployment or new automation. This increment verifies/selects the review
+file, not a public access path, a finished reviewed release or adoption of
+shorter caption proposals. A public-link placement remains blocked pending
+explicit authorization; no private artifact access reference is added.
+
 ## 15 November 2026 · isolated stability-caption fit comparison
 
 Fresh PR #4 head c08b87e3f63443a778eb27fc6e1ef1ab632ccb4b; isolated

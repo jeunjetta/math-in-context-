@@ -7,7 +7,11 @@ Video work lives here independently of the Marimo starter PR #1.
 **Review without installing anything:** open the
 [tablet-friendly editorial handoff](fft-latency/REVIEW.md) for the exact
 current script, scene checklist and draft title/description/source links.
-It is a review page, not a release approval or live interactive lesson.
+The handoff now identifies the exact full review file, distinguishing it from
+the shorter teasers. Its existing private copy was hash/probe/decode checked
+on 15 November 2026 UTC, not newly edited or approved. Private review links
+are not included here; no public video destination or access grant is implied.
+The handoff is a review page, not a release approval or live interactive lesson.
 
 The [v7 packaging audit](fft-latency/PACKAGE_AUDIT_V7.md) reconciles current
 video/blog handoff identities, the component-specific title and source credits.
