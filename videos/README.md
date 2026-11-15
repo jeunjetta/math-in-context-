@@ -90,6 +90,9 @@ It has not passed actual-tablet playback or editorial approval.
 A [full-pilot caption pacing audit](fft-latency/CAPTION_PACING.md) identifies
 49–61 s as the highest caption-character-rate region and supplies four shorter,
 unadopted copy proposals. Counts are not comprehension or accessibility approval.
+A [52-second source-frame fit comparison](fft-latency/CAPTION_FIT.md) now tests
+the stability proposal. Both fit one line, but shortening does not enlarge the
+unchanged nominal 13 px half-size caption; it remains unadopted.
 
 Retained from v6: moving bars replace animation-generated decimal totals with
 endpoint arrows during the two moving-bar beats (18–21 s and 40–43 s).

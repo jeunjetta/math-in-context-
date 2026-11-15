@@ -1,5 +1,49 @@
 # Video status log
 
+## 15 November 2026 · isolated stability-caption fit comparison
+
+Fresh PR #4 head c08b87e3f63443a778eb27fc6e1ef1ab632ccb4b; isolated
+fetched codex/video-* worktree. Read current main README/inventory,
+#1 AGENTS/ROADMAP/source registry, video README/status, caption proposals/
+audit and actual renderer/text-fit tests. AGENTS/ROADMAP absent on main;
+PRs #1–4 remain open/unmerged; #4 issue/review/inline feedback empty.
+Continue codex/video-teaser-pacing / draft #4, not a new PR stack.
+
+Files: caption_fit.py and four tests, CAPTION_FIT.md, caption-fit/report.json,
+two fresh 640×360 PNGs, README/log. Separate in-memory deep copy changes
+ONLY the unadopted stability caption at 52–55 s, no global/source mutation.
+Both original/proposed source images rendered at 1280 and 640; inspected
+all four stills, no clipping seen. Both captions remain ONE line at 26 px
+source / nominal 13 px half-size. Text advances 742.875→602.0625 px,
+code points 55→46; actual ink boxes fit. Shorter copy does NOT enlarge
+text or free a line, nor prove better comprehension/three-second pacing.
+Large active description/context unchanged; small caption/footer concern
+remains. No equation in this cue; other equation scenes not re-reviewed.
+
+Validation: four focused tests pass in 1.981 s; full suite **122 pass in
+85.224 s**. All 72 cue frames render; changed pixels confined to caption
+band, cue boundaries/invalid indices, one-field data isolation, actual ink,
+source/font/image identities, deterministic still reproduction and
+no-overwrite tested. Audit/narration --checks, review-player/Node and
+whitespace pass. Report includes four PNG hashes; two reduced previews
+committed, full-size stills reproducible output. Not encoded/OCR evidence.
+
+Official Pillow drawing/MIT-CMU licence docs checked 15 November;
+retained pinned Pillow 12.3.0 and external DejaVu fonts (hashes recorded),
+no new dependency/lock change/bundled binary/assets/paid service or blanket
+commercial/codec/font clearance. Source/connected tree compared exactly;
+expected-head fast-forward, no force. All edits under videos/. No new
+MP4/audio, decoded/full playback/device/accessibility/speech-sync review.
+Frozen media/lesson/captions/VTT/proposals/package, narration/adoption
+choices, notebooks and research untouched; browser permission not retried.
+Next: actual-device review of existing 49–61 s; choose copy and whether
+type/hierarchy also needs revision, then controlled candidate/caption/
+review/package update and encoded/full review if adopted. Existing
+destination/live-lesson gate unless explicitly changed, human math/
+editorial/rights approval, audio choice, parent reconciliation and exact-
+version publication approval remain open. No publication, merge, hosting,
+assumed Open Notebook deployment, account change or new automation.
+
 ## 15 November 2026 · full-pilot caption audit and shorter copy proposals
 
 Source: fresh PR #4 head 85f1868ea816a52c581ed64cbde3d21b567a40c4;
