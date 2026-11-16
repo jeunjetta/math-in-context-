@@ -101,6 +101,10 @@ A [larger-type source-frame study](fft-latency/CAPTION_TYPE.md) separately
 keeps all four original category sentences and tests 34 px instead of 26 px.
 They fit one line (nominal 17 vs 13 px at half-size), but no timing, device,
 encoded-media or adoption approval is implied; the frozen pilot is unchanged.
+A [full-pilot larger-caption layout check](fft-latency/CAPTION_LAYOUT.md)
+extends this to all 19 cues. It fixes a negative-bearing edge case and uses
+a taller box for two ending cues; one still has a single-word orphan line.
+This is unadopted source-layout evidence, not a new reviewed movie.
 
 Retained from v6: moving bars replace animation-generated decimal totals with
 endpoint arrows during the two moving-bar beats (18–21 s and 40–43 s).

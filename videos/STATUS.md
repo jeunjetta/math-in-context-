@@ -1,5 +1,66 @@
 # Video status log
 
+## 17 November 2026 · whole-pilot larger-caption layout and ink-bearing fix
+
+Source: fresh PR #4 head 920dd609b068146e00c7f7827fc927a756e828c9;
+isolated clean codex/video-* worktree. Read current main README/inventory,
+#1 AGENTS/ROADMAP/source registry/FFT lesson, video README/status, renderer,
+category study and identity. Main still lacks AGENTS/ROADMAP; #1–4 remain
+open/unmerged and #4 combined review feedback empty. Continue existing
+codex/video-teaser-pacing/#4 without a new external branch/PR stack.
+
+Bounded extension of the four-cue study: test one consistent 34px caption
+treatment against ALL 19 original cues / 1,920 source frames, without copy,
+cue or canonical renderer changes. Seventeen captions fit one line; 70–75
+and 75–80 s require two. Proposed box height 92 instead of 80 accommodates
+91.8px line boxes. A font-only change in the old box is insufficient.
+Lowest actual ink y=674.9, below the caption-box limit 682 and above the
+untouched footer origin 684. Nominal 640-wide caption font 17 vs 13px;
+not a CSS/accessibility standard or proof of reading comprehension.
+
+Initial strict ink audit rejected 65.5s: advance=1119px, but negative
+left bearing produced ink x=79.5 instead of >=80. Three initial focused
+tests errored; no evidence was accepted from that run. Centering actual
+ink rather than advance gives x=80..1200 (draw origin x=81). This edge
+case is explicitly regression-tested. No silent text shrinking/clipping.
+
+Files: caption_layout.py, test_caption_layout.py (three tests), separate
+fft-latency/caption-layout.json, CAPTION_LAYOUT.md, caption-layout/report.json
+and comparison-640.png, README/log. Adapter erases/redraws only caption-box
+pixels in memory, without monkey-patching the production renderer. Exported
+eight full-size PNGs plus a four-row before/after sheet; only sheet/report
+committed. Inspected final full-size proposed 35/65.5/70/75s and all final
+half-size panels. Equation/variable regions remain visible and unchanged;
+no caption/footer overlap seen. Greedy 70s wrapping leaves 'lesson.' alone
+on line two: an unresolved typographic weakness, NOT a polished ending.
+75s needs two lines too. Footer/source details stay small; cue times unchanged.
+
+Final validation: **129 tests pass in 125.379s**, including all 1,920 frames,
+caption-only changed pixels, exact words/cue endpoints, ink/bearing bounds,
+invalid input/overflow guards, deterministic report/sheet reproduction and
+no-overwrite. Review HTML, caption-pacing/narration --checks and whitespace
+pass. Source/font/image hashes recorded; binary blob equals local git hash.
+Connected tree matched checked local tree before expected-head non-force
+update. Earlier evidence/identity hashes not regenerated or relabelled.
+
+Official Pillow drawing docs/MIT-CMU licence checked 17 November; pinned
+12.3.0/lockfile and external DejaVu retained. No dependency/encoder/font
+redistribution, purchase or blanket commercial/codec clearance claim. All
+edits under videos/; frozen movie, canonical lesson/caption/VTT/package,
+other proposals, notebooks and research untouched. No new MP4, voice,
+speech-sync, native/browser/full-playback/device/accessibility approval,
+private artifact link, sharing, publishing, merge, account change or automation.
+No assumed Open Notebook deployment; previous public-link blocker not retried.
+
+Next bounded step: test word-preserving balanced two-line wrapping for the
+70–75s cue in this adapter, not another shortened-copy variant. Then review
+both wrapped endings and the 49–61s load on an actual device before choosing
+production treatment and encoding. Remaining gates: orphan-line treatment,
+human math/editorial/rights, full/tablet playback, audio choice/any retiming,
+unverified live-Marimo CTA/destination (source-only fallback unadopted), public
+review-route authorization, parent reconciliation and exact-version release
+approval. No candidate or release-status upgrade from source-fit evidence.
+
 ## 16 November 2026 · larger original-copy category captions, isolated study
 
 Source: freshly fetched PR #4 head 1538d57e3128d75767af52c2a7e022023b2c03ea;
