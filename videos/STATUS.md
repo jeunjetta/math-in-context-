@@ -1,5 +1,58 @@
 # Video status log
 
+## 16 November 2026 · larger original-copy category captions, isolated study
+
+Source: freshly fetched PR #4 head 1538d57e3128d75767af52c2a7e022023b2c03ea;
+clean isolated codex/video-* worktree. Read current main README/inventory,
+#1 AGENTS/ROADMAP/source registry/FFT lesson, video README/status, frozen
+renderer, copy-fit study and candidate identity. Main lacks AGENTS/ROADMAP;
+PRs #1–4 still open/unmerged, #4 combined review feedback empty. Continue
+existing codex/video-teaser-pacing/#4; no new stacked branch/PR externally.
+
+Bounded question from the previous fit study: shorter wording did not enlarge
+the small caption. Tested the ORIGINAL four 49–61 s sentences at 34 px
+instead of 26 px, without changing wording, cue windows or production source.
+All remain one line in the existing 1120×80 caption box; nominal half-size
+font 13→17 px (+30.8%). Actual glyph bounds also fit. Max study advance
+971.48 px (stability). Erase/redraw only the caption box in a separate adapter;
+footer, hero, context, progress and canonical renderer/data stay untouched.
+
+Files: caption_type_study.py, three tests, fft-latency/CAPTION_TYPE.md,
+caption-type/report.json and comparison-640.png, README/log. Exported eight
+full-size source PNGs plus an eight-panel 640-wide-per-panel sheet. Inspected
+all four proposed full-size images and all comparison panels: no visible
+caption clipping; original meaning/category alignment retained. No equation
+occurs in these cues; other equation scenes not re-reviewed. Larger caption
+is an observed layout difference, not proof of better reading/comprehension.
+Footer/context labels remain small; three-second reading load unchanged.
+
+Validation: three focused tests pass in 3.192 s; full suite **126 pass in
+47.765 s**. All 288 frames in 49–61 s render, changed-pixel bounds stay
+inside the caption box, current 26px branch matches original pixels, incoming/
+last outgoing cues retain exact copy, invalid frame/size rejection, actual
+ink, deterministic sheet/report and no-overwrite tested. Existing review HTML,
+caption-pacing --check and whitespace pass. Report records source/font/PNG
+hashes. Binary blob matches local git hash; connected source tree compared
+exactly before expected-head non-force update. No historical report refreshed.
+
+Official Pillow drawing docs and MIT-CMU licence checked 16 November;
+retained pinned 12.3.0/uv.lock and external DejaVu Sans, no dependency/font/
+encoder redistribution or blanket codec/commercial clearance claim. No paid
+service, new MP4, audio, speech sync, browser launch, full playback, actual-
+tablet/accessibility review or release approval. Frozen movie, caption/VTT,
+review/credit identity, proposals, notebooks and research unchanged. No private
+artifact link added, sharing/publication/merge/account change or automation.
+Open Notebook deployment not assumed; earlier public review-link gate not retried.
+
+Next: actual-device comparison of original copy at larger type versus the
+separate short-copy option; select one explicit production treatment, then
+check 48–49/61–62 s typography transitions and encode/review before updating
+candidate identity. Do not apply 34px globally: other scenes untested at that
+size. Exact remaining gates: human math/editorial/rights, full/tablet playback,
+audio choice and any retiming, unverified live-lesson CTA/destination (source-
+only fallback unadopted), public-review-route authorization, stacked-parent
+reconciliation and exact-version publication approval. Study stays unadopted.
+
 ## 15 November 2026 UTC · exact full-pilot file handoff
 
 Source: freshly fetched PR #4 head d8c8756681e3f2e03e6a9029e6cfc6b38df0489a;

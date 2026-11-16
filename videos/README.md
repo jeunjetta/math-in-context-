@@ -97,6 +97,10 @@ unadopted copy proposals. Counts are not comprehension or accessibility approval
 A [52-second source-frame fit comparison](fft-latency/CAPTION_FIT.md) now tests
 the stability proposal. Both fit one line, but shortening does not enlarge the
 unchanged nominal 13 px half-size caption; it remains unadopted.
+A [larger-type source-frame study](fft-latency/CAPTION_TYPE.md) separately
+keeps all four original category sentences and tests 34 px instead of 26 px.
+They fit one line (nominal 17 vs 13 px at half-size), but no timing, device,
+encoded-media or adoption approval is implied; the frozen pilot is unchanged.
 
 Retained from v6: moving bars replace animation-generated decimal totals with
 endpoint arrows during the two moving-bar beats (18–21 s and 40–43 s).
