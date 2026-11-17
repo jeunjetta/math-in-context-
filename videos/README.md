@@ -4,6 +4,12 @@ First increment: **80-second silent, captioned visual draft**, not an approved
 YouTube release. Original graphics; synthetic numbers; no operational claims.
 Video work lives here independently of the Marimo starter PR #1.
 
+One [complete 80-second caption-layout review](fft-latency/CAPTION_REVIEW_RENDER.md)
+now integrates the tested larger captions and balanced ending into an encoded
+copy for normal-speed review. Full decode/timestamps and sampled visuals pass;
+the treatment is unadopted, silent and does not replace frozen v7. The live-Marimo
+CTA remains unverified. Review evidence and exact remaining gates are in the handoff.
+
 **Review without installing anything:** open the
 [tablet-friendly editorial handoff](fft-latency/REVIEW.md) for the exact
 current script, scene checklist and draft title/description/source links.

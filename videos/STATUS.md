@@ -1,5 +1,51 @@
 # Video status log
 
+## 18 November 2026 · one complete caption-layout review encode
+
+Source: fresh PR #4 head 1dfb4f7aeba73ac6d244ec5db9383cc0e58f58f4;
+isolated codex/video-* worktree. Read current main README/inventory,
+#1 AGENTS/ROADMAP/source registry/FFT lesson, video README/status and relevant
+caption/QA sources. Main lacks AGENTS/ROADMAP; #1–4 remain open/unmerged,
+#4 combined review feedback empty. Continue codex/video-teaser-pacing/#4;
+no new external PR stack. No superseding review decision retrieved.
+
+Bounded increment: integrate the tested whole-pilot 34px ink-centered captions
+and balanced 70–75s break into ONE complete provisional review encode. Not
+production-layout selection, adoption or a replacement for frozen v7. Ordered
+words, cue times, maths, lesson/graph/source cards and original unverified Marimo
+CTA unchanged; source-only ending proposal not included. No new copy variants.
+
+Files: caption_review_render.py, three new tests, CAPTION_REVIEW_RENDER.md,
+caption-review/render-report.json, README/log. Review MP4 724,266 bytes, SHA-256
+d0b22d6291d0b8d9205bd5e47d7d27cbd8892f63df4a1957a7d3d5decc605142;
+80s/1,920 frames/24fps/1280×720/H.264/no audio. Exact VTT bytes unchanged.
+Full decode and all timestamps pass; 39 cut/midpoint samples exported. Inspected
+all seven contact sheets plus native frames 840,1680,1800: no caption/footer
+clipping seen, equations legible, both ending wraps fit. Not full normal-speed
+human/device/accessibility review, reading-comprehension or speech-sync approval.
+
+First encode succeeded but 101-sample QA select filter failed with Cannot
+allocate memory; no successful report written. New-directory retry uses existing
+39-sample selection, retains full decode/all timestamps; exact cause undiagnosed.
+No overwrite, frozen QA edit or stale evidence relabelling. Three focused tests
+pass; final full suite **135 pass in 91.167s**. Review HTML, caption-pacing,
+narration source-copy and whitespace checks pass. Manifest includes source/font/
+media hashes. Render delivered separately for private review, no public URL/access
+grant in repo. Existing v7 media/identity/package and prior studies untouched.
+
+Official FFmpeg commands/legal and Pillow licence checked; existing pinned
+Pillow 12.3.0/lock, external DejaVu and external GPL/libx264 retained. No new
+dependency, bundled encoder/font, paid service or blanket commercial clearance.
+Only videos/ edited; no notebook/research conclusions changed. No sharing change,
+publishing, merge, account mutation or automation. Open Notebook not assumed live.
+
+Next: one normal-speed actual-device review, especially 49–61s and 70–80s,
+then record specific feedback/select production treatment before identity change.
+Exact blockers: human math/editorial/rights; full-device/accessibility review;
+audio choice/retiming/speech sync; unverified live-Marimo CTA or explicit fallback
+adoption; authorized public review route; parent reconciliation; exact-version
+release approval. No further layout variants without an observed defect.
+
 ## 17 November 2026 · word-preserving balance of the 70–75 s ending
 
 Source: fresh PR #4 head 3f7a74537ec0299a290deaaa9ab27292b59ad4b2;
