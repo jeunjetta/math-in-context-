@@ -105,6 +105,10 @@ A [full-pilot larger-caption layout check](fft-latency/CAPTION_LAYOUT.md)
 extends this to all 19 cues. It fixes a negative-bearing edge case and uses
 a taller box for two ending cues; one still has a single-word orphan line.
 This is unadopted source-layout evidence, not a new reviewed movie.
+A [word-preserving balance study](fft-latency/CAPTION_BALANCE.md) resolves
+that orphan in a separate 70–75 s source adapter: ink-width difference
+918→8 px, with unchanged font, box, wording and timing. It remains unadopted;
+the frozen pilot and earlier study evidence are untouched.
 
 Retained from v6: moving bars replace animation-generated decimal totals with
 endpoint arrows during the two moving-bar beats (18–21 s and 40–43 s).

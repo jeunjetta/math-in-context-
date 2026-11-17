@@ -1,5 +1,57 @@
 # Video status log
 
+## 17 November 2026 · word-preserving balance of the 70–75 s ending
+
+Source: fresh PR #4 head 3f7a74537ec0299a290deaaa9ab27292b59ad4b2;
+isolated codex/video-* worktree. Read current main README/inventory,
+#1 AGENTS/ROADMAP/source registry/FFT lesson, video README/status and
+the full-pilot layout adapter. Main lacks AGENTS/ROADMAP; #1–4 still
+open/unmerged, #4 combined review feedback empty. Continue existing
+codex/video-teaser-pacing/#4; no new external branch/PR stack.
+
+Closed the last study's specific orphan-line defect, not another copy
+variant: enumerate fitting word-boundary splits with >=2 words per line,
+minimize actual ink-width difference, deterministic width/index tie breaks.
+Selected exact copy is 'Explore the fraction improved and' / 'its speedup
+in our Marimo lesson.' Ink widths 582/574px (8px gap), versus greedy
+1037/119px (918px). Font stays 34px, box 1120×92, window 70–75s.
+The conjunction at line one's end is an explicit editorial tradeoff;
+equal widths do not prove better language flow or comprehension.
+
+Files: caption_balance.py, three tests, CAPTION_BALANCE.md,
+caption-balance/report.json and comparison-640.png, README/log. Separate
+adapter reuses earlier ink-bearing correction without editing prior source
+or evidence. Only frames 1680..1799 supported; no other cue rebalanced.
+Four separate full/half-size PNGs exported; sheet/report committed. Inspected
+greedy and balanced full-size frames and both half-size panels: no caption/
+footer clipping seen, orphan absent, concept graph/source details unchanged.
+Neither comparison panel is the frozen 26px movie. No equation in this cue;
+no new equation-scene inspection or motion/audio synchronization claimed.
+
+Validation: three focused tests pass in 6.344s; full suite **132 pass in
+170.881s**. All 120 cue frames, caption-only changed pixels, exact word
+sequence, ink/balance/word-count bounds, invalid scope, deterministic sheet/
+report and no-overwrite tested. Review HTML, caption-pacing/narration
+--checks and whitespace pass. Source/font/image hashes recorded; image
+blob equals local git hash, connected source tree compared exactly before
+expected-head non-force update. Earlier source/report/identity untouched.
+
+Pillow official drawing docs/MIT-CMU licence checked 17 November; pinned
+12.3.0/lock and external DejaVu retained, no dependency, bundled encoder/
+font, paid service or blanket codec/commercial-clearance claim. All edits
+under videos/. Frozen media, canonical lesson/caption/VTT/package, notebooks
+and research unchanged. No new MP4, speech, native/full-playback/device/
+accessibility approval, private artifact link, sharing, publishing, merge,
+account change or automation. Open Notebook deployment not assumed.
+
+Next: actual-device/editorial review of both wrapped ending cues and dense
+49–61s; select a single production treatment before encoding/updating
+candidate identity. Avoid more copy/layout alternatives absent a specific
+defect. Exact blockers: human math/editorial/rights, device/full playback,
+audio choice/retiming, unverified live-Marimo CTA/destination (source-only
+fallback unadopted), public-review-route authorization, stacked-parent
+reconciliation and exact-version release approval. Study remains unadopted.
+
 ## 17 November 2026 · whole-pilot larger-caption layout and ink-bearing fix
 
 Source: fresh PR #4 head 920dd609b068146e00c7f7827fc927a756e828c9;
