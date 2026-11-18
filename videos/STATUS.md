@@ -1,5 +1,49 @@
 # Video status log
 
+## 18 November 2026 · native import smoke test and one-copy review sheet
+
+Source: fresh PR #4 head 7cb4f60ef0ae3ec447a8d86e4ac2e149d54205f7;
+clean isolated codex/video-* worktree. Read current main README/inventory,
+#1 AGENTS/ROADMAP/source registry/FFT lesson, complete video README, latest
+status and relevant review/render sources. Main lacks AGENTS/ROADMAP;
+#1–4 still open/unmerged; #4 combined feedback empty. Continue existing
+codex/video-teaser-pacing/#4, no new external branch/PR stack.
+
+Bounded increment: try actual native playback of the ONE existing larger-
+caption review, then supply exact-version/timestamped PLAYBACK_REVIEW.md.
+No new variant or encode. Rechecked MP4 hash before/after, matching
+d0b22d6291d0b8d9205bd5e47d7d27cbd8892f63df4a1957a7d3d5decc605142.
+Installed Kdenlive 24.12.3 / MLT 7.30.0 imported the clip, showed 80s and
+HD 720p/24fps, and visibly decoded opening/baseline/changing bars/formula
+as playhead advanced into 30–40s. Temporary project matched source profile.
+This is native import/PARTIAL visible decoding, not a full playback pass.
+
+Exact new blocker: clip image only 320×180 on 1364×1024 desktop; expanded
+monitor stayed 320×334 including controls, normal resize attempt ineffective.
+No full-size/80s/actual-Android/normal-speed timing, stutter or accessibility
+approval. No permission workaround or browser-launch retry. Closed editor,
+discarded only our temporary unsaved project; original MP4 unchanged. No
+saved native project, screenshots, installation, speech, retiming or new media.
+
+Files: PLAYBACK_REVIEW.md, README/log only. Sheet binds filename/hash,
+contains nine source-timed review windows and public-safe feedback prompts,
+distinguishes player limitations from content defects and preserves all gates.
+Validation: exact movie/manifest/source identities and review time windows
+checked; existing focused renderer tests and source-copy checks rerun (details
+in handoff). Prior 135-test/full-decode report not represented as a fresh run.
+Official Add Clip docs checked; newer docs vs installed version distinguished.
+No dependency/toolchain/licence choice changed; existing caveats preserved.
+
+Next: one full normal-speed intended-device pass using the sheet; record a
+specific defect or layout choice before further edits. Exact remaining gates:
+human math/editorial/rights; device/accessibility review; audio choice/retiming;
+unverified Marimo destination or explicit fallback adoption; authorized review
+route; parent reconciliation; exact-version release approval. Only videos/
+changed; research/notebooks, frozen v7 and new review bytes untouched. No
+publishing, sharing change, merge, purchase, account change or automation.
+Open Notebook deployment not assumed. This partial UI test does not fully
+block the ongoing project or justify inventing additional layout variants.
+
 ## 18 November 2026 · one complete caption-layout review encode
 
 Source: fresh PR #4 head 1dfb4f7aeba73ac6d244ec5db9383cc0e58f58f4;

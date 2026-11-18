@@ -9,6 +9,10 @@ now integrates the tested larger captions and balanced ending into an encoded
 copy for normal-speed review. Full decode/timestamps and sampled visuals pass;
 the treatment is unadopted, silent and does not replace frozen v7. The live-Marimo
 CTA remains unverified. Review evidence and exact remaining gates are in the handoff.
+Use the [one-copy playback review sheet](fft-latency/PLAYBACK_REVIEW.md) for
+exact-file identification and timestamped feedback. Native import/partial
+decoding was observed; the editor's small monitor prevented full-size review.
+No complete intended-device playback or layout approval is claimed.
 
 **Review without installing anything:** open the
 [tablet-friendly editorial handoff](fft-latency/REVIEW.md) for the exact
