@@ -276,6 +276,11 @@ for the current pilot. It accepts positive whole seconds only. Omitting
 the option preserves the original selection. The report records the interval;
 even dense samples cannot certify unseen frames, smooth motion or pacing.
 
+For the existing larger-caption review, the flat dense selection fails in
+the inspected FFmpeg 7.1.5 build. The opt-in [balanced dense export](fft-latency/DENSE_QA.md)
+recovers all 101 intended frames without editing archived QA or the movie.
+Its actual frame-selection/pixel checks pass; it is not full playback approval.
+
 The report records input SHA256, QA source hash, resolved lesson hash, external
 FFmpeg/FFprobe versions, dimensions, duration, frame count/rate and every
 frame's constant-rate timestamp check. A complete FFmpeg decode must succeed.

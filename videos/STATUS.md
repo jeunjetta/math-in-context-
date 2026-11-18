@@ -1,5 +1,53 @@
 # Video status log
 
+## 19 November 2026 · recovered the 101-frame encoded QA export
+
+Source: fresh PR #4 head 62e288b77e1524c08d38a4e81e2c8a2df380801a,
+clean isolated codex/video-* worktree. Read current main README/inventory,
+#1 AGENTS/ROADMAP/source registry/FFT lesson, complete video README,
+latest status and relevant QA/render sources. Main lacks AGENTS/ROADMAP;
+#1–4 remain open/unmerged, #4 combined review feedback empty. Continue
+codex/video-teaser-pacing/#4; no new external branch/PR stack.
+
+Bounded fix: flat 101-comparison selection (1,153 chars) reproduces exit
+244 / Cannot allocate memory on FFmpeg 7.1.5. Same comparisons in balanced
+sum (1,353 chars) succeed. Expression structure matters; exact allocator/
+parser limit not independently diagnosed. No global RAM-failure claim.
+New opt-in dense_qa.py validates exact caption-review identity, reuses frozen
+qa.py default probe/timestamps/decode/39 samples, then decodes all frames again
+to export the full 101-sample selection. No mutation/monkeypatch of old code.
+No overwrite; success only after output-count and final input-hash checks.
+
+Files: dense_qa.py, four tests, DENSE_QA.md, dense-qa/report.json and one
+original ceiling-transition sheet, README/log. Existing 80s silent MP4 SHA
+d0b22d6291d0b8d9205bd5e47d7d27cbd8892f63df4a1957a7d3d5decc605142
+unchanged. Both full decodes and all 1,920 timestamp checks pass; 101 PNGs/
+17 sheets exported. Actual movie: all 101 PTS/pixel-MD5 pairs equal indexed
+full-decode records; all 39 common PNG SHA pairs match baseline. Metadata
+captions are not OCR. Report records source/input/image hashes and selection.
+
+Inspected sheets 04/05/09/12 and native-size frames 1068/1919: transition
+arrows precede settled 90/80ms, 1.25x equation appears with 44.5s cue,
+no caption/footer clipping seen and final caption present. Not all samples
+visually reviewed. No complete native/tablet playback, motion/pacing/stutter,
+accessibility, speech sync, layout adoption or publication approval claimed.
+
+Four focused tests pass in 0.176s; full suite **139 pass in 86.954s**.
+Review HTML, caption-pacing/narration copy and whitespace checks pass.
+Official FFmpeg select/expression/legal docs checked. Existing pinned
+Pillow/lock, external encoder/font retained; no paid service, new dependency,
+bundled asset or blanket commercial clearance. Frozen QA, renderer, canonical
+lesson/VTT, old reports and all movie identities unchanged. Only videos/;
+no notebook/research edits, publishing, sharing change, merge or automation.
+
+Next: one full intended-device normal-speed pass using PLAYBACK_REVIEW.md;
+record a specific defect or production-layout choice before further edits.
+Exact remaining gates: usable full-size native/tablet playback; human math/
+editorial/rights; audio choice/retiming; unverified Marimo destination or
+explicit fallback; authorized review route; parent reconciliation;
+exact-version release approval. Dense-export blocker fixed, not the small
+native-monitor issue. Open Notebook deployment not assumed.
+
 ## 18 November 2026 · native import smoke test and one-copy review sheet
 
 Source: fresh PR #4 head 7cb4f60ef0ae3ec447a8d86e4ac2e149d54205f7;
