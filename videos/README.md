@@ -4,6 +4,11 @@ First increment: **80-second silent, captioned visual draft**, not an approved
 YouTube release. Original graphics; synthetic numbers; no operational claims.
 Video work lives here independently of the Marimo starter PR #1.
 
+A [source-color contrast audit](fft-latency/CONTRAST_AUDIT.md) now checks the
+exact source-only review's ten inventoried text/background pairs: all exceed
+the conservative 4.5:1 target, minimum 7.338:1. Hash-bound tests protect scope;
+no pixels changed. Small text, reading density and device review remain open.
+
 A [full source-only review copy](fft-latency/SOURCE_ONLY_REVIEW.md) now places
 the existing fallback ending in the complete 80-second lesson, with a matching
 VTT and draft description. It explicitly distinguishes source code from a live

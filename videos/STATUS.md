@@ -1,5 +1,58 @@
 # Video status log
 
+## 20 November 2026 · source-only text-color contrast audit
+
+Source: freshly retrieved PR #4 head
+68668c1dbd54fcd2996e3042e32481c3733fc8ef, isolated clean codex/video-* worktree.
+Remote main remains c9fdf98729379dd404afce99daad1a6aa042156e (template;
+no root AGENTS/ROADMAP). Read current main/#1 READMEs, #1 AGENTS/ROADMAP,
+source registry/FFT notebook, full video README/latest status and relevant
+rendering, caption and source-only review files. #1–4 remain open/unmerged;
+#4 combined review feedback empty. Continue existing codex/video-teaser-pacing/
+PR #4, no new PR stack. No Open Notebook or live-lesson deployment assumed.
+
+Bounded increment: reproducible intended-color contrast audit of the existing
+80s source-only review, not another movie/layout variant. Manually inventoried
+ten actual opaque text/background combinations across original scenes,
+caption/footer and source-only ending. Parse palette literals without importing
+renderer/Pillow; pin render manifest SHA and validate all 12 render-source plus
+resolved lesson/VTT hashes. Movie identity from that manifest:
+790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e.
+Movie bytes not reopened, rendered or newly visually inspected this run.
+
+Official W3C luminance/contrast guidance checked: sRGB linearization breakpoint
+0.04045, weighted luminance and (Llight+0.05)/(Ldark+0.05). Project target 4.5:1
+for every inventoried text pair, without large-text exemption or rounding the
+comparison. **All ten pass; minimum 7.338:1 (secondary text on panel).**
+No color change warranted by this narrow result. Passing intended colors is
+not encoded/streamed-pixel analysis, non-text contrast, full accessibility or
+device readability. Footer stays 16px at 1280 width (nominal 8px at 640);
+closing labels down to 28px (14px at half-size). Size/density remain unresolved.
+
+Files: contrast_audit.py, seven tests, fft-latency/{contrast-spec.json,
+contrast-report.json,CONTRAST_AUDIT.md}, README/log. No existing renderer,
+lesson, captions, manifests, media, candidate or package changed. No new
+assets/dependencies; lockfile retained. Official current Pillow licence,
+FFmpeg legal and Remotion pricing rechecked; existing external encoder/font
+and commercial-eligibility caveats retained, no purchase or redistribution.
+
+Validation: seven focused tests pass (0.018s); full existing/new suite
+**151 pass in 135.716s**. Contrast report freshness, review HTML,
+caption-pacing/narration source-copy checks and git whitespace pass.
+Tests cover formula endpoints/branches/weights, symmetry, malformed/nonopaque
+colors, unrounded threshold, nonexecuting palette extraction, exact report
+and provenance drift. No new timing/render/audio-sync evidence claimed.
+
+Next: complete intended-device playback of THIS source-only review, especially
+49–61s cards and 70–80s ending; judge secondary text/reading load and decide
+source-only adoption before canonical/package reconciliation. Exact remaining
+gates: human math/editorial/rights, accessible full playback, audio choice and
+retiming if narrated, adoption/parent reconciliation, authorized review route
+and exact-version publication approval. No technical rendering blocker;
+actual device/editorial decisions unavailable, not replaced by automated tests.
+No research conclusions/notebooks altered; no YouTube/Substack/social publish,
+merge, account settings, sharing change, paid service or new automation.
+
 ## 19 November 2026 · full source-only review assembly
 
 Source: fresh PR #4 head 0a083c1274f3792f0385c526e01d3488285ccd22;
