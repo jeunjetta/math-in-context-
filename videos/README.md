@@ -4,6 +4,12 @@ First increment: **80-second silent, captioned visual draft**, not an approved
 YouTube release. Original graphics; synthetic numbers; no operational claims.
 Video work lives here independently of the Marimo starter PR #1.
 
+A [full source-only review copy](fft-latency/SOURCE_ONLY_REVIEW.md) now places
+the existing fallback ending in the complete 80-second lesson, with a matching
+VTT and draft description. It explicitly distinguishes source code from a live
+lesson and fixes an observed orphan line. This separate copy is unadopted;
+frozen v7, previous review files and publication gates remain unchanged.
+
 One [complete 80-second caption-layout review](fft-latency/CAPTION_REVIEW_RENDER.md)
 now integrates the tested larger captions and balanced ending into an encoded
 copy for normal-speed review. Full decode/timestamps and sampled visuals pass;

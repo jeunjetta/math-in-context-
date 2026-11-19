@@ -1,5 +1,55 @@
 # Video status log
 
+## 19 November 2026 · full source-only review assembly
+
+Source: fresh PR #4 head 0a083c1274f3792f0385c526e01d3488285ccd22;
+isolated clean codex/video-* worktree. Read current main README/inventory,
+#1 AGENTS/ROADMAP/source registry/FFT notebook, video README/latest status,
+proposal and rendering/QA sources. Main lacks AGENTS/ROADMAP; #1–4 remain
+open/unmerged, #4 combined feedback empty. Continue codex/video-teaser-pacing/
+#4; no new external PR stack. Notebook source freshly fetched, blob SHA
+bf6eb0d52cb3bb20f0ec2747a0648612eb1af09a matches. No live URL verified;
+public-fetch deployments endpoint unsupported, not evidence of account state.
+
+Bounded increment: ONE full 80s unadopted source-only review, evaluating the
+existing fallback ending in context of the known unverified-CTA defect.
+First 70s SOURCE pixels reuse larger-caption layout; no timing/arithmetic/
+assumption/four-distinction change. Final 10s reuse source-only proposal.
+First assembly exposed orphan description.; final assembly changes only
+that cue's line break, preserving exact words and time. First encode stays
+ignored/undistributed, final-only file supplied separately. No release-route
+adoption, canonical replacement or silent clearing of frozen v7's live gate.
+
+Final MP4 732,406 bytes, SHA256
+790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e.
+80s/1,920 frames/24fps/1280×720/H.264/no audio; full decode and all timestamps
+pass. 39 cut/midpoint samples/seven sheets generated. Inspected native frames
+840/1679/1680/1799/1800/1919 and reduced final sheet: equation/cuts/ending
+captions legible in samples, no clipping seen, orphan removed. Dense ending
+secondary text still needs device judgement. No complete normal-speed/human/
+Android/accessibility/speech-sync approval; no UI restriction retry.
+
+Files: source_only_review.py, five tests, wrapping-only JSON, SOURCE_ONLY_REVIEW.md,
+source-only-review/{render-report,resolved-lesson,VTT,ending.png}, README/log.
+Content and rendering separated; matching unpublished source-linked description
+bound to this new identity. Frozen lesson/VTT/candidate/package, old proposals,
+media and evidence untouched. Five focused tests pass in 0.358s. Final suite:
+**144 pass in 166.463s**. Review HTML, caption-pacing/narration copy and
+whitespace pass. Source/font/content/media hashes and baseline recorded.
+
+Official Pillow licence/FFmpeg commands/legal checked; pinned dependencies/
+lock, external font/GPL encoder retained. No bundled binary/font, new paid
+service, fabricated voice, copied assets or blanket commercial clearance.
+Only videos/ edited; no notebook/research changes, publishing, sharing change,
+account settings, deployment, merge or automation. Open Notebook not assumed live.
+
+Next: one complete intended-device pass of THIS copy; judge cut/reading load
+and choose the release design before candidate/package reconciliation. Exact
+remaining gates: source-only adoption decision; full-device/accessibility and
+human math/editorial/rights; audio choice/retiming; parent reconciliation;
+authorized review route; exact-version publication approval. The source-only
+draft avoids implying a live app but does not deploy or verify one.
+
 ## 19 November 2026 · recovered the 101-frame encoded QA export
 
 Source: fresh PR #4 head 62e288b77e1524c08d38a4e81e2c8a2df380801a,
