@@ -4,6 +4,11 @@ First increment: **80-second silent, captioned visual draft**, not an approved
 YouTube release. Original graphics; synthetic numbers; no operational claims.
 Video work lives here independently of the Marimo starter PR #1.
 
+A [draft descriptive text alternative](fft-latency/DESCRIPTIVE_TRANSCRIPT.md)
+now combines all 19 source-only review captions with eight visual descriptions,
+equations in words and the four active panels. It supports reading without
+the visuals; it is not recorded narration or an accessibility certification.
+
 A [source-color contrast audit](fft-latency/CONTRAST_AUDIT.md) now checks the
 exact source-only review's ten inventoried text/background pairs: all exceed
 the conservative 4.5:1 target, minimum 7.338:1. Hash-bound tests protect scope;

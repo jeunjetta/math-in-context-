@@ -1,5 +1,66 @@
 # Video status log
 
+## 21 November 2026 · descriptive text alternative for the silent pilot
+
+Source: fresh PR #4 head 4b3a4a2ef4194801480cc7aa14041932c75b44ec,
+clean isolated codex/video-* worktree. Fetched main, #1 and video heads;
+read current main README, #1 AGENTS/ROADMAP/source registry/FFT notebook,
+full video README/latest status, resolved source-only lesson/VTT, rendering
+sources and narration brief. Main c9fdf98729379dd404afce99daad1a6aa042156e
+remains template without root AGENTS/ROADMAP. #1–4 open/unmerged; #4 feedback
+empty. Continue codex/video-teaser-pacing/PR #4; no new PR stack.
+
+Bounded content increment: a descriptive text alternative for the existing
+silent source-only review. Previous reading captions/optional human script
+do not describe all informative visuals. Eight original scene descriptions
+now accompany all 19 exact caption cues, four active-panel explanations,
+equations in words, assumptions, progress-line meaning and source credits.
+Endpoint arrows are not instantaneous measured totals; the dark comparison
+background does not add latency. The source link is not a live lesson.
+This is text for review, not speech, a new cut or accessibility certification.
+
+Files: descriptive_transcript.py, six tests, fft-latency/{descriptive-transcript.json,
+DESCRIPTIVE_TRANSCRIPT.md}, README/source-only links and log. Manual descriptions
+are separate from the standard-library generator. It pins the render manifest,
+movie identity, all 12 archived render sources, resolved lesson and VTT; scene
+order/coverage and unadopted status are checked. Captions, times, headings,
+active-panel words and source links are derived, not independently retyped.
+Read-only --check rejects stale output; deliberate generation updates only
+the derived document. No dependency or lockfile change.
+
+Inspected EXISTING decoded contact sheets 01/02/04/06/07 and native samples
+840/1248/1320/1680 against the new descriptions: bar layout, formula/rounding,
+focus wording and source disclosure agree in these samples; no clipping seen
+there. Renderer sources verify the two 3s transitions and 44.5s equation cue.
+This is sampled descriptive correspondence, not fresh encoding/decode, full
+normal-speed/device playback, every-frame visual inspection or speech sync.
+Existing movie rehashed unchanged:
+790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e.
+
+Six final focused tests pass in 0.016s; full suite **166 pass in 191.582s**.
+Tests cover all 19 contiguous cues, eight descriptions/four panels, freshness,
+wrong identity/approval/coverage, source/content drift, equations/assumptions/
+disclosures and no writes during --check. Contrast, review HTML, pacing,
+narration and whitespace checks pass. Python 3.12.14; notebooks untouched,
+so no Marimo check/export rerun. No new timing/audio validation claimed.
+
+Official W3C WAI transcript/video-only guidance checked 21 November: describe
+essential visual information as well as caption text. This draft does not
+claim full equivalence or WCAG conformance. Python JSON docs/licence checked;
+no new renderer/licensing choice, voice, assets, purchase or bundled runtime.
+Existing external font/encoder/codec caveats retained. All copy is original;
+no creator clips, transcript quotes, research conclusions or private data.
+
+Next: review this text for visual equivalence and assistive-technology reading
+alongside one complete intended-device pass of the exact source-only movie;
+choose the release design before candidate/caption/package reconciliation.
+Exact remaining gates: human math/editorial/rights, equivalence/assistive-tech
+and full accessible playback, source-only adoption, audio choice/retiming,
+parent reconciliation, authorized review route and exact-version publication
+approval. No technical render blocker, but human/device decisions unavailable.
+No Open Notebook/live lesson assumed; no publication, merge, sharing/account
+settings, research edits or additional automation.
+
 ## 20 November 2026 · version-correct source-only playback handoff
 
 Source: fresh PR #4 head 5abf3cca6f3544938eec16f5e5d2b08b32ed887b;
