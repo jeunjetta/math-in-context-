@@ -1,0 +1,32 @@
+{
+  "status": "exact full source-only review bytes and technical checks passed",
+  "filename": "fft-source-only-review.mp4",
+  "sha256": "790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e",
+  "size_bytes": 732406,
+  "captions_sha256": "3418c98bbc7fe171544ffe4298eacaa46c0297342960e76a3c69dd2f421f164e",
+  "render_source_commit": "0a083c1274f3792f0385c526e01d3488285ccd22",
+  "render_report_sha256": "2456b23798529acc23853d5bdb5ac521b0ef5d3fdf08160bc51e7ee122a5e13a",
+  "verifier_sha256": "a8c37903f026ed95b2e669436779ea65531cc9d8bf7d82efb960f95592579edc",
+  "verifier_dependencies": {
+    "qa.py": "45ae6c25baf9f54564c8cf4cf95ee2e8590ed988fc5e732e9cf96fc21094d9b9",
+    "verify_source_ending.py": "bda87c5d17393b375a77263fffa88f3eab926b3de5365573825d3091317d9d41"
+  },
+  "media": {
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "frames": 1920,
+    "duration": 80.0,
+    "audio_streams": 0,
+    "timestamps_verified": true
+  },
+  "full_decode_completed": true,
+  "source_files_checked": 12,
+  "tools": {
+    "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffprobe": "ffprobe version 7.1.5-0+deb13u1 Copyright (c) 2007-2026 the FFmpeg developers"
+  },
+  "publication_approved": false,
+  "limitations": "Trusted repository identity, not a digital signature. No new render, OCR, visual inspection, complete human/device playback, speech sync, comprehension, rights clearance, source-only adoption or publication approval."
+}

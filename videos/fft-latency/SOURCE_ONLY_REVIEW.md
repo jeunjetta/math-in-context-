@@ -14,6 +14,9 @@ File: `fft-source-only-review.mp4` · 732,406 bytes · silent H.264 ·
 SHA-256: `790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e`.
 The private review file is supplied separately; no public destination or
 access grant is embedded here. [Render evidence](source-only-review/render-report.json).
+Use the [worksheet for this exact copy](SOURCE_PLAYBACK_REVIEW.md) for full
+playback feedback and optional local hash/probe/decode verification. It does
+not reuse the older movie's ending prompts or claim its native smoke test.
 
 The first 70 seconds route through the same 34px caption-layout source as
 the previous full review. Arithmetic, assumptions, bar timing and four claim

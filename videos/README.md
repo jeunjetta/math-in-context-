@@ -14,6 +14,10 @@ the existing fallback ending in the complete 80-second lesson, with a matching
 VTT and draft description. It explicitly distinguishes source code from a live
 lesson and fixes an observed orphan line. This separate copy is unadopted;
 frozen v7, previous review files and publication gates remain unchanged.
+Use its [source-only playback worksheet](fft-latency/SOURCE_PLAYBACK_REVIEW.md)
+for version-correct closing prompts and the optional exact-copy verifier.
+The older worksheet below identifies a different movie; neither is completed
+human/device review or approval.
 
 One [complete 80-second caption-layout review](fft-latency/CAPTION_REVIEW_RENDER.md)
 now integrates the tested larger captions and balanced ending into an encoded

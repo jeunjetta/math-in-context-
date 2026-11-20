@@ -1,5 +1,62 @@
 # Video status log
 
+## 20 November 2026 · version-correct source-only playback handoff
+
+Source: fresh PR #4 head 5abf3cca6f3544938eec16f5e5d2b08b32ed887b;
+clean isolated codex/video-* worktree. Fetched remote main, video branch
+and #1 branch; read current main README, #1 AGENTS/ROADMAP/source registry/
+FFT notebook, complete video README/latest status and relevant review/QA
+sources. Main remains template c9fdf98729379dd404afce99daad1a6aa042156e,
+without root AGENTS/ROADMAP. #1–4 open/unmerged; #4 combined feedback empty.
+Continue existing codex/video-teaser-pacing/PR #4; no new external PR stack.
+
+Bounded handoff correction: existing PLAYBACK_REVIEW.md identifies the
+OLDER caption-layout movie and its ending prompts. Preserve that evidence;
+add SOURCE_PLAYBACK_REVIEW.md identifying the newer full source-only movie,
+correct 70–75/75–80s captions, nine review windows and a public-safe response
+format. The prior native smoke test is not reassigned to this new identity.
+Human review can use an existing player, without code/accounts/installations.
+
+Optional verify_source_review.py checks local movie/VTT bytes, size, pinned
+manifest, resolved lesson and all 12 render-source hashes before decoding.
+Reuses existing SHA/media-validation helpers without editing them. Probes
+all streams/timestamps, requires one silent H.264 stream, fully decodes and
+rechecks identity afterward. Optional evidence output refuses overwrite.
+This is trusted repository identity, not a signature or independent content
+audit. Source content/rendering and earlier evidence remain unchanged.
+
+Actual run on fft-source-only-review.mp4 passes: 732,406 bytes, SHA256
+790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e,
+80s/1,920 frames/24fps/1280×720/no audio. All timestamps and complete decode
+pass; no new frames/pixels visually inspected, playback observed or render
+generated. copy-check.json records source/helper/movie/VTT/manifest hashes,
+tool versions and false publication approval. No private review URLs/paths
+or account data added to public files.
+
+Files: verifier, nine unit tests, SOURCE_PLAYBACK_REVIEW.md, copy-check.json,
+README/source-only handoff links and log. Nine focused tests pass in 0.024s;
+20 companion checks pass in 0.369s; full suite **160 pass in 94.077s**.
+Wrong bytes/scope/source drift/path escape, manifest changes, extra streams,
+bad timestamps, decode failure, input changes during check, no-overwrite and
+worksheet identity/window consistency are tested. Stored verifier/helper
+hashes, contrast freshness, HTML/pacing/narration copy and whitespace pass.
+No notebook edited; Marimo export not rerun for this video-only increment.
+
+Official FFprobe commands and FFmpeg legal guidance rechecked. Existing
+pinned dependencies and external font/build/codec licensing caveats retained;
+no bundled binary, paid service, asset, voice or renderer/toolchain change.
+No restriction retry or new player/browser prototype.
+
+Next: one complete intended-device pass of THIS exact source-only movie;
+judge 49–61s category pace and 70–80s density/disclosures, then choose the
+release design before candidate/captions/package reconciliation. Exact
+remaining gates: source-only adoption, human math/editorial/rights, accessible
+full playback, audio choice/retiming if narrated, parent reconciliation,
+authorized review route and exact-version publication approval. Human/device
+decision is unavailable, not a technical rendering failure or automated pass.
+No live lesson/Open Notebook deployment assumed; no research conclusions,
+publication, merge, sharing/account settings or automation changed.
+
 ## 20 November 2026 · source-only text-color contrast audit
 
 Source: freshly retrieved PR #4 head
