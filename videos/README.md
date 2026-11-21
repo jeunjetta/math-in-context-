@@ -4,25 +4,51 @@ First increment: **80-second silent, captioned visual draft**, not an approved
 YouTube release. Original graphics; synthetic numbers; no operational claims.
 Video work lives here independently of the Marimo starter PR #1.
 
-A [draft descriptive text alternative](fft-latency/DESCRIPTIVE_TRANSCRIPT.md)
-now combines all 19 source-only review captions with eight visual descriptions,
-equations in words and the four active panels. It supports reading without
-the visuals; it is not recorded narration or an accessibility certification.
+## Start with one complete review copy
 
-A [source-color contrast audit](fft-latency/CONTRAST_AUDIT.md) now checks the
-exact source-only review's ten inventoried text/background pairs: all exceed
-the conservative 4.5:1 target, minimum 7.338:1. Hash-bound tests protect scope;
-no pixels changed. Small text, reading density and device review remain open.
+Review focus: **the full source-only copy**, not a teaser, the older
+caption-layout comparison or the frozen v7 reference. This is a review
+priority, **not adoption of a release design**. All three copies below are
+80-second silent drafts and remain unapproved.
 
-A [full source-only review copy](fft-latency/SOURCE_ONLY_REVIEW.md) now places
-the existing fallback ending in the complete 80-second lesson, with a matching
-VTT and draft description. It explicitly distinguishes source code from a live
-lesson and fixes an observed orphan line. This separate copy is unadopted;
-frozen v7, previous review files and publication gates remain unchanged.
-Use its [source-only playback worksheet](fft-latency/SOURCE_PLAYBACK_REVIEW.md)
-for version-correct closing prompts and the optional exact-copy verifier.
-The older worksheet below identifies a different movie; neither is completed
-human/device review or approval.
+| Copy | Role and limitation | Correct handoff |
+|---|---|---|
+| `fft-source-only-review.mp4` | Review focus; unadopted source-code-only ending, not a live lesson | [Playback worksheet](fft-latency/SOURCE_PLAYBACK_REVIEW.md) · [Exact identity and draft description](fft-latency/SOURCE_ONLY_REVIEW.md) |
+| `fft-caption-layout-review.mp4` | Earlier larger-caption comparison; live-lesson CTA remains unverified | [Older playback worksheet](fft-latency/PLAYBACK_REVIEW.md) · [Render evidence](fft-latency/CAPTION_REVIEW_RENDER.md) |
+| `fft-latency-draft.mp4` | Frozen canonical v7 reference; not approved, live-lesson CTA unverified | [v7 editorial handoff](fft-latency/REVIEW.md) · [Canonical identity](fft-latency/review-version.json) |
+
+For the review focus, use the existing separately supplied file:
+`fft-source-only-review.mp4`, 732,406 bytes, SHA-256
+`790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e`.
+Private review links are not included here; these repository links do not
+grant media access or imply a public video destination.
+
+1. Open the [source-only worksheet](fft-latency/SOURCE_PLAYBACK_REVIEW.md)
+   and watch the exact copy once at normal speed in an existing trusted player.
+   No installation or code is needed to watch and comment.
+2. Use the [descriptive text alternative](fft-latency/DESCRIPTIVE_TRANSCRIPT.md)
+   to follow the captions, visual changes and equations in text. It is a draft,
+   not recorded narration or an accessibility certification.
+3. Return the worksheet's timestamped feedback for that file: keep, one specific
+   fix, or cannot assess. A review recommendation does not authorize publication.
+
+Prioritize 49–61 s (the four distinctions) and 70–80 s (the source-only ending).
+Choose the release design before reconciling candidate, captions and package;
+do not substitute the older worksheet's ending prompts. Full intended-device
+playback, human math/editorial/rights, text-equivalence/assistive-tech review,
+audio choice/retiming, parent reconciliation and exact-version publication
+approval remain open. Source-only adoption does not deploy a live lesson.
+
+For technical reproduction of this exact copy, use the
+[fresh-environment rebuild commands](fft-latency/CLEAN_REBUILD.md).
+The [contrast audit](fft-latency/CONTRAST_AUDIT.md) checks intended source
+colors, not small-text readability. Neither check completes human review.
+
+## Retained studies and supporting drafts
+
+The following are provenance and scoped comparisons, not additional copies
+to review before giving feedback on the focus above. They remain separate;
+none silently replaces the canonical reference or clears publication gates.
 
 One [complete 80-second caption-layout review](fft-latency/CAPTION_REVIEW_RENDER.md)
 now integrates the tested larger captions and balanced ending into an encoded
@@ -34,16 +60,15 @@ exact-file identification and timestamped feedback. Native import/partial
 decoding was observed; the editor's small monitor prevented full-size review.
 No complete intended-device playback or layout approval is claimed.
 
-**Review without installing anything:** open the
-[tablet-friendly editorial handoff](fft-latency/REVIEW.md) for the exact
-current script, scene checklist and draft title/description/source links.
-The handoff now identifies the exact full review file, distinguishing it from
-the shorter teasers. Its existing private copy was hash/probe/decode checked
+The [frozen v7 editorial handoff](fft-latency/REVIEW.md) retains that reference's
+script, scene checklist and draft title/description/source links; it is not
+the source-only handoff. It identifies the full v7 file rather than the short
+teasers. Its existing private copy was hash/probe/decode checked
 on 15 November 2026 UTC, not newly edited or approved. Private review links
 are not included here; no public video destination or access grant is implied.
 The handoff is a review page, not a release approval or live interactive lesson.
 
-The [v7 packaging audit](fft-latency/PACKAGE_AUDIT_V7.md) reconciles current
+The [v7 packaging audit](fft-latency/PACKAGE_AUDIT_V7.md) reconciles canonical v7
 video/blog handoff identities, the component-specific title and source credits.
 Its shared snapshot and regression tests detect narrow drift, not release approval.
 An [unadopted source-only ending proposal](fft-latency/SOURCE_ENDCARD.md)
@@ -117,7 +142,7 @@ The [live-lesson handoff](fft-latency/LESSON_LINK.md) records the read-only
 Pages/Actions audit, current deployment blocker and approval-dependent CTA
 verification steps. Passing pilot tests does not establish a deployed lesson.
 
-Latest revision: **v7 focus-first candidate** enlarges the active category's
+Frozen canonical reference: **v7 focus-first candidate** enlarges the active category's
 description while retaining the four titles as context. See the
 [encoded v6/v7 comparison and review limits](fft-latency/FOCUS_V7.md).
 It has not passed actual-tablet playback or editorial approval.
@@ -156,6 +181,11 @@ or release approval; no new version of the movie is distributed.
 
 From `videos/`, with Python 3.11–3.13, uv, FFmpeg (libx264 enabled) and
 DejaVu Sans installed:
+
+The default `render.py` commands below render the **frozen v7 reference**;
+`--scenario` is a separate synthetic reuse fixture. Neither is the source-only
+review focus. For that copy, follow `CLEAN_REBUILD.md` above and its
+`source_only_review.py` command. Choose the command for the intended identity.
 
 ```sh
 uv sync --locked

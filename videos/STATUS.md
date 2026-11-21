@@ -1,5 +1,51 @@
 # Video status log
 
+## 22 November 2026 · one unambiguous review entry point
+
+Source: fresh PR #4 head 03d6d5071db16febff586d791ce61d326ee414c4;
+clean isolated codex/video-* worktree. Fetched main/#1/video branches;
+read current main README, #1 AGENTS/ROADMAP/source registry/FFT notebook,
+complete video README/latest log, canonical/source-only/caption-review
+identities and relevant package tests. Main remains template
+c9fdf98729379dd404afce99daad1a6aa042156e without root AGENTS/ROADMAP.
+#1–4 open/unmerged; #4 combined feedback empty. Continue existing
+codex/video-teaser-pacing/PR #4, not a new external PR stack.
+
+Bounded documentation correction: README promoted the source-only copy but
+also called the older v7 handoff current and led into default v7 render
+commands. The entry now identifies ONE review focus, links its existing
+worksheet/text alternative and gives exact filename/size/hash. A three-copy
+table distinguishes source-only focus, earlier caption-layout comparison
+and frozen canonical v7. Review priority does not adopt the source-only
+release route; all remain unapproved. No video, script or new helper added.
+
+Retained studies are explicitly scoped as provenance/comparisons rather
+than prerequisites to giving feedback. The older handoff is labelled v7,
+not the source-only handoff; default render.py, alternate scenario and
+source_only_review.py commands are distinguished. Existing separately
+supplied media is referenced without private links or access grants.
+All 56 prior link destinations retained; all 42 local destinations resolve.
+Three copy roles match recorded identities/unapproved status; focus SHA
+and size match the source-only render manifest. Mathematical/source/gate
+sections from Content and extension points onward remain byte-unchanged.
+
+Files: README.md and this log only. Twenty focused package/source-copy/
+descriptive-text tests pass in 0.070s. Transcript/contrast/review HTML/
+pacing/narration freshness and whitespace checks pass. No full-suite rerun
+for this docs-only change; the prior 166-test result is not presented as
+fresh. No new render, decode, frames, timing/audio or device inspection.
+Renderer/dependencies/lock, source captions/manifests, archived evidence,
+notebooks and research conclusions untouched; no new licensing choice.
+
+Next: one complete intended-device pass of the exact source-only focus,
+then one specific fix or release-design decision before candidate/package
+reconciliation. Exact remaining gates: human math/editorial/rights,
+accessible playback, text-equivalence/assistive-tech review, audio choice/
+retiming, adoption, parent reconciliation, authorized review route and
+exact-version publication approval. No technical render blocker; human/
+device decisions unavailable. No live lesson/Open Notebook deployment
+assumed, publishing, merge, sharing/account change or new automation.
+
 ## 21 November 2026 · same-host fresh-environment rebuild
 
 Source: fresh PR #4 head 17a066de120ddced5400229dcafab07cb6d9c128,
