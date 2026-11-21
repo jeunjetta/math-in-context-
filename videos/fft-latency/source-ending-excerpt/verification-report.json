@@ -1,0 +1,26 @@
+{
+  "status": "exact excerpt bytes and technical media checks passed",
+  "source_commit": "879cf7b13eb9a4cb4af3889803e41da26d31e869",
+  "sha256": "c6735b9bc729204db6c6238ecda204d22643489807a918dee92c8115eee65f79",
+  "captions_sha256": "cbbbd72d0622a43c1c95368ff65542ba0d6e4f9f3b54214e0b426a4f743ad687",
+  "render_report_sha256": "5179519ab70efd7ad1bd5bcb0f6556a965f1b5b6a40afd1f3820142d79fc96f9",
+  "verifier_sha256": "bda87c5d17393b375a77263fffa88f3eab926b3de5365573825d3091317d9d41",
+  "media": {
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "frames": 240,
+    "duration": 10.0,
+    "audio_streams": 0,
+    "timestamps_verified": true
+  },
+  "full_decode_completed": true,
+  "source_files_checked": 8,
+  "tools": {
+    "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffprobe": "ffprobe version 7.1.5-0+deb13u1 Copyright (c) 2007-2026 the FFmpeg developers"
+  },
+  "publication_approved": false,
+  "limitations": "Trusted repository report, not a digital signature or independent content audit. No OCR, fresh visual inspection, continuous human playback, audio sync, device comprehension, rights clearance or adoption approval."
+}

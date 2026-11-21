@@ -1,0 +1,862 @@
+{
+  "source_commit": "62e288b77e1524c08d38a4e81e2c8a2df380801a",
+  "input_sha256": "d0b22d6291d0b8d9205bd5e47d7d27cbd8892f63df4a1957a7d3d5decc605142",
+  "identity_report_sha256": "d918fa4b94c09ce9bd00b7e14794c0e19f44ab8ecae34dd111de9ffbfdc4d562",
+  "media": {
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "frames": 1920,
+    "duration": 80.0,
+    "audio_streams": 0,
+    "timestamps_verified": true
+  },
+  "source_hashes": {
+    "dense_qa.py": "a0c7f002d061bfff625aec5ccc532367a91b2baa65ee37cc8c25faa01f0979c3",
+    "qa.py": "45ae6c25baf9f54564c8cf4cf95ee2e8590ed988fc5e732e9cf96fc21094d9b9",
+    "render.py": "186ca20d2a95d9cb10b728edecf786ddc5c47a7ac70ede9f0ae76df70b17b1f1",
+    "lesson_model.py": "bb1dc4939db2806b136986f5f287f9d5ecea4f2b9d93336434c96ecde852bc5c",
+    "uv.lock": "2983dcf099d4c4e6141728dfe7bd627d41d9d20a35ff54e3cf51d7fbb18cffef"
+  },
+  "tools": {
+    "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffprobe": "ffprobe version 7.1.5-0+deb13u1 Copyright (c) 2007-2026 the FFmpeg developers"
+  },
+  "full_decode_completed": true,
+  "decode_passes": 2,
+  "baseline_qa": "cuts/report.json",
+  "every_seconds": 1,
+  "selection_expression": "((((((eq(n\\,0)+(eq(n\\,24)+eq(n\\,48)))+(eq(n\\,72)+(eq(n\\,95)+eq(n\\,96))))+((eq(n\\,120)+(eq(n\\,144)+eq(n\\,168)))+(eq(n\\,191)+(eq(n\\,192)+eq(n\\,216)))))+(((eq(n\\,240)+(eq(n\\,264)+eq(n\\,288)))+(eq(n\\,311)+(eq(n\\,312)+eq(n\\,336))))+((eq(n\\,360)+(eq(n\\,384)+eq(n\\,408)))+((eq(n\\,431)+eq(n\\,432))+(eq(n\\,456)+eq(n\\,480))))))+((((eq(n\\,504)+(eq(n\\,527)+eq(n\\,528)))+(eq(n\\,552)+(eq(n\\,576)+eq(n\\,600))))+((eq(n\\,623)+(eq(n\\,624)+eq(n\\,648)))+(eq(n\\,672)+(eq(n\\,696)+eq(n\\,719)))))+(((eq(n\\,720)+(eq(n\\,744)+eq(n\\,768)))+(eq(n\\,792)+(eq(n\\,816)+eq(n\\,839))))+((eq(n\\,840)+(eq(n\\,864)+eq(n\\,888)))+((eq(n\\,912)+eq(n\\,936))+(eq(n\\,959)+eq(n\\,960)))))))+(((((eq(n\\,984)+(eq(n\\,1008)+eq(n\\,1032)))+(eq(n\\,1056)+(eq(n\\,1067)+eq(n\\,1068))))+((eq(n\\,1080)+(eq(n\\,1104)+eq(n\\,1128)))+(eq(n\\,1152)+(eq(n\\,1175)+eq(n\\,1176)))))+(((eq(n\\,1200)+(eq(n\\,1224)+eq(n\\,1247)))+(eq(n\\,1248)+(eq(n\\,1272)+eq(n\\,1296))))+((eq(n\\,1319)+(eq(n\\,1320)+eq(n\\,1344)))+((eq(n\\,1368)+eq(n\\,1391))+(eq(n\\,1392)+eq(n\\,1416))))))+((((eq(n\\,1440)+(eq(n\\,1463)+eq(n\\,1464)))+(eq(n\\,1488)+(eq(n\\,1512)+eq(n\\,1536))))+((eq(n\\,1560)+(eq(n\\,1571)+eq(n\\,1572)))+((eq(n\\,1584)+eq(n\\,1608))+(eq(n\\,1632)+eq(n\\,1656)))))+(((eq(n\\,1679)+(eq(n\\,1680)+eq(n\\,1704)))+(eq(n\\,1728)+(eq(n\\,1752)+eq(n\\,1776))))+((eq(n\\,1799)+(eq(n\\,1800)+eq(n\\,1824)))+((eq(n\\,1848)+eq(n\\,1872))+(eq(n\\,1896)+eq(n\\,1919))))))))",
+  "samples": [
+    {
+      "frame": 0,
+      "seconds": 0.0,
+      "scene": "hook",
+      "expected_caption": "Suppose Fourier computation becomes 2\u00d7 as fast.",
+      "image": "frames/0001.png",
+      "image_sha256": "4a7d411c286eee7ee5873d5967edebf2e91d7ef921879f6358c1032b6b1d51e9"
+    },
+    {
+      "frame": 24,
+      "seconds": 1.0,
+      "scene": "hook",
+      "expected_caption": "Suppose Fourier computation becomes 2\u00d7 as fast.",
+      "image": "frames/0002.png",
+      "image_sha256": "8d41ac9a495c6a7bf015c13544f72f408d8f30c2d6ebb061407e3b7c30031944"
+    },
+    {
+      "frame": 48,
+      "seconds": 2.0,
+      "scene": "hook",
+      "expected_caption": "Suppose Fourier computation becomes 2\u00d7 as fast.",
+      "image": "frames/0003.png",
+      "image_sha256": "fdfd31db19fa5224057f42bf7b078156a83cb0abc38feaaca7f94a45db41aea1"
+    },
+    {
+      "frame": 72,
+      "seconds": 3.0,
+      "scene": "hook",
+      "expected_caption": "Suppose Fourier computation becomes 2\u00d7 as fast.",
+      "image": "frames/0004.png",
+      "image_sha256": "91e0b4e85b898ae835c9be1c98b46e47fc46244c00f6b7e8da5e1f144b41cbbd"
+    },
+    {
+      "frame": 95,
+      "seconds": 3.9583333333333335,
+      "scene": "hook",
+      "expected_caption": "Suppose Fourier computation becomes 2\u00d7 as fast.",
+      "image": "frames/0005.png",
+      "image_sha256": "51e82fa4f7cc36ff860b41e6b40d3d68b11300c31ba43690781f02de64a5018b"
+    },
+    {
+      "frame": 96,
+      "seconds": 4.0,
+      "scene": "hook",
+      "expected_caption": "Does the whole system become 2\u00d7 as fast? Pause and predict.",
+      "image": "frames/0006.png",
+      "image_sha256": "79c217152d0c6aeda502b04173f5811e9573f059977a954890568ce63a6fe42f"
+    },
+    {
+      "frame": 120,
+      "seconds": 5.0,
+      "scene": "hook",
+      "expected_caption": "Does the whole system become 2\u00d7 as fast? Pause and predict.",
+      "image": "frames/0007.png",
+      "image_sha256": "8a2f3343454fa9730d9ac19bcbfd32dd809b2e1cff7845ffe19d4c67f92c058d"
+    },
+    {
+      "frame": 144,
+      "seconds": 6.0,
+      "scene": "hook",
+      "expected_caption": "Does the whole system become 2\u00d7 as fast? Pause and predict.",
+      "image": "frames/0008.png",
+      "image_sha256": "1d9d0398ac2ab32cfdaeb91846535805e510a5021ed99ab98540b3311a4c695c"
+    },
+    {
+      "frame": 168,
+      "seconds": 7.0,
+      "scene": "hook",
+      "expected_caption": "Does the whole system become 2\u00d7 as fast? Pause and predict.",
+      "image": "frames/0009.png",
+      "image_sha256": "a8633cb520cf389ffe3a165f56713ea2cf5ba7368132ba648b2086c820790ed1"
+    },
+    {
+      "frame": 191,
+      "seconds": 7.958333333333333,
+      "scene": "hook",
+      "expected_caption": "Does the whole system become 2\u00d7 as fast? Pause and predict.",
+      "image": "frames/0010.png",
+      "image_sha256": "1cdb62f9b22d84ac84cfdd1848ac29d92b0a1365fc192d3e326cd4247b932f19"
+    },
+    {
+      "frame": 192,
+      "seconds": 8.0,
+      "scene": "baseline",
+      "expected_caption": "Imagine sequential work taking 100 milliseconds.",
+      "image": "frames/0011.png",
+      "image_sha256": "5f726e795147bfde28338122966b665e974d50ad6d8d0291b57235b49c1777c0"
+    },
+    {
+      "frame": 216,
+      "seconds": 9.0,
+      "scene": "baseline",
+      "expected_caption": "Imagine sequential work taking 100 milliseconds.",
+      "image": "frames/0012.png",
+      "image_sha256": "6150114b5d726e831adbefc90861898836280a80358c678f8619156d9be1a411"
+    },
+    {
+      "frame": 240,
+      "seconds": 10.0,
+      "scene": "baseline",
+      "expected_caption": "Imagine sequential work taking 100 milliseconds.",
+      "image": "frames/0013.png",
+      "image_sha256": "6767a5327d60661eccd50cc6da708ab4766ce932f8d9f57865c6f1acdb12bf73"
+    },
+    {
+      "frame": 264,
+      "seconds": 11.0,
+      "scene": "baseline",
+      "expected_caption": "Imagine sequential work taking 100 milliseconds.",
+      "image": "frames/0014.png",
+      "image_sha256": "b3717ceab20f9d3cfdc97461ba2aa4195fa3ed00dab13e9f3450457de8d0b6a8"
+    },
+    {
+      "frame": 288,
+      "seconds": 12.0,
+      "scene": "baseline",
+      "expected_caption": "Imagine sequential work taking 100 milliseconds.",
+      "image": "frames/0015.png",
+      "image_sha256": "851063f909299981bed77ebcb97662374de43bb0435c0b78d98aae8ba7ea8a8e"
+    },
+    {
+      "frame": 311,
+      "seconds": 12.958333333333334,
+      "scene": "baseline",
+      "expected_caption": "Imagine sequential work taking 100 milliseconds.",
+      "image": "frames/0016.png",
+      "image_sha256": "4380ebac1d15bea86e52433b11c3629a34dfffdc9453451bca58833587b3e460"
+    },
+    {
+      "frame": 312,
+      "seconds": 13.0,
+      "scene": "baseline",
+      "expected_caption": "Fourier work takes 20 ms. Everything else takes 80 ms.",
+      "image": "frames/0017.png",
+      "image_sha256": "a9da512b75cb1ea427a63327c27847a56ceb0ac2977dda8c5c97c67ea5939fd8"
+    },
+    {
+      "frame": 336,
+      "seconds": 14.0,
+      "scene": "baseline",
+      "expected_caption": "Fourier work takes 20 ms. Everything else takes 80 ms.",
+      "image": "frames/0018.png",
+      "image_sha256": "53bbe0e8ba30a30290cb8aa1d7b27cf71f1b5ebfab21f618633e19c66d511e4f"
+    },
+    {
+      "frame": 360,
+      "seconds": 15.0,
+      "scene": "baseline",
+      "expected_caption": "Fourier work takes 20 ms. Everything else takes 80 ms.",
+      "image": "frames/0019.png",
+      "image_sha256": "82cf0f60c474472e90725117fbced604801d14c095ed2fbca527bb4a2b50a635"
+    },
+    {
+      "frame": 384,
+      "seconds": 16.0,
+      "scene": "baseline",
+      "expected_caption": "Fourier work takes 20 ms. Everything else takes 80 ms.",
+      "image": "frames/0020.png",
+      "image_sha256": "4399b896c41002bade01d9b2a51f2edcf860a625780be7d9980f3fdb28c6bcd3"
+    },
+    {
+      "frame": 408,
+      "seconds": 17.0,
+      "scene": "baseline",
+      "expected_caption": "Fourier work takes 20 ms. Everything else takes 80 ms.",
+      "image": "frames/0021.png",
+      "image_sha256": "5054286caa956ca37f23aaa0b872c16b921fc4f803443613c0111e513bcff77d"
+    },
+    {
+      "frame": 431,
+      "seconds": 17.958333333333332,
+      "scene": "baseline",
+      "expected_caption": "Fourier work takes 20 ms. Everything else takes 80 ms.",
+      "image": "frames/0022.png",
+      "image_sha256": "2d5ae2a030a7851756a2b39e68da86dee0192c1e1ec5ba5ede16b8f682132f68"
+    },
+    {
+      "frame": 432,
+      "seconds": 18.0,
+      "scene": "halve",
+      "expected_caption": "Divide Fourier time by 2: 20 ms becomes 10 ms.",
+      "image": "frames/0023.png",
+      "image_sha256": "50f91727377818f4d0a3607890c6c3dd8cf0c1d8b6ab98d1ac8c5265f3a552f3"
+    },
+    {
+      "frame": 456,
+      "seconds": 19.0,
+      "scene": "halve",
+      "expected_caption": "Divide Fourier time by 2: 20 ms becomes 10 ms.",
+      "image": "frames/0024.png",
+      "image_sha256": "c707a4d568bc2a4134d7081da555e974a70d79fd4cc4521101fa215f3af528ed"
+    },
+    {
+      "frame": 480,
+      "seconds": 20.0,
+      "scene": "halve",
+      "expected_caption": "Divide Fourier time by 2: 20 ms becomes 10 ms.",
+      "image": "frames/0025.png",
+      "image_sha256": "5f6463c710700540ac130611ce70f39b7b3e40bc6e36299f18c1a8118767a6e3"
+    },
+    {
+      "frame": 504,
+      "seconds": 21.0,
+      "scene": "halve",
+      "expected_caption": "Divide Fourier time by 2: 20 ms becomes 10 ms.",
+      "image": "frames/0026.png",
+      "image_sha256": "b22b309c6323cec5080c10fd57e7d34e72d56d117ec8f125ce0a4c1c338f6f1b"
+    },
+    {
+      "frame": 527,
+      "seconds": 21.958333333333332,
+      "scene": "halve",
+      "expected_caption": "Divide Fourier time by 2: 20 ms becomes 10 ms.",
+      "image": "frames/0027.png",
+      "image_sha256": "5f9f76c6286519817e17280ccd9edb7b32809ca049210e26ebe5c6ef5162f16c"
+    },
+    {
+      "frame": 528,
+      "seconds": 22.0,
+      "scene": "halve",
+      "expected_caption": "The other 80 milliseconds stays unchanged.",
+      "image": "frames/0028.png",
+      "image_sha256": "1a49776f8299ec94004aabd85623c4fd738bdcba310a3817887b9970139b0b25"
+    },
+    {
+      "frame": 552,
+      "seconds": 23.0,
+      "scene": "halve",
+      "expected_caption": "The other 80 milliseconds stays unchanged.",
+      "image": "frames/0029.png",
+      "image_sha256": "4965116192ac20d4a5bf355f1a27e61eae4563264c9089480df7d9c6a6155dba"
+    },
+    {
+      "frame": 576,
+      "seconds": 24.0,
+      "scene": "halve",
+      "expected_caption": "The other 80 milliseconds stays unchanged.",
+      "image": "frames/0030.png",
+      "image_sha256": "34fa738770198fbd25642c803cbfe07c3b431d8a54c5650fac6c524b559d6bb9"
+    },
+    {
+      "frame": 600,
+      "seconds": 25.0,
+      "scene": "halve",
+      "expected_caption": "The other 80 milliseconds stays unchanged.",
+      "image": "frames/0031.png",
+      "image_sha256": "aa2f9f473b9f06a476fa1028a0ff922378c688491be038093da89d532c59eda9"
+    },
+    {
+      "frame": 623,
+      "seconds": 25.958333333333332,
+      "scene": "halve",
+      "expected_caption": "The other 80 milliseconds stays unchanged.",
+      "image": "frames/0032.png",
+      "image_sha256": "23f14848eadd47b6a8b062b4388121cc2cd1cfc0b63d4ce4c3012d765df94bb9"
+    },
+    {
+      "frame": 624,
+      "seconds": 26.0,
+      "scene": "halve",
+      "expected_caption": "10 + 80 = 90 ms. We saved 10 milliseconds.",
+      "image": "frames/0033.png",
+      "image_sha256": "07ecbdefa6015a72c40d1c8a531ffca9afe6b77873d71335d477084e284b478c"
+    },
+    {
+      "frame": 648,
+      "seconds": 27.0,
+      "scene": "halve",
+      "expected_caption": "10 + 80 = 90 ms. We saved 10 milliseconds.",
+      "image": "frames/0034.png",
+      "image_sha256": "faf29fafa53cd8ddcb9451e59cd8acb42bcadac4c4b6c286447e7b3fe525cd3e"
+    },
+    {
+      "frame": 672,
+      "seconds": 28.0,
+      "scene": "halve",
+      "expected_caption": "10 + 80 = 90 ms. We saved 10 milliseconds.",
+      "image": "frames/0035.png",
+      "image_sha256": "3cfcbbcaf38e6597f43e630447f88df663f8cf82a84845ccd00e6c5e55c49ec7"
+    },
+    {
+      "frame": 696,
+      "seconds": 29.0,
+      "scene": "halve",
+      "expected_caption": "10 + 80 = 90 ms. We saved 10 milliseconds.",
+      "image": "frames/0036.png",
+      "image_sha256": "f79e01b68f1d0311e91c81daa34cc24b5ee7154aeeeef89b46147348a5243b20"
+    },
+    {
+      "frame": 719,
+      "seconds": 29.958333333333332,
+      "scene": "halve",
+      "expected_caption": "10 + 80 = 90 ms. We saved 10 milliseconds.",
+      "image": "frames/0037.png",
+      "image_sha256": "ca69b0a759c8f9a3dd6238834855c4b2d954f91eba391dbc6edb6c7c5a2e8cbc"
+    },
+    {
+      "frame": 720,
+      "seconds": 30.0,
+      "scene": "formula",
+      "expected_caption": "Overall speedup is old time divided by new time.",
+      "image": "frames/0038.png",
+      "image_sha256": "08e61d66ad741dd47b37f312b4c267d99514b8816da9a83c61273ad0da56f165"
+    },
+    {
+      "frame": 744,
+      "seconds": 31.0,
+      "scene": "formula",
+      "expected_caption": "Overall speedup is old time divided by new time.",
+      "image": "frames/0039.png",
+      "image_sha256": "28f30eb98a41f5dd65b04bc3e2235eb3d8124be6710a72d4f51909fbe5345db0"
+    },
+    {
+      "frame": 768,
+      "seconds": 32.0,
+      "scene": "formula",
+      "expected_caption": "Overall speedup is old time divided by new time.",
+      "image": "frames/0040.png",
+      "image_sha256": "abd3b3ef66dc0948cbf50a2ba9624ed6e1cd28bd1133fbbcd6ed24e1aab29174"
+    },
+    {
+      "frame": 792,
+      "seconds": 33.0,
+      "scene": "formula",
+      "expected_caption": "Overall speedup is old time divided by new time.",
+      "image": "frames/0041.png",
+      "image_sha256": "c03b58dfec823d21d0bef938a210f10f95650a43ea0a21b3287058f1bbde84dc"
+    },
+    {
+      "frame": 816,
+      "seconds": 34.0,
+      "scene": "formula",
+      "expected_caption": "Overall speedup is old time divided by new time.",
+      "image": "frames/0042.png",
+      "image_sha256": "bdbfec7adf48bf638be57b3292c31261c1ba73d6fb67a45e33191eea9fd3622c"
+    },
+    {
+      "frame": 839,
+      "seconds": 34.958333333333336,
+      "scene": "formula",
+      "expected_caption": "Overall speedup is old time divided by new time.",
+      "image": "frames/0043.png",
+      "image_sha256": "e7e6f1a26c9f816934b4400ec296126278b9931e5c143ddf86e8a39784c02fd8"
+    },
+    {
+      "frame": 840,
+      "seconds": 35.0,
+      "scene": "formula",
+      "expected_caption": "100 divided by 90 is about 1.11\u00d7, not 2\u00d7.",
+      "image": "frames/0044.png",
+      "image_sha256": "31dd70237e3f26cb5f006db8c4ce6f6cc6bf7207c7cbcaa17fd7cc7596f3e0ae"
+    },
+    {
+      "frame": 864,
+      "seconds": 36.0,
+      "scene": "formula",
+      "expected_caption": "100 divided by 90 is about 1.11\u00d7, not 2\u00d7.",
+      "image": "frames/0045.png",
+      "image_sha256": "7541357605bfee9b7cfd6465f55835940adbcf8e77990f354b930097d5970085"
+    },
+    {
+      "frame": 888,
+      "seconds": 37.0,
+      "scene": "formula",
+      "expected_caption": "100 divided by 90 is about 1.11\u00d7, not 2\u00d7.",
+      "image": "frames/0046.png",
+      "image_sha256": "5c2a671a7e5d0eb8d09fdabef7c3afcbab179cfc4f9a7ea13337d382870c4593"
+    },
+    {
+      "frame": 912,
+      "seconds": 38.0,
+      "scene": "formula",
+      "expected_caption": "100 divided by 90 is about 1.11\u00d7, not 2\u00d7.",
+      "image": "frames/0047.png",
+      "image_sha256": "fb4405cd82edb9598bdb2547f83a28559a77cd532aa156fe7607a9ddd84ac3ff"
+    },
+    {
+      "frame": 936,
+      "seconds": 39.0,
+      "scene": "formula",
+      "expected_caption": "100 divided by 90 is about 1.11\u00d7, not 2\u00d7.",
+      "image": "frames/0048.png",
+      "image_sha256": "c4ae2d05609e0007707bf0f87fa01a0e48a7b099b45dcd4bd938f0e33f71a857"
+    },
+    {
+      "frame": 959,
+      "seconds": 39.958333333333336,
+      "scene": "formula",
+      "expected_caption": "100 divided by 90 is about 1.11\u00d7, not 2\u00d7.",
+      "image": "frames/0049.png",
+      "image_sha256": "140225d406583d3ba6406e936760d7873aa63fc5a952864ced398978c3a57217"
+    },
+    {
+      "frame": 960,
+      "seconds": 40.0,
+      "scene": "ceiling",
+      "expected_caption": "Even zero Fourier time leaves 80 milliseconds.",
+      "image": "frames/0050.png",
+      "image_sha256": "028fa99db2f5a7c685cd854b5b62f1459e37c630a2b51cc2243476b1cd3d6761"
+    },
+    {
+      "frame": 984,
+      "seconds": 41.0,
+      "scene": "ceiling",
+      "expected_caption": "Even zero Fourier time leaves 80 milliseconds.",
+      "image": "frames/0051.png",
+      "image_sha256": "6dc03c911f2c4ebdaf8e0796630895c31c91325876d961056d2bf74b65ecaf21"
+    },
+    {
+      "frame": 1008,
+      "seconds": 42.0,
+      "scene": "ceiling",
+      "expected_caption": "Even zero Fourier time leaves 80 milliseconds.",
+      "image": "frames/0052.png",
+      "image_sha256": "521dcd85d378040463f56c264eed88ec229514333ebb826c48a173531edfeb18"
+    },
+    {
+      "frame": 1032,
+      "seconds": 43.0,
+      "scene": "ceiling",
+      "expected_caption": "Even zero Fourier time leaves 80 milliseconds.",
+      "image": "frames/0053.png",
+      "image_sha256": "b1ac2a86c57175ab66106b58c31f1ebd23b05a99aaf905670999ebbcb506ee1b"
+    },
+    {
+      "frame": 1056,
+      "seconds": 44.0,
+      "scene": "ceiling",
+      "expected_caption": "Even zero Fourier time leaves 80 milliseconds.",
+      "image": "frames/0054.png",
+      "image_sha256": "297a46384d175b52262721d094ff28007d4988704a4cd7c4be87bc919ce42691"
+    },
+    {
+      "frame": 1067,
+      "seconds": 44.458333333333336,
+      "scene": "ceiling",
+      "expected_caption": "Even zero Fourier time leaves 80 milliseconds.",
+      "image": "frames/0055.png",
+      "image_sha256": "359890888d04c442d278a957da698034145f79e90bd5ac959f68b4dafaa6463b"
+    },
+    {
+      "frame": 1068,
+      "seconds": 44.5,
+      "scene": "ceiling",
+      "expected_caption": "In this model, the speedup limit is about 1.25\u00d7.",
+      "image": "frames/0056.png",
+      "image_sha256": "65e2fdbfc927606651bf315eae1c49442a4ae99dad7b70f469a4a315d1ad8c1c"
+    },
+    {
+      "frame": 1080,
+      "seconds": 45.0,
+      "scene": "ceiling",
+      "expected_caption": "In this model, the speedup limit is about 1.25\u00d7.",
+      "image": "frames/0057.png",
+      "image_sha256": "2ab8c7fa4adbda7f6d3664ab2c775ee7de9fe4b042a984cb4b462a6d5066d28f"
+    },
+    {
+      "frame": 1104,
+      "seconds": 46.0,
+      "scene": "ceiling",
+      "expected_caption": "In this model, the speedup limit is about 1.25\u00d7.",
+      "image": "frames/0058.png",
+      "image_sha256": "a6d9fb669eb2c93641a20f2be7c83dd6f821bc35bdb8fae14d4cc0168f04575d"
+    },
+    {
+      "frame": 1128,
+      "seconds": 47.0,
+      "scene": "ceiling",
+      "expected_caption": "In this model, the speedup limit is about 1.25\u00d7.",
+      "image": "frames/0059.png",
+      "image_sha256": "1d58a36d688d0d17be285e711612194a1d623bd4492844b582f875536e5b3930"
+    },
+    {
+      "frame": 1152,
+      "seconds": 48.0,
+      "scene": "ceiling",
+      "expected_caption": "In this model, the speedup limit is about 1.25\u00d7.",
+      "image": "frames/0060.png",
+      "image_sha256": "c60c5d275dfc532b1047b2546ccc755e288a59e978d7826181029898b97f82bd"
+    },
+    {
+      "frame": 1175,
+      "seconds": 48.958333333333336,
+      "scene": "ceiling",
+      "expected_caption": "In this model, the speedup limit is about 1.25\u00d7.",
+      "image": "frames/0061.png",
+      "image_sha256": "8e91a0402a2438485316267c9451a8a2f35db249213588fe3967cf4d8805005a"
+    },
+    {
+      "frame": 1176,
+      "seconds": 49.0,
+      "scene": "distinctions",
+      "expected_caption": "Arithmetic complexity asks how operation counts grow.",
+      "image": "frames/0062.png",
+      "image_sha256": "6ae404b0772c63e40400719e89f6f0e0201cc359e9dfc2033fadde8ad2250492"
+    },
+    {
+      "frame": 1200,
+      "seconds": 50.0,
+      "scene": "distinctions",
+      "expected_caption": "Arithmetic complexity asks how operation counts grow.",
+      "image": "frames/0063.png",
+      "image_sha256": "a47d0a842c1ec2b7505f569430e6a90b680c5b5b6e27421c0c7ee7586bfe9385"
+    },
+    {
+      "frame": 1224,
+      "seconds": 51.0,
+      "scene": "distinctions",
+      "expected_caption": "Arithmetic complexity asks how operation counts grow.",
+      "image": "frames/0064.png",
+      "image_sha256": "c5511ae21fe298cb366e86e90a752ddaf258f90f7101628c43b66bc74ccd62ab"
+    },
+    {
+      "frame": 1247,
+      "seconds": 51.958333333333336,
+      "scene": "distinctions",
+      "expected_caption": "Arithmetic complexity asks how operation counts grow.",
+      "image": "frames/0065.png",
+      "image_sha256": "36ac4a5acff827d0f62346422022f36e5efeecb37e1d01f7dc9cf91b073f30b8"
+    },
+    {
+      "frame": 1248,
+      "seconds": 52.0,
+      "scene": "distinctions",
+      "expected_caption": "Numerical stability asks how computation errors behave.",
+      "image": "frames/0066.png",
+      "image_sha256": "14ee2d69c73219288ef8206662c0af43e0496d092920d2eceee9eda36dc8e3fb"
+    },
+    {
+      "frame": 1272,
+      "seconds": 53.0,
+      "scene": "distinctions",
+      "expected_caption": "Numerical stability asks how computation errors behave.",
+      "image": "frames/0067.png",
+      "image_sha256": "bcab02cfbb9147b3bf0c96ab09fa9d9f29488eba5b4f91be2317598b95224504"
+    },
+    {
+      "frame": 1296,
+      "seconds": 54.0,
+      "scene": "distinctions",
+      "expected_caption": "Numerical stability asks how computation errors behave.",
+      "image": "frames/0068.png",
+      "image_sha256": "587b6a769004d029687987a9cab740ae2a3a36554ef2563a75b15fee28c53df7"
+    },
+    {
+      "frame": 1319,
+      "seconds": 54.958333333333336,
+      "scene": "distinctions",
+      "expected_caption": "Numerical stability asks how computation errors behave.",
+      "image": "frames/0069.png",
+      "image_sha256": "a904259735e189f1f17208dcf7c78ae22d8d0713ca7dde33668295d62133c083"
+    },
+    {
+      "frame": 1320,
+      "seconds": 55.0,
+      "scene": "distinctions",
+      "expected_caption": "Latency measures elapsed time for the whole workload.",
+      "image": "frames/0070.png",
+      "image_sha256": "cd5881bb880947750c3169694e23427d77f30da90f66187435070798e24e3d31"
+    },
+    {
+      "frame": 1344,
+      "seconds": 56.0,
+      "scene": "distinctions",
+      "expected_caption": "Latency measures elapsed time for the whole workload.",
+      "image": "frames/0071.png",
+      "image_sha256": "935c1bfbce440a31e1c4fe3ffb63aa8fcf7bc9e3d1fe85ae944dba7f1b8a81ee"
+    },
+    {
+      "frame": 1368,
+      "seconds": 57.0,
+      "scene": "distinctions",
+      "expected_caption": "Latency measures elapsed time for the whole workload.",
+      "image": "frames/0072.png",
+      "image_sha256": "7092fcb822d1a77111ff3179cca66e641c01a4bc918e633964ae601166aa972f"
+    },
+    {
+      "frame": 1391,
+      "seconds": 57.958333333333336,
+      "scene": "distinctions",
+      "expected_caption": "Latency measures elapsed time for the whole workload.",
+      "image": "frames/0073.png",
+      "image_sha256": "b10b4b2871095fa1e740278c2b706685371a1426d0bb20e4635fa7611e4fa21e"
+    },
+    {
+      "frame": 1392,
+      "seconds": 58.0,
+      "scene": "distinctions",
+      "expected_caption": "Readiness needs validation against system deadlines.",
+      "image": "frames/0074.png",
+      "image_sha256": "2260092a2d46fc029dd4f8bcb0ddb46c410773bf148c44d131633207d5921f21"
+    },
+    {
+      "frame": 1416,
+      "seconds": 59.0,
+      "scene": "distinctions",
+      "expected_caption": "Readiness needs validation against system deadlines.",
+      "image": "frames/0075.png",
+      "image_sha256": "3ced1396e0ac5fdd7a673bd20bb6c60786509bf73234a5cad66b3f67dcaaefd2"
+    },
+    {
+      "frame": 1440,
+      "seconds": 60.0,
+      "scene": "distinctions",
+      "expected_caption": "Readiness needs validation against system deadlines.",
+      "image": "frames/0076.png",
+      "image_sha256": "5cc385a52d681091d38e0338395806d11d886bb1f839b80fcc4e69a6ca7f73ee"
+    },
+    {
+      "frame": 1463,
+      "seconds": 60.958333333333336,
+      "scene": "distinctions",
+      "expected_caption": "Readiness needs validation against system deadlines.",
+      "image": "frames/0077.png",
+      "image_sha256": "03e25f2bb5bf14962e36d0ed50727c05df899dc78c6b2fd4bf4670068d2ca0f7"
+    },
+    {
+      "frame": 1464,
+      "seconds": 61.0,
+      "scene": "readiness",
+      "expected_caption": "Check accuracy, data movement, and worst-case deadlines.",
+      "image": "frames/0078.png",
+      "image_sha256": "1a08a8935284dd399004a2061188ddd4aebb97b609e569d67a4ac805af2a1529"
+    },
+    {
+      "frame": 1488,
+      "seconds": 62.0,
+      "scene": "readiness",
+      "expected_caption": "Check accuracy, data movement, and worst-case deadlines.",
+      "image": "frames/0079.png",
+      "image_sha256": "bcc4c1a05cbf618426242583cbb7afd41f203db8b73f488fa30e1dd1d9fcd661"
+    },
+    {
+      "frame": 1512,
+      "seconds": 63.0,
+      "scene": "readiness",
+      "expected_caption": "Check accuracy, data movement, and worst-case deadlines.",
+      "image": "frames/0080.png",
+      "image_sha256": "83fd073e76a2963700f5fd0dbf9f5ef854822b8f88cea727356345aaa6ad0aaf"
+    },
+    {
+      "frame": 1536,
+      "seconds": 64.0,
+      "scene": "readiness",
+      "expected_caption": "Check accuracy, data movement, and worst-case deadlines.",
+      "image": "frames/0081.png",
+      "image_sha256": "97c0d71e515227bc51848a6102e6eaf011bdc9d1e6cef19d3bd1ca8e7003a282"
+    },
+    {
+      "frame": 1560,
+      "seconds": 65.0,
+      "scene": "readiness",
+      "expected_caption": "Check accuracy, data movement, and worst-case deadlines.",
+      "image": "frames/0082.png",
+      "image_sha256": "a645f0640fd6f493d9fbdaf99a54f763dc33c8eb6862644433ff8e1962c7ca6c"
+    },
+    {
+      "frame": 1571,
+      "seconds": 65.45833333333333,
+      "scene": "readiness",
+      "expected_caption": "Check accuracy, data movement, and worst-case deadlines.",
+      "image": "frames/0083.png",
+      "image_sha256": "f3acfc477e39b9ea7be694e7d280051edaec1a7164a887e046c735ade79d8aa4"
+    },
+    {
+      "frame": 1572,
+      "seconds": 65.5,
+      "scene": "readiness",
+      "expected_caption": "This toy arithmetic proves no new FFT or real-time grid capability.",
+      "image": "frames/0084.png",
+      "image_sha256": "e20335a1d84b5eb56a43084f9d422774e4c01307bf48ddbde21f61e6ea69e71a"
+    },
+    {
+      "frame": 1584,
+      "seconds": 66.0,
+      "scene": "readiness",
+      "expected_caption": "This toy arithmetic proves no new FFT or real-time grid capability.",
+      "image": "frames/0085.png",
+      "image_sha256": "58ee54447ebecb9fd3daac9ac3251f517624b32a050731e512666460067a2e7f"
+    },
+    {
+      "frame": 1608,
+      "seconds": 67.0,
+      "scene": "readiness",
+      "expected_caption": "This toy arithmetic proves no new FFT or real-time grid capability.",
+      "image": "frames/0086.png",
+      "image_sha256": "a5018cf82e6e8e7df68f2be5df1db53b969466b9688b2228264540b3f5324aee"
+    },
+    {
+      "frame": 1632,
+      "seconds": 68.0,
+      "scene": "readiness",
+      "expected_caption": "This toy arithmetic proves no new FFT or real-time grid capability.",
+      "image": "frames/0087.png",
+      "image_sha256": "d3bed66a36056589f78fce040ccbbd31c6f9e3a5c2e468732913648ef7109737"
+    },
+    {
+      "frame": 1656,
+      "seconds": 69.0,
+      "scene": "readiness",
+      "expected_caption": "This toy arithmetic proves no new FFT or real-time grid capability.",
+      "image": "frames/0088.png",
+      "image_sha256": "82d19410dcf1ca73bb57779c3e05500e86677782ea6d49598023915115628308"
+    },
+    {
+      "frame": 1679,
+      "seconds": 69.95833333333333,
+      "scene": "readiness",
+      "expected_caption": "This toy arithmetic proves no new FFT or real-time grid capability.",
+      "image": "frames/0089.png",
+      "image_sha256": "fc7840913b1338cf9ade672ba399c8d4a15e14072246cdad9f69879084cdeaf4"
+    },
+    {
+      "frame": 1680,
+      "seconds": 70.0,
+      "scene": "end",
+      "expected_caption": "Explore the fraction improved and its speedup in our Marimo lesson.",
+      "image": "frames/0090.png",
+      "image_sha256": "d359fb8e13b0abf55ff90e7f75b3e03f76a87222c9f4783972e5fb705edfefab"
+    },
+    {
+      "frame": 1704,
+      "seconds": 71.0,
+      "scene": "end",
+      "expected_caption": "Explore the fraction improved and its speedup in our Marimo lesson.",
+      "image": "frames/0091.png",
+      "image_sha256": "8d43a640498058f82e12b241b0bc3279786112843ec3f7c697479925098e79a8"
+    },
+    {
+      "frame": 1728,
+      "seconds": 72.0,
+      "scene": "end",
+      "expected_caption": "Explore the fraction improved and its speedup in our Marimo lesson.",
+      "image": "frames/0092.png",
+      "image_sha256": "f2ce1a51ce737b537fbba21a2e82d7295a1b2ea68618f2f84fc868cfa68bc1b2"
+    },
+    {
+      "frame": 1752,
+      "seconds": 73.0,
+      "scene": "end",
+      "expected_caption": "Explore the fraction improved and its speedup in our Marimo lesson.",
+      "image": "frames/0093.png",
+      "image_sha256": "aea8f93a1b030887f79d0c67d8bc37803948027b412844a30fe9b852ebe21acf"
+    },
+    {
+      "frame": 1776,
+      "seconds": 74.0,
+      "scene": "end",
+      "expected_caption": "Explore the fraction improved and its speedup in our Marimo lesson.",
+      "image": "frames/0094.png",
+      "image_sha256": "081d67bd32d057f0588699a1202d7c7186ba382ef6e4486d9804c2583bc9f18d"
+    },
+    {
+      "frame": 1799,
+      "seconds": 74.95833333333333,
+      "scene": "end",
+      "expected_caption": "Explore the fraction improved and its speedup in our Marimo lesson.",
+      "image": "frames/0095.png",
+      "image_sha256": "c03cf6af9ee379f63bdede79294e5750fa28337cbe87971b698f92e2a6293a11"
+    },
+    {
+      "frame": 1800,
+      "seconds": 75.0,
+      "scene": "end",
+      "expected_caption": "Fourier methods connect algorithms to latency\u2014not automatically to readiness.",
+      "image": "frames/0096.png",
+      "image_sha256": "f310b2674024f3c8c9e45272c4b64a53a4d79aa462924b4318af82b1baf3e1be"
+    },
+    {
+      "frame": 1824,
+      "seconds": 76.0,
+      "scene": "end",
+      "expected_caption": "Fourier methods connect algorithms to latency\u2014not automatically to readiness.",
+      "image": "frames/0097.png",
+      "image_sha256": "a3aff77d5aa493a41ff63370a456c8f71f3ff7461f2a4b203863cd92ff6b7a68"
+    },
+    {
+      "frame": 1848,
+      "seconds": 77.0,
+      "scene": "end",
+      "expected_caption": "Fourier methods connect algorithms to latency\u2014not automatically to readiness.",
+      "image": "frames/0098.png",
+      "image_sha256": "5ebf95e780fff0f217340c3c1d0b8eedf69c6394baa37ec97b40fccbeaf364b7"
+    },
+    {
+      "frame": 1872,
+      "seconds": 78.0,
+      "scene": "end",
+      "expected_caption": "Fourier methods connect algorithms to latency\u2014not automatically to readiness.",
+      "image": "frames/0099.png",
+      "image_sha256": "9ba569973c44fa8d6b4a0babea7e6292addc99edb544c4126ca3ccb669f5611f"
+    },
+    {
+      "frame": 1896,
+      "seconds": 79.0,
+      "scene": "end",
+      "expected_caption": "Fourier methods connect algorithms to latency\u2014not automatically to readiness.",
+      "image": "frames/0100.png",
+      "image_sha256": "fee98aaba5690028af7b325be47fbf3d7caf631106337ad1b72482ec7092f6da"
+    },
+    {
+      "frame": 1919,
+      "seconds": 79.95833333333333,
+      "scene": "end",
+      "expected_caption": "Fourier methods connect algorithms to latency\u2014not automatically to readiness.",
+      "image": "frames/0101.png",
+      "image_sha256": "7edac73f4870526f3115d0f2c643f3f8575d38f043bc368b2e5a717e55bd1bed"
+    }
+  ],
+  "contact_sheets": [
+    "contact-01.png",
+    "contact-02.png",
+    "contact-03.png",
+    "contact-04.png",
+    "contact-05.png",
+    "contact-06.png",
+    "contact-07.png",
+    "contact-08.png",
+    "contact-09.png",
+    "contact-10.png",
+    "contact-11.png",
+    "contact-12.png",
+    "contact-13.png",
+    "contact-14.png",
+    "contact-15.png",
+    "contact-16.png",
+    "contact-17.png"
+  ],
+  "publication_approved": false,
+  "limitations": "Expected captions are metadata, not OCR. Dense samples are not full playback, motion/pacing/device/accessibility/audio-sync or adoption approval."
+}

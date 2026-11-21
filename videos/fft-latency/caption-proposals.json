@@ -1,0 +1,12 @@
+{
+  "status":"unadopted category-caption copy proposals",
+  "publication_approved":false,
+  "source_commit":"85f1868ea816a52c581ed64cbde3d21b567a40c4",
+  "video_sha256":"1d3050b3094f1a090954cb9c2e6ed10e90d438169e86bd2cfbc2a7f13ed74036",
+  "proposals":[
+    {"start":49,"end":52,"category":"Complexity","text":"Complexity: how operation counts grow."},
+    {"start":52,"end":55,"category":"Stability","text":"Numerical stability: computation error growth."},
+    {"start":55,"end":58,"category":"Latency","text":"Latency: elapsed time for the whole job."},
+    {"start":58,"end":61,"category":"Readiness","text":"Readiness: validated system and deadlines."}
+  ]
+}

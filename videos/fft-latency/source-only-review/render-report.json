@@ -1,0 +1,72 @@
+{
+  "source_commit": "0a083c1274f3792f0385c526e01d3488285ccd22",
+  "status": "unadopted full source-only review",
+  "publication_approved": false,
+  "filename": "fft-source-only-review.mp4",
+  "sha256": "790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e",
+  "size_bytes": 732406,
+  "media": {
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "frames": 1920,
+    "duration": 80.0,
+    "audio_streams": 0,
+    "timestamps_verified": true
+  },
+  "full_decode_completed": true,
+  "sample_count": 39,
+  "tools": {
+    "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffprobe": "ffprobe version 7.1.5-0+deb13u1 Copyright (c) 2007-2026 the FFmpeg developers"
+  },
+  "captions_sha256": "3418c98bbc7fe171544ffe4298eacaa46c0297342960e76a3c69dd2f421f164e",
+  "resolved_lesson_sha256": "b7bbd15d8b8eb88bd4325b8f9f010988f49c8ba56d706c7f837de35babed46d5",
+  "source_hashes": {
+    "source_only_review.py": "893c2420d30321c5d7743d55b7f5d5fb8b3f5c8bad773a9ff7c56b518298e171",
+    "caption_layout.py": "587bc256ea26a8df313eee35a47f249ed93f7c1d3016b0ead2cfe4ba67cb1f59",
+    "fft_source_endcard.py": "2dad587366c0e34c59ccec144f49a8ebc67dc72c94cc21a77b8da2df826b30a4",
+    "fft-latency/source-only-review.json": "458886afe96a71b1d9b233df99a0f8641bc98e998ecaf699ac9e16839d45c934",
+    "fft-latency/source-endcard.json": "447958d83a7399ab04bdeabd794a9314c9f1c05a89c5e5367adbf53083120557",
+    "fft-latency/caption-layout.json": "192c62bd0672d5e2e28af130541e55afa5a55098250da124eb34eeb4ee12ee32",
+    "fft-latency/lesson.json": "8d6cb7de816988a1577a4ae8d2ac942ce01567331110dc075c05dfba97ffc3dc",
+    "fft-latency/review-version.json": "0bed8b95103558c954bf099c9d453ec5105b17434746a48a2bdcd726cbb7f994",
+    "render.py": "186ca20d2a95d9cb10b728edecf786ddc5c47a7ac70ede9f0ae76df70b17b1f1",
+    "lesson_model.py": "bb1dc4939db2806b136986f5f287f9d5ecea4f2b9d93336434c96ecde852bc5c",
+    "qa.py": "45ae6c25baf9f54564c8cf4cf95ee2e8590ed988fc5e732e9cf96fc21094d9b9",
+    "uv.lock": "2983dcf099d4c4e6141728dfe7bd627d41d9d20a35ff54e3cf51d7fbb18cffef"
+  },
+  "fonts": {
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e",
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf": "a4c5bc453ca281d90ea079e596da7ae0dfeb5777497c29ec254e76d97ff6f890"
+  },
+  "encoder_options": [
+    "-v",
+    "error",
+    "-n",
+    "-f",
+    "rawvideo",
+    "-pix_fmt",
+    "rgb24",
+    "-s",
+    "1280x720",
+    "-r",
+    "24",
+    "-i",
+    "pipe:0",
+    "-an",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "fast",
+    "-crf",
+    "20",
+    "-pix_fmt",
+    "yuv420p",
+    "-movflags",
+    "+faststart"
+  ],
+  "changes": "First 70s source pixels match larger-caption review. Final 10s reuse source-only proposal with word-preserving first-cue line break.",
+  "limitations": "Separate silent unadopted full review. Source link is not a live lesson. No complete human/device playback, speech sync, accessibility, layout/release-design adoption, rights or publication approval. Frozen v7 and earlier review untouched."
+}

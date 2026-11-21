@@ -1,0 +1,100 @@
+{
+  "source_commit": "3f7a74537ec0299a290deaaa9ab27292b59ad4b2",
+  "publication_approved": false,
+  "status": "unadopted two-line balance study",
+  "window": [
+    70,
+    75
+  ],
+  "fps": 24,
+  "text": "Explore the fraction improved and its speedup in our Marimo lesson.",
+  "greedy": {
+    "lines": [
+      "Explore the fraction improved and its speedup in our Marimo",
+      "lesson."
+    ],
+    "ink_bounds": [
+      [
+        121.5,
+        596.0,
+        1158.5,
+        629.0
+      ],
+      [
+        580.5,
+        641.9,
+        699.5,
+        667.9
+      ]
+    ],
+    "origins": [
+      [
+        121.5,
+        590.0
+      ],
+      [
+        580.5,
+        635.9
+      ]
+    ]
+  },
+  "balanced": {
+    "lines": [
+      "Explore the fraction improved and",
+      "its speedup in our Marimo lesson."
+    ],
+    "origins": [
+      [
+        349.0,
+        590.0
+      ],
+      [
+        353.0,
+        635.9
+      ]
+    ],
+    "ink_bounds": [
+      [
+        349.0,
+        596.0,
+        931.0,
+        629.0
+      ],
+      [
+        353.0,
+        641.9,
+        927.0,
+        674.9
+      ]
+    ],
+    "ink_width_difference_px": 8.0,
+    "split_word_index": 5
+  },
+  "font_px": 34,
+  "box": [
+    80,
+    590,
+    1120,
+    92
+  ],
+  "images": {
+    "greedy-1280.png": "48a55ea787cf4763ff45631f7702b1144b7d54908a04e4597d46fa9d2f24ab2e",
+    "greedy-640.png": "717802cbd0b2ba84e8a07ba0b41707afa4c2fc68e7d9ed89c8826227d1bd074c",
+    "balanced-1280.png": "a02bdcb5a39b4b3df5cb323b43aac1e48d0d5cd8d20a09dc2fbe93a93c5fc30b",
+    "balanced-640.png": "68ca587011c52d54b46c3713e6741fa0732977a8b73f3da76eedcc511bcee258",
+    "comparison-640.png": "22df7d2893cd07dfe56d4358a4e2afc897e8de4f16b548f8fa79e0c432f324dc"
+  },
+  "source_hashes": {
+    "caption_balance.py": "607b89d6733466b293d61e1377fd806a87d3ed545e8e417a726e2a0818324102",
+    "caption_layout.py": "587bc256ea26a8df313eee35a47f249ed93f7c1d3016b0ead2cfe4ba67cb1f59",
+    "fft-latency/caption-layout.json": "192c62bd0672d5e2e28af130541e55afa5a55098250da124eb34eeb4ee12ee32",
+    "render.py": "186ca20d2a95d9cb10b728edecf786ddc5c47a7ac70ede9f0ae76df70b17b1f1",
+    "lesson_model.py": "bb1dc4939db2806b136986f5f287f9d5ecea4f2b9d93336434c96ecde852bc5c",
+    "fft-latency/lesson.json": "8d6cb7de816988a1577a4ae8d2ac942ce01567331110dc075c05dfba97ffc3dc",
+    "fft-latency/captions.vtt": "7713ab432a953f757757d25126bed96fed66b4e381967ddd608367282b0a2a9d",
+    "fft-latency/review-version.json": "0bed8b95103558c954bf099c9d453ec5105b17434746a48a2bdcd726cbb7f994",
+    "uv.lock": "2983dcf099d4c4e6141728dfe7bd627d41d9d20a35ff54e3cf51d7fbb18cffef"
+  },
+  "font_sha256": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e",
+  "limitations": "Line-break geometry only, not production adoption, encoded playback, speech sync, reading-speed or device approval. Existing live-Marimo CTA unverified."
+}

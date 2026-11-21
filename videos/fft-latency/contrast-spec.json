@@ -1,0 +1,19 @@
+{
+  "source_commit": "68668c1dbd54fcd2996e3042e32481c3733fc8ef",
+  "movie_sha256": "790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e",
+  "render_report_sha256": "2456b23798529acc23853d5bdb5ac521b0ef5d3fdf08160bc51e7ee122a5e13a",
+  "minimum_ratio": 4.5,
+  "caption_background": "#0a111c",
+  "pairs": [
+    {"foreground":"FG","background":"BG","role":"Headings, formula and readiness text; source-only closing caption"},
+    {"foreground":"MUTED","background":"BG","role":"Draft marker, assumptions, definitions and closing credits"},
+    {"foreground":"CYAN","background":"BG","role":"Eyebrows, prediction, result equations, Fourier label and focus counter"},
+    {"foreground":"AMBER","background":"BG","role":"Other-work label and synthetic-evidence warning"},
+    {"foreground":"FG","background":"PANEL","role":"Active category description and source-only notebook prompt"},
+    {"foreground":"MUTED","background":"PANEL","role":"Inactive category titles"},
+    {"foreground":"CYAN","background":"PANEL","role":"Active category titles and source-only source label"},
+    {"foreground":"AMBER","background":"PANEL","role":"Source-only not-a-live-app disclosure"},
+    {"foreground":"FG","background":"CAPTION_BG","role":"Reading-track captions before 70 seconds"},
+    {"foreground":"MUTED","background":"CAPTION_BG","role":"Persistent synthetic/no-telemetry footer before 70 seconds"}
+  ]
+}

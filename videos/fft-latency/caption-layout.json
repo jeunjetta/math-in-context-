@@ -1,0 +1,8 @@
+{
+  "status": "unadopted full-pilot caption layout",
+  "publication_approved": false,
+  "font_px": 34,
+  "box": [80, 590, 1120, 92],
+  "max_lines": 2,
+  "sample_seconds": [35, 65.5, 70, 75]
+}

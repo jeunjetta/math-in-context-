@@ -4,14 +4,58 @@ First increment: **80-second silent, captioned visual draft**, not an approved
 YouTube release. Original graphics; synthetic numbers; no operational claims.
 Video work lives here independently of the Marimo starter PR #1.
 
+A [draft descriptive text alternative](fft-latency/DESCRIPTIVE_TRANSCRIPT.md)
+now combines all 19 source-only review captions with eight visual descriptions,
+equations in words and the four active panels. It supports reading without
+the visuals; it is not recorded narration or an accessibility certification.
+
+A [source-color contrast audit](fft-latency/CONTRAST_AUDIT.md) now checks the
+exact source-only review's ten inventoried text/background pairs: all exceed
+the conservative 4.5:1 target, minimum 7.338:1. Hash-bound tests protect scope;
+no pixels changed. Small text, reading density and device review remain open.
+
+A [full source-only review copy](fft-latency/SOURCE_ONLY_REVIEW.md) now places
+the existing fallback ending in the complete 80-second lesson, with a matching
+VTT and draft description. It explicitly distinguishes source code from a live
+lesson and fixes an observed orphan line. This separate copy is unadopted;
+frozen v7, previous review files and publication gates remain unchanged.
+Use its [source-only playback worksheet](fft-latency/SOURCE_PLAYBACK_REVIEW.md)
+for version-correct closing prompts and the optional exact-copy verifier.
+The older worksheet below identifies a different movie; neither is completed
+human/device review or approval.
+
+One [complete 80-second caption-layout review](fft-latency/CAPTION_REVIEW_RENDER.md)
+now integrates the tested larger captions and balanced ending into an encoded
+copy for normal-speed review. Full decode/timestamps and sampled visuals pass;
+the treatment is unadopted, silent and does not replace frozen v7. The live-Marimo
+CTA remains unverified. Review evidence and exact remaining gates are in the handoff.
+Use the [one-copy playback review sheet](fft-latency/PLAYBACK_REVIEW.md) for
+exact-file identification and timestamped feedback. Native import/partial
+decoding was observed; the editor's small monitor prevented full-size review.
+No complete intended-device playback or layout approval is claimed.
+
 **Review without installing anything:** open the
 [tablet-friendly editorial handoff](fft-latency/REVIEW.md) for the exact
 current script, scene checklist and draft title/description/source links.
-It is a review page, not a release approval or live interactive lesson.
+The handoff now identifies the exact full review file, distinguishing it from
+the shorter teasers. Its existing private copy was hash/probe/decode checked
+on 15 November 2026 UTC, not newly edited or approved. Private review links
+are not included here; no public video destination or access grant is implied.
+The handoff is a review page, not a release approval or live interactive lesson.
 
 The [v7 packaging audit](fft-latency/PACKAGE_AUDIT_V7.md) reconciles current
 video/blog handoff identities, the component-specific title and source credits.
 Its shared snapshot and regression tests detect narrow drift, not release approval.
+An [unadopted source-only ending proposal](fft-latency/SOURCE_ENDCARD.md)
+offers a clearly labelled public-notebook-source fallback while the live lesson
+is unverified. Two original still states are inspected, but no full video or
+release gate has changed; adoption requires a separate reviewed decision.
+A [separate 10-second encoded ending test](fft-latency/SOURCE_ENDCARD_EXCERPT.md)
+now checks that proposal's caption cut and final frame. It is not an adopted
+80-second candidate; device readability and the release-design decision remain open.
+A [local exact-copy check](fft-latency/SOURCE_ENDCARD_EXCERPT.md#verify-a-downloaded-or-copied-excerpt)
+rejects wrong movie/caption bytes and source drift before probing the excerpt.
+Passing this technical check does not approve its content or adoption.
 The [28-second FFT teaser storyboard](fft-latency/TEASER.md) now has a
 source-bound preproduction script and provisional VTT, retained for provenance.
 Two [original vertical keyframe prototypes](fft-latency/VERTICAL_KEYFRAMES.md)
@@ -22,6 +66,18 @@ add the other four scenes and staged closing distinctions. All 672 proposed
 frames are testable. The [first complete silent encoded teaser test](fft-latency/TEASER_RENDER.md)
 now has a matching reading-track VTT, full decode/timestamp checks and sampled
 pixel review. It is not an approved release or a replacement for the full pilot.
+
+The [slower closing comparison](fft-latency/TEASER_PACING.md) quantifies
+the competing closing copy and supplies a tested 34-second timing alternative.
+Only the four final holds double; original pixels and frozen movies stay intact.
+The [34-second encoded comparison](fft-latency/TEASER_SLOW_RENDER.md) now
+has complete decode/timestamp checks and sampled pixel review. Neither
+version has been approved by complete actual-device playback.
+
+A [local comparison-review prototype](fft-latency/LOCAL_REVIEW.md) adds
+exact-file verification and timestamped feedback export without uploading files.
+Its code checks pass; browser layout/native playback remain unverified due
+to a browser-launch restriction. It is optional, not a release gate substitute.
 
 Later candidate: [Same-looking curves, different physics](same-looking-curves/STORYBOARD.md)
 has an original 82-second unrecorded script, primary-source ledger and tested
@@ -65,6 +121,24 @@ Latest revision: **v7 focus-first candidate** enlarges the active category's
 description while retaining the four titles as context. See the
 [encoded v6/v7 comparison and review limits](fft-latency/FOCUS_V7.md).
 It has not passed actual-tablet playback or editorial approval.
+A [full-pilot caption pacing audit](fft-latency/CAPTION_PACING.md) identifies
+49–61 s as the highest caption-character-rate region and supplies four shorter,
+unadopted copy proposals. Counts are not comprehension or accessibility approval.
+A [52-second source-frame fit comparison](fft-latency/CAPTION_FIT.md) now tests
+the stability proposal. Both fit one line, but shortening does not enlarge the
+unchanged nominal 13 px half-size caption; it remains unadopted.
+A [larger-type source-frame study](fft-latency/CAPTION_TYPE.md) separately
+keeps all four original category sentences and tests 34 px instead of 26 px.
+They fit one line (nominal 17 vs 13 px at half-size), but no timing, device,
+encoded-media or adoption approval is implied; the frozen pilot is unchanged.
+A [full-pilot larger-caption layout check](fft-latency/CAPTION_LAYOUT.md)
+extends this to all 19 cues. It fixes a negative-bearing edge case and uses
+a taller box for two ending cues; one still has a single-word orphan line.
+This is unadopted source-layout evidence, not a new reviewed movie.
+A [word-preserving balance study](fft-latency/CAPTION_BALANCE.md) resolves
+that orphan in a separate 70–75 s source adapter: ink-width difference
+918→8 px, with unchanged font, box, wording and timing. It remains unadopted;
+the frozen pilot and earlier study evidence are untouched.
 
 Retained from v6: moving bars replace animation-generated decimal totals with
 endpoint arrows during the two moving-bar beats (18–21 s and 40–43 s).
@@ -74,6 +148,11 @@ timing model, public 100 → 90 ms example, prediction-first opening and
 synchronized question cards are retained; duration remains 80 seconds.
 
 ## Reproduce
+
+The [fresh-environment source-only rebuild](fft-latency/CLEAN_REBUILD.md)
+reproduces the existing MP4, manifest, captions and lesson byte-for-byte on
+the same host. It checks a new local environment, not cross-machine output
+or release approval; no new version of the movie is distributed.
 
 From `videos/`, with Python 3.11–3.13, uv, FFmpeg (libx264 enabled) and
 DejaVu Sans installed:
@@ -130,6 +209,9 @@ not an instantaneous measured total. Settled labels use the exact model value.
 No separate narration has been recorded. The current captions are a silent
 reading track, not a claim of alignment to speech. Record an authorized human
 voice only after editorial review; then retime the cues to that recording.
+An [optional human-recording brief and 154-word rehearsal script](fft-latency/NARRATION_BRIEF.md)
+now prepares that choice; target timing is tested, but no speech or sync is claimed.
+Its neutral ending does not resolve the frozen visual CTA or adopt a release route.
 Change the three timing parameters through a scenario file; numeric captions,
 equations, variables and bar scales then follow automatically. The script's
 qualitative assumptions still need editorial review. This lesson deliberately
@@ -218,6 +300,11 @@ all those cut/midpoint/first/last checks: 101 samples and 17 contact sheets
 for the current pilot. It accepts positive whole seconds only. Omitting
 the option preserves the original selection. The report records the interval;
 even dense samples cannot certify unseen frames, smooth motion or pacing.
+
+For the existing larger-caption review, the flat dense selection fails in
+the inspected FFmpeg 7.1.5 build. The opt-in [balanced dense export](fft-latency/DENSE_QA.md)
+recovers all 101 intended frames without editing archived QA or the movie.
+Its actual frame-selection/pixel checks pass; it is not full playback approval.
 
 The report records input SHA256, QA source hash, resolved lesson hash, external
 FFmpeg/FFprobe versions, dimensions, duration, frame count/rate and every

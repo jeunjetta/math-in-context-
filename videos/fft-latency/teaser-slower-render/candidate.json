@@ -1,0 +1,13 @@
+{
+  "status": "rendered silent comparison, unapproved",
+  "publication_approved": false,
+  "audio": false,
+  "sha256": "7651d3e43a027947cf44efce39ecd76c14700e02df98a6d6a377fcdfde28405d",
+  "source_commit": "c1a0bf873111dbd73b161bcb17815fa6cf2aba29",
+  "compared_to_sha256": "1ad0c7ed5ed0de7f14b0723ef3af37ab4e22b5c7616391a744c8a6fd136b4f50",
+  "duration": 34,
+  "fps": 24,
+  "frames": 816,
+  "public_video_url": null,
+  "interactive_lesson_url": null
+}

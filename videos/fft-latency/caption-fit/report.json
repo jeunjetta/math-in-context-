@@ -1,0 +1,64 @@
+{
+  "source_commit": "c08b87e3f63443a778eb27fc6e1ef1ab632ccb4b",
+  "source_video_sha256": "1d3050b3094f1a090954cb9c2e6ed10e90d438169e86bd2cfbc2a7f13ed74036",
+  "status": "unadopted stability-caption source-frame comparison",
+  "publication_approved": false,
+  "frame": 1248,
+  "seconds": 52,
+  "window": [
+    52,
+    55
+  ],
+  "fps": 24,
+  "pillow": "12.3.0",
+  "captions": [
+    {
+      "text": "Numerical stability asks how computation errors behave.",
+      "characters": 55,
+      "font_px": 26,
+      "nominal_font_px_at_640": 13,
+      "lines": 1,
+      "advance_px": 742.875,
+      "ink_bounds": [
+        268.5625,
+        595,
+        1011.5625,
+        620
+      ]
+    },
+    {
+      "text": "Numerical stability: computation error growth.",
+      "characters": 46,
+      "font_px": 26,
+      "nominal_font_px_at_640": 13,
+      "lines": 1,
+      "advance_px": 602.0625,
+      "ink_bounds": [
+        338.96875,
+        595,
+        940.96875,
+        620
+      ]
+    }
+  ],
+  "images": {
+    "current-1280.png": "ff130adf2209ed495fd70b6a4cd152a911b06d87c8cf6d243be2304cb2e22365",
+    "current-640.png": "809261b0188d8eb1cf5a51be14cfc10bea2bf02ace55bf10813d0cf7b7781451",
+    "proposed-1280.png": "0ef9bea9ec3ac1d600c8191e2ad8dbfcf80296e4787506593b6086ce1787af02",
+    "proposed-640.png": "6a7e79a70b5aa0302a5964755afaff1d5d73b91cd16828214fc7f3de1a378aba"
+  },
+  "source_hashes": {
+    "caption_fit.py": "bcce729c24f6019bd2c165efa8729dceff1e89f045bf3e93a785348c6c3b6eac",
+    "render.py": "186ca20d2a95d9cb10b728edecf786ddc5c47a7ac70ede9f0ae76df70b17b1f1",
+    "lesson_model.py": "bb1dc4939db2806b136986f5f287f9d5ecea4f2b9d93336434c96ecde852bc5c",
+    "fft-latency/lesson.json": "8d6cb7de816988a1577a4ae8d2ac942ce01567331110dc075c05dfba97ffc3dc",
+    "fft-latency/caption-proposals.json": "0ff71c9bd8774ef572794922857c5f1d8759940133354154a80c181530859f8a",
+    "fft-latency/review-version.json": "0bed8b95103558c954bf099c9d453ec5105b17434746a48a2bdcd726cbb7f994",
+    "uv.lock": "2983dcf099d4c4e6141728dfe7bd627d41d9d20a35ff54e3cf51d7fbb18cffef"
+  },
+  "fonts": {
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e",
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf": "a4c5bc453ca281d90ea079e596da7ae0dfeb5777497c29ec254e76d97ff6f890"
+  },
+  "limitations": "Source-frame stills, not encoded media, adoption, device readability, full playback, speech sync, accessibility or publication approval. Both captions remain one line at unchanged 26px source / nominal 13px half-size."
+}

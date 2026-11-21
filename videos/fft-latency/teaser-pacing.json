@@ -1,0 +1,11 @@
+{
+  "status": "unrendered timing comparison",
+  "publication_approved": false,
+  "audio": false,
+  "source_commit": "23aa5b2ab3ec88d07a39251c2ba01c95305468e1",
+  "frozen_video_sha256": "1ad0c7ed5ed0de7f14b0723ef3af37ab4e22b5c7616391a744c8a6fd136b4f50",
+  "scope_start": 22,
+  "focus_seconds": 3,
+  "duration": 34,
+  "fps": 24
+}

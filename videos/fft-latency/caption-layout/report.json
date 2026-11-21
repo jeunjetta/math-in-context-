@@ -1,0 +1,487 @@
+{
+  "source_commit": "920dd609b068146e00c7f7827fc927a756e828c9",
+  "config": {
+    "status": "unadopted full-pilot caption layout",
+    "publication_approved": false,
+    "font_px": 34,
+    "box": [
+      80,
+      590,
+      1120,
+      92
+    ],
+    "max_lines": 2,
+    "sample_seconds": [
+      35,
+      65.5,
+      70,
+      75
+    ]
+  },
+  "pillow": "12.3.0",
+  "cues": [
+    {
+      "start": 0.0,
+      "end": 4.0,
+      "text": "Suppose Fourier computation becomes 2\u00d7 as fast.",
+      "lines": [
+        "Suppose Fourier computation becomes 2\u00d7 as fast."
+      ],
+      "ink_bounds": [
+        [
+          209.0,
+          596.0,
+          1071.0,
+          629.0
+        ]
+      ],
+      "origins": [
+        [
+          209.0,
+          590.0
+        ]
+      ]
+    },
+    {
+      "start": 4.0,
+      "end": 8.0,
+      "text": "Does the whole system become 2\u00d7 as fast? Pause and predict.",
+      "lines": [
+        "Does the whole system become 2\u00d7 as fast? Pause and predict."
+      ],
+      "ink_bounds": [
+        [
+          103.5,
+          596.0,
+          1176.5,
+          629.0
+        ]
+      ],
+      "origins": [
+        [
+          103.5,
+          590.0
+        ]
+      ]
+    },
+    {
+      "start": 8.0,
+      "end": 13.0,
+      "text": "Imagine sequential work taking 100 milliseconds.",
+      "lines": [
+        "Imagine sequential work taking 100 milliseconds."
+      ],
+      "ink_bounds": [
+        [
+          218.5,
+          596.0,
+          1061.5,
+          629.0
+        ]
+      ],
+      "origins": [
+        [
+          218.5,
+          590.0
+        ]
+      ]
+    },
+    {
+      "start": 13.0,
+      "end": 18.0,
+      "text": "Fourier work takes 20 ms. Everything else takes 80 ms.",
+      "lines": [
+        "Fourier work takes 20 ms. Everything else takes 80 ms."
+      ],
+      "ink_bounds": [
+        [
+          168.0,
+          596.0,
+          1112.0,
+          629.0
+        ]
+      ],
+      "origins": [
+        [
+          168.0,
+          590.0
+        ]
+      ]
+    },
+    {
+      "start": 18.0,
+      "end": 22.0,
+      "text": "Divide Fourier time by 2: 20 ms becomes 10 ms.",
+      "lines": [
+        "Divide Fourier time by 2: 20 ms becomes 10 ms."
+      ],
+      "ink_bounds": [
+        [
+          226.0,
+          596.0,
+          1054.0,
+          629.0
+        ]
+      ],
+      "origins": [
+        [
+          226.0,
+          590.0
+        ]
+      ]
+    },
+    {
+      "start": 22.0,
+      "end": 26.0,
+      "text": "The other 80 milliseconds stays unchanged.",
+      "lines": [
+        "The other 80 milliseconds stays unchanged."
+      ],
+      "ink_bounds": [
+        [
+          264.0,
+          596.0,
+          1016.0,
+          629.0
+        ]
+      ],
+      "origins": [
+        [
+          265.0,
+          590.0
+        ]
+      ]
+    },
+    {
+      "start": 26.0,
+      "end": 30.0,
+      "text": "10 + 80 = 90 ms. We saved 10 milliseconds.",
+      "lines": [
+        "10 + 80 = 90 ms. We saved 10 milliseconds."
+      ],
+      "ink_bounds": [
+        [
+          258.5,
+          596.0,
+          1021.5,
+          622.0
+        ]
+      ],
+      "origins": [
+        [
+          258.5,
+          590.0
+        ]
+      ]
+    },
+    {
+      "start": 30.0,
+      "end": 35.0,
+      "text": "Overall speedup is old time divided by new time.",
+      "lines": [
+        "Overall speedup is old time divided by new time."
+      ],
+      "ink_bounds": [
+        [
+          223.0,
+          596.0,
+          1057.0,
+          629.0
+        ]
+      ],
+      "origins": [
+        [
+          223.0,
+          590.0
+        ]
+      ]
+    },
+    {
+      "start": 35.0,
+      "end": 40.0,
+      "text": "100 divided by 90 is about 1.11\u00d7, not 2\u00d7.",
+      "lines": [
+        "100 divided by 90 is about 1.11\u00d7, not 2\u00d7."
+      ],
+      "ink_bounds": [
+        [
+          281.0,
+          596.0,
+          999.0,
+          629.0
+        ]
+      ],
+      "origins": [
+        [
+          281.0,
+          590.0
+        ]
+      ]
+    },
+    {
+      "start": 40.0,
+      "end": 44.5,
+      "text": "Even zero Fourier time leaves 80 milliseconds.",
+      "lines": [
+        "Even zero Fourier time leaves 80 milliseconds."
+      ],
+      "ink_bounds": [
+        [
+          244.0,
+          596.0,
+          1036.0,
+          622.0
+        ]
+      ],
+      "origins": [
+        [
+          244.0,
+          590.0
+        ]
+      ]
+    },
+    {
+      "start": 44.5,
+      "end": 49.0,
+      "text": "In this model, the speedup limit is about 1.25\u00d7.",
+      "lines": [
+        "In this model, the speedup limit is about 1.25\u00d7."
+      ],
+      "ink_bounds": [
+        [
+          233.0,
+          596.0,
+          1047.0,
+          629.0
+        ]
+      ],
+      "origins": [
+        [
+          233.0,
+          590.0
+        ]
+      ]
+    },
+    {
+      "start": 49.0,
+      "end": 52.0,
+      "text": "Arithmetic complexity asks how operation counts grow.",
+      "lines": [
+        "Arithmetic complexity asks how operation counts grow."
+      ],
+      "ink_bounds": [
+        [
+          168.5,
+          596.0,
+          1111.5,
+          629.0
+        ]
+      ],
+      "origins": [
+        [
+          168.5,
+          590.0
+        ]
+      ]
+    },
+    {
+      "start": 52.0,
+      "end": 55.0,
+      "text": "Numerical stability asks how computation errors behave.",
+      "lines": [
+        "Numerical stability asks how computation errors behave."
+      ],
+      "ink_bounds": [
+        [
+          154.5,
+          596.0,
+          1125.5,
+          629.0
+        ]
+      ],
+      "origins": [
+        [
+          154.5,
+          590.0
+        ]
+      ]
+    },
+    {
+      "start": 55.0,
+      "end": 58.0,
+      "text": "Latency measures elapsed time for the whole workload.",
+      "lines": [
+        "Latency measures elapsed time for the whole workload."
+      ],
+      "ink_bounds": [
+        [
+          162.5,
+          596.0,
+          1117.5,
+          629.0
+        ]
+      ],
+      "origins": [
+        [
+          162.5,
+          590.0
+        ]
+      ]
+    },
+    {
+      "start": 58.0,
+      "end": 61.0,
+      "text": "Readiness needs validation against system deadlines.",
+      "lines": [
+        "Readiness needs validation against system deadlines."
+      ],
+      "ink_bounds": [
+        [
+          180.0,
+          596.0,
+          1100.0,
+          629.0
+        ]
+      ],
+      "origins": [
+        [
+          180.0,
+          590.0
+        ]
+      ]
+    },
+    {
+      "start": 61.0,
+      "end": 65.5,
+      "text": "Check accuracy, data movement, and worst-case deadlines.",
+      "lines": [
+        "Check accuracy, data movement, and worst-case deadlines."
+      ],
+      "ink_bounds": [
+        [
+          126.0,
+          596.0,
+          1154.0,
+          629.0
+        ]
+      ],
+      "origins": [
+        [
+          126.0,
+          590.0
+        ]
+      ]
+    },
+    {
+      "start": 65.5,
+      "end": 70.0,
+      "text": "This toy arithmetic proves no new FFT or real-time grid capability.",
+      "lines": [
+        "This toy arithmetic proves no new FFT or real-time grid capability."
+      ],
+      "ink_bounds": [
+        [
+          80.0,
+          596.0,
+          1200.0,
+          629.0
+        ]
+      ],
+      "origins": [
+        [
+          81.0,
+          590.0
+        ]
+      ]
+    },
+    {
+      "start": 70.0,
+      "end": 75.0,
+      "text": "Explore the fraction improved and its speedup in our Marimo lesson.",
+      "lines": [
+        "Explore the fraction improved and its speedup in our Marimo",
+        "lesson."
+      ],
+      "ink_bounds": [
+        [
+          121.5,
+          596.0,
+          1158.5,
+          629.0
+        ],
+        [
+          580.5,
+          641.9,
+          699.5,
+          667.9
+        ]
+      ],
+      "origins": [
+        [
+          121.5,
+          590.0
+        ],
+        [
+          580.5,
+          635.9
+        ]
+      ]
+    },
+    {
+      "start": 75.0,
+      "end": 80.0,
+      "text": "Fourier methods connect algorithms to latency\u2014not automatically to readiness.",
+      "lines": [
+        "Fourier methods connect algorithms to latency\u2014not",
+        "automatically to readiness."
+      ],
+      "ink_bounds": [
+        [
+          196.0,
+          596.0,
+          1084.0,
+          629.0
+        ],
+        [
+          409.0,
+          641.9,
+          871.0,
+          674.9
+        ]
+      ],
+      "origins": [
+        [
+          196.0,
+          590.0
+        ],
+        [
+          409.0,
+          635.9
+        ]
+      ]
+    }
+  ],
+  "images": {
+    "35s-0-1280.png": "fecd86ebf22d321af0be1bee07bd07a17be6793a3c3ba10ba952ed5966cd99bc",
+    "35s-1-1280.png": "af84bf5588024834474ec8f8e06d5df346bf4a03eec3bd7e100d42c1846be197",
+    "65.5s-0-1280.png": "146a291af096080e6ade3c30f7d9aaf6dce20ad5ec09ba95e8283684ff05a99f",
+    "65.5s-1-1280.png": "c8da2fda49c12c772418d1c927f97305c4cf0d68678a103aa903cbfef389ede5",
+    "70s-0-1280.png": "8efd89c1da6cf09f94eaa87e6b3e6e6767e45f1b4d38a102a0e87f8b7ada0428",
+    "70s-1-1280.png": "48a55ea787cf4763ff45631f7702b1144b7d54908a04e4597d46fa9d2f24ab2e",
+    "75s-0-1280.png": "553847d6b79c500f3434c0a659c5833ba840b1583da229f1509f7be057549b25",
+    "75s-1-1280.png": "863c2666419b68d858000eaf5704dd590a12051ba24f61cdd344c3d8b578c07c",
+    "comparison-640.png": "40f3ef7e08e9b8c584b7aa05c5796e63046890c0a7c1f01eb9216dc1e6e97613"
+  },
+  "source_hashes": {
+    "caption_layout.py": "587bc256ea26a8df313eee35a47f249ed93f7c1d3016b0ead2cfe4ba67cb1f59",
+    "fft-latency/caption-layout.json": "192c62bd0672d5e2e28af130541e55afa5a55098250da124eb34eeb4ee12ee32",
+    "render.py": "186ca20d2a95d9cb10b728edecf786ddc5c47a7ac70ede9f0ae76df70b17b1f1",
+    "lesson_model.py": "bb1dc4939db2806b136986f5f287f9d5ecea4f2b9d93336434c96ecde852bc5c",
+    "fft-latency/lesson.json": "8d6cb7de816988a1577a4ae8d2ac942ce01567331110dc075c05dfba97ffc3dc",
+    "fft-latency/captions.vtt": "7713ab432a953f757757d25126bed96fed66b4e381967ddd608367282b0a2a9d",
+    "fft-latency/review-version.json": "0bed8b95103558c954bf099c9d453ec5105b17434746a48a2bdcd726cbb7f994",
+    "uv.lock": "2983dcf099d4c4e6141728dfe7bd627d41d9d20a35ff54e3cf51d7fbb18cffef"
+  },
+  "font_sha256": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e",
+  "limitations": "Source-frame layout only, not encoded, adopted, speech-synchronized, device-tested or approved. Copy/timing/hero/footer unchanged; live CTA still unverified."
+}
