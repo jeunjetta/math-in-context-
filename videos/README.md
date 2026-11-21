@@ -149,6 +149,11 @@ synchronized question cards are retained; duration remains 80 seconds.
 
 ## Reproduce
 
+The [fresh-environment source-only rebuild](fft-latency/CLEAN_REBUILD.md)
+reproduces the existing MP4, manifest, captions and lesson byte-for-byte on
+the same host. It checks a new local environment, not cross-machine output
+or release approval; no new version of the movie is distributed.
+
 From `videos/`, with Python 3.11–3.13, uv, FFmpeg (libx264 enabled) and
 DejaVu Sans installed:
 

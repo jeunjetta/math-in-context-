@@ -1,5 +1,53 @@
 # Video status log
 
+## 21 November 2026 · same-host fresh-environment rebuild
+
+Source: fresh PR #4 head 17a066de120ddced5400229dcafab07cb6d9c128,
+clean isolated codex/video-* worktree. Fetched main/#1/video branches;
+read main README, #1 AGENTS/ROADMAP/source registry/FFT notebook, full video
+README/latest status, assembly and source-only handoff. Main remains template
+c9fdf98729379dd404afce99daad1a6aa042156e without root AGENTS/ROADMAP;
+#1–4 open/unmerged, #4 feedback empty. Continue codex/video-teaser-pacing/
+PR #4; no new stack. No research or Open Notebook deployment assumptions.
+
+Bounded validation increment: install the locked dependency in a NEW local
+environment and rebuild the SAME source-only review, instead of adding an
+editorial variant while feedback is absent. uv sync --locked creates .venv
+and installs Pillow 12.3.0; Python 3.12.14, uv 0.13.9. Verified renderer import
+comes from this worktree and Pillow from its .venv. Shared system interpreter,
+FFmpeg/FFprobe/fonts and possible cache remain; not a clean-host/container/
+cold-cache/cross-platform test. Hardlink warning falls back to a successful
+copy install, not a blocker or reason to alter dependency versions.
+
+Full source_only_review.py render completes under ignored out/. Direct cmp
+and SHA-256 prove the rebuilt MP4 equals the previously supplied movie:
+790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e,
+732,406 bytes, 80s/1,920 frames/24fps/1280×720/H.264/no audio. Manifest,
+VTT and resolved lesson are byte-identical to checked-in originals; all
+12 render-source hashes, font hashes and encoder/tool facts match. Manifest
+SHA256 remains 2456b23798529acc23853d5bdb5ac521b0ef5d3fdf08160bc51e7ee122a5e13a.
+Fresh QA passes complete decode and all frame timestamps, exports 39 samples/
+seven sheets. Inspected fresh native 840/1068/1680/1919: equations, settled
+ceiling, source disclosure/final caption agree; no clipping seen there.
+Not complete human/device playback, every-frame visual or speech-sync review.
+
+Files: CLEAN_REBUILD.md, source-only-review/rebuild-check.json, README/log.
+No new permanent helper, source/lesson/caption/dependency/lock modification,
+candidate replacement or separately distributed movie. All **166 tests pass
+in 110.470s** in the new environment. Transcript/contrast/HTML/pacing/narration
+freshness checks pass. No notebook edited; no Marimo export rerun.
+Official Pillow licence and FFmpeg commands/legal rechecked; existing external
+font/build/codec terms retained, no bundled runtime, paid service, asset or voice.
+
+Next: complete intended-device playback using the existing exact-copy sheet,
+review descriptive-text equivalence/assistive-tech usability and decide
+source-only adoption before canonical/package reconciliation. Remaining gates:
+human math/editorial/rights, accessible full playback, audio choice/retiming,
+adoption, parent reconciliation, authorized review route and exact-version
+publication approval. No technical render blocker; human/device decisions
+unavailable. No live lesson verified or assumed; no publishing, merging,
+sharing/account settings, research conclusion or automation changes.
+
 ## 21 November 2026 · descriptive text alternative for the silent pilot
 
 Source: fresh PR #4 head 4b3a4a2ef4194801480cc7aa14041932c75b44ec,
