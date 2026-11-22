@@ -1,0 +1,69 @@
+import copy
+from fractions import Fraction as F
+import json
+from pathlib import Path
+import unittest
+from unittest.mock import patch
+
+import overhead_check as o
+
+
+class OverheadCheckTests(unittest.TestCase):
+    def setUp(self):
+        self.spec, self.lesson = o.load()
+
+    def test_exact_original_prediction_and_break_even(self):
+        for h,total,gain,status in ((0,90,F(10,9),'faster'),
+                (8,98,F(50,49),'faster'),(10,100,F(1),'break-even'),
+                (12,102,F(50,51),'slower')):
+            with self.subTest(h=h):
+                r = o.evaluate(self.lesson, h)
+                self.assertEqual((r['total'],r['speedup'],r['outcome']), (total,gain,status))
+                self.assertEqual(r['break_even'],10)
+        for h,status in ((9.99,'faster'),(10.01,'slower')):
+            self.assertEqual(o.evaluate(self.lesson,h)['outcome'],status)
+
+    def test_general_model_and_no_mutation(self):
+        model = dict(baseline_ms=200, fourier_ms=100, kernel_speedup=4)
+        original = copy.deepcopy(model)
+        r = o.evaluate(model,75)
+        self.assertEqual((r['total'],r['break_even'],r['speedup']), (200,75,1))
+        self.assertEqual(model,original)
+        with self.assertRaises(ValueError):
+            o.evaluate(dict(model, kernel_speedup=1),0)
+
+    def test_invalid_overhead(self):
+        for h in (-1,True,'8',None,float('nan'),float('inf')):
+            with self.subTest(h=h),self.assertRaises(ValueError):
+                o.evaluate(self.lesson,h)
+
+    def test_scope_and_misleading_precision_rejected(self):
+        actual = Path.read_text
+        for key,value in (('publication_approved',True),('movie_sha256','wrong'),
+                          ('changed_assumption','Same accuracy'),
+                          ('prediction_choices_ms',[90,108]),
+                          ('overheads_ms',[0,8,10.001])):
+            spec = copy.deepcopy(self.spec); spec[key] = value
+            def read(path,*args,**kwargs):
+                if path.name=='overhead-check.json': return json.dumps(spec)
+                return actual(path,*args,**kwargs)
+            with self.subTest(key=key),patch.object(Path,'read_text',read):
+                with self.assertRaises(ValueError): o.load()
+
+    def test_document_fresh_and_check_never_writes(self):
+        text = o.document(self.spec,self.lesson)
+        self.assertEqual(o.OUTPUT.read_text(),text)
+        for phrase in ('98 ms','exactly','100 / 98 ≈ 1.02×','100 / 100 = 1.00×',
+                       '100 / 102 ≈ 0.98×','h < F(1 - 1/s)',
+                       'not benchmark evidence','accuracy is assumed','not a deployed lesson'):
+            self.assertIn(phrase,text)
+        with patch('sys.argv',['overhead_check.py','--check']),patch.object(Path,'write_text') as write:
+            o.main();write.assert_not_called()
+        with patch('sys.argv',['overhead_check.py','--check']),patch.object(o,'load',return_value=(self.spec,self.lesson)),\
+             patch.object(Path,'read_text',return_value='stale'),patch.object(Path,'write_text') as write:
+            with self.assertRaises(SystemExit):o.main()
+            write.assert_not_called()
+
+
+if __name__ == '__main__':
+    unittest.main()
