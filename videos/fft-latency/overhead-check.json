@@ -1,0 +1,11 @@
+{
+  "status": "unadopted optional after-video exercise",
+  "publication_approved": false,
+  "source_commit": "e880ac860d5240f513e40648355507640a909885",
+  "movie_sha256": "790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e",
+  "overheads_ms": [0, 8, 10, 12],
+  "prediction_overhead_ms": 8,
+  "prediction_choices_ms": [90, 98, 108],
+  "changed_assumption": "No added overhead",
+  "overhead_definition": "Additional sequential time on the improved path only; not a cost already included in the original other work."
+}
