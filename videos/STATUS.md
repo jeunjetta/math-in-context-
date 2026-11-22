@@ -1,5 +1,63 @@
 # Video status log
 
+## 23 November 2026 · optional after-video overhead prediction
+
+Source: fresh PR #4 head e880ac860d5240f513e40648355507640a909885;
+isolated codex/video-* worktree. Fetched live main/#1/#4; main remains
+template c9fdf987 without AGENTS/ROADMAP. Read its README, current #1
+README/AGENTS/ROADMAP/source registry/full FFT notebook at 7905dc2b,
+video README/latest log, resolved source-only lesson/descriptions, existing
+playback/description and companion writing. #1–4 remain open/unmerged;
+#4 combined feedback empty. Continue existing video branch/PR #4 without
+another external stack. No research-checkpoint or deployment assumptions.
+
+Bounded learning-content increment: one optional prediction/feedback check
+of the no-added-overhead assumption, not another movie/renderer variant or
+new review prerequisite. Same synthetic 100/20/80 ms sequential baseline;
+halve Fourier time, then introduce NEW sequential overhead only on the
+improved path. 8 ms gives 98 ms; the 10 ms saving is the break-even budget;
+12 ms gives 102 ms, slower despite a faster component. Distractor feedback
+distinguishes omitting overhead from forgetting to halve Fourier time.
+Exact general criterion h<F(1-1/s), equality break-even, is derived directly.
+No claim overhead stays fixed with input size or component speedup; avoid
+double-counting costs already in the unchanged work. Same accuracy remains
+an assumption, not a numerical-stability result or grid-readiness evidence.
+
+Files: overhead_check.py, test_overhead_check.py,
+fft-latency/{overhead-check.json,OVERHEAD_CHECK.md}, README link and log.
+Content JSON is separate from a standard-library Markdown generator; the
+pure exact-fraction evaluator can be reused in a future Marimo cell. No
+Marimo app, export, live endpoint or changed notebook is claimed. Reference
+movie/assumption identity checks and nonnegative finite-number/precision
+validation reject stale scope or misleading rounded timing equalities.
+Generated --check is read-only and fails on drift. No response collection.
+
+Five new tests pass; 30 focused exercise/package/source-assembly/verifier/
+descriptive-text tests pass in 0.254s. Exact cases 0/8/10/12 ms, values just
+below/above break-even and the existing alternate model are checked, along
+with invalid inputs, no model mutation, wrong reference/approval/assumption,
+distractor/precision drift and generated-document freshness. Markdown read
+through; its four-row table agrees with the exact results. No full-suite
+rerun: prior 171-test result is historical, not a fresh claim. Additional
+generated checks and whitespace validation run before handoff.
+
+No new encode/decode, visual/device/playback or audio-sync review. Movie,
+canonical and source-only lesson/captions/manifests/package, old helpers,
+dependencies/lock, notebook sources and research conclusions unchanged.
+Official Python Fraction docs and FFTW accuracy context rechecked today;
+the latter is not timing evidence. No new renderer/licence choice, copied
+text/assets, voices, paid service or blanket commercial clearance. Draft
+content is not a validated learner assessment or accessibility certification.
+
+Next: review this optional check or discard it independently; complete the
+single intended-device movie pass and resolve one observed issue/adoption
+decision before candidate/package reconciliation. No technical render
+blocker. Exact remaining gates: human math/editorial/rights, accessible
+full playback/text-equivalence, audio choice/retiming, source-only adoption,
+parent reconciliation, authorized review route and exact-version publication
+approval. No publishing, merging, sharing/account changes, private/operator
+data, assumed Open Notebook deployment or additional automation.
+
 ## 22 November 2026 · snapshot input for new encoded review packs
 
 Source: fresh PR #4 head b591022707584010e70a9188965ba4fab5ac81c4;
