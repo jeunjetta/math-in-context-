@@ -43,6 +43,9 @@ For technical reproduction of this exact copy, use the
 [fresh-environment rebuild commands](fft-latency/CLEAN_REBUILD.md).
 The [contrast audit](fft-latency/CONTRAST_AUDIT.md) checks intended source
 colors, not small-text readability. Neither check completes human review.
+An optional [snapshot-based QA command](fft-latency/STABLE_QA.md) prevents
+ordinary concurrent movie edits from misidentifying a newly generated review
+pack; the archived renderer and existing manifests remain unchanged.
 
 ## Retained studies and supporting drafts
 
