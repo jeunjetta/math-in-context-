@@ -1,5 +1,52 @@
 # Video status log
 
+## 22 November 2026 · snapshot input for new encoded review packs
+
+Source: fresh PR #4 head b591022707584010e70a9188965ba4fab5ac81c4;
+isolated codex/video-* worktree. Live main remains template c9fdf987;
+README read; AGENTS/ROADMAP absent on main/video branch. Read current #1
+instructions/roadmap/README/source registry/FFT notebook at 7905dc2b,
+open #1–4 and #4 feedback (empty), full video README/latest status and
+source-only assembly/rebuild/QA/verifier sources. No continuity gap.
+Continue codex/video-teaser-pacing/PR #4, without another external PR stack.
+
+Bounded tested-code increment: opt-in stable_qa.py wraps archived qa.py with
+a private movie snapshot and deep-copied lesson, hashes original and snapshot
+before/after decoding, and exports evidence only after checks pass. The old
+helper hashes input only after generating samples; concurrent replacement
+could misattribute evidence. Controlled mutation tests reproduce that risk;
+no prior actual review pack is claimed to be affected. Existing source hashes
+and frozen helper stay unchanged. New destination/late-collision refusal,
+temporary cleanup and report-last export preserve ordinary review evidence.
+Not a lock/signature/adversarial-race defense; restored temporary edits can
+escape checks. I/O failure can leave an incomplete destination without a report.
+
+Files: stable_qa.py, five regression tests in test_stable_qa.py,
+fft-latency/STABLE_QA.md, README link and this log. Ten focused tests pass
+in 0.771s including existing real encoded fixture integration; full suite
+171 passes in 92.943s. Separate real wrapper run on the existing full source-
+only review passes complete decode/all 1,920 timestamps, 39 samples/seven
+sheets: SHA256 790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e,
+732,406 bytes, 80s/24fps/1280x720/H.264/no audio. Existing exact-copy verifier
+also passes all twelve archived sources. Native decoded 840/1320/1919
+inspected: equation, latency focus, final disclosure agree; no clipping seen.
+No new render or distributed movie, every-frame visual audit, normal-speed
+human/device playback, OCR or speech sync. Results under ignored out/.
+
+Locked Pillow 12.3.0/new local environment used; no dependency/lock, old
+renderer, lesson/caption/VTT/manifest/package, notebook or research edits.
+Official FFprobe/FFmpeg legal/Python hash docs checked; existing external
+build/codec/font terms retained, no new assets, services or blanket rights
+clearance. No Marimo export needed for video-only helper changes.
+
+Next: complete intended-device review of the single source-only focus and
+resolve one observed issue/adoption decision before canonical reconciliation.
+No technical render blocker. Exact open gates remain human math/editorial/
+rights, accessible full playback/text-equivalence, audio choice/retiming,
+source-only adoption, parent reconciliation, authorized review route and
+exact-version publication approval. No publishing, merge, deployment assumed,
+account/sharing change, private data or additional automation.
+
 ## 22 November 2026 · one unambiguous review entry point
 
 Source: fresh PR #4 head 03d6d5071db16febff586d791ce61d326ee414c4;
