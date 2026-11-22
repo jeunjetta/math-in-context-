@@ -53,6 +53,11 @@ The following are provenance and scoped comparisons, not additional copies
 to review before giving feedback on the focus above. They remain separate;
 none silently replaces the canonical reference or clears publication gates.
 
+An optional [after-video overhead check](fft-latency/OVERHEAD_CHECK.md) asks
+when new sequential overhead erases the Fourier time saving. It is an
+unadopted text exercise with exact tested arithmetic, not extra movie content
+or a prerequisite to feedback. The original no-overhead 90 ms result stays intact.
+
 One [complete 80-second caption-layout review](fft-latency/CAPTION_REVIEW_RENDER.md)
 now integrates the tested larger captions and balanced ending into an encoded
 copy for normal-speed review. Full decode/timestamps and sampled visuals pass;
