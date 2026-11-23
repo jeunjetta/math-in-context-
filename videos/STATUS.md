@@ -1,5 +1,50 @@
 # Video status log
 
+## 23 November 2026 · reconcile the PR opening with the one-copy handoff
+
+Source: fresh PR #4 head cff39958e2e1a1e52bd9d24dbd732bc3c60b94e1;
+isolated codex/video-* worktree. Fetched live main/#1/#4; read main
+README (still template without AGENTS/ROADMAP), #1 instructions/roadmap/
+source registry/full FFT notebook at 7905dc2b, full video README/latest
+log, actual source-only manifest and worksheet. Open #1–4 remain unmerged;
+#4 combined feedback empty. No research-checkpoint or deployment assumption.
+
+Observed handoff inconsistency: README identifies one complete source-only
+80s review, but PR #4 still had its teaser title and opened at a 15 November
+caption-fit study. Bounded docs/metadata correction: new PR_HANDOFF.md is
+the exact current opening, with immutable links, movie filename/size/hash,
+one normal-speed intended-device request and unchanged scope/gates. PR title
+now reads “FFT pilot: full source-only review and production studies”.
+The complete previous body is retained VERBATIM in a labelled historical
+details section, not deleted or promoted to evidence for a different copy.
+Base/head branches, open/draft/unmerged state remain unchanged; no reviewer
+requests, account permissions or publication action. Current summary is
+review priority, not adoption of the source-only release route.
+
+Files: fft-latency/PR_HANDOFF.md and this log only, plus PR title/body.
+Six immutable source targets resolve in the inspected commit; filename,
+SHA256, 732,406-byte size and 80s/1280x720/24fps/silent identity match the
+archived manifest. Twenty-five focused package/source-assembly/exact-copy/
+descriptive-text tests pass in 0.269s. Prior evidence is explicitly dated;
+no new encode/decode, frame inspection, full/device playback or audio-sync
+claim. No full-suite rerun or new helper/test/dependency/renderer/licence
+choice. Existing tools, generated-copy checks and whitespace validation
+remain separate from human review. No Marimo export needed for docs only.
+
+Movie, source/canonical captions/lesson/manifests/package, old helpers,
+notebooks and research conclusions untouched. No new visual assets, voice,
+paid service, private data, hosting/sharing grant or automation. Historical
+PR text is preserved in place, not copied into the public code repository.
+
+Next: obtain one complete intended-device pass of the named copy and one
+specific observed issue or release-design recommendation; only then
+reconcile candidate/captions/package. Exact open gates remain human math/
+editorial/rights, accessible text/playback review, audio choice/retiming,
+source-only adoption, parent reconciliation, authorized review route and
+exact-version publication approval. No technical render blocker; human/
+device decisions unavailable. No YouTube/Substack/social posting, merge,
+deployment or account change. Continue existing branch/PR #4, no new stack.
+
 ## 23 November 2026 · optional after-video overhead prediction
 
 Source: fresh PR #4 head e880ac860d5240f513e40648355507640a909885;
