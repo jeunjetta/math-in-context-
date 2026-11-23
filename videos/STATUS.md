@@ -37,6 +37,8 @@ legal notes checked today; basic UTF-8 SRT support is not proof of platform
 import or authorization to upload. No account/session/platform action.
 Existing external-build/font/codec terms retained, no new dependency/lock,
 bundled binary/asset, paid service, voice or blanket commercial clearance.
+The converter's final blank cue separator is retained byte-for-byte: the
+SRT-only blank-at-EOF warning is excepted; other whitespace checks pass.
 
 No new movie encode/decode, keyframe/clip/typography inspection, complete
 human/device playback or audio-sync evidence. A plain sidecar cannot remove
