@@ -40,8 +40,11 @@ cmp fft-latency/source-only-review/fft-source-only-review.srt out/fft-source-onl
 python3 -m unittest test_source_srt -v
 ```
 
-Actual conversion used system FFmpeg 7.1.5-0+deb13u1. Three focused tests pass:
-all texts/times equal the hash-verified VTT; cue numbers/contiguous 0–80s
+Actual conversion used system FFmpeg 7.1.5-0+deb13u1.
+The converter's final blank cue separator is retained verbatim; Git's
+blank-at-EOF warning is intentionally excepted for this SRT only.
+Three focused tests pass: all texts/times equal the hash-verified VTT;
+cue numbers/contiguous 0–80s
 coverage and all 24fps frame boundaries agree; independently reading SRT with
 FFmpeg and writing WebVTT back preserves every text and timestamp. The final
 two cues remain 70–75s and 75–80s; the exclusive end is frame 1,920. Unicode
