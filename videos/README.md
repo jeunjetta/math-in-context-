@@ -46,6 +46,9 @@ colors, not small-text readability. Neither check completes human review.
 An optional [snapshot-based QA command](fft-latency/STABLE_QA.md) prevents
 ordinary concurrent movie edits from misidentifying a newly generated review
 pack; the archived renderer and existing manifests remain unchanged.
+An equivalent [plain UTF-8 SRT reading track](fft-latency/SRT_SIDECAR.md)
+is available for compatible editors/players. It preserves the 19 WebVTT
+cues; it is not speech or a readability fix for the burned-in text.
 
 ## Retained studies and supporting drafts
 
