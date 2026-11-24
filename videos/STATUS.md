@@ -1,5 +1,58 @@
 # Video status log
 
+## 24 November 2026 · full integration check after recent additions
+
+Source: fresh PR #4 head 12c49f00b524e7bbb53323bcdf94ff1f58e3a797;
+isolated codex/video-* worktree. Fetched live main/#1/#4; read current
+main README, #1 AGENTS/ROADMAP/source registry/full FFT notebook at
+7905dc2b, complete video README/latest log and open #1–4. Main remains
+template c9fdf987 with no root AGENTS/ROADMAP; those files are also absent
+on the video branch. #1–4 remain open/unmerged; #4 draft and feedback empty.
+Continue existing video branch/PR #4 without a new external stack.
+
+Bounded verification increment: recent overhead/SRT additions had focused
+checks but no combined full-suite result. Created a fresh local .venv using
+uv sync --locked, retaining Pillow 12.3.0 and the unchanged uv.lock. Python
+3.12.14, uv 0.13.9; renderer import resolves to THIS worktree and Pillow to
+its environment. The hardlink warning falls back to a successful copy
+install. Same host/system interpreter/tools/fonts and possible caches are
+shared; this is not a clean-host, cold-cache or cross-platform validation.
+
+Actual full command: uv run --locked python -m unittest discover -p 'test_*.py'
+from videos/. All 179 tests pass in 91.896s, with no skips reported. This
+includes the new overhead cases, source-only SRT equivalence/real FFmpeg
+round-trip, snapshot guards, existing renderer/source-frame checks and
+encoded fixture tests. Generated overhead/transcript/contrast/review HTML/
+caption-pacing/narration checks and separate Node DOM-shim logic pass.
+Fifty-one distinct local link targets exist across README and four current
+review/sidecar/exercise documents; this does not validate external access,
+anchors, actual device rendering or the links' substantive content.
+
+Separately ran the existing exact-copy verifier on the SAME supplied
+source-only movie: SHA256 790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e,
+732,406 bytes, 80s/1,920 frames/24fps/1280x720/H.264/no audio. All twelve
+archived source hashes, original VTT/resolved lesson, all timestamps and
+complete decode pass with system FFmpeg/FFprobe 7.1.5. No replacement file,
+new full render, visual/keyframe inspection, full human/device playback,
+OCR or speech-sync evidence. Existing dated evidence is not overwritten.
+
+Files: this log ONLY. Source/tests/renderers, movies/captions/VTT/SRT,
+manifests/package, notebook/research conclusions and dependencies/lock are
+unchanged. No Marimo check/export rerun for this video-only validation.
+Official uv locking/sync docs and Pillow licence page rechecked today;
+pins retained, no new tool choice or blanket commercial/security clearance.
+Existing external encoder/font/build terms remain; no bundled assets/voice,
+paid service, hosting or Open Notebook deployment assumed.
+
+Next: complete one intended-device pass of the exact source-only focus,
+record an observed issue or release-design recommendation and only then
+reconcile candidate/captions/package. Technical tests are not a finished
+reviewed video. Open gates remain human math/editorial/rights, accessible
+text/playback, audio choice/retiming, source-only adoption, parent
+reconciliation, authorized review route and exact-version publication
+approval. No technical render blocker, publishing, merge, PR metadata,
+account/sharing change, private/operator data or additional automation.
+
 ## 24 November 2026 · equivalent basic SubRip reading track
 
 Source: fresh PR #4 head c60940d5c6b5e1ae56100057f6604216ae23024f;
