@@ -43,6 +43,9 @@ For technical reproduction of this exact copy, use the
 [fresh-environment rebuild commands](fft-latency/CLEAN_REBUILD.md).
 The [contrast audit](fft-latency/CONTRAST_AUDIT.md) checks intended source
 colors, not small-text readability. Neither check completes human review.
+The [four encoded caption samples](fft-latency/ENCODED_CAPTION_AUDIT.md)
+extend that narrow check to decoded solid glyph interiors in 49–61 s;
+thin strokes, antialias edges and intended-device readability remain unassessed.
 An optional [snapshot-based QA command](fft-latency/STABLE_QA.md) prevents
 ordinary concurrent movie edits from misidentifying a newly generated review
 pack; the archived renderer and existing manifests remain unchanged.

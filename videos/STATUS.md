@@ -1,5 +1,63 @@
 # Video status log
 
+## 25 November 2026 · encoded solid-caption-core check, no new cut
+
+Source: live GitHub PR #4 head 053c1cacd2a9a0de25626ce41d7543fef59c35ef,
+exact commit/tree materialized in an isolated codex/video-* worktree.
+Read current main README/inventory; #1 README/AGENTS/ROADMAP/source registry/
+full FFT notebook at 7905dc2b; video README/latest status, source assembly,
+caption adapter and intended-color audit. Main/video branch have no root
+AGENTS/ROADMAP; #1–4 remain open/unmerged, #4 draft with no comments/reviews.
+Continue existing codex/video-teaser-pacing/PR #4; no new external PR stack.
+
+One bounded gap from the source-color audit: measure four actual encoded
+caption midpoints in the dense 49–61s distinctions, not another layout/copy
+variant. New encoded_caption_audit.py validates the exact 732,406-byte movie
+SHA256 790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e
+and twelve archived source hashes. It decodes the SAME in-memory snapshot
+at frames 1212/1284/1356/1428. Source-defined exact color masks eroded 3x3
+select only solid caption cores; decoded RGB luminance extrema yield ratios
+15.883/14.978/14.898/15.828:1. Only 108–121 foreground pixels survive per
+sample; this cannot characterize thin strokes, edges or complete captions.
+No color change is justified by the result alone. See ENCODED_CAPTION_AUDIT.md
+and encoded-caption-report.json for method, counts, hashes and limitations.
+
+Inspected four-row decoded 640-wide sheet and full-size stability frame;
+no caption clipping/wrong active category observed in those samples. Footer
+remains small and concurrent text load remains a device-review concern.
+No equation occurs in this section; no fresh equation-scene review, motion/
+full playback, color-managed device/streaming, OCR, speech sync or accessibility
+approval claimed. This is sampled diagnostic evidence, not a finished video.
+
+Validation: 11 focused tests pass in 0.041s, including four new core-mask,
+decoded-versus-source measurement, missing-core/geometry and wrong-file
+before-decode guards. Actual four-frame decoder run succeeds. Initial
+unescaped filter commas caused extraction failure; fixed before accepting
+the report. Retained Pillow getdata deprecation warning is non-fatal.
+Full suite: 183 tests pass in 135.856s, no skips reported. Re-extraction in
+a separate new directory reproduces report.json byte-for-byte. Existing
+source-color generated check and whitespace check pass. No full movie
+rerender/decode/timestamp revalidation is claimed for this four-frame audit.
+
+Files: encoded_caption_audit.py, test_encoded_caption_audit.py,
+fft-latency/ENCODED_CAPTION_AUDIT.md, encoded-caption-report.json, README
+and this log. Four full PNGs/contact sheet are generated local ignored QA,
+not committed media. No archived evidence, movie, caption/VTT/SRT, canonical
+identity/package, notebook/research conclusions or dependencies/lock changed.
+uv sync --locked creates a local environment with retained Pillow 12.3.0.
+Current official Pillow drawing/licence and FFmpeg select/legal docs checked;
+existing external system encoder/DejaVu terms remain, no blanket commercial
+clearance, bundled fonts/binaries, voice, paid service or hosting assumption.
+
+Next: intended-device normal-speed review of the exact source-only focus,
+then one observed issue or release-design recommendation. Do not generate
+another movie solely from this diagnostic. Exact open gates remain human
+math/editorial/rights, accessible full playback/text-equivalence, audio choice/
+retiming, source-only adoption, parent reconciliation, authorized review route
+and exact-version publication approval. No technical render blocker, YouTube/
+Substack/social publication, merge, PR metadata/account/sharing change,
+private/operator data, Open Notebook deployment or additional automation.
+
 ## 24 November 2026 · full integration check after recent additions
 
 Source: fresh PR #4 head 12c49f00b524e7bbb53323bcdf94ff1f58e3a797;
