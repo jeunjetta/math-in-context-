@@ -1,5 +1,40 @@
 # Video status log
 
+## 26 November 2026 · separate retained studies from the review entry
+
+Source: live PR #4 head 1288d7b7e542b4602c14076ad6d67c59ed7a5647;
+isolated codex/video-* worktree with identical base tree. Read main README/
+inventory, #1 README/AGENTS/ROADMAP/source registry/full FFT notebook, video
+README/latest status and current handoffs. #1–4 remain open/unmerged; #4
+draft with no comments/reviews. Root instructions/roadmap still live only
+in #1. Continue codex/video-teaser-pacing/PR #4, no new external PR stack.
+
+Bounded handoff improvement: move the 133-line retained-studies section
+verbatim to videos/PRODUCTION_STUDIES.md. README drops 382->256 lines;
+its old section heading remains as a signpost, preserving the anchor.
+Review instructions before it and all reproduction/extension/math/source/
+QA/gate content after it are byte-identical. Archive header identifies the
+source baseline and historical/unadopted status, with a return-review link.
+No dated evidence is refreshed or study adopted by the move.
+
+Validation: five existing package tests pass in 0.021s; moved text exactly
+9,102 bytes, SHA256 ac4d3bf91b9d2d5a483c3629c7a08a64f2a5754f8481456894c8becfe40245f8.
+Exact prefix/suffix and heading preservation, 54 local link occurrences
+(including two Markdown anchors) and whitespace pass. Checks cover local
+navigation, not external access or Android/GitHub rendering. No full-suite,
+render/decode, keyframe/clipping/equation, playback or audio-sync rerun.
+
+Files: README, PRODUCTION_STUDIES and this log only. No production code,
+movie, caption, manifest/package, research/notebook or dependency/lock change;
+no new renderer/tool choice, licensing recertification, hosting or assumed
+Open Notebook deployment. No publishing, merge, account/sharing change,
+private/operator data, paid service, voice or additional automation.
+Next remains one intended-device pass and one observed issue/release-design
+recommendation. Human math/editorial/rights, accessible full playback,
+audio choice/retiming, source-only adoption, parent reconciliation, authorized
+review route and exact-version publication approval remain open. No technical
+render blocker; this navigation change does not complete the video milestone.
+
 ## 25 November 2026 · evening, encoded caption-cut timing
 
 Source: live PR #4 head 9d0280cfc7e914359b9bd7f0571bf61e4a390e8e;
