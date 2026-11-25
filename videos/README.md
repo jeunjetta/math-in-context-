@@ -46,6 +46,9 @@ colors, not small-text readability. Neither check completes human review.
 The [four encoded caption samples](fft-latency/ENCODED_CAPTION_AUDIT.md)
 extend that narrow check to decoded solid glyph interiors in 49–61 s;
 thin strokes, antialias edges and intended-device readability remain unassessed.
+A [caption-cut timing check](fft-latency/CAPTION_CUT_AUDIT.md) compares decoded
+pixels on both sides of all 18 cue changes with outgoing/incoming source
+templates. It is not OCR, speech synchronization or full-playback approval.
 An optional [snapshot-based QA command](fft-latency/STABLE_QA.md) prevents
 ordinary concurrent movie edits from misidentifying a newly generated review
 pack; the archived renderer and existing manifests remain unchanged.

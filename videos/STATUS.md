@@ -1,5 +1,42 @@
 # Video status log
 
+## 25 November 2026 · evening, encoded caption-cut timing
+
+Source: live PR #4 head 9d0280cfc7e914359b9bd7f0571bf61e4a390e8e;
+isolated codex/video-* worktree with identical base tree. Read current main
+README/inventory, #1 README/AGENTS/ROADMAP/source registry/full FFT notebook,
+video README/latest status, source assembly and exact-copy handoff. Root
+AGENTS/ROADMAP remain absent outside unmerged #1; #1–4 remain open and #4
+draft with no comments/reviews. Continue existing video branch/PR #4.
+
+Bounded increment: actual encoded caption-region comparisons at every
+interior cue cut. All 36 samples at 18 cuts favor expected over adjacent
+source template, including 44.5s and both ending transitions. Minimum RGB
+MAE separation 162.60 levels/channel; not a perceptual/readability score.
+Foreground-union masks exclude background dominance. Exact in-memory movie
+snapshot and twelve source hashes checked; no new movie/caption changes.
+See CAPTION_CUT_AUDIT.md and caption-cut-report.json for commands/method.
+
+Files: caption_cut_audit.py, test_caption_cut_audit.py, the two named
+fft-latency artifacts, README and this log. Fifteen focused tests pass in
+0.031s, including four new boundary/early-late fixture/ambiguity/wrong-file
+checks. Actual three-batch FFmpeg extraction succeeds; a second extraction
+reproduces report.json byte-for-byte. Full suite: 187 pass in 95.314s, no
+skips reported. Source-color generated check, report/script/approval guards
+and whitespace pass. No new visual/equation/clipping/full-playback,
+all-held-frame, OCR, intended-device or speech-sync evidence is claimed.
+
+Official FFmpeg filter/legal and Pillow channel-operations/licence docs
+checked today. Existing Pillow 12.3.0/uv.lock, external FFmpeg/DejaVu retained;
+no bundled assets/binaries, dependency/research/notebook/old evidence change,
+paid service or assumed Open Notebook deployment. No publishing, merge,
+PR-metadata/account/sharing change, private/operator data or new automation.
+Next: complete intended-device playback, then one observed issue or release-
+design recommendation. Gates remain human math/editorial/rights, accessible
+playback, audio choice/retiming, source-only adoption, parent reconciliation,
+authorized review route and exact-version publication approval. No technical
+render blocker; sampled technical checks do not finish the reviewed video.
+
 ## 25 November 2026 · encoded solid-caption-core check, no new cut
 
 Source: live GitHub PR #4 head 053c1cacd2a9a0de25626ce41d7543fef59c35ef,
