@@ -1,5 +1,45 @@
 # Video status log
 
+## 27 November 2026 · distinguish transcript freshness from equivalence
+
+Source: live PR #4 head e615567cb06a3562500b00bc3f1ce18b55a035d8;
+isolated codex/video-* worktree with identical base tree. Read current main
+inventory, #1 README/AGENTS/ROADMAP/registry/full FFT notebook, video README/
+latest status, transcript JSON/generated text/helper and renderer. Main/video
+have no root AGENTS/ROADMAP; #1–4 open/unmerged, #4 draft without feedback.
+Continue codex/video-teaser-pacing/PR #4; no new external PR stack.
+
+Concrete evidence-label correction: the transcript CLI previously said eight
+descriptions and 19 cues 'match this draft'. Its checks pin source identity,
+scene coverage, supplied text and generated-file freshness, not visual meaning.
+Both generate/check success messages now explicitly state visual equivalence
+and accessibility remain unverified; --check help names its narrow scope.
+No visual mismatch or accessibility compliance failure is asserted by this
+wording fix. Movie is untouched; descriptive JSON and generated Markdown
+remain byte-identical. Archived evidence/results are not rewritten.
+
+Files: descriptive_transcript.py, test_descriptive_transcript.py and this log.
+Two new regressions cover generate/check wording with no real write, and an
+in-memory deliberately false visual-description fixture that passes schema
+validation. The fixture demonstrates the semantic limit; it is never saved
+as an educational description. All 13 focused transcript/package tests pass
+in 0.037s. Actual --check, --help and whitespace checks pass. No full-suite,
+render/decode, keyframe/clipping/equation/device/full-playback or speech-sync
+rerun; the film is still silent. Prior full-suite results remain historical.
+
+Current official W3C WAI transcript and video-only-alternative guidance
+rechecked: https://www.w3.org/WAI/media/av/transcripts/ and
+https://www.w3.org/WAI/WCAG22/Understanding/audio-only-and-video-only-prerecorded.html.
+No conformance determination, new renderer/tool choice, dependency/lock,
+font/encoder, notebook/research, package or publication-identity change.
+No paid service, voice, private/operator data, deployment/Open Notebook
+assumption, publishing, merge, sharing/account action or new automation.
+Next remains a human text-equivalence/intended-device pass and one observed
+issue/release-design recommendation. Exact gates remain human math/editorial/
+rights, accessible playback, audio choice/retiming, source-only adoption,
+parent reconciliation, authorized review route and exact-version publication
+approval. No technical render blocker; structural checks do not clear gates.
+
 ## 26 November 2026 · evening, reproduce the named review focus first
 
 Source: live PR #4 head 626ab33e4a00b1008c7c6f9b72c4c322a4253ccd;

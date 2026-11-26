@@ -1,4 +1,6 @@
 import copy
+import io
+from contextlib import redirect_stdout
 from pathlib import Path
 import unittest
 from unittest.mock import patch
@@ -66,6 +68,30 @@ class DescriptiveTranscriptTests(unittest.TestCase):
              patch.object(Path,'write_text') as write:
             with self.assertRaises(SystemExit):d.main()
             write.assert_not_called()
+
+    def test_cli_success_labels_only_what_it_checks(self):
+        for checking in (False,True):
+            argv=['descriptive_transcript.py']+(['--check'] if checking else [])
+            stream=io.StringIO()
+            with patch('sys.argv',argv),patch.object(Path,'write_text') as write,redirect_stdout(stream):
+                d.main()
+            message=stream.getvalue()
+            self.assertIn('freshness checked' if checking else 'generated',message)
+            self.assertIn('structure and pinned-source identity checked',message)
+            self.assertIn('Visual equivalence and accessibility remain unverified',message)
+            self.assertNotIn('match this draft',message)
+            self.assertEqual(write.call_count,0 if checking else 1)
+
+    def test_structure_validation_is_not_semantic_equivalence(self):
+        # Deliberately false wording in an in-memory fixture ONLY. No file write.
+        original=d.OUTPUT.read_bytes()
+        spec=copy.deepcopy(self.spec)
+        spec['scenes'][1]['visual_description']='Negative-control fixture: a purple 700 ms bar.'
+        d.validate(spec,self.lesson,self.report)  # schema cannot detect this semantic error
+        rendered=d.document(spec,self.lesson,self.report,self.ending)
+        self.assertIn('purple 700 ms bar',rendered)
+        self.assertFalse(spec['publication_approved'])
+        self.assertEqual(d.OUTPUT.read_bytes(),original)
 
 
 if __name__=='__main__':

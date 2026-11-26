@@ -97,7 +97,8 @@ def document(spec,lesson,report,ending):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--check',action='store_true')
+    parser.add_argument('--check',action='store_true',
+                        help='Check generated-file freshness, not visual equivalence or accessibility')
     args=parser.parse_args()
     expected=document(*load())
     if args.check:
@@ -105,7 +106,9 @@ def main():
             raise SystemExit('Stale descriptive text alternative')
     else:
         OUTPUT.write_text(expected)
-    print('Eight visual descriptions and 19 on-screen cues match this draft; no approval implied.')
+    action='freshness checked' if args.check else 'generated'
+    print('Descriptive text alternative '+action+'; structure and pinned-source identity checked. '
+          'Visual equivalence and accessibility remain unverified.')
 
 
 if __name__=='__main__':
