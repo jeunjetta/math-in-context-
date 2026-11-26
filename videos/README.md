@@ -73,10 +73,31 @@ or release approval; no new version of the movie is distributed.
 From `videos/`, with Python 3.11–3.13, uv, FFmpeg (libx264 enabled) and
 DejaVu Sans installed:
 
-The default `render.py` commands below render the **frozen v7 reference**;
-`--scenario` is a separate synthetic reuse fixture. Neither is the source-only
-review focus. For that copy, follow `CLEAN_REBUILD.md` above and its
-`source_only_review.py` command. Choose the command for the intended identity.
+### Current review focus: full source-only copy
+
+These commands build the copy named in the review instructions above, not
+frozen v7. Choose a NEW output directory; the renderer refuses an existing
+one. The test command runs the full video workshop suite, including retained
+studies. It does not complete human review or authorize publication.
+
+```sh
+uv sync --locked
+uv run --locked python -m unittest discover -p 'test_*.py'
+uv run --locked python source_only_review.py --out out/review-copy-new
+uv run --locked python verify_source_review.py out/review-copy-new/fft-source-only-review.mp4 --captions out/review-copy-new/fft-source-only-review.vtt
+```
+
+The verifier requires the existing exact movie/caption/source identity before
+checking all timestamps and fully decoding. A different host/toolchain may
+produce different bytes: investigate a mismatch, do not overwrite archived
+evidence or silently adopt the new output. The
+[fresh-environment receipt](fft-latency/CLEAN_REBUILD.md) records the earlier
+same-host result and its limits. Rebuilding does not distribute a new copy.
+
+### Frozen v7 and alternate fixture: reference commands only
+
+The default `render.py` commands below are NOT the source-only review focus.
+`--scenario` is a separate synthetic reuse fixture, not another public episode.
 
 ```sh
 uv sync --locked

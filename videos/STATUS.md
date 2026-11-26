@@ -1,5 +1,53 @@
 # Video status log
 
+## 26 November 2026 · evening, reproduce the named review focus first
+
+Source: live PR #4 head 626ab33e4a00b1008c7c6f9b72c4c322a4253ccd;
+isolated codex/video-* worktree with identical base tree. Read live main/
+#1–4, main and #1 README, #1 AGENTS/ROADMAP/registry/full FFT notebook,
+video README/latest log, rebuild and verifier. Main/video still lack root
+AGENTS/ROADMAP; #1–4 open/unmerged, #4 draft with no comments/reviews.
+Continue existing codex/video-teaser-pacing/PR #4, no new external stack.
+
+Bounded handoff correction: README's first reproduction command block now
+builds/verifies the SAME source-only review focus and runs the full workshop
+suite. Frozen v7/alternate commands remain, explicitly reference-only.
+Previously the main block rendered v7 while focus reproduction required a
+separate link; it was labelled, not known to have caused a wrong review.
+This is command-path clarity, not source-only adoption or a new video cut.
+
+Executed the documented uv sync --locked and source_only_review.py command
+in a new local environment/output directory. Pillow 12.3.0 and THIS worktree's
+renderer import paths verified. Same system interpreter/FFmpeg/fonts and
+possible cache remain shared: not clean-host/cross-platform validation.
+Actual fresh MP4 is byte-identical to the earlier exact copy: 732,406 bytes,
+SHA256 790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e.
+Render manifest, resolved lesson and VTT also compare byte-for-byte with
+archived originals. Their original source baseline remains unchanged.
+
+The documented verifier passes twelve render-source hashes, caption/movie
+identity, all 1,920 timestamps and complete decode: 80s, 24fps, 1280x720,
+H.264, no audio. Fresh render QA exports 39 samples; inspected native frames
+840/1068/1919 (35/44.5/79.9583s): quotient/ceiling equations and final
+source-only disclosure agree, with no clipping observed there. Not full
+human/device playback, unseen-frame readability or speech-sync approval.
+Full suite: 187 tests pass in 94.363s, no skips reported. Twenty local README link
+occurrences resolve, command ordering and whitespace checks pass.
+
+Files: README and this log ONLY. No renderer/test/model/scene/caption,
+archived evidence, package/manifest, dependency/lock, notebook or research
+change. Rebuilt binaries/QA remain local ignored output, not a replacement
+or separately distributed review copy. Current official Pillow licence,
+FFmpeg command/legal docs checked; existing external-build/font/codec terms
+remain, no new tool choice, bundled assets or blanket commercial clearance.
+No paid service, voice, hosting/Open Notebook deployment, publishing, merge,
+PR metadata/account/sharing change, private/operator data or new automation.
+Next: intended-device playback and one observed issue/release-design
+recommendation. Gates remain human math/editorial/rights, accessible playback,
+audio choice/retiming, source-only adoption, parent reconciliation, authorized
+review route and exact-version publication approval. No technical render
+blocker; successful reproduction is not a finished reviewed video.
+
 ## 26 November 2026 · separate retained studies from the review entry
 
 Source: live PR #4 head 1288d7b7e542b4602c14076ad6d67c59ed7a5647;
