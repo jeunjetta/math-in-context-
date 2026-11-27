@@ -41,6 +41,9 @@ approval remain open. Source-only adoption does not deploy a live lesson.
 
 For technical reproduction of this exact copy, use the
 [fresh-environment rebuild commands](fft-latency/CLEAN_REBUILD.md).
+The [sampled text/frame comparison](fft-latency/TRANSCRIPT_VISUAL_CHECK.md)
+records an assistant check of 16 decoded frames across all eight scenes;
+it does not complete human text-equivalence or accessibility review.
 The [contrast audit](fft-latency/CONTRAST_AUDIT.md) checks intended source
 colors, not small-text readability. Neither check completes human review.
 The [four encoded caption samples](fft-latency/ENCODED_CAPTION_AUDIT.md)

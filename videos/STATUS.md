@@ -1,5 +1,49 @@
 # Video status log
 
+## 27 November 2026 · evening, sampled descriptive-text visual comparison
+
+Source: live PR #4 head d3206c2b0ac6ae97035704645b47c77917626e15.
+Fetched live branch into an isolated codex/video-* worktree; exact base commit
+and tree match. Read main and #1 README, #1 AGENTS/ROADMAP/source and concept
+registries/full FFT notebook, current video README/log/text/helper and open
+#1–4. Main/video have no root AGENTS/ROADMAP; #1–4 open/unmerged, #4 draft
+without feedback. Continue codex/video-teaser-pacing/PR #4, no new PR stack.
+
+Bounded increment: TRANSCRIPT_VISUAL_CHECK.md records an assistant comparison
+of the existing descriptive text with 16 freshly decoded native 1280x720
+frames across all eight scenes. Sampled moving/settled bars, quotient/ceiling,
+all four focus panels, engineering warning and both ending caption states.
+No substantive contradiction or clipping found in those samples; keep text
+unchanged. This is not independent human equivalence review, unseen-frame
+or continuous-motion verification, normal-speed comprehension, intended-device
+legibility, assistive-tech testing or accessibility approval.
+
+Existing exact-copy verifier rerun passed twelve source hashes, movie/VTT
+identity, all 1,920 timestamps and complete decode: SAME 732,406-byte movie,
+SHA256 790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e,
+80s/24fps/H.264/no audio. Extraction succeeded with FFmpeg 7.1.5.
+All 16 resulting PNGs actually viewed; local ignored QA only, not a new movie
+or new distributed review copy. Report names frames/times/method/limits.
+
+Files: new comparison report, README link, this log only. Locked environment
+retains Pillow 12.3.0; 13 existing focused transcript/package tests pass in
+0.054s. Transcript --check, linked-file checks and whitespace pass.
+No full-suite rerun; previous full-suite results remain historical.
+Movie, transcript JSON/Markdown, captions, renderer, archived evidence,
+dependencies/lock, package, notebooks and research remain unchanged.
+
+Official W3C transcript and FFmpeg select/legal docs checked, linked in report.
+No new renderer/tool choice, bundled fonts/binaries, blanket commercial
+clearance, paid service, voice, private/operator data, hosting/Open Notebook
+deployment assumption, publishing, merge, PR metadata/account/sharing action
+or additional automation. No technical render blocker.
+Next: full intended-device playback and human text-equivalence feedback,
+then one observed issue/release-design recommendation. Gates remain human
+math/editorial/rights, accessible playback, audio choice/retiming, source-only
+adoption, parent reconciliation, authorized review route and exact-version
+publication approval. Silent-file speech sync is inapplicable, not passed.
+
+
 ## 27 November 2026 · distinguish transcript freshness from equivalence
 
 Source: live PR #4 head e615567cb06a3562500b00bc3f1ce18b55a035d8;
