@@ -37,6 +37,24 @@ class OverheadCheckTests(unittest.TestCase):
             with self.subTest(h=h),self.assertRaises(ValueError):
                 o.evaluate(self.lesson,h)
 
+    def test_feedback_uses_actual_speedup_not_always_halving(self):
+        for baseline,fourier,gain,new_fourier,total,saving in (
+                (200,100,4,25,133,75), (100,20,2.5,8,96,12)):
+            with self.subTest(gain=gain):
+                model = dict(baseline_ms=baseline, fourier_ms=fourier,
+                             kernel_speedup=gain)
+                spec = copy.deepcopy(self.spec)
+                spec['overheads_ms'] = [0,8,saving,saving+2]
+                spec['prediction_choices_ms'] = [total-8,total,baseline+8]
+                before = copy.deepcopy((spec,model))
+                text = o.document(spec,model)
+                self.assertIn(f'forgets to divide Fourier time by {gain:g}.',text)
+                self.assertIn(f'**{total} ms**: {new_fourier} + '
+                              f'{baseline-fourier} + 8 = {total} ms.',text)
+                self.assertIn(f'Exactly **{saving} ms of new overhead**',text)
+                self.assertNotIn('forgets to halve',text)
+                self.assertEqual((spec,model),before)
+
     def test_scope_and_misleading_precision_rejected(self):
         actual = Path.read_text
         for key,value in (('publication_approved',True),('movie_sha256','wrong'),
@@ -54,6 +72,7 @@ class OverheadCheckTests(unittest.TestCase):
         text = o.document(self.spec,self.lesson)
         self.assertEqual(o.OUTPUT.read_text(),text)
         for phrase in ('98 ms','exactly','100 / 98 ≈ 1.02×','100 / 100 = 1.00×',
+                       'forgets to divide Fourier time by 2.',
                        '100 / 102 ≈ 0.98×','h < F(1 - 1/s)',
                        'not benchmark evidence','accuracy is assumed','not a deployed lesson'):
             self.assertIn(phrase,text)

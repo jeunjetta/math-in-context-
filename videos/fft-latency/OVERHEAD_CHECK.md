@@ -18,7 +18,7 @@ Change only the no-added-overhead assumption. Work is still sequential; other wo
 
 **98 ms**: 10 + 80 + 8 = 98 ms.
 
-Choosing 90 ms omits the new overhead. Choosing 108 ms adds overhead but forgets to halve the Fourier step.
+Choosing 90 ms omits the new overhead. Choosing 108 ms adds overhead but forgets to divide Fourier time by 2.
 
 The Fourier change saves 10 ms before overhead. Exactly **10 ms of new overhead** consumes that saving. Less gives a net time reduction; more makes this toy workload slower.
 

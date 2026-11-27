@@ -75,7 +75,8 @@ def document(spec, lesson):
         f"**{compact(probe['total'])} ms**: {compact(m['new_fourier'])} + "
         f"{compact(m['other'])} + {compact(probe['overhead'])} = {compact(probe['total'])} ms.", '',
         f"Choosing {compact(m['new_total'])} ms omits the new overhead. "
-        f"Choosing {compact(m['baseline']+probe['overhead'])} ms adds overhead but forgets to halve the Fourier step.", '',
+        f"Choosing {compact(m['baseline']+probe['overhead'])} ms adds overhead but forgets to "
+        f"divide Fourier time by {compact(m['kernel_gain'])}.", '',
         f"The Fourier change saves {compact(m['saved'])} ms before overhead. "
         f"Exactly **{compact(m['saved'])} ms of new overhead** consumes that saving. "
         'Less gives a net time reduction; more makes this toy workload slower.', '',

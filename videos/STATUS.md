@@ -1,5 +1,50 @@
 # Video status log
 
+## 28 November 2026 · model-derived overhead-exercise feedback
+
+Source: live PR #4 head f4ca74835d9fb9d6ac908afc8af0849d49570510;
+fetched exact commit into isolated codex/video-* worktree. Read live main
+README, #1 README/AGENTS/ROADMAP/source registry/full FFT notebook and
+video README/latest status/current worksheet/overhead data/helper/tests.
+Main/video lack root AGENTS/ROADMAP; #1–4 remain open/unmerged, #4 draft
+with no feedback. Continue codex/video-teaser-pacing/PR #4, no new PR stack.
+
+Observed reuse bug: optional overhead exercise arithmetic already supports
+other kernel gains, but its generated distractor feedback always said
+"forgets to halve the Fourier step". That is false for a 4x or 2.5x model.
+One sentence now derives "divide Fourier time by s" from the actual
+kernel_gain. Default lesson still gives 98 ms with 8 ms overhead, and
+10 ms break-even; regenerated text changes only that feedback sentence.
+No new lesson, film variant or exercise adoption.
+
+Added one parametrized regression for 4x and 2.5x in-memory fixtures,
+including exact answer, saving, feedback and no-mutation assertions.
+Both subcases failed on old wording before the fix; all eleven focused
+overhead/package tests pass afterward in 0.037s. Default 2x wording,
+generated-file --check and whitespace pass. Fixtures are not saved as
+learner content. No full-suite, Marimo check/export, render/decode,
+frame/clipping/equation, normal-speed/device or speech-sync rerun.
+Previous visual evidence remains historical; current movie stays silent.
+
+Files: overhead_check.py, test_overhead_check.py,
+fft-latency/OVERHEAD_CHECK.md and this log only. No changes to exercise
+JSON, exact arithmetic model, renderer, movie/captions, descriptive text,
+archived evidence, package, dependencies/lock, notebook or research.
+Current official Python Fraction docs and FFTW accuracy context checked:
+https://docs.python.org/3/library/fractions.html and
+https://fftw.org/accuracy/comments.html. These support arithmetic tooling
+and scope separation, not synthetic timing evidence. No new tool choice,
+license clearance, paid service, voice, private/operator data, deployment/
+Open Notebook assumption, publishing, merge, account/sharing change or
+additional automation.
+
+Next: intended-device complete playback/human text-equivalence feedback,
+then one observed issue or release-design recommendation. Optional exercise
+adoption remains separate. Exact open gates remain human math/editorial/
+rights, accessible playback, audio choice/retiming, source-only adoption,
+parent reconciliation, authorized review route and exact-version publication
+approval. No technical render blocker; code tests do not clear review gates.
+
 ## 27 November 2026 · evening, sampled descriptive-text visual comparison
 
 Source: live PR #4 head d3206c2b0ac6ae97035704645b47c77917626e15.
