@@ -1,0 +1,32 @@
+{
+  "status": "unrecorded optional human-narration rehearsal draft",
+  "publication_approved": false,
+  "audio_recorded": false,
+  "source_commit": "fa1d45046df8a462f3b92c9b4f36b8ea5e2fca4a",
+  "source_video_sha256": "1d3050b3094f1a090954cb9c2e6ed10e90d438169e86bd2cfbc2a7f13ed74036",
+  "source_lesson_sha256": "8d6cb7de816988a1577a4ae8d2ac942ce01567331110dc075c05dfba97ffc3dc",
+  "duration": 80,
+  "mechanical_wpm_budget": 160,
+  "ending": "destination-neutral rehearsal only; existing visual CTA remains blocked",
+  "cues": [
+    {"start":0,"end":4,"speech":"Suppose Fourier computation runs twice as fast.","pause_seconds":0},
+    {"start":4,"end":8,"speech":"Does the whole job? Make your prediction.","pause_seconds":1},
+    {"start":8,"end":13,"speech":"Imagine sequential work taking one hundred milliseconds.","pause_seconds":0},
+    {"start":13,"end":18,"speech":"Twenty milliseconds for Fourier computation; eighty for everything else.","pause_seconds":0},
+    {"start":18,"end":22,"speech":"Halve Fourier time: twenty milliseconds becomes ten.","pause_seconds":0},
+    {"start":22,"end":26,"speech":"Assume the same accuracy, with no added overhead.","pause_seconds":0},
+    {"start":26,"end":30,"speech":"Keep other work fixed: ten plus eighty makes ninety.","pause_seconds":0},
+    {"start":30,"end":35,"speech":"Overall speedup divides old elapsed time by new elapsed time.","pause_seconds":0},
+    {"start":35,"end":40,"speech":"One hundred over ninety: about one point one one, not two.","pause_seconds":0},
+    {"start":40,"end":44.5,"speech":"Even instantaneous Fourier work leaves eighty milliseconds elsewhere.","pause_seconds":0},
+    {"start":44.5,"end":49,"speech":"The model's limiting speedup is one point two five.","pause_seconds":0},
+    {"start":49,"end":52,"speech":"Complexity: how operation counts grow.","pause_seconds":0},
+    {"start":52,"end":55,"speech":"Stability: how computation errors behave.","pause_seconds":0},
+    {"start":55,"end":58,"speech":"Latency: elapsed time for the whole job.","pause_seconds":0},
+    {"start":58,"end":61,"speech":"Readiness: validated behavior within system deadlines.","pause_seconds":0},
+    {"start":61,"end":65.5,"speech":"This arithmetic is synthetic, not a new Fourier algorithm benchmark.","pause_seconds":0},
+    {"start":65.5,"end":70,"speech":"Faster computation alone does not establish real-time grid readiness.","pause_seconds":0},
+    {"start":70,"end":75,"speech":"Fourier methods connect algorithms to component costs and total latency.","pause_seconds":0},
+    {"start":75,"end":80,"speech":"Measure the whole job before promising a system speedup.","pause_seconds":1}
+  ]
+}

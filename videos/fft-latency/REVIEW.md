@@ -2,6 +2,21 @@
 
 **DRAFT FOR KARIN'S REVIEW · not approved for publication.**
 
+## Select the complete review file
+
+Full pilot: **fft-latency-draft.mp4 · 80 seconds · v7 silent candidate**.
+Unlike the 28/34-second teasers, this is the complete pilot. Request this
+exact copy from Karin through an authorized private review route if needed.
+Private review links are not included in this public repository. No sharing
+was changed; this handoff does not grant access or provide a public destination.
+On 15 November 2026 UTC, the current copy (version 5, 669,380 bytes) matched
+the SHA256 below; 80.000 s, 1,920 frames, 1280×720 at 24 fps, no audio,
+and complete decode verified. That is technical verification, not a fresh
+editorial playback or actual-device test. A filename alone does not establish
+identity: compare the downloaded copy's hash with the candidate before approval.
+The separate [dated file check](review-file.json) records this observation
+without changing the frozen candidate/credit snapshot.
+
 Updated 4 November 2026 for the **v7 focus-first candidate, 80-second silent draft**.
 Source baseline before this refinement:
 `ad0d35aced7ff2a5e33cc08f128896b0b7604e57`; the same draft PR contains v7.
@@ -18,8 +33,9 @@ neither records human approval.
 Moving-bar totals now use endpoint arrows instead of decorative decimals;
 90 ms holds from 21 s, 80 ms from 43 s, and 1.25× appears at 44.5 s.
 The canonical captions, timing and mathematical claims are unchanged.
-Read this page on GitHub without installing anything. Open the review video
-from the accompanying ChatGPT message; it is not a public YouTube upload.
+Read this page on GitHub without installing anything. No public YouTube upload
+is claimed. If you lack the exact full file, request an authorized review copy;
+do not treat a teaser as the full-pilot review.
 
 ## Three decisions, when convenient
 

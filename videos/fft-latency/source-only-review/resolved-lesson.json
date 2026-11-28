@@ -1,0 +1,138 @@
+{
+  "id": "fft-latency",
+  "title": "2\u00d7 faster Fourier work. But only 10 ms saved?",
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "duration": 80,
+  "baseline_ms": 100,
+  "fourier_ms": 20,
+  "kernel_speedup": 2,
+  "assumptions": [
+    "Sequential work",
+    "Same accuracy",
+    "No added overhead",
+    "Other work unchanged"
+  ],
+  "scenes": [
+    {
+      "id": "hook",
+      "start": 0,
+      "end": 8,
+      "heading": "A faster FFT. A faster system?",
+      "eyebrow": "01 / THE QUESTION",
+      "captions": [
+        "Suppose Fourier computation becomes 2\u00d7 as fast.",
+        "Does the whole system become 2\u00d7 as fast? Pause and predict."
+      ]
+    },
+    {
+      "id": "baseline",
+      "start": 8,
+      "end": 18,
+      "heading": "First, measure the whole journey.",
+      "eyebrow": "02 / A SYNTHETIC PIPELINE",
+      "captions": [
+        "Imagine sequential work taking 100 milliseconds.",
+        "Fourier work takes 20 ms. Everything else takes 80 ms."
+      ]
+    },
+    {
+      "id": "halve",
+      "start": 18,
+      "end": 30,
+      "heading": "Only the Fourier block shrinks.",
+      "eyebrow": "03 / CHANGE ONE THING",
+      "transition_seconds": 3,
+      "transition_label": "TRANSITION \u00b7 Fourier time \u00f7 2",
+      "transition_total": "\u2192 90 ms",
+      "result_label": "AFTER \u00b7 same time scale",
+      "captions": [
+        "Divide Fourier time by 2: 20 ms becomes 10 ms.",
+        "The other 80 milliseconds stays unchanged.",
+        "10 + 80 = 90 ms. We saved 10 milliseconds."
+      ]
+    },
+    {
+      "id": "formula",
+      "start": 30,
+      "end": 40,
+      "heading": "Kernel speed is not system speed.",
+      "eyebrow": "04 / AMDAHL-STYLE ACCOUNTING",
+      "captions": [
+        "Overall speedup is old time divided by new time.",
+        "100 divided by 90 is about 1.11\u00d7, not 2\u00d7."
+      ]
+    },
+    {
+      "id": "ceiling",
+      "start": 40,
+      "end": 49,
+      "heading": "Even an instant FFT has a ceiling.",
+      "eyebrow": "05 / THE UNCHANGED WORK",
+      "transition_seconds": 3,
+      "transition_label": "TRANSITION \u00b7 Fourier time \u2192 zero",
+      "transition_total": "\u2192 80 ms",
+      "limit_label": "IDEAL LIMIT \u00b7 Fourier time = 0",
+      "transition_note": "Only the Fourier block is changing.",
+      "limit_note": "80 ms of other work remains.",
+      "captions": [
+        "Even zero Fourier time leaves 80 milliseconds.",
+        "In this model, the speedup limit is about 1.25\u00d7."
+      ]
+    },
+    {
+      "id": "distinctions",
+      "start": 49,
+      "end": 61,
+      "heading": "Four questions. Four different tests.",
+      "eyebrow": "06 / DON'T COLLAPSE THE CLAIMS",
+      "captions": [
+        "Arithmetic complexity asks how operation counts grow.",
+        "Numerical stability asks how computation errors behave.",
+        "Latency measures elapsed time for the whole workload.",
+        "Readiness needs validation against system deadlines."
+      ],
+      "cards": [
+        {
+          "title": "Complexity",
+          "description": "Operation count as input grows"
+        },
+        {
+          "title": "Stability",
+          "description": "Roundoff and error growth"
+        },
+        {
+          "title": "Latency",
+          "description": "Elapsed end-to-end time"
+        },
+        {
+          "title": "Readiness",
+          "description": "Validated system + deadlines"
+        }
+      ]
+    },
+    {
+      "id": "readiness",
+      "start": 61,
+      "end": 70,
+      "heading": "Faster is useful. Readiness is more.",
+      "eyebrow": "07 / ENGINEERING CONTEXT",
+      "captions": [
+        "Check accuracy, data movement, and worst-case deadlines.",
+        "This toy arithmetic proves no new FFT or real-time grid capability."
+      ]
+    },
+    {
+      "id": "end",
+      "start": 70,
+      "end": 80,
+      "heading": "Measure the whole job.",
+      "eyebrow": "08 / MATH IN CONTEXT",
+      "captions": [
+        "Inspect the synthetic notebook source, linked in the description.",
+        "No live lesson or real-grid benchmark is claimed."
+      ]
+    }
+  ]
+}

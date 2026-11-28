@@ -1,0 +1,103 @@
+{
+  "source_commit": "68668c1dbd54fcd2996e3042e32481c3733fc8ef",
+  "movie_sha256": "790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e",
+  "render_report_sha256": "2456b23798529acc23853d5bdb5ac521b0ef5d3fdf08160bc51e7ee122a5e13a",
+  "spec_sha256": "8dafb33e1b8969841a86bce617f60fb16dd40c1d8931629d46a258ac88e3738f",
+  "audit_source_sha256": "eac678d833555a9e402005859882a194be7a30efb43ad8229160c090fb13a05b",
+  "minimum_ratio": 4.5,
+  "all_pairs_pass": true,
+  "pairs": [
+    {
+      "foreground": "FG",
+      "background": "BG",
+      "role": "Headings, formula and readiness text; source-only closing caption",
+      "foreground_hex": "#f4f7fc",
+      "background_hex": "#101c2c",
+      "ratio": 15.971032334419132,
+      "passes": true
+    },
+    {
+      "foreground": "MUTED",
+      "background": "BG",
+      "role": "Draft marker, assumptions, definitions and closing credits",
+      "foreground_hex": "#b5c4d7",
+      "background_hex": "#101c2c",
+      "ratio": 9.670846036741107,
+      "passes": true
+    },
+    {
+      "foreground": "CYAN",
+      "background": "BG",
+      "role": "Eyebrows, prediction, result equations, Fourier label and focus counter",
+      "foreground_hex": "#63e0d0",
+      "background_hex": "#101c2c",
+      "ratio": 10.701160274761241,
+      "passes": true
+    },
+    {
+      "foreground": "AMBER",
+      "background": "BG",
+      "role": "Other-work label and synthetic-evidence warning",
+      "foreground_hex": "#ffc273",
+      "background_hex": "#101c2c",
+      "ratio": 10.793173651979577,
+      "passes": true
+    },
+    {
+      "foreground": "FG",
+      "background": "PANEL",
+      "role": "Active category description and source-only notebook prompt",
+      "foreground_hex": "#f4f7fc",
+      "background_hex": "#203249",
+      "ratio": 12.117861736350818,
+      "passes": true
+    },
+    {
+      "foreground": "MUTED",
+      "background": "PANEL",
+      "role": "Inactive category titles",
+      "foreground_hex": "#b5c4d7",
+      "background_hex": "#203249",
+      "ratio": 7.337658123339291,
+      "passes": true
+    },
+    {
+      "foreground": "CYAN",
+      "background": "PANEL",
+      "role": "Active category titles and source-only source label",
+      "foreground_hex": "#63e0d0",
+      "background_hex": "#203249",
+      "ratio": 8.119398791061489,
+      "passes": true
+    },
+    {
+      "foreground": "AMBER",
+      "background": "PANEL",
+      "role": "Source-only not-a-live-app disclosure",
+      "foreground_hex": "#ffc273",
+      "background_hex": "#203249",
+      "ratio": 8.189213024711467,
+      "passes": true
+    },
+    {
+      "foreground": "FG",
+      "background": "CAPTION_BG",
+      "role": "Reading-track captions before 70 seconds",
+      "foreground_hex": "#f4f7fc",
+      "background_hex": "#0a111c",
+      "ratio": 17.620865075368062,
+      "passes": true
+    },
+    {
+      "foreground": "MUTED",
+      "background": "CAPTION_BG",
+      "role": "Persistent synthetic/no-telemetry footer before 70 seconds",
+      "foreground_hex": "#b5c4d7",
+      "background_hex": "#0a111c",
+      "ratio": 10.669859631479532,
+      "passes": true
+    }
+  ],
+  "publication_approved": false,
+  "limitations": "Manually inventoried opaque intended sRGB text/background roles only. Not automatic role discovery, encoded/color-managed pixel analysis, non-text contrast, full WCAG conformance, small-screen readability, pacing, device or editorial approval. Movie bytes not reopened by this source-only audit; identity is from pinned render report."
+}

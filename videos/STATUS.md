@@ -1,5 +1,1773 @@
 # Video status log
 
+## 28 November 2026 · evening, refuse false printed exercise equalities
+
+Source: live PR #4 head 268b08d50e32967ea866abc53ca51dfe108d22d8;
+fetched exact head into an isolated codex/video-* worktree. Read live main
+README, #1 README/AGENTS/ROADMAP/source registry/full FFT notebook,
+video README/latest log and current overhead generator/data/tests.
+Main/video lack root AGENTS/ROADMAP; #1–4 open/unmerged, #4 draft with
+no feedback. Continue codex/video-teaser-pacing/PR #4, no new PR stack.
+
+Observed precision gap in the OPTIONAL exercise: validating only overhead
+and total allows separately rounded Fourier/other operands to form a false
+printed equality. An in-memory synthetic stress fixture (100 ms baseline,
+20.005 ms Fourier, 4001x component gain, 8 ms overhead) returned exact total
+88, but printed "0.01 + 80 + 8 = 88 ms". This is a display bug in a reuse
+case, NOT incorrect arithmetic or a defect in the current 100/20/2 movie.
+No such fixture is saved as educational material or timing evidence.
+
+Extracted shared display validation, called by both load() and document().
+It applies existing lesson_model.context precision rules to every displayed
+model operand, then the existing overhead/total and answer-choice guards.
+Direct document reuse can no longer bypass these guards. Pure evaluate()
+still returns exact fractions for otherwise valid inputs; it does not
+inherit the two-decimal text restriction. Existing model/renderer untouched.
+
+Two new tests failed before the fix and pass afterward: exact total with
+unrepresentable operands; direct document overhead precision. They also
+cover rejection before CLI writes in generate/check modes, no mutation,
+and a valid cent-exact positive control. All 13 focused overhead/package
+tests pass in 0.038s. Generated Markdown --check, byte-identical default
+text assertion and whitespace pass. No full-suite/Marimo check/export,
+render/decode, keyframe/equation/clipping, normal-speed/device or speech-sync
+rerun. Previous test/visual results remain historical.
+
+Files: overhead_check.py, test_overhead_check.py and this log only.
+Exercise JSON/generated Markdown, movie/captions, descriptive text, package,
+archived evidence, dependency/lock, notebook/research and mathematical
+conclusions unchanged. Current official Python 3.12 Fraction documentation
+checked: https://docs.python.org/3.12/library/fractions.html.
+No tool migration, new licensing clearance, asset/voice, paid service,
+private/operator data, deployment/Open Notebook assumption, publishing,
+merge, account/sharing change or additional automation.
+
+Next: intended-device complete playback/human text-equivalence feedback,
+then one observed issue or release-design recommendation. Optional exercise
+adoption remains separate. Gates remain human math/editorial/rights,
+accessible playback, audio choice/retiming, source-only adoption, parent
+reconciliation, authorized review route and exact-version publication
+approval. No technical render blocker; tests do not complete human review.
+
+## 28 November 2026 · model-derived overhead-exercise feedback
+
+Source: live PR #4 head f4ca74835d9fb9d6ac908afc8af0849d49570510;
+fetched exact commit into isolated codex/video-* worktree. Read live main
+README, #1 README/AGENTS/ROADMAP/source registry/full FFT notebook and
+video README/latest status/current worksheet/overhead data/helper/tests.
+Main/video lack root AGENTS/ROADMAP; #1–4 remain open/unmerged, #4 draft
+with no feedback. Continue codex/video-teaser-pacing/PR #4, no new PR stack.
+
+Observed reuse bug: optional overhead exercise arithmetic already supports
+other kernel gains, but its generated distractor feedback always said
+"forgets to halve the Fourier step". That is false for a 4x or 2.5x model.
+One sentence now derives "divide Fourier time by s" from the actual
+kernel_gain. Default lesson still gives 98 ms with 8 ms overhead, and
+10 ms break-even; regenerated text changes only that feedback sentence.
+No new lesson, film variant or exercise adoption.
+
+Added one parametrized regression for 4x and 2.5x in-memory fixtures,
+including exact answer, saving, feedback and no-mutation assertions.
+Both subcases failed on old wording before the fix; all eleven focused
+overhead/package tests pass afterward in 0.037s. Default 2x wording,
+generated-file --check and whitespace pass. Fixtures are not saved as
+learner content. No full-suite, Marimo check/export, render/decode,
+frame/clipping/equation, normal-speed/device or speech-sync rerun.
+Previous visual evidence remains historical; current movie stays silent.
+
+Files: overhead_check.py, test_overhead_check.py,
+fft-latency/OVERHEAD_CHECK.md and this log only. No changes to exercise
+JSON, exact arithmetic model, renderer, movie/captions, descriptive text,
+archived evidence, package, dependencies/lock, notebook or research.
+Current official Python Fraction docs and FFTW accuracy context checked:
+https://docs.python.org/3/library/fractions.html and
+https://fftw.org/accuracy/comments.html. These support arithmetic tooling
+and scope separation, not synthetic timing evidence. No new tool choice,
+license clearance, paid service, voice, private/operator data, deployment/
+Open Notebook assumption, publishing, merge, account/sharing change or
+additional automation.
+
+Next: intended-device complete playback/human text-equivalence feedback,
+then one observed issue or release-design recommendation. Optional exercise
+adoption remains separate. Exact open gates remain human math/editorial/
+rights, accessible playback, audio choice/retiming, source-only adoption,
+parent reconciliation, authorized review route and exact-version publication
+approval. No technical render blocker; code tests do not clear review gates.
+
+## 27 November 2026 · evening, sampled descriptive-text visual comparison
+
+Source: live PR #4 head d3206c2b0ac6ae97035704645b47c77917626e15.
+Fetched live branch into an isolated codex/video-* worktree; exact base commit
+and tree match. Read main and #1 README, #1 AGENTS/ROADMAP/source and concept
+registries/full FFT notebook, current video README/log/text/helper and open
+#1–4. Main/video have no root AGENTS/ROADMAP; #1–4 open/unmerged, #4 draft
+without feedback. Continue codex/video-teaser-pacing/PR #4, no new PR stack.
+
+Bounded increment: TRANSCRIPT_VISUAL_CHECK.md records an assistant comparison
+of the existing descriptive text with 16 freshly decoded native 1280x720
+frames across all eight scenes. Sampled moving/settled bars, quotient/ceiling,
+all four focus panels, engineering warning and both ending caption states.
+No substantive contradiction or clipping found in those samples; keep text
+unchanged. This is not independent human equivalence review, unseen-frame
+or continuous-motion verification, normal-speed comprehension, intended-device
+legibility, assistive-tech testing or accessibility approval.
+
+Existing exact-copy verifier rerun passed twelve source hashes, movie/VTT
+identity, all 1,920 timestamps and complete decode: SAME 732,406-byte movie,
+SHA256 790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e,
+80s/24fps/H.264/no audio. Extraction succeeded with FFmpeg 7.1.5.
+All 16 resulting PNGs actually viewed; local ignored QA only, not a new movie
+or new distributed review copy. Report names frames/times/method/limits.
+
+Files: new comparison report, README link, this log only. Locked environment
+retains Pillow 12.3.0; 13 existing focused transcript/package tests pass in
+0.054s. Transcript --check, linked-file checks and whitespace pass.
+No full-suite rerun; previous full-suite results remain historical.
+Movie, transcript JSON/Markdown, captions, renderer, archived evidence,
+dependencies/lock, package, notebooks and research remain unchanged.
+
+Official W3C transcript and FFmpeg select/legal docs checked, linked in report.
+No new renderer/tool choice, bundled fonts/binaries, blanket commercial
+clearance, paid service, voice, private/operator data, hosting/Open Notebook
+deployment assumption, publishing, merge, PR metadata/account/sharing action
+or additional automation. No technical render blocker.
+Next: full intended-device playback and human text-equivalence feedback,
+then one observed issue/release-design recommendation. Gates remain human
+math/editorial/rights, accessible playback, audio choice/retiming, source-only
+adoption, parent reconciliation, authorized review route and exact-version
+publication approval. Silent-file speech sync is inapplicable, not passed.
+
+
+## 27 November 2026 · distinguish transcript freshness from equivalence
+
+Source: live PR #4 head e615567cb06a3562500b00bc3f1ce18b55a035d8;
+isolated codex/video-* worktree with identical base tree. Read current main
+inventory, #1 README/AGENTS/ROADMAP/registry/full FFT notebook, video README/
+latest status, transcript JSON/generated text/helper and renderer. Main/video
+have no root AGENTS/ROADMAP; #1–4 open/unmerged, #4 draft without feedback.
+Continue codex/video-teaser-pacing/PR #4; no new external PR stack.
+
+Concrete evidence-label correction: the transcript CLI previously said eight
+descriptions and 19 cues 'match this draft'. Its checks pin source identity,
+scene coverage, supplied text and generated-file freshness, not visual meaning.
+Both generate/check success messages now explicitly state visual equivalence
+and accessibility remain unverified; --check help names its narrow scope.
+No visual mismatch or accessibility compliance failure is asserted by this
+wording fix. Movie is untouched; descriptive JSON and generated Markdown
+remain byte-identical. Archived evidence/results are not rewritten.
+
+Files: descriptive_transcript.py, test_descriptive_transcript.py and this log.
+Two new regressions cover generate/check wording with no real write, and an
+in-memory deliberately false visual-description fixture that passes schema
+validation. The fixture demonstrates the semantic limit; it is never saved
+as an educational description. All 13 focused transcript/package tests pass
+in 0.037s. Actual --check, --help and whitespace checks pass. No full-suite,
+render/decode, keyframe/clipping/equation/device/full-playback or speech-sync
+rerun; the film is still silent. Prior full-suite results remain historical.
+
+Current official W3C WAI transcript and video-only-alternative guidance
+rechecked: https://www.w3.org/WAI/media/av/transcripts/ and
+https://www.w3.org/WAI/WCAG22/Understanding/audio-only-and-video-only-prerecorded.html.
+No conformance determination, new renderer/tool choice, dependency/lock,
+font/encoder, notebook/research, package or publication-identity change.
+No paid service, voice, private/operator data, deployment/Open Notebook
+assumption, publishing, merge, sharing/account action or new automation.
+Next remains a human text-equivalence/intended-device pass and one observed
+issue/release-design recommendation. Exact gates remain human math/editorial/
+rights, accessible playback, audio choice/retiming, source-only adoption,
+parent reconciliation, authorized review route and exact-version publication
+approval. No technical render blocker; structural checks do not clear gates.
+
+## 26 November 2026 · evening, reproduce the named review focus first
+
+Source: live PR #4 head 626ab33e4a00b1008c7c6f9b72c4c322a4253ccd;
+isolated codex/video-* worktree with identical base tree. Read live main/
+#1–4, main and #1 README, #1 AGENTS/ROADMAP/registry/full FFT notebook,
+video README/latest log, rebuild and verifier. Main/video still lack root
+AGENTS/ROADMAP; #1–4 open/unmerged, #4 draft with no comments/reviews.
+Continue existing codex/video-teaser-pacing/PR #4, no new external stack.
+
+Bounded handoff correction: README's first reproduction command block now
+builds/verifies the SAME source-only review focus and runs the full workshop
+suite. Frozen v7/alternate commands remain, explicitly reference-only.
+Previously the main block rendered v7 while focus reproduction required a
+separate link; it was labelled, not known to have caused a wrong review.
+This is command-path clarity, not source-only adoption or a new video cut.
+
+Executed the documented uv sync --locked and source_only_review.py command
+in a new local environment/output directory. Pillow 12.3.0 and THIS worktree's
+renderer import paths verified. Same system interpreter/FFmpeg/fonts and
+possible cache remain shared: not clean-host/cross-platform validation.
+Actual fresh MP4 is byte-identical to the earlier exact copy: 732,406 bytes,
+SHA256 790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e.
+Render manifest, resolved lesson and VTT also compare byte-for-byte with
+archived originals. Their original source baseline remains unchanged.
+
+The documented verifier passes twelve render-source hashes, caption/movie
+identity, all 1,920 timestamps and complete decode: 80s, 24fps, 1280x720,
+H.264, no audio. Fresh render QA exports 39 samples; inspected native frames
+840/1068/1919 (35/44.5/79.9583s): quotient/ceiling equations and final
+source-only disclosure agree, with no clipping observed there. Not full
+human/device playback, unseen-frame readability or speech-sync approval.
+Full suite: 187 tests pass in 94.363s, no skips reported. Twenty local README link
+occurrences resolve, command ordering and whitespace checks pass.
+
+Files: README and this log ONLY. No renderer/test/model/scene/caption,
+archived evidence, package/manifest, dependency/lock, notebook or research
+change. Rebuilt binaries/QA remain local ignored output, not a replacement
+or separately distributed review copy. Current official Pillow licence,
+FFmpeg command/legal docs checked; existing external-build/font/codec terms
+remain, no new tool choice, bundled assets or blanket commercial clearance.
+No paid service, voice, hosting/Open Notebook deployment, publishing, merge,
+PR metadata/account/sharing change, private/operator data or new automation.
+Next: intended-device playback and one observed issue/release-design
+recommendation. Gates remain human math/editorial/rights, accessible playback,
+audio choice/retiming, source-only adoption, parent reconciliation, authorized
+review route and exact-version publication approval. No technical render
+blocker; successful reproduction is not a finished reviewed video.
+
+## 26 November 2026 · separate retained studies from the review entry
+
+Source: live PR #4 head 1288d7b7e542b4602c14076ad6d67c59ed7a5647;
+isolated codex/video-* worktree with identical base tree. Read main README/
+inventory, #1 README/AGENTS/ROADMAP/source registry/full FFT notebook, video
+README/latest status and current handoffs. #1–4 remain open/unmerged; #4
+draft with no comments/reviews. Root instructions/roadmap still live only
+in #1. Continue codex/video-teaser-pacing/PR #4, no new external PR stack.
+
+Bounded handoff improvement: move the 133-line retained-studies section
+verbatim to videos/PRODUCTION_STUDIES.md. README drops 382->256 lines;
+its old section heading remains as a signpost, preserving the anchor.
+Review instructions before it and all reproduction/extension/math/source/
+QA/gate content after it are byte-identical. Archive header identifies the
+source baseline and historical/unadopted status, with a return-review link.
+No dated evidence is refreshed or study adopted by the move.
+
+Validation: five existing package tests pass in 0.021s; moved text exactly
+9,102 bytes, SHA256 ac4d3bf91b9d2d5a483c3629c7a08a64f2a5754f8481456894c8becfe40245f8.
+Exact prefix/suffix and heading preservation, 54 local link occurrences
+(including two Markdown anchors) and whitespace pass. Checks cover local
+navigation, not external access or Android/GitHub rendering. No full-suite,
+render/decode, keyframe/clipping/equation, playback or audio-sync rerun.
+
+Files: README, PRODUCTION_STUDIES and this log only. No production code,
+movie, caption, manifest/package, research/notebook or dependency/lock change;
+no new renderer/tool choice, licensing recertification, hosting or assumed
+Open Notebook deployment. No publishing, merge, account/sharing change,
+private/operator data, paid service, voice or additional automation.
+Next remains one intended-device pass and one observed issue/release-design
+recommendation. Human math/editorial/rights, accessible full playback,
+audio choice/retiming, source-only adoption, parent reconciliation, authorized
+review route and exact-version publication approval remain open. No technical
+render blocker; this navigation change does not complete the video milestone.
+
+## 25 November 2026 · evening, encoded caption-cut timing
+
+Source: live PR #4 head 9d0280cfc7e914359b9bd7f0571bf61e4a390e8e;
+isolated codex/video-* worktree with identical base tree. Read current main
+README/inventory, #1 README/AGENTS/ROADMAP/source registry/full FFT notebook,
+video README/latest status, source assembly and exact-copy handoff. Root
+AGENTS/ROADMAP remain absent outside unmerged #1; #1–4 remain open and #4
+draft with no comments/reviews. Continue existing video branch/PR #4.
+
+Bounded increment: actual encoded caption-region comparisons at every
+interior cue cut. All 36 samples at 18 cuts favor expected over adjacent
+source template, including 44.5s and both ending transitions. Minimum RGB
+MAE separation 162.60 levels/channel; not a perceptual/readability score.
+Foreground-union masks exclude background dominance. Exact in-memory movie
+snapshot and twelve source hashes checked; no new movie/caption changes.
+See CAPTION_CUT_AUDIT.md and caption-cut-report.json for commands/method.
+
+Files: caption_cut_audit.py, test_caption_cut_audit.py, the two named
+fft-latency artifacts, README and this log. Fifteen focused tests pass in
+0.031s, including four new boundary/early-late fixture/ambiguity/wrong-file
+checks. Actual three-batch FFmpeg extraction succeeds; a second extraction
+reproduces report.json byte-for-byte. Full suite: 187 pass in 95.314s, no
+skips reported. Source-color generated check, report/script/approval guards
+and whitespace pass. No new visual/equation/clipping/full-playback,
+all-held-frame, OCR, intended-device or speech-sync evidence is claimed.
+
+Official FFmpeg filter/legal and Pillow channel-operations/licence docs
+checked today. Existing Pillow 12.3.0/uv.lock, external FFmpeg/DejaVu retained;
+no bundled assets/binaries, dependency/research/notebook/old evidence change,
+paid service or assumed Open Notebook deployment. No publishing, merge,
+PR-metadata/account/sharing change, private/operator data or new automation.
+Next: complete intended-device playback, then one observed issue or release-
+design recommendation. Gates remain human math/editorial/rights, accessible
+playback, audio choice/retiming, source-only adoption, parent reconciliation,
+authorized review route and exact-version publication approval. No technical
+render blocker; sampled technical checks do not finish the reviewed video.
+
+## 25 November 2026 · encoded solid-caption-core check, no new cut
+
+Source: live GitHub PR #4 head 053c1cacd2a9a0de25626ce41d7543fef59c35ef,
+exact commit/tree materialized in an isolated codex/video-* worktree.
+Read current main README/inventory; #1 README/AGENTS/ROADMAP/source registry/
+full FFT notebook at 7905dc2b; video README/latest status, source assembly,
+caption adapter and intended-color audit. Main/video branch have no root
+AGENTS/ROADMAP; #1–4 remain open/unmerged, #4 draft with no comments/reviews.
+Continue existing codex/video-teaser-pacing/PR #4; no new external PR stack.
+
+One bounded gap from the source-color audit: measure four actual encoded
+caption midpoints in the dense 49–61s distinctions, not another layout/copy
+variant. New encoded_caption_audit.py validates the exact 732,406-byte movie
+SHA256 790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e
+and twelve archived source hashes. It decodes the SAME in-memory snapshot
+at frames 1212/1284/1356/1428. Source-defined exact color masks eroded 3x3
+select only solid caption cores; decoded RGB luminance extrema yield ratios
+15.883/14.978/14.898/15.828:1. Only 108–121 foreground pixels survive per
+sample; this cannot characterize thin strokes, edges or complete captions.
+No color change is justified by the result alone. See ENCODED_CAPTION_AUDIT.md
+and encoded-caption-report.json for method, counts, hashes and limitations.
+
+Inspected four-row decoded 640-wide sheet and full-size stability frame;
+no caption clipping/wrong active category observed in those samples. Footer
+remains small and concurrent text load remains a device-review concern.
+No equation occurs in this section; no fresh equation-scene review, motion/
+full playback, color-managed device/streaming, OCR, speech sync or accessibility
+approval claimed. This is sampled diagnostic evidence, not a finished video.
+
+Validation: 11 focused tests pass in 0.041s, including four new core-mask,
+decoded-versus-source measurement, missing-core/geometry and wrong-file
+before-decode guards. Actual four-frame decoder run succeeds. Initial
+unescaped filter commas caused extraction failure; fixed before accepting
+the report. Retained Pillow getdata deprecation warning is non-fatal.
+Full suite: 183 tests pass in 135.856s, no skips reported. Re-extraction in
+a separate new directory reproduces report.json byte-for-byte. Existing
+source-color generated check and whitespace check pass. No full movie
+rerender/decode/timestamp revalidation is claimed for this four-frame audit.
+
+Files: encoded_caption_audit.py, test_encoded_caption_audit.py,
+fft-latency/ENCODED_CAPTION_AUDIT.md, encoded-caption-report.json, README
+and this log. Four full PNGs/contact sheet are generated local ignored QA,
+not committed media. No archived evidence, movie, caption/VTT/SRT, canonical
+identity/package, notebook/research conclusions or dependencies/lock changed.
+uv sync --locked creates a local environment with retained Pillow 12.3.0.
+Current official Pillow drawing/licence and FFmpeg select/legal docs checked;
+existing external system encoder/DejaVu terms remain, no blanket commercial
+clearance, bundled fonts/binaries, voice, paid service or hosting assumption.
+
+Next: intended-device normal-speed review of the exact source-only focus,
+then one observed issue or release-design recommendation. Do not generate
+another movie solely from this diagnostic. Exact open gates remain human
+math/editorial/rights, accessible full playback/text-equivalence, audio choice/
+retiming, source-only adoption, parent reconciliation, authorized review route
+and exact-version publication approval. No technical render blocker, YouTube/
+Substack/social publication, merge, PR metadata/account/sharing change,
+private/operator data, Open Notebook deployment or additional automation.
+
+## 24 November 2026 · full integration check after recent additions
+
+Source: fresh PR #4 head 12c49f00b524e7bbb53323bcdf94ff1f58e3a797;
+isolated codex/video-* worktree. Fetched live main/#1/#4; read current
+main README, #1 AGENTS/ROADMAP/source registry/full FFT notebook at
+7905dc2b, complete video README/latest log and open #1–4. Main remains
+template c9fdf987 with no root AGENTS/ROADMAP; those files are also absent
+on the video branch. #1–4 remain open/unmerged; #4 draft and feedback empty.
+Continue existing video branch/PR #4 without a new external stack.
+
+Bounded verification increment: recent overhead/SRT additions had focused
+checks but no combined full-suite result. Created a fresh local .venv using
+uv sync --locked, retaining Pillow 12.3.0 and the unchanged uv.lock. Python
+3.12.14, uv 0.13.9; renderer import resolves to THIS worktree and Pillow to
+its environment. The hardlink warning falls back to a successful copy
+install. Same host/system interpreter/tools/fonts and possible caches are
+shared; this is not a clean-host, cold-cache or cross-platform validation.
+
+Actual full command: uv run --locked python -m unittest discover -p 'test_*.py'
+from videos/. All 179 tests pass in 91.896s, with no skips reported. This
+includes the new overhead cases, source-only SRT equivalence/real FFmpeg
+round-trip, snapshot guards, existing renderer/source-frame checks and
+encoded fixture tests. Generated overhead/transcript/contrast/review HTML/
+caption-pacing/narration checks and separate Node DOM-shim logic pass.
+Fifty-one distinct local link targets exist across README and four current
+review/sidecar/exercise documents; this does not validate external access,
+anchors, actual device rendering or the links' substantive content.
+
+Separately ran the existing exact-copy verifier on the SAME supplied
+source-only movie: SHA256 790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e,
+732,406 bytes, 80s/1,920 frames/24fps/1280x720/H.264/no audio. All twelve
+archived source hashes, original VTT/resolved lesson, all timestamps and
+complete decode pass with system FFmpeg/FFprobe 7.1.5. No replacement file,
+new full render, visual/keyframe inspection, full human/device playback,
+OCR or speech-sync evidence. Existing dated evidence is not overwritten.
+
+Files: this log ONLY. Source/tests/renderers, movies/captions/VTT/SRT,
+manifests/package, notebook/research conclusions and dependencies/lock are
+unchanged. No Marimo check/export rerun for this video-only validation.
+Official uv locking/sync docs and Pillow licence page rechecked today;
+pins retained, no new tool choice or blanket commercial/security clearance.
+Existing external encoder/font/build terms remain; no bundled assets/voice,
+paid service, hosting or Open Notebook deployment assumed.
+
+Next: complete one intended-device pass of the exact source-only focus,
+record an observed issue or release-design recommendation and only then
+reconcile candidate/captions/package. Technical tests are not a finished
+reviewed video. Open gates remain human math/editorial/rights, accessible
+text/playback, audio choice/retiming, source-only adoption, parent
+reconciliation, authorized review route and exact-version publication
+approval. No technical render blocker, publishing, merge, PR metadata,
+account/sharing change, private/operator data or additional automation.
+
+## 24 November 2026 · equivalent basic SubRip reading track
+
+Source: fresh PR #4 head c60940d5c6b5e1ae56100057f6604216ae23024f;
+isolated codex/video-* worktree. Live main/#1/#4 fetched; main remains
+template c9fdf987 without AGENTS/ROADMAP. Read main README, #1 current
+instructions/roadmap/source registry/full FFT notebook at 7905dc2b,
+video README/latest log, source-only VTT/config/assembly and manifest/
+description conventions. #1–4 open/unmerged; #4 feedback empty. Continue
+existing codex/video-teaser-pacing/PR #4, not another external PR stack.
+
+Bounded interoperability increment: plain UTF-8 SubRip sidecar for the
+SAME full source-only copy. All 19 original cue texts and start/end times
+are unchanged; only cue numbers and comma-millisecond syntax are added.
+Generated by existing external FFmpeg, no new production helper or text
+source. Original VTT/manifest stay immutable; this new file is not passed
+off as an output of the earlier render. It is an optional silent reading
+track, NOT a fabricated speech transcript, accessibility certification or
+adopted publication asset. Movie remains unchanged/unapproved.
+
+Files: test_source_srt.py, fft-latency/SRT_SIDECAR.md,
+fft-latency/source-only-review/fft-source-only-review.srt, README link and
+this log. SRT SHA256 f11544880886b3b233fbb67e7ae37246f06fb6988b3bb0882da9a2c3381a62e4;
+source VTT 3418c98bbc7fe171544ffe4298eacaa46c0297342960e76a3c69dd2f421f164e.
+Reference movie remains 790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e.
+Three new tests pass: pinned cue equality, all boundaries on the 24fps
+timeline/contiguous 0–80s/ending, and real FFmpeg SRT-to-VTT round-trip.
+The latter emits valid shorter timestamps, normalized to integer ms for
+comparison. Unicode multiplication signs survive. Tests are scoped to this
+archive's plain-text profile, not a general subtitle parser. Final focused
+suite: 28 passes in 0.358s. No full-suite rerun; old results remain historical.
+
+Conversion uses system FFmpeg 7.1.5; documented -n reproduction refuses
+overwrite. YouTube official supported-format guidance, FFmpeg commands and
+legal notes checked today; basic UTF-8 SRT support is not proof of platform
+import or authorization to upload. No account/session/platform action.
+Existing external-build/font/codec terms retained, no new dependency/lock,
+bundled binary/asset, paid service, voice or blanket commercial clearance.
+The converter's final blank cue separator is retained byte-for-byte: the
+SRT-only blank-at-EOF warning is excepted; other whitespace checks pass.
+
+No new movie encode/decode, keyframe/clip/typography inspection, complete
+human/device playback or audio-sync evidence. A plain sidecar cannot remove
+or resize existing burned-in text and may cause duplicate overlays if a
+player auto-loads it. Player wrapping/position are not preserved. Intended-
+device and assistive-tech review remain open. No notebook/research/old
+renderer/source caption/package/PR-metadata edits or live deployment assumed.
+
+Next: optional local-player import during the exact-copy device review,
+record overlay state/wrapping and resolve one observed issue or adoption
+decision. Exact remaining gates: human math/editorial/rights, accessible
+full playback/text-equivalence, audio choice/retiming, source-only adoption,
+parent reconciliation, authorized review route and exact-version publication
+approval. No technical rendering blocker, publishing, merge, private/operator
+data, sharing/account change or additional automation.
+
+## 23 November 2026 · reconcile the PR opening with the one-copy handoff
+
+Source: fresh PR #4 head cff39958e2e1a1e52bd9d24dbd732bc3c60b94e1;
+isolated codex/video-* worktree. Fetched live main/#1/#4; read main
+README (still template without AGENTS/ROADMAP), #1 instructions/roadmap/
+source registry/full FFT notebook at 7905dc2b, full video README/latest
+log, actual source-only manifest and worksheet. Open #1–4 remain unmerged;
+#4 combined feedback empty. No research-checkpoint or deployment assumption.
+
+Observed handoff inconsistency: README identifies one complete source-only
+80s review, but PR #4 still had its teaser title and opened at a 15 November
+caption-fit study. Bounded docs/metadata correction: new PR_HANDOFF.md is
+the exact current opening, with immutable links, movie filename/size/hash,
+one normal-speed intended-device request and unchanged scope/gates. PR title
+now reads “FFT pilot: full source-only review and production studies”.
+The complete previous body is retained VERBATIM in a labelled historical
+details section, not deleted or promoted to evidence for a different copy.
+Base/head branches, open/draft/unmerged state remain unchanged; no reviewer
+requests, account permissions or publication action. Current summary is
+review priority, not adoption of the source-only release route.
+
+Files: fft-latency/PR_HANDOFF.md and this log only, plus PR title/body.
+Six immutable source targets resolve in the inspected commit; filename,
+SHA256, 732,406-byte size and 80s/1280x720/24fps/silent identity match the
+archived manifest. Twenty-five focused package/source-assembly/exact-copy/
+descriptive-text tests pass in 0.269s. Prior evidence is explicitly dated;
+no new encode/decode, frame inspection, full/device playback or audio-sync
+claim. No full-suite rerun or new helper/test/dependency/renderer/licence
+choice. Existing tools, generated-copy checks and whitespace validation
+remain separate from human review. No Marimo export needed for docs only.
+
+Movie, source/canonical captions/lesson/manifests/package, old helpers,
+notebooks and research conclusions untouched. No new visual assets, voice,
+paid service, private data, hosting/sharing grant or automation. Historical
+PR text is preserved in place, not copied into the public code repository.
+
+Next: obtain one complete intended-device pass of the named copy and one
+specific observed issue or release-design recommendation; only then
+reconcile candidate/captions/package. Exact open gates remain human math/
+editorial/rights, accessible text/playback review, audio choice/retiming,
+source-only adoption, parent reconciliation, authorized review route and
+exact-version publication approval. No technical render blocker; human/
+device decisions unavailable. No YouTube/Substack/social posting, merge,
+deployment or account change. Continue existing branch/PR #4, no new stack.
+
+## 23 November 2026 · optional after-video overhead prediction
+
+Source: fresh PR #4 head e880ac860d5240f513e40648355507640a909885;
+isolated codex/video-* worktree. Fetched live main/#1/#4; main remains
+template c9fdf987 without AGENTS/ROADMAP. Read its README, current #1
+README/AGENTS/ROADMAP/source registry/full FFT notebook at 7905dc2b,
+video README/latest log, resolved source-only lesson/descriptions, existing
+playback/description and companion writing. #1–4 remain open/unmerged;
+#4 combined feedback empty. Continue existing video branch/PR #4 without
+another external stack. No research-checkpoint or deployment assumptions.
+
+Bounded learning-content increment: one optional prediction/feedback check
+of the no-added-overhead assumption, not another movie/renderer variant or
+new review prerequisite. Same synthetic 100/20/80 ms sequential baseline;
+halve Fourier time, then introduce NEW sequential overhead only on the
+improved path. 8 ms gives 98 ms; the 10 ms saving is the break-even budget;
+12 ms gives 102 ms, slower despite a faster component. Distractor feedback
+distinguishes omitting overhead from forgetting to halve Fourier time.
+Exact general criterion h<F(1-1/s), equality break-even, is derived directly.
+No claim overhead stays fixed with input size or component speedup; avoid
+double-counting costs already in the unchanged work. Same accuracy remains
+an assumption, not a numerical-stability result or grid-readiness evidence.
+
+Files: overhead_check.py, test_overhead_check.py,
+fft-latency/{overhead-check.json,OVERHEAD_CHECK.md}, README link and log.
+Content JSON is separate from a standard-library Markdown generator; the
+pure exact-fraction evaluator can be reused in a future Marimo cell. No
+Marimo app, export, live endpoint or changed notebook is claimed. Reference
+movie/assumption identity checks and nonnegative finite-number/precision
+validation reject stale scope or misleading rounded timing equalities.
+Generated --check is read-only and fails on drift. No response collection.
+
+Five new tests pass; 30 focused exercise/package/source-assembly/verifier/
+descriptive-text tests pass in 0.254s. Exact cases 0/8/10/12 ms, values just
+below/above break-even and the existing alternate model are checked, along
+with invalid inputs, no model mutation, wrong reference/approval/assumption,
+distractor/precision drift and generated-document freshness. Markdown read
+through; its four-row table agrees with the exact results. No full-suite
+rerun: prior 171-test result is historical, not a fresh claim. Additional
+generated checks and whitespace validation run before handoff.
+
+No new encode/decode, visual/device/playback or audio-sync review. Movie,
+canonical and source-only lesson/captions/manifests/package, old helpers,
+dependencies/lock, notebook sources and research conclusions unchanged.
+Official Python Fraction docs and FFTW accuracy context rechecked today;
+the latter is not timing evidence. No new renderer/licence choice, copied
+text/assets, voices, paid service or blanket commercial clearance. Draft
+content is not a validated learner assessment or accessibility certification.
+
+Next: review this optional check or discard it independently; complete the
+single intended-device movie pass and resolve one observed issue/adoption
+decision before candidate/package reconciliation. No technical render
+blocker. Exact remaining gates: human math/editorial/rights, accessible
+full playback/text-equivalence, audio choice/retiming, source-only adoption,
+parent reconciliation, authorized review route and exact-version publication
+approval. No publishing, merging, sharing/account changes, private/operator
+data, assumed Open Notebook deployment or additional automation.
+
+## 22 November 2026 · snapshot input for new encoded review packs
+
+Source: fresh PR #4 head b591022707584010e70a9188965ba4fab5ac81c4;
+isolated codex/video-* worktree. Live main remains template c9fdf987;
+README read; AGENTS/ROADMAP absent on main/video branch. Read current #1
+instructions/roadmap/README/source registry/FFT notebook at 7905dc2b,
+open #1–4 and #4 feedback (empty), full video README/latest status and
+source-only assembly/rebuild/QA/verifier sources. No continuity gap.
+Continue codex/video-teaser-pacing/PR #4, without another external PR stack.
+
+Bounded tested-code increment: opt-in stable_qa.py wraps archived qa.py with
+a private movie snapshot and deep-copied lesson, hashes original and snapshot
+before/after decoding, and exports evidence only after checks pass. The old
+helper hashes input only after generating samples; concurrent replacement
+could misattribute evidence. Controlled mutation tests reproduce that risk;
+no prior actual review pack is claimed to be affected. Existing source hashes
+and frozen helper stay unchanged. New destination/late-collision refusal,
+temporary cleanup and report-last export preserve ordinary review evidence.
+Not a lock/signature/adversarial-race defense; restored temporary edits can
+escape checks. I/O failure can leave an incomplete destination without a report.
+
+Files: stable_qa.py, five regression tests in test_stable_qa.py,
+fft-latency/STABLE_QA.md, README link and this log. Ten focused tests pass
+in 0.771s including existing real encoded fixture integration; full suite
+171 passes in 92.943s. Separate real wrapper run on the existing full source-
+only review passes complete decode/all 1,920 timestamps, 39 samples/seven
+sheets: SHA256 790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e,
+732,406 bytes, 80s/24fps/1280x720/H.264/no audio. Existing exact-copy verifier
+also passes all twelve archived sources. Native decoded 840/1320/1919
+inspected: equation, latency focus, final disclosure agree; no clipping seen.
+No new render or distributed movie, every-frame visual audit, normal-speed
+human/device playback, OCR or speech sync. Results under ignored out/.
+
+Locked Pillow 12.3.0/new local environment used; no dependency/lock, old
+renderer, lesson/caption/VTT/manifest/package, notebook or research edits.
+Official FFprobe/FFmpeg legal/Python hash docs checked; existing external
+build/codec/font terms retained, no new assets, services or blanket rights
+clearance. No Marimo export needed for video-only helper changes.
+
+Next: complete intended-device review of the single source-only focus and
+resolve one observed issue/adoption decision before canonical reconciliation.
+No technical render blocker. Exact open gates remain human math/editorial/
+rights, accessible full playback/text-equivalence, audio choice/retiming,
+source-only adoption, parent reconciliation, authorized review route and
+exact-version publication approval. No publishing, merge, deployment assumed,
+account/sharing change, private data or additional automation.
+
+## 22 November 2026 · one unambiguous review entry point
+
+Source: fresh PR #4 head 03d6d5071db16febff586d791ce61d326ee414c4;
+clean isolated codex/video-* worktree. Fetched main/#1/video branches;
+read current main README, #1 AGENTS/ROADMAP/source registry/FFT notebook,
+complete video README/latest log, canonical/source-only/caption-review
+identities and relevant package tests. Main remains template
+c9fdf98729379dd404afce99daad1a6aa042156e without root AGENTS/ROADMAP.
+#1–4 open/unmerged; #4 combined feedback empty. Continue existing
+codex/video-teaser-pacing/PR #4, not a new external PR stack.
+
+Bounded documentation correction: README promoted the source-only copy but
+also called the older v7 handoff current and led into default v7 render
+commands. The entry now identifies ONE review focus, links its existing
+worksheet/text alternative and gives exact filename/size/hash. A three-copy
+table distinguishes source-only focus, earlier caption-layout comparison
+and frozen canonical v7. Review priority does not adopt the source-only
+release route; all remain unapproved. No video, script or new helper added.
+
+Retained studies are explicitly scoped as provenance/comparisons rather
+than prerequisites to giving feedback. The older handoff is labelled v7,
+not the source-only handoff; default render.py, alternate scenario and
+source_only_review.py commands are distinguished. Existing separately
+supplied media is referenced without private links or access grants.
+All 56 prior link destinations retained; all 42 local destinations resolve.
+Three copy roles match recorded identities/unapproved status; focus SHA
+and size match the source-only render manifest. Mathematical/source/gate
+sections from Content and extension points onward remain byte-unchanged.
+
+Files: README.md and this log only. Twenty focused package/source-copy/
+descriptive-text tests pass in 0.070s. Transcript/contrast/review HTML/
+pacing/narration freshness and whitespace checks pass. No full-suite rerun
+for this docs-only change; the prior 166-test result is not presented as
+fresh. No new render, decode, frames, timing/audio or device inspection.
+Renderer/dependencies/lock, source captions/manifests, archived evidence,
+notebooks and research conclusions untouched; no new licensing choice.
+
+Next: one complete intended-device pass of the exact source-only focus,
+then one specific fix or release-design decision before candidate/package
+reconciliation. Exact remaining gates: human math/editorial/rights,
+accessible playback, text-equivalence/assistive-tech review, audio choice/
+retiming, adoption, parent reconciliation, authorized review route and
+exact-version publication approval. No technical render blocker; human/
+device decisions unavailable. No live lesson/Open Notebook deployment
+assumed, publishing, merge, sharing/account change or new automation.
+
+## 21 November 2026 · same-host fresh-environment rebuild
+
+Source: fresh PR #4 head 17a066de120ddced5400229dcafab07cb6d9c128,
+clean isolated codex/video-* worktree. Fetched main/#1/video branches;
+read main README, #1 AGENTS/ROADMAP/source registry/FFT notebook, full video
+README/latest status, assembly and source-only handoff. Main remains template
+c9fdf98729379dd404afce99daad1a6aa042156e without root AGENTS/ROADMAP;
+#1–4 open/unmerged, #4 feedback empty. Continue codex/video-teaser-pacing/
+PR #4; no new stack. No research or Open Notebook deployment assumptions.
+
+Bounded validation increment: install the locked dependency in a NEW local
+environment and rebuild the SAME source-only review, instead of adding an
+editorial variant while feedback is absent. uv sync --locked creates .venv
+and installs Pillow 12.3.0; Python 3.12.14, uv 0.13.9. Verified renderer import
+comes from this worktree and Pillow from its .venv. Shared system interpreter,
+FFmpeg/FFprobe/fonts and possible cache remain; not a clean-host/container/
+cold-cache/cross-platform test. Hardlink warning falls back to a successful
+copy install, not a blocker or reason to alter dependency versions.
+
+Full source_only_review.py render completes under ignored out/. Direct cmp
+and SHA-256 prove the rebuilt MP4 equals the previously supplied movie:
+790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e,
+732,406 bytes, 80s/1,920 frames/24fps/1280×720/H.264/no audio. Manifest,
+VTT and resolved lesson are byte-identical to checked-in originals; all
+12 render-source hashes, font hashes and encoder/tool facts match. Manifest
+SHA256 remains 2456b23798529acc23853d5bdb5ac521b0ef5d3fdf08160bc51e7ee122a5e13a.
+Fresh QA passes complete decode and all frame timestamps, exports 39 samples/
+seven sheets. Inspected fresh native 840/1068/1680/1919: equations, settled
+ceiling, source disclosure/final caption agree; no clipping seen there.
+Not complete human/device playback, every-frame visual or speech-sync review.
+
+Files: CLEAN_REBUILD.md, source-only-review/rebuild-check.json, README/log.
+No new permanent helper, source/lesson/caption/dependency/lock modification,
+candidate replacement or separately distributed movie. All **166 tests pass
+in 110.470s** in the new environment. Transcript/contrast/HTML/pacing/narration
+freshness checks pass. No notebook edited; no Marimo export rerun.
+Official Pillow licence and FFmpeg commands/legal rechecked; existing external
+font/build/codec terms retained, no bundled runtime, paid service, asset or voice.
+
+Next: complete intended-device playback using the existing exact-copy sheet,
+review descriptive-text equivalence/assistive-tech usability and decide
+source-only adoption before canonical/package reconciliation. Remaining gates:
+human math/editorial/rights, accessible full playback, audio choice/retiming,
+adoption, parent reconciliation, authorized review route and exact-version
+publication approval. No technical render blocker; human/device decisions
+unavailable. No live lesson verified or assumed; no publishing, merging,
+sharing/account settings, research conclusion or automation changes.
+
+## 21 November 2026 · descriptive text alternative for the silent pilot
+
+Source: fresh PR #4 head 4b3a4a2ef4194801480cc7aa14041932c75b44ec,
+clean isolated codex/video-* worktree. Fetched main, #1 and video heads;
+read current main README, #1 AGENTS/ROADMAP/source registry/FFT notebook,
+full video README/latest status, resolved source-only lesson/VTT, rendering
+sources and narration brief. Main c9fdf98729379dd404afce99daad1a6aa042156e
+remains template without root AGENTS/ROADMAP. #1–4 open/unmerged; #4 feedback
+empty. Continue codex/video-teaser-pacing/PR #4; no new PR stack.
+
+Bounded content increment: a descriptive text alternative for the existing
+silent source-only review. Previous reading captions/optional human script
+do not describe all informative visuals. Eight original scene descriptions
+now accompany all 19 exact caption cues, four active-panel explanations,
+equations in words, assumptions, progress-line meaning and source credits.
+Endpoint arrows are not instantaneous measured totals; the dark comparison
+background does not add latency. The source link is not a live lesson.
+This is text for review, not speech, a new cut or accessibility certification.
+
+Files: descriptive_transcript.py, six tests, fft-latency/{descriptive-transcript.json,
+DESCRIPTIVE_TRANSCRIPT.md}, README/source-only links and log. Manual descriptions
+are separate from the standard-library generator. It pins the render manifest,
+movie identity, all 12 archived render sources, resolved lesson and VTT; scene
+order/coverage and unadopted status are checked. Captions, times, headings,
+active-panel words and source links are derived, not independently retyped.
+Read-only --check rejects stale output; deliberate generation updates only
+the derived document. No dependency or lockfile change.
+
+Inspected EXISTING decoded contact sheets 01/02/04/06/07 and native samples
+840/1248/1320/1680 against the new descriptions: bar layout, formula/rounding,
+focus wording and source disclosure agree in these samples; no clipping seen
+there. Renderer sources verify the two 3s transitions and 44.5s equation cue.
+This is sampled descriptive correspondence, not fresh encoding/decode, full
+normal-speed/device playback, every-frame visual inspection or speech sync.
+Existing movie rehashed unchanged:
+790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e.
+
+Six final focused tests pass in 0.016s; full suite **166 pass in 191.582s**.
+Tests cover all 19 contiguous cues, eight descriptions/four panels, freshness,
+wrong identity/approval/coverage, source/content drift, equations/assumptions/
+disclosures and no writes during --check. Contrast, review HTML, pacing,
+narration and whitespace checks pass. Python 3.12.14; notebooks untouched,
+so no Marimo check/export rerun. No new timing/audio validation claimed.
+
+Official W3C WAI transcript/video-only guidance checked 21 November: describe
+essential visual information as well as caption text. This draft does not
+claim full equivalence or WCAG conformance. Python JSON docs/licence checked;
+no new renderer/licensing choice, voice, assets, purchase or bundled runtime.
+Existing external font/encoder/codec caveats retained. All copy is original;
+no creator clips, transcript quotes, research conclusions or private data.
+
+Next: review this text for visual equivalence and assistive-technology reading
+alongside one complete intended-device pass of the exact source-only movie;
+choose the release design before candidate/caption/package reconciliation.
+Exact remaining gates: human math/editorial/rights, equivalence/assistive-tech
+and full accessible playback, source-only adoption, audio choice/retiming,
+parent reconciliation, authorized review route and exact-version publication
+approval. No technical render blocker, but human/device decisions unavailable.
+No Open Notebook/live lesson assumed; no publication, merge, sharing/account
+settings, research edits or additional automation.
+
+## 20 November 2026 · version-correct source-only playback handoff
+
+Source: fresh PR #4 head 5abf3cca6f3544938eec16f5e5d2b08b32ed887b;
+clean isolated codex/video-* worktree. Fetched remote main, video branch
+and #1 branch; read current main README, #1 AGENTS/ROADMAP/source registry/
+FFT notebook, complete video README/latest status and relevant review/QA
+sources. Main remains template c9fdf98729379dd404afce99daad1a6aa042156e,
+without root AGENTS/ROADMAP. #1–4 open/unmerged; #4 combined feedback empty.
+Continue existing codex/video-teaser-pacing/PR #4; no new external PR stack.
+
+Bounded handoff correction: existing PLAYBACK_REVIEW.md identifies the
+OLDER caption-layout movie and its ending prompts. Preserve that evidence;
+add SOURCE_PLAYBACK_REVIEW.md identifying the newer full source-only movie,
+correct 70–75/75–80s captions, nine review windows and a public-safe response
+format. The prior native smoke test is not reassigned to this new identity.
+Human review can use an existing player, without code/accounts/installations.
+
+Optional verify_source_review.py checks local movie/VTT bytes, size, pinned
+manifest, resolved lesson and all 12 render-source hashes before decoding.
+Reuses existing SHA/media-validation helpers without editing them. Probes
+all streams/timestamps, requires one silent H.264 stream, fully decodes and
+rechecks identity afterward. Optional evidence output refuses overwrite.
+This is trusted repository identity, not a signature or independent content
+audit. Source content/rendering and earlier evidence remain unchanged.
+
+Actual run on fft-source-only-review.mp4 passes: 732,406 bytes, SHA256
+790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e,
+80s/1,920 frames/24fps/1280×720/no audio. All timestamps and complete decode
+pass; no new frames/pixels visually inspected, playback observed or render
+generated. copy-check.json records source/helper/movie/VTT/manifest hashes,
+tool versions and false publication approval. No private review URLs/paths
+or account data added to public files.
+
+Files: verifier, nine unit tests, SOURCE_PLAYBACK_REVIEW.md, copy-check.json,
+README/source-only handoff links and log. Nine focused tests pass in 0.024s;
+20 companion checks pass in 0.369s; full suite **160 pass in 94.077s**.
+Wrong bytes/scope/source drift/path escape, manifest changes, extra streams,
+bad timestamps, decode failure, input changes during check, no-overwrite and
+worksheet identity/window consistency are tested. Stored verifier/helper
+hashes, contrast freshness, HTML/pacing/narration copy and whitespace pass.
+No notebook edited; Marimo export not rerun for this video-only increment.
+
+Official FFprobe commands and FFmpeg legal guidance rechecked. Existing
+pinned dependencies and external font/build/codec licensing caveats retained;
+no bundled binary, paid service, asset, voice or renderer/toolchain change.
+No restriction retry or new player/browser prototype.
+
+Next: one complete intended-device pass of THIS exact source-only movie;
+judge 49–61s category pace and 70–80s density/disclosures, then choose the
+release design before candidate/captions/package reconciliation. Exact
+remaining gates: source-only adoption, human math/editorial/rights, accessible
+full playback, audio choice/retiming if narrated, parent reconciliation,
+authorized review route and exact-version publication approval. Human/device
+decision is unavailable, not a technical rendering failure or automated pass.
+No live lesson/Open Notebook deployment assumed; no research conclusions,
+publication, merge, sharing/account settings or automation changed.
+
+## 20 November 2026 · source-only text-color contrast audit
+
+Source: freshly retrieved PR #4 head
+68668c1dbd54fcd2996e3042e32481c3733fc8ef, isolated clean codex/video-* worktree.
+Remote main remains c9fdf98729379dd404afce99daad1a6aa042156e (template;
+no root AGENTS/ROADMAP). Read current main/#1 READMEs, #1 AGENTS/ROADMAP,
+source registry/FFT notebook, full video README/latest status and relevant
+rendering, caption and source-only review files. #1–4 remain open/unmerged;
+#4 combined review feedback empty. Continue existing codex/video-teaser-pacing/
+PR #4, no new PR stack. No Open Notebook or live-lesson deployment assumed.
+
+Bounded increment: reproducible intended-color contrast audit of the existing
+80s source-only review, not another movie/layout variant. Manually inventoried
+ten actual opaque text/background combinations across original scenes,
+caption/footer and source-only ending. Parse palette literals without importing
+renderer/Pillow; pin render manifest SHA and validate all 12 render-source plus
+resolved lesson/VTT hashes. Movie identity from that manifest:
+790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e.
+Movie bytes not reopened, rendered or newly visually inspected this run.
+
+Official W3C luminance/contrast guidance checked: sRGB linearization breakpoint
+0.04045, weighted luminance and (Llight+0.05)/(Ldark+0.05). Project target 4.5:1
+for every inventoried text pair, without large-text exemption or rounding the
+comparison. **All ten pass; minimum 7.338:1 (secondary text on panel).**
+No color change warranted by this narrow result. Passing intended colors is
+not encoded/streamed-pixel analysis, non-text contrast, full accessibility or
+device readability. Footer stays 16px at 1280 width (nominal 8px at 640);
+closing labels down to 28px (14px at half-size). Size/density remain unresolved.
+
+Files: contrast_audit.py, seven tests, fft-latency/{contrast-spec.json,
+contrast-report.json,CONTRAST_AUDIT.md}, README/log. No existing renderer,
+lesson, captions, manifests, media, candidate or package changed. No new
+assets/dependencies; lockfile retained. Official current Pillow licence,
+FFmpeg legal and Remotion pricing rechecked; existing external encoder/font
+and commercial-eligibility caveats retained, no purchase or redistribution.
+
+Validation: seven focused tests pass (0.018s); full existing/new suite
+**151 pass in 135.716s**. Contrast report freshness, review HTML,
+caption-pacing/narration source-copy checks and git whitespace pass.
+Tests cover formula endpoints/branches/weights, symmetry, malformed/nonopaque
+colors, unrounded threshold, nonexecuting palette extraction, exact report
+and provenance drift. No new timing/render/audio-sync evidence claimed.
+
+Next: complete intended-device playback of THIS source-only review, especially
+49–61s cards and 70–80s ending; judge secondary text/reading load and decide
+source-only adoption before canonical/package reconciliation. Exact remaining
+gates: human math/editorial/rights, accessible full playback, audio choice and
+retiming if narrated, adoption/parent reconciliation, authorized review route
+and exact-version publication approval. No technical rendering blocker;
+actual device/editorial decisions unavailable, not replaced by automated tests.
+No research conclusions/notebooks altered; no YouTube/Substack/social publish,
+merge, account settings, sharing change, paid service or new automation.
+
+## 19 November 2026 · full source-only review assembly
+
+Source: fresh PR #4 head 0a083c1274f3792f0385c526e01d3488285ccd22;
+isolated clean codex/video-* worktree. Read current main README/inventory,
+#1 AGENTS/ROADMAP/source registry/FFT notebook, video README/latest status,
+proposal and rendering/QA sources. Main lacks AGENTS/ROADMAP; #1–4 remain
+open/unmerged, #4 combined feedback empty. Continue codex/video-teaser-pacing/
+#4; no new external PR stack. Notebook source freshly fetched, blob SHA
+bf6eb0d52cb3bb20f0ec2747a0648612eb1af09a matches. No live URL verified;
+public-fetch deployments endpoint unsupported, not evidence of account state.
+
+Bounded increment: ONE full 80s unadopted source-only review, evaluating the
+existing fallback ending in context of the known unverified-CTA defect.
+First 70s SOURCE pixels reuse larger-caption layout; no timing/arithmetic/
+assumption/four-distinction change. Final 10s reuse source-only proposal.
+First assembly exposed orphan description.; final assembly changes only
+that cue's line break, preserving exact words and time. First encode stays
+ignored/undistributed, final-only file supplied separately. No release-route
+adoption, canonical replacement or silent clearing of frozen v7's live gate.
+
+Final MP4 732,406 bytes, SHA256
+790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e.
+80s/1,920 frames/24fps/1280×720/H.264/no audio; full decode and all timestamps
+pass. 39 cut/midpoint samples/seven sheets generated. Inspected native frames
+840/1679/1680/1799/1800/1919 and reduced final sheet: equation/cuts/ending
+captions legible in samples, no clipping seen, orphan removed. Dense ending
+secondary text still needs device judgement. No complete normal-speed/human/
+Android/accessibility/speech-sync approval; no UI restriction retry.
+
+Files: source_only_review.py, five tests, wrapping-only JSON, SOURCE_ONLY_REVIEW.md,
+source-only-review/{render-report,resolved-lesson,VTT,ending.png}, README/log.
+Content and rendering separated; matching unpublished source-linked description
+bound to this new identity. Frozen lesson/VTT/candidate/package, old proposals,
+media and evidence untouched. Five focused tests pass in 0.358s. Final suite:
+**144 pass in 166.463s**. Review HTML, caption-pacing/narration copy and
+whitespace pass. Source/font/content/media hashes and baseline recorded.
+
+Official Pillow licence/FFmpeg commands/legal checked; pinned dependencies/
+lock, external font/GPL encoder retained. No bundled binary/font, new paid
+service, fabricated voice, copied assets or blanket commercial clearance.
+Only videos/ edited; no notebook/research changes, publishing, sharing change,
+account settings, deployment, merge or automation. Open Notebook not assumed live.
+
+Next: one complete intended-device pass of THIS copy; judge cut/reading load
+and choose the release design before candidate/package reconciliation. Exact
+remaining gates: source-only adoption decision; full-device/accessibility and
+human math/editorial/rights; audio choice/retiming; parent reconciliation;
+authorized review route; exact-version publication approval. The source-only
+draft avoids implying a live app but does not deploy or verify one.
+
+## 19 November 2026 · recovered the 101-frame encoded QA export
+
+Source: fresh PR #4 head 62e288b77e1524c08d38a4e81e2c8a2df380801a,
+clean isolated codex/video-* worktree. Read current main README/inventory,
+#1 AGENTS/ROADMAP/source registry/FFT lesson, complete video README,
+latest status and relevant QA/render sources. Main lacks AGENTS/ROADMAP;
+#1–4 remain open/unmerged, #4 combined review feedback empty. Continue
+codex/video-teaser-pacing/#4; no new external branch/PR stack.
+
+Bounded fix: flat 101-comparison selection (1,153 chars) reproduces exit
+244 / Cannot allocate memory on FFmpeg 7.1.5. Same comparisons in balanced
+sum (1,353 chars) succeed. Expression structure matters; exact allocator/
+parser limit not independently diagnosed. No global RAM-failure claim.
+New opt-in dense_qa.py validates exact caption-review identity, reuses frozen
+qa.py default probe/timestamps/decode/39 samples, then decodes all frames again
+to export the full 101-sample selection. No mutation/monkeypatch of old code.
+No overwrite; success only after output-count and final input-hash checks.
+
+Files: dense_qa.py, four tests, DENSE_QA.md, dense-qa/report.json and one
+original ceiling-transition sheet, README/log. Existing 80s silent MP4 SHA
+d0b22d6291d0b8d9205bd5e47d7d27cbd8892f63df4a1957a7d3d5decc605142
+unchanged. Both full decodes and all 1,920 timestamp checks pass; 101 PNGs/
+17 sheets exported. Actual movie: all 101 PTS/pixel-MD5 pairs equal indexed
+full-decode records; all 39 common PNG SHA pairs match baseline. Metadata
+captions are not OCR. Report records source/input/image hashes and selection.
+
+Inspected sheets 04/05/09/12 and native-size frames 1068/1919: transition
+arrows precede settled 90/80ms, 1.25x equation appears with 44.5s cue,
+no caption/footer clipping seen and final caption present. Not all samples
+visually reviewed. No complete native/tablet playback, motion/pacing/stutter,
+accessibility, speech sync, layout adoption or publication approval claimed.
+
+Four focused tests pass in 0.176s; full suite **139 pass in 86.954s**.
+Review HTML, caption-pacing/narration copy and whitespace checks pass.
+Official FFmpeg select/expression/legal docs checked. Existing pinned
+Pillow/lock, external encoder/font retained; no paid service, new dependency,
+bundled asset or blanket commercial clearance. Frozen QA, renderer, canonical
+lesson/VTT, old reports and all movie identities unchanged. Only videos/;
+no notebook/research edits, publishing, sharing change, merge or automation.
+
+Next: one full intended-device normal-speed pass using PLAYBACK_REVIEW.md;
+record a specific defect or production-layout choice before further edits.
+Exact remaining gates: usable full-size native/tablet playback; human math/
+editorial/rights; audio choice/retiming; unverified Marimo destination or
+explicit fallback; authorized review route; parent reconciliation;
+exact-version release approval. Dense-export blocker fixed, not the small
+native-monitor issue. Open Notebook deployment not assumed.
+
+## 18 November 2026 · native import smoke test and one-copy review sheet
+
+Source: fresh PR #4 head 7cb4f60ef0ae3ec447a8d86e4ac2e149d54205f7;
+clean isolated codex/video-* worktree. Read current main README/inventory,
+#1 AGENTS/ROADMAP/source registry/FFT lesson, complete video README, latest
+status and relevant review/render sources. Main lacks AGENTS/ROADMAP;
+#1–4 still open/unmerged; #4 combined feedback empty. Continue existing
+codex/video-teaser-pacing/#4, no new external branch/PR stack.
+
+Bounded increment: try actual native playback of the ONE existing larger-
+caption review, then supply exact-version/timestamped PLAYBACK_REVIEW.md.
+No new variant or encode. Rechecked MP4 hash before/after, matching
+d0b22d6291d0b8d9205bd5e47d7d27cbd8892f63df4a1957a7d3d5decc605142.
+Installed Kdenlive 24.12.3 / MLT 7.30.0 imported the clip, showed 80s and
+HD 720p/24fps, and visibly decoded opening/baseline/changing bars/formula
+as playhead advanced into 30–40s. Temporary project matched source profile.
+This is native import/PARTIAL visible decoding, not a full playback pass.
+
+Exact new blocker: clip image only 320×180 on 1364×1024 desktop; expanded
+monitor stayed 320×334 including controls, normal resize attempt ineffective.
+No full-size/80s/actual-Android/normal-speed timing, stutter or accessibility
+approval. No permission workaround or browser-launch retry. Closed editor,
+discarded only our temporary unsaved project; original MP4 unchanged. No
+saved native project, screenshots, installation, speech, retiming or new media.
+
+Files: PLAYBACK_REVIEW.md, README/log only. Sheet binds filename/hash,
+contains nine source-timed review windows and public-safe feedback prompts,
+distinguishes player limitations from content defects and preserves all gates.
+Validation: exact movie/manifest/source identities and review time windows
+checked; existing focused renderer tests and source-copy checks rerun (details
+in handoff). Prior 135-test/full-decode report not represented as a fresh run.
+Official Add Clip docs checked; newer docs vs installed version distinguished.
+No dependency/toolchain/licence choice changed; existing caveats preserved.
+
+Next: one full normal-speed intended-device pass using the sheet; record a
+specific defect or layout choice before further edits. Exact remaining gates:
+human math/editorial/rights; device/accessibility review; audio choice/retiming;
+unverified Marimo destination or explicit fallback adoption; authorized review
+route; parent reconciliation; exact-version release approval. Only videos/
+changed; research/notebooks, frozen v7 and new review bytes untouched. No
+publishing, sharing change, merge, purchase, account change or automation.
+Open Notebook deployment not assumed. This partial UI test does not fully
+block the ongoing project or justify inventing additional layout variants.
+
+## 18 November 2026 · one complete caption-layout review encode
+
+Source: fresh PR #4 head 1dfb4f7aeba73ac6d244ec5db9383cc0e58f58f4;
+isolated codex/video-* worktree. Read current main README/inventory,
+#1 AGENTS/ROADMAP/source registry/FFT lesson, video README/status and relevant
+caption/QA sources. Main lacks AGENTS/ROADMAP; #1–4 remain open/unmerged,
+#4 combined review feedback empty. Continue codex/video-teaser-pacing/#4;
+no new external PR stack. No superseding review decision retrieved.
+
+Bounded increment: integrate the tested whole-pilot 34px ink-centered captions
+and balanced 70–75s break into ONE complete provisional review encode. Not
+production-layout selection, adoption or a replacement for frozen v7. Ordered
+words, cue times, maths, lesson/graph/source cards and original unverified Marimo
+CTA unchanged; source-only ending proposal not included. No new copy variants.
+
+Files: caption_review_render.py, three new tests, CAPTION_REVIEW_RENDER.md,
+caption-review/render-report.json, README/log. Review MP4 724,266 bytes, SHA-256
+d0b22d6291d0b8d9205bd5e47d7d27cbd8892f63df4a1957a7d3d5decc605142;
+80s/1,920 frames/24fps/1280×720/H.264/no audio. Exact VTT bytes unchanged.
+Full decode and all timestamps pass; 39 cut/midpoint samples exported. Inspected
+all seven contact sheets plus native frames 840,1680,1800: no caption/footer
+clipping seen, equations legible, both ending wraps fit. Not full normal-speed
+human/device/accessibility review, reading-comprehension or speech-sync approval.
+
+First encode succeeded but 101-sample QA select filter failed with Cannot
+allocate memory; no successful report written. New-directory retry uses existing
+39-sample selection, retains full decode/all timestamps; exact cause undiagnosed.
+No overwrite, frozen QA edit or stale evidence relabelling. Three focused tests
+pass; final full suite **135 pass in 91.167s**. Review HTML, caption-pacing,
+narration source-copy and whitespace checks pass. Manifest includes source/font/
+media hashes. Render delivered separately for private review, no public URL/access
+grant in repo. Existing v7 media/identity/package and prior studies untouched.
+
+Official FFmpeg commands/legal and Pillow licence checked; existing pinned
+Pillow 12.3.0/lock, external DejaVu and external GPL/libx264 retained. No new
+dependency, bundled encoder/font, paid service or blanket commercial clearance.
+Only videos/ edited; no notebook/research conclusions changed. No sharing change,
+publishing, merge, account mutation or automation. Open Notebook not assumed live.
+
+Next: one normal-speed actual-device review, especially 49–61s and 70–80s,
+then record specific feedback/select production treatment before identity change.
+Exact blockers: human math/editorial/rights; full-device/accessibility review;
+audio choice/retiming/speech sync; unverified live-Marimo CTA or explicit fallback
+adoption; authorized public review route; parent reconciliation; exact-version
+release approval. No further layout variants without an observed defect.
+
+## 17 November 2026 · word-preserving balance of the 70–75 s ending
+
+Source: fresh PR #4 head 3f7a74537ec0299a290deaaa9ab27292b59ad4b2;
+isolated codex/video-* worktree. Read current main README/inventory,
+#1 AGENTS/ROADMAP/source registry/FFT lesson, video README/status and
+the full-pilot layout adapter. Main lacks AGENTS/ROADMAP; #1–4 still
+open/unmerged, #4 combined review feedback empty. Continue existing
+codex/video-teaser-pacing/#4; no new external branch/PR stack.
+
+Closed the last study's specific orphan-line defect, not another copy
+variant: enumerate fitting word-boundary splits with >=2 words per line,
+minimize actual ink-width difference, deterministic width/index tie breaks.
+Selected exact copy is 'Explore the fraction improved and' / 'its speedup
+in our Marimo lesson.' Ink widths 582/574px (8px gap), versus greedy
+1037/119px (918px). Font stays 34px, box 1120×92, window 70–75s.
+The conjunction at line one's end is an explicit editorial tradeoff;
+equal widths do not prove better language flow or comprehension.
+
+Files: caption_balance.py, three tests, CAPTION_BALANCE.md,
+caption-balance/report.json and comparison-640.png, README/log. Separate
+adapter reuses earlier ink-bearing correction without editing prior source
+or evidence. Only frames 1680..1799 supported; no other cue rebalanced.
+Four separate full/half-size PNGs exported; sheet/report committed. Inspected
+greedy and balanced full-size frames and both half-size panels: no caption/
+footer clipping seen, orphan absent, concept graph/source details unchanged.
+Neither comparison panel is the frozen 26px movie. No equation in this cue;
+no new equation-scene inspection or motion/audio synchronization claimed.
+
+Validation: three focused tests pass in 6.344s; full suite **132 pass in
+170.881s**. All 120 cue frames, caption-only changed pixels, exact word
+sequence, ink/balance/word-count bounds, invalid scope, deterministic sheet/
+report and no-overwrite tested. Review HTML, caption-pacing/narration
+--checks and whitespace pass. Source/font/image hashes recorded; image
+blob equals local git hash, connected source tree compared exactly before
+expected-head non-force update. Earlier source/report/identity untouched.
+
+Pillow official drawing docs/MIT-CMU licence checked 17 November; pinned
+12.3.0/lock and external DejaVu retained, no dependency, bundled encoder/
+font, paid service or blanket codec/commercial-clearance claim. All edits
+under videos/. Frozen media, canonical lesson/caption/VTT/package, notebooks
+and research unchanged. No new MP4, speech, native/full-playback/device/
+accessibility approval, private artifact link, sharing, publishing, merge,
+account change or automation. Open Notebook deployment not assumed.
+
+Next: actual-device/editorial review of both wrapped ending cues and dense
+49–61s; select a single production treatment before encoding/updating
+candidate identity. Avoid more copy/layout alternatives absent a specific
+defect. Exact blockers: human math/editorial/rights, device/full playback,
+audio choice/retiming, unverified live-Marimo CTA/destination (source-only
+fallback unadopted), public-review-route authorization, stacked-parent
+reconciliation and exact-version release approval. Study remains unadopted.
+
+## 17 November 2026 · whole-pilot larger-caption layout and ink-bearing fix
+
+Source: fresh PR #4 head 920dd609b068146e00c7f7827fc927a756e828c9;
+isolated clean codex/video-* worktree. Read current main README/inventory,
+#1 AGENTS/ROADMAP/source registry/FFT lesson, video README/status, renderer,
+category study and identity. Main still lacks AGENTS/ROADMAP; #1–4 remain
+open/unmerged and #4 combined review feedback empty. Continue existing
+codex/video-teaser-pacing/#4 without a new external branch/PR stack.
+
+Bounded extension of the four-cue study: test one consistent 34px caption
+treatment against ALL 19 original cues / 1,920 source frames, without copy,
+cue or canonical renderer changes. Seventeen captions fit one line; 70–75
+and 75–80 s require two. Proposed box height 92 instead of 80 accommodates
+91.8px line boxes. A font-only change in the old box is insufficient.
+Lowest actual ink y=674.9, below the caption-box limit 682 and above the
+untouched footer origin 684. Nominal 640-wide caption font 17 vs 13px;
+not a CSS/accessibility standard or proof of reading comprehension.
+
+Initial strict ink audit rejected 65.5s: advance=1119px, but negative
+left bearing produced ink x=79.5 instead of >=80. Three initial focused
+tests errored; no evidence was accepted from that run. Centering actual
+ink rather than advance gives x=80..1200 (draw origin x=81). This edge
+case is explicitly regression-tested. No silent text shrinking/clipping.
+
+Files: caption_layout.py, test_caption_layout.py (three tests), separate
+fft-latency/caption-layout.json, CAPTION_LAYOUT.md, caption-layout/report.json
+and comparison-640.png, README/log. Adapter erases/redraws only caption-box
+pixels in memory, without monkey-patching the production renderer. Exported
+eight full-size PNGs plus a four-row before/after sheet; only sheet/report
+committed. Inspected final full-size proposed 35/65.5/70/75s and all final
+half-size panels. Equation/variable regions remain visible and unchanged;
+no caption/footer overlap seen. Greedy 70s wrapping leaves 'lesson.' alone
+on line two: an unresolved typographic weakness, NOT a polished ending.
+75s needs two lines too. Footer/source details stay small; cue times unchanged.
+
+Final validation: **129 tests pass in 125.379s**, including all 1,920 frames,
+caption-only changed pixels, exact words/cue endpoints, ink/bearing bounds,
+invalid input/overflow guards, deterministic report/sheet reproduction and
+no-overwrite. Review HTML, caption-pacing/narration --checks and whitespace
+pass. Source/font/image hashes recorded; binary blob equals local git hash.
+Connected tree matched checked local tree before expected-head non-force
+update. Earlier evidence/identity hashes not regenerated or relabelled.
+
+Official Pillow drawing docs/MIT-CMU licence checked 17 November; pinned
+12.3.0/lockfile and external DejaVu retained. No dependency/encoder/font
+redistribution, purchase or blanket commercial/codec clearance claim. All
+edits under videos/; frozen movie, canonical lesson/caption/VTT/package,
+other proposals, notebooks and research untouched. No new MP4, voice,
+speech-sync, native/browser/full-playback/device/accessibility approval,
+private artifact link, sharing, publishing, merge, account change or automation.
+No assumed Open Notebook deployment; previous public-link blocker not retried.
+
+Next bounded step: test word-preserving balanced two-line wrapping for the
+70–75s cue in this adapter, not another shortened-copy variant. Then review
+both wrapped endings and the 49–61s load on an actual device before choosing
+production treatment and encoding. Remaining gates: orphan-line treatment,
+human math/editorial/rights, full/tablet playback, audio choice/any retiming,
+unverified live-Marimo CTA/destination (source-only fallback unadopted), public
+review-route authorization, parent reconciliation and exact-version release
+approval. No candidate or release-status upgrade from source-fit evidence.
+
+## 16 November 2026 · larger original-copy category captions, isolated study
+
+Source: freshly fetched PR #4 head 1538d57e3128d75767af52c2a7e022023b2c03ea;
+clean isolated codex/video-* worktree. Read current main README/inventory,
+#1 AGENTS/ROADMAP/source registry/FFT lesson, video README/status, frozen
+renderer, copy-fit study and candidate identity. Main lacks AGENTS/ROADMAP;
+PRs #1–4 still open/unmerged, #4 combined review feedback empty. Continue
+existing codex/video-teaser-pacing/#4; no new stacked branch/PR externally.
+
+Bounded question from the previous fit study: shorter wording did not enlarge
+the small caption. Tested the ORIGINAL four 49–61 s sentences at 34 px
+instead of 26 px, without changing wording, cue windows or production source.
+All remain one line in the existing 1120×80 caption box; nominal half-size
+font 13→17 px (+30.8%). Actual glyph bounds also fit. Max study advance
+971.48 px (stability). Erase/redraw only the caption box in a separate adapter;
+footer, hero, context, progress and canonical renderer/data stay untouched.
+
+Files: caption_type_study.py, three tests, fft-latency/CAPTION_TYPE.md,
+caption-type/report.json and comparison-640.png, README/log. Exported eight
+full-size source PNGs plus an eight-panel 640-wide-per-panel sheet. Inspected
+all four proposed full-size images and all comparison panels: no visible
+caption clipping; original meaning/category alignment retained. No equation
+occurs in these cues; other equation scenes not re-reviewed. Larger caption
+is an observed layout difference, not proof of better reading/comprehension.
+Footer/context labels remain small; three-second reading load unchanged.
+
+Validation: three focused tests pass in 3.192 s; full suite **126 pass in
+47.765 s**. All 288 frames in 49–61 s render, changed-pixel bounds stay
+inside the caption box, current 26px branch matches original pixels, incoming/
+last outgoing cues retain exact copy, invalid frame/size rejection, actual
+ink, deterministic sheet/report and no-overwrite tested. Existing review HTML,
+caption-pacing --check and whitespace pass. Report records source/font/PNG
+hashes. Binary blob matches local git hash; connected source tree compared
+exactly before expected-head non-force update. No historical report refreshed.
+
+Official Pillow drawing docs and MIT-CMU licence checked 16 November;
+retained pinned 12.3.0/uv.lock and external DejaVu Sans, no dependency/font/
+encoder redistribution or blanket codec/commercial clearance claim. No paid
+service, new MP4, audio, speech sync, browser launch, full playback, actual-
+tablet/accessibility review or release approval. Frozen movie, caption/VTT,
+review/credit identity, proposals, notebooks and research unchanged. No private
+artifact link added, sharing/publication/merge/account change or automation.
+Open Notebook deployment not assumed; earlier public review-link gate not retried.
+
+Next: actual-device comparison of original copy at larger type versus the
+separate short-copy option; select one explicit production treatment, then
+check 48–49/61–62 s typography transitions and encode/review before updating
+candidate identity. Do not apply 34px globally: other scenes untested at that
+size. Exact remaining gates: human math/editorial/rights, full/tablet playback,
+audio choice and any retiming, unverified live-lesson CTA/destination (source-
+only fallback unadopted), public-review-route authorization, stacked-parent
+reconciliation and exact-version publication approval. Study stays unadopted.
+
+## 15 November 2026 UTC · exact full-pilot file handoff
+
+Source: freshly fetched PR #4 head d8c8756681e3f2e03e6a9029e6cfc6b38df0489a;
+isolated codex/video-* worktree. Read current main README/inventory, #1
+AGENTS/ROADMAP/source registry and FFT lesson, video README/status, full
+handoff/identity and v7 audit. Main still lacks AGENTS/ROADMAP; #1–4 remain
+open/unmerged, #4 issue/review/inline feedback empty. Continue existing
+codex/video-teaser-pacing / draft #4, not another stacked PR or variant.
+
+Found a concrete handoff gap: the full 80-second REVIEW sent readers back
+to an earlier chat message without file-selection/access-limit guidance.
+Resolved the existing full review copy, version 5, rather than creating a
+duplicate. Downloaded bytes match frozen v7 SHA256
+1d3050b3094f1a090954cb9c2e6ed10e90d438169e86bd2cfbc2a7f13ed74036.
+Size 669,380 bytes; ffprobe counts 1,920 frames, H.264 1280×720 at 24 fps,
+80.000 seconds, no audio streams. FFmpeg 7.1.5 complete decode with
+-xerror succeeds. This checks identity/decodability, not editorial playback.
+
+Files: README.md and fft-latency/REVIEW.md now identify the exact full copy,
+distinguish it from teasers and explain private access/approval limits;
+fft-latency/review-file.json records observed identity/probe/decode facts;
+test_package.py adds one narrow offline identity/private-link exclusion guard.
+Private review links are excluded from this public change, not published
+or replaced with a public upload. Ask for the exact hash-matching copy
+through an authorized review route. No sharing changed; viewer-side sign-in/
+playback untested. A public review destination still requires authorization.
+
+Validation: five packaging tests pass (0.027 s), full suite **123 pass in
+56.276 s**; caption-pacing/narration --checks, review-player HTML check,
+Node logic and git diff --check pass. Initial attempt put file metadata
+in review-version.json; eight provenance checks correctly rejected its
+changed hash. Restored that frozen file byte-for-byte and kept new file data
+separate; no historical evidence regenerated.
+All edits under videos/; no renderer/lesson/caption/VTT/credit snapshot,
+lockfile, dependency, assets, notebooks or research changes. No new movie,
+audio, clipping/equation inspection, timing, speech-sync, browser or actual-
+device review claimed. Existing source licences/tool choice retained, no
+purchase, redistribution or blanket commercial-clearance claim.
+
+Next: use the identified full private copy for normal-speed actual-device
+review, especially 49–61 s, and record the first confusing timestamp plus
+audio-format decision. Exact blockers remain human math/editorial/rights,
+tablet/readability and full-playback approval; unverified live-lesson CTA /
+destination (source-only alternative still unadopted); stacked-parent
+reconciliation and exact-version publication approval. No public upload,
+Substack/social post, merge, account change, assumed Open Notebook
+deployment or new automation. This increment verifies/selects the review
+file, not a public access path, a finished reviewed release or adoption of
+shorter caption proposals. A public-link placement remains blocked pending
+explicit authorization; no private artifact access reference is added.
+
+## 15 November 2026 · isolated stability-caption fit comparison
+
+Fresh PR #4 head c08b87e3f63443a778eb27fc6e1ef1ab632ccb4b; isolated
+fetched codex/video-* worktree. Read current main README/inventory,
+#1 AGENTS/ROADMAP/source registry, video README/status, caption proposals/
+audit and actual renderer/text-fit tests. AGENTS/ROADMAP absent on main;
+PRs #1–4 remain open/unmerged; #4 issue/review/inline feedback empty.
+Continue codex/video-teaser-pacing / draft #4, not a new PR stack.
+
+Files: caption_fit.py and four tests, CAPTION_FIT.md, caption-fit/report.json,
+two fresh 640×360 PNGs, README/log. Separate in-memory deep copy changes
+ONLY the unadopted stability caption at 52–55 s, no global/source mutation.
+Both original/proposed source images rendered at 1280 and 640; inspected
+all four stills, no clipping seen. Both captions remain ONE line at 26 px
+source / nominal 13 px half-size. Text advances 742.875→602.0625 px,
+code points 55→46; actual ink boxes fit. Shorter copy does NOT enlarge
+text or free a line, nor prove better comprehension/three-second pacing.
+Large active description/context unchanged; small caption/footer concern
+remains. No equation in this cue; other equation scenes not re-reviewed.
+
+Validation: four focused tests pass in 1.981 s; full suite **122 pass in
+85.224 s**. All 72 cue frames render; changed pixels confined to caption
+band, cue boundaries/invalid indices, one-field data isolation, actual ink,
+source/font/image identities, deterministic still reproduction and
+no-overwrite tested. Audit/narration --checks, review-player/Node and
+whitespace pass. Report includes four PNG hashes; two reduced previews
+committed, full-size stills reproducible output. Not encoded/OCR evidence.
+
+Official Pillow drawing/MIT-CMU licence docs checked 15 November;
+retained pinned Pillow 12.3.0 and external DejaVu fonts (hashes recorded),
+no new dependency/lock change/bundled binary/assets/paid service or blanket
+commercial/codec/font clearance. Source/connected tree compared exactly;
+expected-head fast-forward, no force. All edits under videos/. No new
+MP4/audio, decoded/full playback/device/accessibility/speech-sync review.
+Frozen media/lesson/captions/VTT/proposals/package, narration/adoption
+choices, notebooks and research untouched; browser permission not retried.
+Next: actual-device review of existing 49–61 s; choose copy and whether
+type/hierarchy also needs revision, then controlled candidate/caption/
+review/package update and encoded/full review if adopted. Existing
+destination/live-lesson gate unless explicitly changed, human math/
+editorial/rights approval, audio choice, parent reconciliation and exact-
+version publication approval remain open. No publication, merge, hosting,
+assumed Open Notebook deployment, account change or new automation.
+
+## 15 November 2026 · full-pilot caption audit and shorter copy proposals
+
+Source: fresh PR #4 head 85f1868ea816a52c581ed64cbde3d21b567a40c4;
+isolated fetched worktree. Read main README, #1 AGENTS/ROADMAP/source
+registry, video README/status, v7 focus audit and canonical cue generation.
+AGENTS/ROADMAP remain absent on main; PRs #1–4 open/unmerged and #4
+issue/review/inline feedback empty. Continue codex/video-teaser-pacing/#4.
+
+Files: caption_pacing.py, test_caption_pacing.py, caption-proposals.json,
+derived CAPTION_PACING.md and caption-pacing-report.json, README/log.
+Audited all 19 canonical cues: 1001 Unicode code points / 160 whitespace
+tokens. Highest caption CPS are the four 49–61 s category cues; peak
+52–55 s is 55/3=18.33. Four original shorter proposals reduce their
+combined count 213→166 without changing target windows. Numerical
+stability remains explicitly numerical; all four questions remain separate.
+These are UNADOPTED copy proposals, not validated reading-speed limits,
+WCAG compliance, total screen-load measurement or proof of comprehension.
+
+Validation: four focused tests pass in 0.004 s; full suite **118 pass in
+54.428 s**. Audit/script generated --checks, review-player/Node and whitespace
+checks pass. Tests cover rational cue/count arithmetic, Unicode/symbol
+definition, all-cue coverage/ranking, shorter equal-duration proposals,
+generated report/source hashes and unapproved status. Official W3C caption
+guidance and Python Fraction/licence docs checked 15 November. Existing
+dependencies/lock and renderer retained; no binary/asset bundle, new paid
+service or blanket commercial/codec rights clearance. Exact staged/connected
+tree comparison and expected-head fast-forward used; all edits in videos/.
+
+No new render, frame/equation/clipping/device/playback/audio-sync review;
+previous visual evidence stays dated. Frozen movie/lesson/captions/VTT,
+narration choice, ending/source-only adoption, release package, notebooks
+and research unchanged. No browser permission retry, assumed Open Notebook
+deployment, publishing, merge, hosting/settings change or new automation.
+Next: device review of existing 49–61 s concurrent reading load. Only if
+copy is chosen, migrate lesson/captions/review/package together, rerender
+and inspect encoded cuts. Device/editorial/math/rights approval, audio and
+destination choices, live-lesson gate unless explicitly changed, parent
+reconciliation and exact-version publication approval remain unresolved.
+
+## 14 November 2026 · optional human-recording script
+
+Fresh remote PR #4 head fa1d45046df8a462f3b92c9b4f36b8ea5e2fca4a;
+isolated fetched codex/video-* worktree. Read current main README/root
+inventory (AGENTS/ROADMAP absent there), unmerged #1 instructions/ROADMAP/
+source registry, video README/status, full REVIEW/script/storyboard/lesson
+and narration-related handoffs. PRs #1–4 remain open/unmerged; #4 issue,
+review and inline comments empty. Existing script was a reading transcript,
+not separate recording copy. Continue codex/video-teaser-pacing / draft #4.
+
+Bounded increment: optional NARRATION_BRIEF.md, editable narration.json,
+derived NARRATION_SCRIPT.md, narration_script.py and four tests, README
+link/log. Original 154-word human-read rehearsal for the SAME 80 s lesson:
+19 provisional cue windows, two planned one-second pauses, pronounced
+numbers/quotients, four explicit assumptions and separate complexity/
+stability/latency/readiness lines. Synthetic/no-new-algorithm-benchmark/
+no-real-time-grid-readiness limitations and connected concept placement
+retained. No narrator, recording method/service or audio-format decision
+is presumed; no voice recorded, synthesized, cloned or impersonated.
+
+Mechanical accounting: 154 words / 80 s =115.50 wpm; 118.46 excluding
+two planned pause seconds; maximum individual cue 140 wpm, below our
+draft 160 wpm budget. This is planning arithmetic, not measured speech,
+validated accessibility, speaking pace or comprehension. Producer checked
+script numbers and focus windows against current lesson/storyboard:
+90 ms after bar settles; ceiling quotient at 44.5 s; categories in order.
+No new render/frame/clipping/equation inspection or audio/caption sync.
+The brief flags actual concurrent-copy mismatch at 22–26 s and requires
+new captions aligned to a real consented recording, not the silent cues.
+
+Destination-neutral rehearsal ending does NOT resolve the frozen visual
+live-lesson CTA, choose an adoption route, or approve the source-only
+alternative. No new movie, adopted soundtrack, replacement canonical
+captions, release package or public destination. Frozen full v7, teasers,
+curves movie, source-only excerpt, lesson/math model/render helpers,
+review/package/description/deployment handoff, notebooks and research
+unchanged. Independent NS audit gate remains. All files under videos/.
+
+Validation: four focused tests pass in 0.016 s; final full suite **114
+tests pass in 100.552 s**. Generated script --check, existing review-player
+--check, Node logic and whitespace checks pass. Tests cover exact 19 cue
+windows, pauses/rates, changed movie/lesson/timing/approval identity,
+bad pauses/over-budget copy, generated-text identity and assumption/
+disclaimer wording. Source baseline and frozen movie/lesson hashes in
+data; no dependency/pin/uv.lock change. Python runtime 3.12.14; official
+JSON/license docs and FFTW accuracy context rechecked 14 November.
+Latest docs differ from retained runtime; no binary/asset/audio engine
+bundle or blanket commercial/codec/recording-rights clearance. No paid
+service. No browser permission retry/bypass; no Marimo export for unchanged
+notebooks. Exact tested tree comparison and expected-head fast-forward,
+never force, are used for the connected commit.
+
+Next: editorially review this concrete script and choose silent versus
+authorized human narration. If chosen, obtain a consented read, log actual
+timings/breaths, then separately build/review an audio candidate with
+speech-aligned captions and a controlled ending/package identity. No
+consented narrator/audio file currently supplied. Device reading-load,
+destination/live-lesson gate unless explicitly changed, math/editorial/
+rights/parent reconciliation and exact-version publication approval remain
+open. No publishing, merge, hosting, account change or new automation.
+
+## 14 November 2026 · exact-copy verification for ending excerpt
+
+Fresh fetched PR #4 head cb999cec97edb70705cabc6a24bdd9695ae95b8c;
+isolated codex/video-* worktree. Read current main README/root inventory
+(AGENTS/ROADMAP absent there), unmerged #1 instructions/ROADMAP/source
+registry, current video README/status, excerpt handoff/render report and
+QA implementation. Open PRs #1–4 remain unmerged; no new #4 feedback.
+Continue on codex/video-teaser-pacing / draft PR #4, no extra PR stack.
+
+Bounded increment: verify_source_ending.py, six tests, new
+source-ending-excerpt/verification-report.json, excerpt handoff command/
+trust-boundary documentation, README link and this log. Checks an existing
+local movie rather than generating another unapproved video variant.
+SHA256 movie/caption matching and eight recorded source hashes checked
+before decoder invocation; source paths restricted to videos/. Verifies
+unadopted/silent/excerpt timeline, independently probes every timestamp,
+dimensions/rates/codec/duration/single stream and fully decodes with
+FFmpeg -xerror. Optional JSON output refuses overwrite. No network fetch,
+upload, browser, automatic feedback post or approval from this checker.
+
+Actual existing MP4 c6735b9bc729204db6c6238ecda204d22643489807a918dee92c8115eee65f79
+passes: H.264 1280×720, 24 fps, 240 frames, 10.000 s, no audio; all frame
+timestamps and full decode verified anew. Matching VTT and all eight
+source files pass. Evidence records movie/caption/render-report/verifier
+hashes and actual FFmpeg/ffprobe 7.1.5-0+deb13u1 versions. Report's
+source_commit remains the rendering baseline 879cf7b…, distinct from
+this run's cb999ce… verification baseline. No new MP4 or visual change.
+
+Validation: six focused tests pass in 0.005 s; final full suite **110 tests
+pass in 61.978 s**. Wrong movie/captions, source drift/empty evidence/path
+escape, claimed approval/audio/timeline drift, pre-decoder rejection and
+pre-verification no-overwrite covered. Fixtures are not media; real decode
+is the separate actual-file check. Existing review-player --check and Node
+logic pass; whitespace check passes. Trusted repo evidence is not a digital
+signature: changing both reference report and movie redefines that evidence.
+No OCR, fresh visual/frame/equation inspection, speech sync, continuous human
+playback or device/comprehension/rights/adoption certification is claimed.
+Earlier inspected frames and dense-text concern remain the visual evidence.
+
+Official ffprobe and FFmpeg legal docs checked 14 November; retained pinned
+environment and external GPL-enabled tools, no new dependency/lock change,
+bundled binary/font, commercial/codec clearance or paid service. No optional
+browser permission retry/bypass; not needed for local verification. No
+notebook changes, so no Marimo check/export rerun. All changed files under
+videos/; tested local tree compared to connected tree before expected-head
+fast-forward, never force. Full pilot/teasers/curves/old report/captions/
+lesson/review/package/description/deployment handoff and research untouched.
+
+Next: actual-device reading-load review of the SAME ending excerpt and owner
+decision on source-only route versus retaining live-lesson dependency.
+Adoption still requires controlled full-candidate/caption/review/package
+update, full playback and math/editorial/rights/exact-version approval.
+Audio choice and stacked-parent reconciliation remain open. No publishing,
+merge, hosting, account change or new automation.
+
+## 13 November 2026 · source-only ending encoded excerpt
+
+Fresh remote PR #4 head 879cf7b13eb9a4cb4af3889803e41da26d31e869;
+isolated fetched worktree. Read main README, unmerged PR #1 instructions/
+ROADMAP/source registry, current video README/status and source-only proposal/
+renderer/QA sources. PRs #1–4 still open/unmerged; no #4 human feedback.
+Only codex/video-teaser-pacing / draft PR #4 is updated, no new PR stack.
+
+Bounded increment: separate fft_source_endcard_media.py wrapper and four
+tests; SOURCE_ENDCARD_EXCERPT.md; matching excerpt-relative VTT, encoded
+render-report.json and two 640-wide decoded previews in source-ending-excerpt/;
+README link/log. Original 70–80 s proposal maps to 0–10 s, with its caption
+cut at frame 120 / 5 s. Two static states, no animation or narration. Source
+content remains separate in the unchanged source-endcard.json. No new maths,
+telemetry or claimed live app. The first milestone remains the full pilot.
+
+New silent MP4 SHA256 c6735b9bc729204db6c6238ecda204d22643489807a918dee92c8115eee65f79,
+1280×720 H.264, 24 fps, 240 frames, exactly 10.000 s, no audio streams.
+Complete decode and all 240 expected timestamps verified; ten decoded sample
+frames generated. Inspected frames 0/119/120/239 at 1280, 119/120/239 at 640.
+Correct caption cut and final state; no clipping observed in those samples.
+No equation on this card; earlier arithmetic/equation frames not re-reviewed.
+Readable fit is not audience comprehension: simultaneous reading load and
+28 px source / 14 px reduced secondary type need actual-device/human review.
+No continuous human playback or speech/caption synchronization claimed.
+
+Validation: four focused tests pass in 0.071 s; final full suite **104 tests
+pass in 67.853 s**. Review-player --check, Node logic and whitespace checks
+pass. Tests cover every excerpt frame/cue mapping, generated VTT identity,
+stored source/caption/media evidence and no-overwrite guard. Stored report
+checks do not rerender/OCR the movie. Source/font/uv.lock hashes recorded.
+Official FFmpeg encoding/probe/legal docs inspected 13 November; retained
+external 7.1.5-0+deb13u1 GPL-enabled libx264 build, pinned Pillow 12.3.0 and
+DejaVu fonts. No bundled tool/font binary, new dependency, paid service or
+blanket commercial/codec rights clearance. Optional browser-launch permission
+blocker not retried/bypassed; local encoding available. Notebooks unchanged,
+so no Marimo check/export rerun. Public review copy linked in excerpt handoff.
+
+UNADOPTED technical excerpt only. Frozen 80 s v7, both teaser candidates,
+curves movie, canonical lesson/captions/review/package/description placeholder,
+deployment handoff and research conclusions untouched. Existing live-lesson
+release gate remains; no source-only design adoption inferred from rendering.
+All changes under videos/; expected-head update and exact tree check required.
+
+Next: actual-device review of this exact excerpt's reading load and owner
+decision on source-only route versus retaining interactive-lesson dependency.
+If adopted, separately update full candidate/captions/review/package together,
+rerender and obtain full playback/math/editorial/rights/exact-version approval.
+Audio choice and stacked-parent reconciliation remain open. No account,
+hosting, publishing, merge or automation change.
+
+## 13 November 2026 · full-pilot source-only ending proposal
+
+Fresh PR #4 head 368ddab0d0f3cbb4388e5d0b6784add5a92f0a83; isolated
+worktree from fetched exact remote commit. Read current main README,
+unmerged #1 AGENTS/ROADMAP/source registry, current video README/status,
+full pilot REVIEW/storyboard/LESSON_LINK and relevant rendering/content
+sources. Open PRs #1–4 unchanged/unmerged; no #4 human feedback. Returned
+to the 80-second first milestone instead of another teaser timing variant.
+Only codex/video-teaser-pacing / draft PR #4 is updated, no new PR stack.
+
+Concrete increment: SOURCE_ENDCARD.md, source-endcard.json, separate
+fft_source_endcard.py and four tests, source-endcard/report.json and four
+original PNGs (two caption states at 1280 and 640 width), README link/log.
+Proposal covers only 70–80 s, two five-second caption windows, bound to
+full FFT v7 hash 1d3050b3…d74036. Text clearly distinguishes public Python/
+Marimo SOURCE CODE from a live interactive app. Concept path and synthetic/
+no-grid-readiness limitations retained. Proposed description links are
+explicitly conditional on adoption, not already-published destinations.
+
+Public notebook fetched fresh at immutable commit 7905dc2b30ad9c05436f4db4a03d9cfe34224ffc,
+returned blob bf6eb0d52cb3bb20f0ec2747a0648612eb1af09a. It contains the
+model/sliders/prediction feedback. This verifies available code only, not
+a running lesson or tablet/Pages readiness. No new deployment/settings
+audit, guessed Pages address or Open Notebook service claim. Existing
+LESSON_LINK.md is dated evidence, not treated as current account diagnosis.
+
+This is an UNADOPTED alternative release design, not clearing or silently
+removing the live-lesson gate. Frozen full/teaser/curves videos, canonical
+captions, lesson/models, old render helpers/review identity/description
+placeholder/package and deployment handoff remain unchanged. No account,
+workflow, publishing, notebook, dependency/pin/uv.lock or research change.
+
+Validation: four focused tests pass in 0.058 s. Final full suite **100 tests
+pass in 134.009 s**; review-player --check, Node logic checks and whitespace
+check pass. New tests cover all 240 half-open frame indices (mapping to
+two static states), actual ink bounds/minimum type size, source-only and
+frozen pilot identity, source/image hashes and no-overwrite output guard.
+Both 1280×720 and both 640×360 stills inspected; no clipping found there.
+Minimum font 28 px (14 px at 640 width) is a design budget, not device
+accessibility/comprehension evidence. Secondary credits and simultaneous
+reading load remain a real-tablet/human judgement. No new MP4, encoded
+review, speech/audio timing, browser test or approval. Earlier browser
+socket-permission blocker was not retried or bypassed; local still rendering
+is unaffected. No Marimo check/export rerun: notebooks untouched.
+
+Official Pillow drawing/license docs and FFTW accuracy context checked
+13 November; retained pinned Pillow 12.3.0 and external DejaVu notices.
+Current stable docs show 13.0.0; no runtime upgrade or bundled font/tool
+binary. Source/font/image hashes recorded. Original code visuals only,
+no creator footage/music/voice/assets, paid service or blanket commercial
+clearance. All changed paths remain under videos/; connected tree checked
+against tested local tree before expected-head update, no force push.
+
+Next: decision on keeping the interactive-lesson dependency versus adopting
+the labelled source-only release route. If adopted, update the complete
+candidate/captions/review/package identities together, rerender, inspect
+encoded/full playback and get exact-version approval; do not silently
+overwrite v7. Before a choice, this is a concrete fallback, not an adopted
+replacement. Full human/device/math/editorial/rights review, audio and
+destination decisions, stacked-parent reconciliation and publication
+approval remain open. No publishing/merge/account change/new automation.
+
+## 12 November 2026 · optional local comparison-review prototype
+
+Fresh remote PR #4 head 60c09d44da94f88fe43915b9806211a6b3419620;
+isolated worktree at that commit. Read current main README, confirmed
+AGENTS/ROADMAP absent there, read unmerged #1 instructions/
+roadmap/source registry, current video README/status, timing and encoded
+comparison sources and all open PR metadata (#1–4). No #4 human discussion
+feedback. Heads #1 7905dc2b, #2 97c8aea3 and #3 23aa5b2 remain unchanged.
+Only codex/video-teaser-pacing / draft PR #4 is updated; no new branch stack.
+
+Delivered optional review aid, not another movie/timing variant:
+fft_review_player.py, test_fft_review_player.py, test_review_player_logic.cjs,
+fft-latency/review-player-template.html, generated review-player.html,
+LOCAL_REVIEW.md, README link and this log. Framework/network-free single
+HTML uses frozen candidate identities from JSON, local SHA-256, native
+media controls, 22 s shortcut and paused-time issue notes. JSON export
+contains candidate identities, provisional preference and explicitly
+self-reported playback; publication_approved is always false. No reviewer
+name/path collection, local/session storage, upload or automatic GitHub post.
+Notes are volatile until explicitly downloaded. CSP disallows connections;
+unknown bytes/oversize selection and duration mismatches are blocked in code.
+Text is inserted with textContent, not interpreted HTML. No real user
+feedback or private/operator data is included in tests or public sources.
+
+Final full Python suite: **96 tests pass in 147.049 s**. Generated-player
+--check, Node logic checks and git diff --check pass. Connected commit tree
+is checked against the tested local tree before expected-head branch update.
+Three new Python tests cover generated identity/static guards/controls.
+Built-in Node 24.22.1 DOM-shim logic checks pass for unknown/oversize
+rejection, fixture switch/seek/timestamped literal-text note, false-approval
+export, duration mismatch and object-URL cleanup. Matching candidate state
+is injected in this fixture, not a verified real-browser file acceptance.
+
+Browser validation is explicitly BLOCKED, not passed: bundled Playwright
+browser executable absent; installed Chromium launch fails at its process-
+singleton socket with Operation not permitted. Stopped without permission
+workaround or browser download. No screenshot, real-browser clipping/native
+media/hash acceptance, keyboard/screen-reader, continuous playback or actual
+tablet usability claim. Static/DOM-shim checks cannot replace those reviews.
+This optional aid must not block using the original MP4s/native player.
+
+All eight changed paths are under videos/. No video, caption, timing data,
+lesson/model/old-render helper, dependency/lockfile, notebook or research
+change. No new render/encoded QA or audio-sync claim. No Marimo check/export
+rerun because notebooks are untouched. No third-party runtime dependency:
+HTML uses browser APIs; Python standard library generator; optional logic
+test uses Node built-ins. MDN digest/object-URL/currentTime docs rechecked
+12 November; API mechanism evidence, not device compatibility clearance.
+Original interface code, no copied creator assets, voice, paid service or
+assumed Open Notebook deployment. No hosting or account configuration.
+
+Next bounded action: permitted real-browser smoke test before relying on
+the aid, then complete 28/34-second tablet comparison and timestamped
+feedback. Use native playback/manual notes if browser/file support is
+unsuitable. Full human/device, independent math/editorial/rights review,
+audio/public destinations, stacked-parent reconciliation and exact-version
+publication approval remain open. FFT v7 remains the first release milestone.
+No YouTube/Substack/social publication, merge or new automation.
+
+## 12 November 2026 · encoded slower FFT teaser comparison
+
+Fresh PR #4 head c1a0bf873111dbd73b161bcb17815fa6cf2aba29; isolated
+worktree from fetched exact remote commit. Read current main README and
+confirmed AGENTS/ROADMAP absent there, read #1 instructions/roadmap/source
+registry, video README/status, lesson and pacing/render sources. Open PRs
+#1–4 remain unmerged; #4 has no human discussion feedback. Prior parent
+heads #1 7905dc2b, #2 97c8aea3, #3 23aa5b2 unchanged. Work updates only
+codex/video-teaser-pacing / draft PR #4, stacked on #3, not other branches.
+
+Delivered fft_teaser_slow_media.py, test_fft_teaser_slow_media.py,
+fft-latency/TEASER_SLOW_RENDER.md, teaser-slower-render/candidate.json,
+render-report.json, matching rendered reading-track VTT, two decoded PNGs,
+README link and this log. Existing timing proposal remains dated history.
+New wrapper retains frozen helpers and uses the tested source-time adapter.
+No retiming/graphics/model/dependency changes beyond the already proposed
+34-second comparison. All new/modified files are under videos/.
+
+Output: H.264, 1080×1920, 24 fps, 816 frames, 34.000 s, 461078 bytes,
+no audio/extra streams. Complete decode and every-frame timestamps,
+count/rates/dimensions/duration pass. SHA256
+7651d3e43a027947cf44efce39ecd76c14700e02df98a6d6a377fcdfde28405d.
+Owner review copy saved separately; no public video/lesson URL or Git movie.
+Rendered VTT is a silent reading track, not aligned speech. Report includes
+exact source/tool/font hashes and 29 decoded sample records; expected
+captions are mapped source metadata, not OCR. Local sample paths in report
+are not all committed; only result/end 360-wide PNGs are included.
+
+Actually inspected 18 decoded 360-wide samples on three chronological cut
+sheets: 0,95,96,191,192,287,288,407,408,527,528,599,600,671,672,743,744,815;
+also full-resolution result 288 and ending 815. No clipping/caption-focus
+mismatch found there. Closing focuses switch at 22,25,28,31 s; original
+synthetic label, 20+80→10+80=90 arithmetic and four assumptions retained.
+Result PNG is byte-identical to prior decoded result; ending is separately
+decoded from this encode. This is sampled inspection, not continuous human
+playback, actual-tablet, accessibility/comprehension or audio-sync review.
+Secondary source/synthetic notes remain small at 360. Three-second holds
+are an alternative for feedback, not evidence of better learning outcomes.
+
+Final full suite: **93 tests pass in 34.090 s**. Four new tests cover 34 s
+versus 28 s format and bad timestamps, incoming caption/focus cuts,
+no-overwrite/input guards, frozen candidate/source/report/VTT identity.
+Existing 89 regressions retained; pacing --check and whitespace check pass.
+No notebook edits; Marimo check/export not rerun. Frozen 28-second teaser,
+80-second FFT v7, curves movie, old helpers/lessons/VTTs, dependency pins/
+uv.lock and research unchanged. Tested tree is verified before branch update.
+
+Official FFmpeg/FFprobe docs and licensing rechecked 12 November; external
+7.1.5 GPL/libx264 build, pinned Pillow 12.3.0 and system DejaVu notices
+retained. No binary/font bundle, new dependency, blanket commercial/codec
+clearance, paid service, copied footage/music or fabricated voice. FFTW
+authors' accuracy context rechecked; synthetic timing is not a new FFT or
+grid readiness claim. No private/operator data or Open Notebook deployment.
+
+Next: complete 28- versus 34-second tablet playback and timestamped feedback,
+then fix one observed issue rather than generate a third timing variant.
+No technical render blocker. Actual-device/full human, independent math/
+editorial/rights review, audio/public destinations, stacked-parent
+reconciliation and explicit exact-version publication approval remain
+unchecked. FFT v7 stays the first release milestone. No YouTube/Substack/
+social publishing, merge, account setting change or new automation.
+
+## 11 November 2026 · measured closing load and slower timing alternative
+
+Fresh source: PR #3 head 23aa5b2ab3ec88d07a39251c2ba01c95305468e1.
+Fetched origin, inspected current main README (template), #1 README/AGENTS/
+ROADMAP/source registry at 7905dc2b, video README/status, teaser lesson,
+script/layouts/render handoff and all open PR metadata (#1–3) plus #3
+discussion. No newer human timing feedback found. AGENTS/ROADMAP remain
+absent on main and video branch; #1 still unmerged. Existing #2 and #3
+branches are untouched. Work is isolated on codex/video-teaser-pacing,
+stacked on #3 for narrow review, not a request to merge the stack.
+
+Delivered fft_teaser_pacing.py, test_fft_teaser_pacing.py,
+fft-latency/teaser-pacing.json, generated TEASER_PACING.md,
+teaser-pacing-report.json and teaser-pacing.vtt, plus README link and log.
+Report records source commit, frozen MP4 identity and source-file hashes.
+New timing preserves 0–22 s and doubles four final focus holds 1.5→3 s:
+34 seconds / 816 proposed frames at 24 fps. The frame adapter reuses exact
+original renderer pixels at mapped times without changing frozen helpers.
+
+Mechanical reading-load audit: 34 persistent whitespace tokens (including
+11-token caption) plus 10 changing description tokens. Persistent text is
+counted once, not recharged to each focus. Description-only token/second
+rates halve; neither metric predicts reading time or comprehension. No
+new numerical threshold or evidence of better learner outcomes is claimed.
+
+Validation: four focused tests pass in 0.545 s; full suite **89 tests pass
+in 54.854 s**. New tests check all 816 mapped times, exact incoming cuts,
+12 pixel-identical source-frame comparisons with actual glyph-fit checks,
+invalid indices, cue coverage, rates and generated-source identity/drift.
+Alternative --check, original teaser --check and git diff --check pass.
+This is source-frame verification, not fresh encoded pixel inspection,
+continuous playback or tablet/accessibility review. No new MP4 or audio;
+the matching alternative VTT is explicitly unrendered and not speech.
+No technical encode blocker: bounded output is a tested timing storyboard.
+
+All changed files under videos/. Full FFT v7, 28-second frozen teaser,
+curves candidate, original captions/lesson/models/renderers, dependency
+pins/uv.lock, Marimo notebooks and research conclusions unchanged. No
+Marimo check/export rerun because no notebook changed. Existing pinned
+Pillow 12.3.0 path retained; current official ImageDraw/license pages
+rechecked (stable docs now 13.0.0). No new assets/fonts/tool binaries,
+copied footage or fabricated voice, blanket commercial clearance, private
+data or assumed Open Notebook deployment.
+
+Next bounded action: encode the 34-second alternative into a new directory,
+verify full decode/timestamps and inspect cut/end frames before comparison
+playback. Human/editorial/math/rights and actual-device review, audio and
+public destinations, stacked-parent reconciliation and explicit exact-version
+publication approval remain gates. FFT v7 remains the first 60–90-second
+milestone. Nothing published, merged or scheduled; no account changes.
+
 ## 11 November 2026 · first complete silent FFT teaser encode
 
 Fresh remote PR #3 head `61f11c05c8c47011eb93645bd074075272b9da32`,

@@ -4,79 +4,103 @@ First increment: **80-second silent, captioned visual draft**, not an approved
 YouTube release. Original graphics; synthetic numbers; no operational claims.
 Video work lives here independently of the Marimo starter PR #1.
 
-**Review without installing anything:** open the
-[tablet-friendly editorial handoff](fft-latency/REVIEW.md) for the exact
-current script, scene checklist and draft title/description/source links.
-It is a review page, not a release approval or live interactive lesson.
+## Start with one complete review copy
 
-The [v7 packaging audit](fft-latency/PACKAGE_AUDIT_V7.md) reconciles current
-video/blog handoff identities, the component-specific title and source credits.
-Its shared snapshot and regression tests detect narrow drift, not release approval.
-The [28-second FFT teaser storyboard](fft-latency/TEASER.md) now has a
-source-bound preproduction script and provisional VTT, retained for provenance.
-Two [original vertical keyframe prototypes](fft-latency/VERTICAL_KEYFRAMES.md)
-now test the baseline/result layout at full, 540 and 360-pixel widths.
-They are stills, not a rendered teaser or a reviewed release.
-The [complete teaser source-frame layouts](fft-latency/TEASER_LAYOUTS.md)
-add the other four scenes and staged closing distinctions. All 672 proposed
-frames are testable. The [first complete silent encoded teaser test](fft-latency/TEASER_RENDER.md)
-now has a matching reading-track VTT, full decode/timestamp checks and sampled
-pixel review. It is not an approved release or a replacement for the full pilot.
+Review focus: **the full source-only copy**, not a teaser, the older
+caption-layout comparison or the frozen v7 reference. This is a review
+priority, **not adoption of a release design**. All three copies below are
+80-second silent drafts and remain unapproved.
 
-Later candidate: [Same-looking curves, different physics](same-looking-curves/STORYBOARD.md)
-has an original 82-second unrecorded script, primary-source ledger and tested
-geometry helpers. Two [original comparison keyframes](same-looking-curves/KEYFRAMES.md)
-now include full/640-pixel previews, source masking and reproducible code.
-A [32-second silent camera-study excerpt](same-looking-curves/CAMERA_STUDY.md)
-now tests fixed dipole curves under a turning camera, with captions and encoded QA.
-A [32-second silent map/potential excerpt](same-looking-curves/MAP_STUDY.md)
-now stages matching input/output points, then explicitly returns to the domain
-for a chosen potential model. An [86-second integrated silent rough cut](same-looking-curves/EPISODE.md)
-now adds 3D orientation, labelled camera cuts and one closing question/source card.
-The [exact-version review handoff](same-looking-curves/REVIEW.md) now includes
-larger orientation labels, before/after samples and an unchecked reviewer checklist.
-The [candidate-bound publication package](same-looking-curves/PACKAGE.md) separates
-proposed title/description and primary-source links from internal review prompts.
-Its offline copy checks reject lesson/media identity drift; they grant no approval.
-One [original curves thumbnail option](same-looking-curves/THUMBNAIL.md) now has
-full/640/320-pixel previews, reproducible geometry and candidate-bound hashes.
-The [unpublished curves companion](same-looking-curves/SUBSTACK_DRAFT.md) adds
-a worked point map and contour-versus-field-line prediction, with primary sources.
-It remains unapproved; the FFT pilot remains the first release milestone.
-No RH or private NS research claims.
+| Copy | Role and limitation | Correct handoff |
+|---|---|---|
+| `fft-source-only-review.mp4` | Review focus; unadopted source-code-only ending, not a live lesson | [Playback worksheet](fft-latency/SOURCE_PLAYBACK_REVIEW.md) · [Exact identity and draft description](fft-latency/SOURCE_ONLY_REVIEW.md) |
+| `fft-caption-layout-review.mp4` | Earlier larger-caption comparison; live-lesson CTA remains unverified | [Older playback worksheet](fft-latency/PLAYBACK_REVIEW.md) · [Render evidence](fft-latency/CAPTION_REVIEW_RENDER.md) |
+| `fft-latency-draft.mp4` | Frozen canonical v7 reference; not approved, live-lesson CTA unverified | [v7 editorial handoff](fft-latency/REVIEW.md) · [Canonical identity](fft-latency/review-version.json) |
 
-The [v6 smaller-view review pack](fft-latency/SMALL_SCREEN.md) includes three
-encoded moments at 640×360 and 960×540, timestamped findings and a reproducible
-export command. It flags dense secondary text; it is not an actual-tablet test.
+For the review focus, use the existing separately supplied file:
+`fft-source-only-review.mp4`, 732,406 bytes, SHA-256
+`790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e`.
+Private review links are not included here; these repository links do not
+grant media access or imply a public video destination.
 
-The [Substack companion draft](fft-latency/SUBSTACK_DRAFT.md) supports this
-same pilot with a prediction, worked example and source links. It is not
-posted or approved; video/lesson destinations remain explicit placeholders.
+1. Open the [source-only worksheet](fft-latency/SOURCE_PLAYBACK_REVIEW.md)
+   and watch the exact copy once at normal speed in an existing trusted player.
+   No installation or code is needed to watch and comment.
+2. Use the [descriptive text alternative](fft-latency/DESCRIPTIVE_TRANSCRIPT.md)
+   to follow the captions, visual changes and equations in text. It is a draft,
+   not recorded narration or an accessibility certification.
+3. Return the worksheet's timestamped feedback for that file: keep, one specific
+   fix, or cannot assess. A review recommendation does not authorize publication.
 
-The [original thumbnail candidate](fft-latency/THUMBNAIL.md) includes full-size
-and small previews, a prediction-first hook and model-driven reproduction
-commands. It is draft packaging for review, not a performance announcement.
+Prioritize 49–61 s (the four distinctions) and 70–80 s (the source-only ending).
+Choose the release design before reconciling candidate, captions and package;
+do not substitute the older worksheet's ending prompts. Full intended-device
+playback, human math/editorial/rights, text-equivalence/assistive-tech review,
+audio choice/retiming, parent reconciliation and exact-version publication
+approval remain open. Source-only adoption does not deploy a live lesson.
 
-The [live-lesson handoff](fft-latency/LESSON_LINK.md) records the read-only
-Pages/Actions audit, current deployment blocker and approval-dependent CTA
-verification steps. Passing pilot tests does not establish a deployed lesson.
+For technical reproduction of this exact copy, use the
+[fresh-environment rebuild commands](fft-latency/CLEAN_REBUILD.md).
+The [sampled text/frame comparison](fft-latency/TRANSCRIPT_VISUAL_CHECK.md)
+records an assistant check of 16 decoded frames across all eight scenes;
+it does not complete human text-equivalence or accessibility review.
+The [contrast audit](fft-latency/CONTRAST_AUDIT.md) checks intended source
+colors, not small-text readability. Neither check completes human review.
+The [four encoded caption samples](fft-latency/ENCODED_CAPTION_AUDIT.md)
+extend that narrow check to decoded solid glyph interiors in 49–61 s;
+thin strokes, antialias edges and intended-device readability remain unassessed.
+A [caption-cut timing check](fft-latency/CAPTION_CUT_AUDIT.md) compares decoded
+pixels on both sides of all 18 cue changes with outgoing/incoming source
+templates. It is not OCR, speech synchronization or full-playback approval.
+An optional [snapshot-based QA command](fft-latency/STABLE_QA.md) prevents
+ordinary concurrent movie edits from misidentifying a newly generated review
+pack; the archived renderer and existing manifests remain unchanged.
+An equivalent [plain UTF-8 SRT reading track](fft-latency/SRT_SIDECAR.md)
+is available for compatible editors/players. It preserves the 19 WebVTT
+cues; it is not speech or a readability fix for the burned-in text.
 
-Latest revision: **v7 focus-first candidate** enlarges the active category's
-description while retaining the four titles as context. See the
-[encoded v6/v7 comparison and review limits](fft-latency/FOCUS_V7.md).
-It has not passed actual-tablet playback or editorial approval.
+## Retained studies and supporting drafts
 
-Retained from v6: moving bars replace animation-generated decimal totals with
-endpoint arrows during the two moving-bar beats (18–21 s and 40–43 s).
-Exact totals appear only once settled: 90 ms at 21 s and 80 ms at 43 s;
-the 1.25× formula still appears with its caption at 44.5 s. The validated
-timing model, public 100 → 90 ms example, prediction-first opening and
-synchronized question cards are retained; duration remains 80 seconds.
+The [retained production studies](PRODUCTION_STUDIES.md) preserve the earlier
+comparisons, teasers, packaging and later curves work. They are provenance,
+not extra prerequisites to reviewing the one complete copy above. No study
+has been adopted or release gate cleared by moving these notes.
 
 ## Reproduce
 
+The [fresh-environment source-only rebuild](fft-latency/CLEAN_REBUILD.md)
+reproduces the existing MP4, manifest, captions and lesson byte-for-byte on
+the same host. It checks a new local environment, not cross-machine output
+or release approval; no new version of the movie is distributed.
+
 From `videos/`, with Python 3.11–3.13, uv, FFmpeg (libx264 enabled) and
 DejaVu Sans installed:
+
+### Current review focus: full source-only copy
+
+These commands build the copy named in the review instructions above, not
+frozen v7. Choose a NEW output directory; the renderer refuses an existing
+one. The test command runs the full video workshop suite, including retained
+studies. It does not complete human review or authorize publication.
+
+```sh
+uv sync --locked
+uv run --locked python -m unittest discover -p 'test_*.py'
+uv run --locked python source_only_review.py --out out/review-copy-new
+uv run --locked python verify_source_review.py out/review-copy-new/fft-source-only-review.mp4 --captions out/review-copy-new/fft-source-only-review.vtt
+```
+
+The verifier requires the existing exact movie/caption/source identity before
+checking all timestamps and fully decoding. A different host/toolchain may
+produce different bytes: investigate a mismatch, do not overwrite archived
+evidence or silently adopt the new output. The
+[fresh-environment receipt](fft-latency/CLEAN_REBUILD.md) records the earlier
+same-host result and its limits. Rebuilding does not distribute a new copy.
+
+### Frozen v7 and alternate fixture: reference commands only
+
+The default `render.py` commands below are NOT the source-only review focus.
+`--scenario` is a separate synthetic reuse fixture, not another public episode.
 
 ```sh
 uv sync --locked
@@ -130,6 +154,9 @@ not an instantaneous measured total. Settled labels use the exact model value.
 No separate narration has been recorded. The current captions are a silent
 reading track, not a claim of alignment to speech. Record an authorized human
 voice only after editorial review; then retime the cues to that recording.
+An [optional human-recording brief and 154-word rehearsal script](fft-latency/NARRATION_BRIEF.md)
+now prepares that choice; target timing is tested, but no speech or sync is claimed.
+Its neutral ending does not resolve the frozen visual CTA or adopt a release route.
 Change the three timing parameters through a scenario file; numeric captions,
 equations, variables and bar scales then follow automatically. The script's
 qualitative assumptions still need editorial review. This lesson deliberately
@@ -218,6 +245,11 @@ all those cut/midpoint/first/last checks: 101 samples and 17 contact sheets
 for the current pilot. It accepts positive whole seconds only. Omitting
 the option preserves the original selection. The report records the interval;
 even dense samples cannot certify unseen frames, smooth motion or pacing.
+
+For the existing larger-caption review, the flat dense selection fails in
+the inspected FFmpeg 7.1.5 build. The opt-in [balanced dense export](fft-latency/DENSE_QA.md)
+recovers all 101 intended frames without editing archived QA or the movie.
+Its actual frame-selection/pixel checks pass; it is not full playback approval.
 
 The report records input SHA256, QA source hash, resolved lesson hash, external
 FFmpeg/FFprobe versions, dimensions, duration, frame count/rate and every

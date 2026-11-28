@@ -1,0 +1,53 @@
+{
+  "checked_on": "2026-11-21",
+  "source_commit": "17a066de120ddced5400229dcafab07cb6d9c128",
+  "status": "same-host fresh-worktree reproducibility check passed",
+  "environment": {
+    "python": "3.12.14",
+    "pillow": "12.3.0",
+    "uv": "uv 0.13.9 (x86_64-unknown-linux-gnu)",
+    "fresh_local_venv": true,
+    "local_renderer_and_pillow_imports_checked": true,
+    "shared_system_interpreter_tools_fonts_and_possible_cache": true,
+    "clean_host": false
+  },
+  "pyproject_sha256": "b3761bd703cae037f44874ed3f0f1e36a0722b7713523a1ffc2fecd5256ef61d",
+  "lock_sha256": "2983dcf099d4c4e6141728dfe7bd627d41d9d20a35ff54e3cf51d7fbb18cffef",
+  "video_sha256": "790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e",
+  "size_bytes": 732406,
+  "render_report_sha256": "2456b23798529acc23853d5bdb5ac521b0ef5d3fdf08160bc51e7ee122a5e13a",
+  "captions_sha256": "3418c98bbc7fe171544ffe4298eacaa46c0297342960e76a3c69dd2f421f164e",
+  "resolved_lesson_sha256": "b7bbd15d8b8eb88bd4325b8f9f010988f49c8ba56d706c7f837de35babed46d5",
+  "render_manifest_original_baseline": "0a083c1274f3792f0385c526e01d3488285ccd22",
+  "byte_equality": {
+    "movie": true,
+    "render_manifest": true,
+    "captions": true,
+    "resolved_lesson": true
+  },
+  "source_files_checked": 12,
+  "font_hashes_match": true,
+  "media": {
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "frames": 1920,
+    "duration": 80.0,
+    "audio_streams": 0,
+    "timestamps_verified": true
+  },
+  "full_decode_completed": true,
+  "sample_count": 39,
+  "tools": {
+    "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffprobe": "ffprobe version 7.1.5-0+deb13u1 Copyright (c) 2007-2026 the FFmpeg developers"
+  },
+  "unit_tests": {
+    "passed": true,
+    "count": 166,
+    "elapsed_seconds": 110.47
+  },
+  "publication_approved": false,
+  "limitations": "New local virtual environment and full rebuild on the same host, not a cold-cache, container, cross-machine or cross-platform test. No content/layout change, speech, complete human/device playback, accessibility/equivalence/rights review, source-only adoption or publication approval. Rebuilt movie remains ignored, not a newly distributed candidate."
+}

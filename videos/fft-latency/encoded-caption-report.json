@@ -1,0 +1,80 @@
+{
+  "source_commit": "053c1cacd2a9a0de25626ce41d7543fef59c35ef",
+  "movie_sha256": "790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e",
+  "movie_bytes": 732406,
+  "script_sha256": "7312e959323c9be17d3d9dfef4904e250cba5ecbe3fe28249ad8b69c7accd845",
+  "pillow": "12.3.0",
+  "font_sha256": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e",
+  "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "decoder_command": [
+    "ffmpeg",
+    "-v",
+    "error",
+    "-i",
+    "pipe:0",
+    "-vf",
+    "select=eq(n\\,1212)+eq(n\\,1284)+eq(n\\,1356)+eq(n\\,1428)",
+    "-fps_mode",
+    "passthrough",
+    "-f",
+    "rawvideo",
+    "-pix_fmt",
+    "rgb24",
+    "pipe:1"
+  ],
+  "crop_box_exclusive": [
+    80,
+    590,
+    1200,
+    682
+  ],
+  "method": "Exact RGB source masks eroded with a 3x3 minimum filter; decoded RGB extrema at those locations.",
+  "samples": [
+    {
+      "frame": 1212,
+      "seconds": 50.5,
+      "caption": "Arithmetic complexity asks how operation counts grow.",
+      "decoded_rgb_sha256": "83473b8ae7d8ee85ae4cac90c79aa804e860c98681696382c9ffe0c4a1281f9a",
+      "foreground_core_pixels": 108,
+      "background_core_pixels": 89442,
+      "minimum_foreground_luminance": 0.8828609725228376,
+      "maximum_background_luminance": 0.008732323976079745,
+      "conservative_core_ratio": 15.88326341220159
+    },
+    {
+      "frame": 1284,
+      "seconds": 53.5,
+      "caption": "Numerical stability asks how computation errors behave.",
+      "decoded_rgb_sha256": "4f786406eb5e9dfa6ef8e8425db7dd176f7f4bac55aecb639a1c418fde4c641a",
+      "foreground_core_pixels": 121,
+      "background_core_pixels": 88997,
+      "minimum_foreground_luminance": 0.8525002041782547,
+      "maximum_background_luminance": 0.0102559327572404,
+      "conservative_core_ratio": 14.977781653704623
+    },
+    {
+      "frame": 1356,
+      "seconds": 56.5,
+      "caption": "Latency measures elapsed time for the whole workload.",
+      "decoded_rgb_sha256": "2cd53c72f4e52d7b56fda7dbda06466fa91fc18a17f1a01387eddd0a97e2b57f",
+      "foreground_core_pixels": 120,
+      "background_core_pixels": 89329,
+      "minimum_foreground_luminance": 0.8512653046068158,
+      "maximum_background_luminance": 0.010496878850007309,
+      "conservative_core_ratio": 14.897715745656306
+    },
+    {
+      "frame": 1428,
+      "seconds": 59.5,
+      "caption": "Readiness needs validation against system deadlines.",
+      "decoded_rgb_sha256": "75274ac77a6dc64a79f4cc37c4d0ddd402f09f36eb2dd93721d1df8a3a59ee71",
+      "foreground_core_pixels": 121,
+      "background_core_pixels": 89047,
+      "minimum_foreground_luminance": 0.8796172123918126,
+      "maximum_background_luminance": 0.008732323976079745,
+      "conservative_core_ratio": 15.828033856968153
+    }
+  ],
+  "publication_approved": false,
+  "limitations": "Four midpoint caption cores only. Antialias edges, thin strokes without cores, hero/cards/footer, other frames, streaming transcodes, color-managed/device display, reading pace, comprehension and WCAG conformance not assessed. Not speech sync or full playback."
+}

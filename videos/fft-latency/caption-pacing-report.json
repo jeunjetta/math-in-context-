@@ -1,0 +1,352 @@
+{
+  "source_commit": "85f1868ea816a52c581ed64cbde3d21b567a40c4",
+  "video_sha256": "1d3050b3094f1a090954cb9c2e6ed10e90d438169e86bd2cfbc2a7f13ed74036",
+  "publication_approved": false,
+  "status": "source-copy audit; proposals unadopted",
+  "cue_count": 19,
+  "total_characters": 1001,
+  "total_whitespace_tokens": 160,
+  "rows": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 4.0,
+      "text": "Suppose Fourier computation becomes 2\u00d7 as fast.",
+      "characters": 47,
+      "whitespace_tokens": 7,
+      "duration_exact": "4",
+      "cps_exact": "47/4",
+      "tokens_per_second_exact": "7/4"
+    },
+    {
+      "index": 1,
+      "start": 4.0,
+      "end": 8.0,
+      "text": "Does the whole system become 2\u00d7 as fast? Pause and predict.",
+      "characters": 59,
+      "whitespace_tokens": 11,
+      "duration_exact": "4",
+      "cps_exact": "59/4",
+      "tokens_per_second_exact": "11/4"
+    },
+    {
+      "index": 2,
+      "start": 8.0,
+      "end": 13.0,
+      "text": "Imagine sequential work taking 100 milliseconds.",
+      "characters": 48,
+      "whitespace_tokens": 6,
+      "duration_exact": "5",
+      "cps_exact": "48/5",
+      "tokens_per_second_exact": "6/5"
+    },
+    {
+      "index": 3,
+      "start": 13.0,
+      "end": 18.0,
+      "text": "Fourier work takes 20 ms. Everything else takes 80 ms.",
+      "characters": 54,
+      "whitespace_tokens": 10,
+      "duration_exact": "5",
+      "cps_exact": "54/5",
+      "tokens_per_second_exact": "2"
+    },
+    {
+      "index": 4,
+      "start": 18.0,
+      "end": 22.0,
+      "text": "Divide Fourier time by 2: 20 ms becomes 10 ms.",
+      "characters": 46,
+      "whitespace_tokens": 10,
+      "duration_exact": "4",
+      "cps_exact": "23/2",
+      "tokens_per_second_exact": "5/2"
+    },
+    {
+      "index": 5,
+      "start": 22.0,
+      "end": 26.0,
+      "text": "The other 80 milliseconds stays unchanged.",
+      "characters": 42,
+      "whitespace_tokens": 6,
+      "duration_exact": "4",
+      "cps_exact": "21/2",
+      "tokens_per_second_exact": "3/2"
+    },
+    {
+      "index": 6,
+      "start": 26.0,
+      "end": 30.0,
+      "text": "10 + 80 = 90 ms. We saved 10 milliseconds.",
+      "characters": 42,
+      "whitespace_tokens": 10,
+      "duration_exact": "4",
+      "cps_exact": "21/2",
+      "tokens_per_second_exact": "5/2"
+    },
+    {
+      "index": 7,
+      "start": 30.0,
+      "end": 35.0,
+      "text": "Overall speedup is old time divided by new time.",
+      "characters": 48,
+      "whitespace_tokens": 9,
+      "duration_exact": "5",
+      "cps_exact": "48/5",
+      "tokens_per_second_exact": "9/5"
+    },
+    {
+      "index": 8,
+      "start": 35.0,
+      "end": 40.0,
+      "text": "100 divided by 90 is about 1.11\u00d7, not 2\u00d7.",
+      "characters": 41,
+      "whitespace_tokens": 9,
+      "duration_exact": "5",
+      "cps_exact": "41/5",
+      "tokens_per_second_exact": "9/5"
+    },
+    {
+      "index": 9,
+      "start": 40.0,
+      "end": 44.5,
+      "text": "Even zero Fourier time leaves 80 milliseconds.",
+      "characters": 46,
+      "whitespace_tokens": 7,
+      "duration_exact": "9/2",
+      "cps_exact": "92/9",
+      "tokens_per_second_exact": "14/9"
+    },
+    {
+      "index": 10,
+      "start": 44.5,
+      "end": 49.0,
+      "text": "In this model, the speedup limit is about 1.25\u00d7.",
+      "characters": 48,
+      "whitespace_tokens": 9,
+      "duration_exact": "9/2",
+      "cps_exact": "32/3",
+      "tokens_per_second_exact": "2"
+    },
+    {
+      "index": 11,
+      "start": 49.0,
+      "end": 52.0,
+      "text": "Arithmetic complexity asks how operation counts grow.",
+      "characters": 53,
+      "whitespace_tokens": 7,
+      "duration_exact": "3",
+      "cps_exact": "53/3",
+      "tokens_per_second_exact": "7/3"
+    },
+    {
+      "index": 12,
+      "start": 52.0,
+      "end": 55.0,
+      "text": "Numerical stability asks how computation errors behave.",
+      "characters": 55,
+      "whitespace_tokens": 7,
+      "duration_exact": "3",
+      "cps_exact": "55/3",
+      "tokens_per_second_exact": "7/3"
+    },
+    {
+      "index": 13,
+      "start": 55.0,
+      "end": 58.0,
+      "text": "Latency measures elapsed time for the whole workload.",
+      "characters": 53,
+      "whitespace_tokens": 8,
+      "duration_exact": "3",
+      "cps_exact": "53/3",
+      "tokens_per_second_exact": "8/3"
+    },
+    {
+      "index": 14,
+      "start": 58.0,
+      "end": 61.0,
+      "text": "Readiness needs validation against system deadlines.",
+      "characters": 52,
+      "whitespace_tokens": 6,
+      "duration_exact": "3",
+      "cps_exact": "52/3",
+      "tokens_per_second_exact": "2"
+    },
+    {
+      "index": 15,
+      "start": 61.0,
+      "end": 65.5,
+      "text": "Check accuracy, data movement, and worst-case deadlines.",
+      "characters": 56,
+      "whitespace_tokens": 7,
+      "duration_exact": "9/2",
+      "cps_exact": "112/9",
+      "tokens_per_second_exact": "14/9"
+    },
+    {
+      "index": 16,
+      "start": 65.5,
+      "end": 70.0,
+      "text": "This toy arithmetic proves no new FFT or real-time grid capability.",
+      "characters": 67,
+      "whitespace_tokens": 11,
+      "duration_exact": "9/2",
+      "cps_exact": "134/9",
+      "tokens_per_second_exact": "22/9"
+    },
+    {
+      "index": 17,
+      "start": 70.0,
+      "end": 75.0,
+      "text": "Explore the fraction improved and its speedup in our Marimo lesson.",
+      "characters": 67,
+      "whitespace_tokens": 11,
+      "duration_exact": "5",
+      "cps_exact": "67/5",
+      "tokens_per_second_exact": "11/5"
+    },
+    {
+      "index": 18,
+      "start": 75.0,
+      "end": 80.0,
+      "text": "Fourier methods connect algorithms to latency\u2014not automatically to readiness.",
+      "characters": 77,
+      "whitespace_tokens": 9,
+      "duration_exact": "5",
+      "cps_exact": "77/5",
+      "tokens_per_second_exact": "9/5"
+    }
+  ],
+  "ranked_indices": [
+    12,
+    11,
+    13,
+    14,
+    18,
+    16,
+    1,
+    17,
+    15,
+    0,
+    4,
+    3,
+    10,
+    5,
+    6,
+    9,
+    2,
+    7,
+    8
+  ],
+  "proposals": [
+    {
+      "category": "Complexity",
+      "original": {
+        "index": 11,
+        "start": 49.0,
+        "end": 52.0,
+        "text": "Arithmetic complexity asks how operation counts grow.",
+        "characters": 53,
+        "whitespace_tokens": 7,
+        "duration_exact": "3",
+        "cps_exact": "53/3",
+        "tokens_per_second_exact": "7/3"
+      },
+      "proposed": {
+        "start": 49.0,
+        "end": 52.0,
+        "text": "Complexity: how operation counts grow.",
+        "characters": 38,
+        "whitespace_tokens": 5,
+        "duration_exact": "3",
+        "cps_exact": "38/3",
+        "tokens_per_second_exact": "5/3"
+      },
+      "characters_removed": 15
+    },
+    {
+      "category": "Stability",
+      "original": {
+        "index": 12,
+        "start": 52.0,
+        "end": 55.0,
+        "text": "Numerical stability asks how computation errors behave.",
+        "characters": 55,
+        "whitespace_tokens": 7,
+        "duration_exact": "3",
+        "cps_exact": "55/3",
+        "tokens_per_second_exact": "7/3"
+      },
+      "proposed": {
+        "start": 52.0,
+        "end": 55.0,
+        "text": "Numerical stability: computation error growth.",
+        "characters": 46,
+        "whitespace_tokens": 5,
+        "duration_exact": "3",
+        "cps_exact": "46/3",
+        "tokens_per_second_exact": "5/3"
+      },
+      "characters_removed": 9
+    },
+    {
+      "category": "Latency",
+      "original": {
+        "index": 13,
+        "start": 55.0,
+        "end": 58.0,
+        "text": "Latency measures elapsed time for the whole workload.",
+        "characters": 53,
+        "whitespace_tokens": 8,
+        "duration_exact": "3",
+        "cps_exact": "53/3",
+        "tokens_per_second_exact": "8/3"
+      },
+      "proposed": {
+        "start": 55.0,
+        "end": 58.0,
+        "text": "Latency: elapsed time for the whole job.",
+        "characters": 40,
+        "whitespace_tokens": 7,
+        "duration_exact": "3",
+        "cps_exact": "40/3",
+        "tokens_per_second_exact": "7/3"
+      },
+      "characters_removed": 13
+    },
+    {
+      "category": "Readiness",
+      "original": {
+        "index": 14,
+        "start": 58.0,
+        "end": 61.0,
+        "text": "Readiness needs validation against system deadlines.",
+        "characters": 52,
+        "whitespace_tokens": 6,
+        "duration_exact": "3",
+        "cps_exact": "52/3",
+        "tokens_per_second_exact": "2"
+      },
+      "proposed": {
+        "start": 58.0,
+        "end": 61.0,
+        "text": "Readiness: validated system and deadlines.",
+        "characters": 42,
+        "whitespace_tokens": 5,
+        "duration_exact": "3",
+        "cps_exact": "14",
+        "tokens_per_second_exact": "5/3"
+      },
+      "characters_removed": 10
+    }
+  ],
+  "source_hashes": {
+    "caption_pacing.py": "b27fcab70b68b6cb1aa669c14bf15c648cd5f49fdefe8299f3623e9f33cbed67",
+    "render.py": "186ca20d2a95d9cb10b728edecf786ddc5c47a7ac70ede9f0ae76df70b17b1f1",
+    "lesson_model.py": "bb1dc4939db2806b136986f5f287f9d5ecea4f2b9d93336434c96ecde852bc5c",
+    "fft-latency/lesson.json": "8d6cb7de816988a1577a4ae8d2ac942ce01567331110dc075c05dfba97ffc3dc",
+    "fft-latency/review-version.json": "0bed8b95103558c954bf099c9d453ec5105b17434746a48a2bdcd726cbb7f994",
+    "fft-latency/caption-proposals.json": "0ff71c9bd8774ef572794922857c5f1d8759940133354154a80c181530859f8a"
+  },
+  "limitations": "Unicode code-point and whitespace-token arithmetic only. No total screen-reading load, OCR, visual/layout review, normative rate threshold, speech synchronization, comprehension, accessibility or adoption approval."
+}

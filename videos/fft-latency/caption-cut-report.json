@@ -1,0 +1,430 @@
+{
+  "source_commit": "9d0280cfc7e914359b9bd7f0571bf61e4a390e8e",
+  "movie_sha256": "790584a85d73529c882106a0202a26fbdd512018433441d8088f5ad069dbeb5e",
+  "movie_bytes": 732406,
+  "audit_source_sha256": "58dacfa3e050f0cb0dc1e87f95b2cfc3a211429b10111e0fbfe5139e47a1c9b2",
+  "pillow": "12.3.0",
+  "font_sha256": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e",
+  "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "crop_box_exclusive": [
+    0,
+    590,
+    1280,
+    692
+  ],
+  "decoder_commands": [
+    [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-i",
+      "pipe:0",
+      "-vf",
+      "select=eq(n\\,95)+eq(n\\,96)+eq(n\\,191)+eq(n\\,192)+eq(n\\,311)+eq(n\\,312)+eq(n\\,431)+eq(n\\,432)+eq(n\\,527)+eq(n\\,528)+eq(n\\,623)+eq(n\\,624),crop=1280:102:0:590",
+      "-fps_mode",
+      "passthrough",
+      "-pix_fmt",
+      "rgb24",
+      "-f",
+      "rawvideo",
+      "pipe:1"
+    ],
+    [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-i",
+      "pipe:0",
+      "-vf",
+      "select=eq(n\\,719)+eq(n\\,720)+eq(n\\,839)+eq(n\\,840)+eq(n\\,959)+eq(n\\,960)+eq(n\\,1067)+eq(n\\,1068)+eq(n\\,1175)+eq(n\\,1176)+eq(n\\,1247)+eq(n\\,1248),crop=1280:102:0:590",
+      "-fps_mode",
+      "passthrough",
+      "-pix_fmt",
+      "rgb24",
+      "-f",
+      "rawvideo",
+      "pipe:1"
+    ],
+    [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-i",
+      "pipe:0",
+      "-vf",
+      "select=eq(n\\,1319)+eq(n\\,1320)+eq(n\\,1391)+eq(n\\,1392)+eq(n\\,1463)+eq(n\\,1464)+eq(n\\,1571)+eq(n\\,1572)+eq(n\\,1679)+eq(n\\,1680)+eq(n\\,1799)+eq(n\\,1800),crop=1280:102:0:590",
+      "-fps_mode",
+      "passthrough",
+      "-pix_fmt",
+      "rgb24",
+      "-f",
+      "rawvideo",
+      "pipe:1"
+    ]
+  ],
+  "boundaries": [
+    {
+      "frame": 96,
+      "seconds": 4.0,
+      "outgoing": "Suppose Fourier computation becomes 2\u00d7 as fast.",
+      "incoming": "Does the whole system become 2\u00d7 as fast? Pause and predict.",
+      "before": {
+        "mask_pixels": 7539,
+        "expected_mae": 2.205288057655746,
+        "other_mae": 178.51686784277314,
+        "margin": 176.3115797851174,
+        "expected_is_closer": true
+      },
+      "after": {
+        "mask_pixels": 7539,
+        "expected_mae": 2.5137728257505416,
+        "other_mae": 178.42777556705133,
+        "margin": 175.91400274130078,
+        "expected_is_closer": true
+      }
+    },
+    {
+      "frame": 192,
+      "seconds": 8.0,
+      "outgoing": "Does the whole system become 2\u00d7 as fast? Pause and predict.",
+      "incoming": "Imagine sequential work taking 100 milliseconds.",
+      "before": {
+        "mask_pixels": 7657,
+        "expected_mae": 2.4885725479952985,
+        "other_mae": 175.98145487788952,
+        "margin": 173.49288232989423,
+        "expected_is_closer": true
+      },
+      "after": {
+        "mask_pixels": 7657,
+        "expected_mae": 1.9112359061425275,
+        "other_mae": 175.97091985546993,
+        "margin": 174.0596839493274,
+        "expected_is_closer": true
+      }
+    },
+    {
+      "frame": 312,
+      "seconds": 13.0,
+      "outgoing": "Imagine sequential work taking 100 milliseconds.",
+      "incoming": "Fourier work takes 20 ms. Everything else takes 80 ms.",
+      "before": {
+        "mask_pixels": 7042,
+        "expected_mae": 1.9622739751964404,
+        "other_mae": 173.01898134999527,
+        "margin": 171.05670737479883,
+        "expected_is_closer": true
+      },
+      "after": {
+        "mask_pixels": 7042,
+        "expected_mae": 2.4299441446558743,
+        "other_mae": 172.95318564801667,
+        "margin": 170.5232415033608,
+        "expected_is_closer": true
+      }
+    },
+    {
+      "frame": 432,
+      "seconds": 18.0,
+      "outgoing": "Fourier work takes 20 ms. Everything else takes 80 ms.",
+      "incoming": "Divide Fourier time by 2: 20 ms becomes 10 ms.",
+      "before": {
+        "mask_pixels": 6919,
+        "expected_mae": 2.367297779062485,
+        "other_mae": 182.72365948836537,
+        "margin": 180.3563617093029,
+        "expected_is_closer": true
+      },
+      "after": {
+        "mask_pixels": 6919,
+        "expected_mae": 2.2389073565544155,
+        "other_mae": 182.8715132244544,
+        "margin": 180.63260586789997,
+        "expected_is_closer": true
+      }
+    },
+    {
+      "frame": 528,
+      "seconds": 22.0,
+      "outgoing": "Divide Fourier time by 2: 20 ms becomes 10 ms.",
+      "incoming": "The other 80 milliseconds stays unchanged.",
+      "before": {
+        "mask_pixels": 6198,
+        "expected_mae": 2.0447993976551575,
+        "other_mae": 176.01505862106055,
+        "margin": 173.97025922340538,
+        "expected_is_closer": true
+      },
+      "after": {
+        "mask_pixels": 6198,
+        "expected_mae": 2.3145100570076367,
+        "other_mae": 176.12213617295902,
+        "margin": 173.8076261159514,
+        "expected_is_closer": true
+      }
+    },
+    {
+      "frame": 624,
+      "seconds": 26.0,
+      "outgoing": "The other 80 milliseconds stays unchanged.",
+      "incoming": "10 + 80 = 90 ms. We saved 10 milliseconds.",
+      "before": {
+        "mask_pixels": 5938,
+        "expected_mae": 2.3147524418996297,
+        "other_mae": 179.90737622094983,
+        "margin": 177.5926237790502,
+        "expected_is_closer": true
+      },
+      "after": {
+        "mask_pixels": 5938,
+        "expected_mae": 2.305209385876277,
+        "other_mae": 179.85191422476703,
+        "margin": 177.54670483889075,
+        "expected_is_closer": true
+      }
+    },
+    {
+      "frame": 720,
+      "seconds": 30.0,
+      "outgoing": "10 + 80 = 90 ms. We saved 10 milliseconds.",
+      "incoming": "Overall speedup is old time divided by new time.",
+      "before": {
+        "mask_pixels": 6198,
+        "expected_mae": 1.866892545982575,
+        "other_mae": 179.24965042486824,
+        "margin": 177.38275787888566,
+        "expected_is_closer": true
+      },
+      "after": {
+        "mask_pixels": 6198,
+        "expected_mae": 2.382327632569646,
+        "other_mae": 179.2599763364526,
+        "margin": 176.87764870388295,
+        "expected_is_closer": true
+      }
+    },
+    {
+      "frame": 840,
+      "seconds": 35.0,
+      "outgoing": "Overall speedup is old time divided by new time.",
+      "incoming": "100 divided by 90 is about 1.11\u00d7, not 2\u00d7.",
+      "before": {
+        "mask_pixels": 5941,
+        "expected_mae": 2.370364136228469,
+        "other_mae": 180.30208157998092,
+        "margin": 177.93171744375246,
+        "expected_is_closer": true
+      },
+      "after": {
+        "mask_pixels": 5941,
+        "expected_mae": 2.2372215676373224,
+        "other_mae": 180.28485664590698,
+        "margin": 178.04763507826965,
+        "expected_is_closer": true
+      }
+    },
+    {
+      "frame": 960,
+      "seconds": 40.0,
+      "outgoing": "100 divided by 90 is about 1.11\u00d7, not 2\u00d7.",
+      "incoming": "Even zero Fourier time leaves 80 milliseconds.",
+      "before": {
+        "mask_pixels": 5842,
+        "expected_mae": 2.0056487504279357,
+        "other_mae": 179.6626726007075,
+        "margin": 177.6570238502796,
+        "expected_is_closer": true
+      },
+      "after": {
+        "mask_pixels": 5842,
+        "expected_mae": 2.5288713910761156,
+        "other_mae": 179.52618966107497,
+        "margin": 176.99731826999886,
+        "expected_is_closer": true
+      }
+    },
+    {
+      "frame": 1068,
+      "seconds": 44.5,
+      "outgoing": "Even zero Fourier time leaves 80 milliseconds.",
+      "incoming": "In this model, the speedup limit is about 1.25\u00d7.",
+      "before": {
+        "mask_pixels": 6293,
+        "expected_mae": 2.3663329625509824,
+        "other_mae": 179.95555908681604,
+        "margin": 177.58922612426505,
+        "expected_is_closer": true
+      },
+      "after": {
+        "mask_pixels": 6293,
+        "expected_mae": 2.3910694422374066,
+        "other_mae": 179.99788124370994,
+        "margin": 177.60681180147253,
+        "expected_is_closer": true
+      }
+    },
+    {
+      "frame": 1176,
+      "seconds": 49.0,
+      "outgoing": "In this model, the speedup limit is about 1.25\u00d7.",
+      "incoming": "Arithmetic complexity asks how operation counts grow.",
+      "before": {
+        "mask_pixels": 6943,
+        "expected_mae": 2.182726007009458,
+        "other_mae": 184.49032598780548,
+        "margin": 182.30759998079603,
+        "expected_is_closer": true
+      },
+      "after": {
+        "mask_pixels": 6943,
+        "expected_mae": 2.1428297085793844,
+        "other_mae": 184.19799318258197,
+        "margin": 182.0551634740026,
+        "expected_is_closer": true
+      }
+    },
+    {
+      "frame": 1248,
+      "seconds": 52.0,
+      "outgoing": "Arithmetic complexity asks how operation counts grow.",
+      "incoming": "Numerical stability asks how computation errors behave.",
+      "before": {
+        "mask_pixels": 7526,
+        "expected_mae": 2.0415891575870315,
+        "other_mae": 173.18642040924794,
+        "margin": 171.14483125166092,
+        "expected_is_closer": true
+      },
+      "after": {
+        "mask_pixels": 7526,
+        "expected_mae": 2.4127026308796173,
+        "other_mae": 173.23553902028524,
+        "margin": 170.82283638940564,
+        "expected_is_closer": true
+      }
+    },
+    {
+      "frame": 1320,
+      "seconds": 55.0,
+      "outgoing": "Numerical stability asks how computation errors behave.",
+      "incoming": "Latency measures elapsed time for the whole workload.",
+      "before": {
+        "mask_pixels": 7534,
+        "expected_mae": 2.4165118131138836,
+        "other_mae": 167.8347491372445,
+        "margin": 165.41823732413062,
+        "expected_is_closer": true
+      },
+      "after": {
+        "mask_pixels": 7534,
+        "expected_mae": 2.4479692062649323,
+        "other_mae": 167.80161047694895,
+        "margin": 165.35364127068402,
+        "expected_is_closer": true
+      }
+    },
+    {
+      "frame": 1392,
+      "seconds": 58.0,
+      "outgoing": "Latency measures elapsed time for the whole workload.",
+      "incoming": "Readiness needs validation against system deadlines.",
+      "before": {
+        "mask_pixels": 7564,
+        "expected_mae": 2.3755508549268463,
+        "other_mae": 172.09677419354838,
+        "margin": 169.72122333862154,
+        "expected_is_closer": true
+      },
+      "after": {
+        "mask_pixels": 7564,
+        "expected_mae": 2.578045126035607,
+        "other_mae": 171.9876167812445,
+        "margin": 169.40957165520888,
+        "expected_is_closer": true
+      }
+    },
+    {
+      "frame": 1464,
+      "seconds": 61.0,
+      "outgoing": "Readiness needs validation against system deadlines.",
+      "incoming": "Check accuracy, data movement, and worst-case deadlines.",
+      "before": {
+        "mask_pixels": 7556,
+        "expected_mae": 2.070804658549497,
+        "other_mae": 165.03714487383095,
+        "margin": 162.96634021528146,
+        "expected_is_closer": true
+      },
+      "after": {
+        "mask_pixels": 7556,
+        "expected_mae": 2.441238750661726,
+        "other_mae": 165.03868890065291,
+        "margin": 162.59745014999118,
+        "expected_is_closer": true
+      }
+    },
+    {
+      "frame": 1572,
+      "seconds": 65.5,
+      "outgoing": "Check accuracy, data movement, and worst-case deadlines.",
+      "incoming": "This toy arithmetic proves no new FFT or real-time grid capability.",
+      "before": {
+        "mask_pixels": 8368,
+        "expected_mae": 2.2909098151688974,
+        "other_mae": 178.62380497131932,
+        "margin": 176.3328951561504,
+        "expected_is_closer": true
+      },
+      "after": {
+        "mask_pixels": 8368,
+        "expected_mae": 2.3981835564053537,
+        "other_mae": 178.52800350541747,
+        "margin": 176.12981994901213,
+        "expected_is_closer": true
+      }
+    },
+    {
+      "frame": 1680,
+      "seconds": 70.0,
+      "outgoing": "This toy arithmetic proves no new FFT or real-time grid capability.",
+      "incoming": "Inspect the synthetic notebook source, linked in the description.",
+      "before": {
+        "mask_pixels": 13059,
+        "expected_mae": 2.0528881741838325,
+        "other_mae": 199.07198100926564,
+        "margin": 197.0190928350818,
+        "expected_is_closer": true
+      },
+      "after": {
+        "mask_pixels": 13059,
+        "expected_mae": 2.580723383617939,
+        "other_mae": 198.4969752661,
+        "margin": 195.91625188248207,
+        "expected_is_closer": true
+      }
+    },
+    {
+      "frame": 1800,
+      "seconds": 75.0,
+      "outgoing": "Inspect the synthetic notebook source, linked in the description.",
+      "incoming": "No live lesson or real-grid benchmark is claimed.",
+      "before": {
+        "mask_pixels": 13705,
+        "expected_mae": 2.5863067007174996,
+        "other_mae": 173.90840325915116,
+        "margin": 171.32209655843366,
+        "expected_is_closer": true
+      },
+      "after": {
+        "mask_pixels": 13705,
+        "expected_mae": 2.2753009850419557,
+        "other_mae": 174.00722364100693,
+        "margin": 171.73192265596498,
+        "expected_is_closer": true
+      }
+    }
+  ],
+  "all_expected_closer": true,
+  "publication_approved": false,
+  "limitations": "36 caption-region samples at 18 cuts only. Source-defined foreground-union mask and two-template relative pixel error, not OCR or semantic proof, exact pixel identity, all-frame QA, full playback, device readability, speech synchronization or release approval."
+}

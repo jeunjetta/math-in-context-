@@ -1,0 +1,105 @@
+{
+  "source_commit": "879cf7b13eb9a4cb4af3889803e41da26d31e869",
+  "sha256": "c6735b9bc729204db6c6238ecda204d22643489807a918dee92c8115eee65f79",
+  "duration": 10,
+  "fps": 24,
+  "frames": 240,
+  "audio": false,
+  "complete_decode": true,
+  "publication_approved": false,
+  "samples": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0
+    },
+    {
+      "frame": 48,
+      "time_seconds": 2.0
+    },
+    {
+      "frame": 60,
+      "time_seconds": 2.5
+    },
+    {
+      "frame": 96,
+      "time_seconds": 4.0
+    },
+    {
+      "frame": 119,
+      "time_seconds": 4.958333333333333
+    },
+    {
+      "frame": 120,
+      "time_seconds": 5.0
+    },
+    {
+      "frame": 144,
+      "time_seconds": 6.0
+    },
+    {
+      "frame": 180,
+      "time_seconds": 7.5
+    },
+    {
+      "frame": 192,
+      "time_seconds": 8.0
+    },
+    {
+      "frame": 239,
+      "time_seconds": 9.958333333333334
+    }
+  ],
+  "source_hashes": {
+    "fft_source_endcard_media.py": "f51b778509d09a09f667bd9ee04fb99735c5cb48ff1033efe6b8796ae7111671",
+    "fft_source_endcard.py": "2dad587366c0e34c59ccec144f49a8ebc67dc72c94cc21a77b8da2df826b30a4",
+    "study_media.py": "e0d6e413e0bdb1534deb65bf6b0f28d11be4b469ef1ec842e0fe528e586d017f",
+    "qa.py": "45ae6c25baf9f54564c8cf4cf95ee2e8590ed988fc5e732e9cf96fc21094d9b9",
+    "render.py": "186ca20d2a95d9cb10b728edecf786ddc5c47a7ac70ede9f0ae76df70b17b1f1",
+    "fft-latency/source-endcard.json": "447958d83a7399ab04bdeabd794a9314c9f1c05a89c5e5367adbf53083120557",
+    "fft-latency/review-version.json": "0bed8b95103558c954bf099c9d453ec5105b17434746a48a2bdcd726cbb7f994",
+    "uv.lock": "2983dcf099d4c4e6141728dfe7bd627d41d9d20a35ff54e3cf51d7fbb18cffef"
+  },
+  "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "media": {
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "frames": 240,
+    "duration": 10.0,
+    "audio_streams": 0,
+    "timestamps_verified": true
+  },
+  "status": "unadopted source-only ending technical excerpt",
+  "original_pilot_window": [
+    70,
+    80
+  ],
+  "source_video_sha256": "1d3050b3094f1a090954cb9c2e6ed10e90d438169e86bd2cfbc2a7f13ed74036",
+  "captions_sha256": "cbbbd72d0622a43c1c95368ff65542ba0d6e4f9f3b54214e0b426a4f743ad687",
+  "original_cue_windows": [
+    [
+      70,
+      75
+    ],
+    [
+      75,
+      80
+    ]
+  ],
+  "excerpt_cue_windows": [
+    [
+      0,
+      5
+    ],
+    [
+      5,
+      10
+    ]
+  ],
+  "fonts": {
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e",
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf": "a4c5bc453ca281d90ea079e596da7ae0dfeb5777497c29ec254e76d97ff6f890"
+  },
+  "limitations": "Separate silent technical excerpt, not an adopted full pilot. Expected captions are not OCR. No speech sync, continuous human playback, device readability, comprehension, rights clearance or publication approval."
+}

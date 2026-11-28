@@ -1,0 +1,229 @@
+{
+  "status": "unadopted source-only end-card proposal",
+  "source_commit": "368ddab0d0f3cbb4388e5d0b6784add5a92f0a83",
+  "publication_approved": false,
+  "audio": false,
+  "source_video_sha256": "1d3050b3094f1a090954cb9c2e6ed10e90d438169e86bd2cfbc2a7f13ed74036",
+  "pillow": "12.3.0",
+  "frames": [
+    {
+      "phase": 0,
+      "caption": "Inspect the synthetic notebook source, linked in the description.",
+      "text": [
+        {
+          "text": "SYNTHETIC \u00b7 NOT A BENCHMARK",
+          "bounds": [
+            64,
+            30,
+            579,
+            50
+          ],
+          "size": 28
+        },
+        {
+          "text": "Measure the whole job.",
+          "bounds": [
+            64,
+            92,
+            698,
+            138
+          ],
+          "size": 48
+        },
+        {
+          "text": "Fourier methods \u2192 component costs \u2192 end-to-end latency",
+          "bounds": [
+            64,
+            177,
+            941,
+            206
+          ],
+          "size": 30
+        },
+        {
+          "text": "EXPLORE THE SOURCE",
+          "bounds": [
+            88,
+            264,
+            440,
+            284
+          ],
+          "size": 28
+        },
+        {
+          "text": "Public Python / Marimo notebook",
+          "bounds": [
+            88,
+            318,
+            839,
+            357
+          ],
+          "size": 40
+        },
+        {
+          "text": "Source code only \u00b7 not a live interactive app",
+          "bounds": [
+            88,
+            382,
+            786,
+            409
+          ],
+          "size": 28
+        },
+        {
+          "text": "Faster computation \u2260 validated grid readiness",
+          "bounds": [
+            64,
+            462,
+            905,
+            493
+          ],
+          "size": 32
+        },
+        {
+          "text": "MODEL \u00b7 synthetic example | ACCURACY CONTEXT \u00b7 FFTW authors",
+          "bounds": [
+            64,
+            526,
+            990,
+            554
+          ],
+          "size": 28
+        },
+        {
+          "text": "Inspect the synthetic notebook source, linked in the",
+          "bounds": [
+            64,
+            595,
+            1008,
+            626
+          ],
+          "size": 32
+        },
+        {
+          "text": "description.",
+          "bounds": [
+            64,
+            637,
+            279,
+            668
+          ],
+          "size": 32
+        }
+      ]
+    },
+    {
+      "phase": 1,
+      "caption": "No live lesson or real-grid benchmark is claimed.",
+      "text": [
+        {
+          "text": "SYNTHETIC \u00b7 NOT A BENCHMARK",
+          "bounds": [
+            64,
+            30,
+            579,
+            50
+          ],
+          "size": 28
+        },
+        {
+          "text": "Measure the whole job.",
+          "bounds": [
+            64,
+            92,
+            698,
+            138
+          ],
+          "size": 48
+        },
+        {
+          "text": "Fourier methods \u2192 component costs \u2192 end-to-end latency",
+          "bounds": [
+            64,
+            177,
+            941,
+            206
+          ],
+          "size": 30
+        },
+        {
+          "text": "EXPLORE THE SOURCE",
+          "bounds": [
+            88,
+            264,
+            440,
+            284
+          ],
+          "size": 28
+        },
+        {
+          "text": "Public Python / Marimo notebook",
+          "bounds": [
+            88,
+            318,
+            839,
+            357
+          ],
+          "size": 40
+        },
+        {
+          "text": "Source code only \u00b7 not a live interactive app",
+          "bounds": [
+            88,
+            382,
+            786,
+            409
+          ],
+          "size": 28
+        },
+        {
+          "text": "Faster computation \u2260 validated grid readiness",
+          "bounds": [
+            64,
+            462,
+            905,
+            493
+          ],
+          "size": 32
+        },
+        {
+          "text": "MODEL \u00b7 synthetic example | ACCURACY CONTEXT \u00b7 FFTW authors",
+          "bounds": [
+            64,
+            526,
+            990,
+            554
+          ],
+          "size": 28
+        },
+        {
+          "text": "No live lesson or real-grid benchmark is claimed.",
+          "bounds": [
+            64,
+            595,
+            948,
+            626
+          ],
+          "size": 32
+        }
+      ]
+    }
+  ],
+  "images": {
+    "phase-0-1280.png": "86874a0c3845075c7fce4302438b4fae7092a3a7f3a245a997fd73b04b9151eb",
+    "phase-0-640.png": "0af9c6824a2116a161ed87befa999c9061a8c125eb8ffa77d49f02e930587fae",
+    "phase-1-1280.png": "7c3856b55c6fb1bf419a3ac4d25555ea1b01a595364b5df9be2365277319f1c9",
+    "phase-1-640.png": "bf5788cf220b414d4f3d9448ba1b19658addb3ad430016895b195ffbad5395cd"
+  },
+  "source_hashes": {
+    "fft_source_endcard.py": "2dad587366c0e34c59ccec144f49a8ebc67dc72c94cc21a77b8da2df826b30a4",
+    "fft-latency/source-endcard.json": "447958d83a7399ab04bdeabd794a9314c9f1c05a89c5e5367adbf53083120557",
+    "fft-latency/review-version.json": "0bed8b95103558c954bf099c9d453ec5105b17434746a48a2bdcd726cbb7f994",
+    "render.py": "186ca20d2a95d9cb10b728edecf786ddc5c47a7ac70ede9f0ae76df70b17b1f1"
+  },
+  "fonts": {
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e",
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf": "a4c5bc453ca281d90ea079e596da7ae0dfeb5777497c29ec254e76d97ff6f890"
+  },
+  "limitations": "Source-frame stills only. Not encoded, adopted, speech-aligned, tablet-reviewed or approved."
+}

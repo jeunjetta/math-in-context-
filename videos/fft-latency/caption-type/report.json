@@ -1,0 +1,155 @@
+{
+  "source_commit": "1538d57e3128d75767af52c2a7e022023b2c03ea",
+  "publication_approved": false,
+  "status": "unadopted original-copy category-caption type study",
+  "pillow": "12.3.0",
+  "fps": 24,
+  "window": [
+    49,
+    61
+  ],
+  "source_video_sha256": "1d3050b3094f1a090954cb9c2e6ed10e90d438169e86bd2cfbc2a7f13ed74036",
+  "cues": [
+    {
+      "start": 49,
+      "end": 52,
+      "current": {
+        "text": "Arithmetic complexity asks how operation counts grow.",
+        "font_px": 26,
+        "nominal_font_px_at_640": 13.0,
+        "advance_px": 721.109375,
+        "ink_bounds": [
+          279.4453125,
+          595,
+          1000.4453125,
+          620
+        ],
+        "lines": 1
+      },
+      "proposed": {
+        "text": "Arithmetic complexity asks how operation counts grow.",
+        "font_px": 34,
+        "nominal_font_px_at_640": 17.0,
+        "advance_px": 943.046875,
+        "ink_bounds": [
+          168.4765625,
+          596,
+          1111.4765625,
+          629
+        ],
+        "lines": 1
+      }
+    },
+    {
+      "start": 52,
+      "end": 55,
+      "current": {
+        "text": "Numerical stability asks how computation errors behave.",
+        "font_px": 26,
+        "nominal_font_px_at_640": 13.0,
+        "advance_px": 742.875,
+        "ink_bounds": [
+          268.5625,
+          595,
+          1011.5625,
+          620
+        ],
+        "lines": 1
+      },
+      "proposed": {
+        "text": "Numerical stability asks how computation errors behave.",
+        "font_px": 34,
+        "nominal_font_px_at_640": 17.0,
+        "advance_px": 971.484375,
+        "ink_bounds": [
+          154.2578125,
+          596,
+          1125.2578125,
+          629
+        ],
+        "lines": 1
+      }
+    },
+    {
+      "start": 55,
+      "end": 58,
+      "current": {
+        "text": "Latency measures elapsed time for the whole workload.",
+        "font_px": 26,
+        "nominal_font_px_at_640": 13.0,
+        "advance_px": 730.078125,
+        "ink_bounds": [
+          274.9609375,
+          595,
+          1004.9609375,
+          620
+        ],
+        "lines": 1
+      },
+      "proposed": {
+        "text": "Latency measures elapsed time for the whole workload.",
+        "font_px": 34,
+        "nominal_font_px_at_640": 17.0,
+        "advance_px": 954.734375,
+        "ink_bounds": [
+          162.6328125,
+          596,
+          1117.6328125,
+          629
+        ],
+        "lines": 1
+      }
+    },
+    {
+      "start": 58,
+      "end": 61,
+      "current": {
+        "text": "Readiness needs validation against system deadlines.",
+        "font_px": 26,
+        "nominal_font_px_at_640": 13.0,
+        "advance_px": 703.46875,
+        "ink_bounds": [
+          288.265625,
+          595,
+          991.265625,
+          620
+        ],
+        "lines": 1
+      },
+      "proposed": {
+        "text": "Readiness needs validation against system deadlines.",
+        "font_px": 34,
+        "nominal_font_px_at_640": 17.0,
+        "advance_px": 919.953125,
+        "ink_bounds": [
+          180.0234375,
+          596,
+          1100.0234375,
+          629
+        ],
+        "lines": 1
+      }
+    }
+  ],
+  "source_hashes": {
+    "caption_type_study.py": "d28ff6c8281394cd3e56282391eccfb6d299df805d727a542e11807844a65a46",
+    "render.py": "186ca20d2a95d9cb10b728edecf786ddc5c47a7ac70ede9f0ae76df70b17b1f1",
+    "lesson_model.py": "bb1dc4939db2806b136986f5f287f9d5ecea4f2b9d93336434c96ecde852bc5c",
+    "fft-latency/lesson.json": "8d6cb7de816988a1577a4ae8d2ac942ce01567331110dc075c05dfba97ffc3dc",
+    "fft-latency/review-version.json": "0bed8b95103558c954bf099c9d453ec5105b17434746a48a2bdcd726cbb7f994",
+    "uv.lock": "2983dcf099d4c4e6141728dfe7bd627d41d9d20a35ff54e3cf51d7fbb18cffef"
+  },
+  "font_sha256": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e",
+  "images": {
+    "49s-26px-1280.png": "ddc07daa927d4b6ce51772ee7adfa50b8b7677c664a6b1c00483a15790674b6e",
+    "49s-34px-1280.png": "cb8836cd7a0e1eb25ad3db0bc8725713355578a1ca0ddc1d0e78910d280f6b29",
+    "52s-26px-1280.png": "ff130adf2209ed495fd70b6a4cd152a911b06d87c8cf6d243be2304cb2e22365",
+    "52s-34px-1280.png": "12afb3e35aa9015041c26a2772dc63a646cee1f795e23fa3f44dd6566668bb29",
+    "55s-26px-1280.png": "3ad99ab5a04a6772d525b2ff9866dc104f804c6b9e3bdc2fa2faf31aae5a820b",
+    "55s-34px-1280.png": "84781ee9b56dbfca2ab851f56f162e1ff7afaee005787a50d7ca13e9ba7d5d68",
+    "58s-26px-1280.png": "cc5357f844d36860c4cf8e4de93a1312a923e584c05269960e6c805ae5bc1d9c",
+    "58s-34px-1280.png": "64b7947023a05eb15c183e9b68eb1b96f202220c503d06965ea148e4cd60c315",
+    "comparison-640.png": "19dcdb03aae6420debff722b93e43778f7cb9bb598708fa1c0f3d377a48f3ea5"
+  },
+  "limitations": "Source stills, not encoded media or adoption. No copy/timing change; no proof of device readability, comprehension, accessibility or speech sync. Footer and inactive category labels remain small. Other scenes not tested at 34px."
+}
