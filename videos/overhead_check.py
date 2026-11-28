@@ -8,7 +8,7 @@ from fractions import Fraction
 import json
 from pathlib import Path
 
-from lesson_model import compact, metrics, number, quotient
+from lesson_model import compact, context, metrics, number, quotient
 
 ROOT = Path(__file__).resolve().parent
 FOLDER = ROOT/'fft-latency'
@@ -39,6 +39,13 @@ def load():
             or spec['changed_assumption'] != 'No added overhead'
             or spec['changed_assumption'] not in lesson['assumptions']):
         raise ValueError('Exercise scope or reference changed; review before regeneration')
+    validate_display(spec, lesson)
+    return spec, lesson
+
+
+def validate_display(spec, lesson):
+    """Refuse rounded operands in exact-looking text, including direct reuse."""
+    context(lesson)  # Shared precision rules for EVERY displayed model operand.
     for h in spec['overheads_ms']:
         row = evaluate(lesson, h)
         if any(Fraction(compact(row[k])) != row[k] for k in ('overhead', 'total')):
@@ -50,10 +57,10 @@ def load():
             or len(choices) != 3 or len(set(choices)) != 3
             or set(choices) != {m['new_total'], probe['total'], m['baseline']+probe['overhead']}):
         raise ValueError('Prediction must have exactly one matching answer')
-    return spec, lesson
 
 
 def document(spec, lesson):
+    validate_display(spec, lesson)
     m = metrics(lesson)
     probe = evaluate(lesson, spec['prediction_overhead_ms'])
     lines = [

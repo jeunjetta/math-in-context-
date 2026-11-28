@@ -1,5 +1,54 @@
 # Video status log
 
+## 28 November 2026 · evening, refuse false printed exercise equalities
+
+Source: live PR #4 head 268b08d50e32967ea866abc53ca51dfe108d22d8;
+fetched exact head into an isolated codex/video-* worktree. Read live main
+README, #1 README/AGENTS/ROADMAP/source registry/full FFT notebook,
+video README/latest log and current overhead generator/data/tests.
+Main/video lack root AGENTS/ROADMAP; #1–4 open/unmerged, #4 draft with
+no feedback. Continue codex/video-teaser-pacing/PR #4, no new PR stack.
+
+Observed precision gap in the OPTIONAL exercise: validating only overhead
+and total allows separately rounded Fourier/other operands to form a false
+printed equality. An in-memory synthetic stress fixture (100 ms baseline,
+20.005 ms Fourier, 4001x component gain, 8 ms overhead) returned exact total
+88, but printed "0.01 + 80 + 8 = 88 ms". This is a display bug in a reuse
+case, NOT incorrect arithmetic or a defect in the current 100/20/2 movie.
+No such fixture is saved as educational material or timing evidence.
+
+Extracted shared display validation, called by both load() and document().
+It applies existing lesson_model.context precision rules to every displayed
+model operand, then the existing overhead/total and answer-choice guards.
+Direct document reuse can no longer bypass these guards. Pure evaluate()
+still returns exact fractions for otherwise valid inputs; it does not
+inherit the two-decimal text restriction. Existing model/renderer untouched.
+
+Two new tests failed before the fix and pass afterward: exact total with
+unrepresentable operands; direct document overhead precision. They also
+cover rejection before CLI writes in generate/check modes, no mutation,
+and a valid cent-exact positive control. All 13 focused overhead/package
+tests pass in 0.038s. Generated Markdown --check, byte-identical default
+text assertion and whitespace pass. No full-suite/Marimo check/export,
+render/decode, keyframe/equation/clipping, normal-speed/device or speech-sync
+rerun. Previous test/visual results remain historical.
+
+Files: overhead_check.py, test_overhead_check.py and this log only.
+Exercise JSON/generated Markdown, movie/captions, descriptive text, package,
+archived evidence, dependency/lock, notebook/research and mathematical
+conclusions unchanged. Current official Python 3.12 Fraction documentation
+checked: https://docs.python.org/3.12/library/fractions.html.
+No tool migration, new licensing clearance, asset/voice, paid service,
+private/operator data, deployment/Open Notebook assumption, publishing,
+merge, account/sharing change or additional automation.
+
+Next: intended-device complete playback/human text-equivalence feedback,
+then one observed issue or release-design recommendation. Optional exercise
+adoption remains separate. Gates remain human math/editorial/rights,
+accessible playback, audio choice/retiming, source-only adoption, parent
+reconciliation, authorized review route and exact-version publication
+approval. No technical render blocker; tests do not complete human review.
+
 ## 28 November 2026 · model-derived overhead-exercise feedback
 
 Source: live PR #4 head f4ca74835d9fb9d6ac908afc8af0849d49570510;

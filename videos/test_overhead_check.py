@@ -68,6 +68,36 @@ class OverheadCheckTests(unittest.TestCase):
             with self.subTest(key=key),patch.object(Path,'read_text',read):
                 with self.assertRaises(ValueError): o.load()
 
+    def test_display_rejects_rounded_operands_even_when_total_is_exact(self):
+        spec = copy.deepcopy(self.spec)
+        spec['prediction_choices_ms'] = [80,88,108]
+        model = dict(baseline_ms=100, fourier_ms=20.005, kernel_speedup=4001)
+        before = copy.deepcopy((spec,model))
+        # Exact arithmetic remains reusable; only this two-decimal text is refused.
+        self.assertEqual(o.evaluate(model,8)['total'],88)
+        with self.assertRaisesRegex(ValueError,'two decimal'):
+            o.document(spec,model)
+        self.assertEqual((spec,model),before)
+        for checking in (False,True):
+            argv = ['overhead_check.py']+(['--check'] if checking else [])
+            with patch('sys.argv',argv),patch.object(o,'load',return_value=(spec,model)),\
+                 patch.object(Path,'write_text') as write:
+                with self.assertRaisesRegex(ValueError,'two decimal'): o.main()
+                write.assert_not_called()
+
+    def test_direct_document_validates_overhead_precision_and_keeps_exact_cents(self):
+        spec = copy.deepcopy(self.spec)
+        spec['overheads_ms'] = [0,8.001,10,12]
+        spec['prediction_overhead_ms'] = 8.001
+        spec['prediction_choices_ms'] = [90,98.001,108.001]
+        with self.assertRaisesRegex(ValueError,'two decimal'):
+            o.document(spec,self.lesson)
+        spec = copy.deepcopy(self.spec)
+        spec['prediction_choices_ms'] = [89.99,97.99,108]
+        model = dict(baseline_ms=100,fourier_ms=20.02,kernel_speedup=2)
+        text = o.document(spec,model)
+        self.assertIn('**97.99 ms**: 10.01 + 79.98 + 8 = 97.99 ms.',text)
+
     def test_document_fresh_and_check_never_writes(self):
         text = o.document(self.spec,self.lesson)
         self.assertEqual(o.OUTPUT.read_text(),text)
